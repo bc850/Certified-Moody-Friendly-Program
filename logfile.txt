@@ -1,0 +1,11 @@
+commit 984ec6282b6fd61af3abf467d79a13eabb105844
+Author: Brandon Corbett <bmcorbet@valdosta.edu>
+Date:   Thu Mar 1 15:57:54 2018 -0500
+
+    added docs to docs folder
+
+commit e2598c21891ce09828ade70762c30163d784264d
+Author: Brandon Corbett <bmcorbet@valdosta.edu>
+Date:   Thu Mar 1 15:15:27 2018 -0500
+
+    initial commit
