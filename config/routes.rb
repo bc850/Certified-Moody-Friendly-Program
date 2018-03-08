@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   resources :discounts
 
   root 'discounts#index', as: 'home'
