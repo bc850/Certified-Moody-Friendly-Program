@@ -31,6 +31,16 @@
     <%= form.text_field :category, id: :discount_category %>
   </div>
 
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :discount_description, rows: 3, cols: 40 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_area :location, id: :discount_location, rows: 1, cols: 40 %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
