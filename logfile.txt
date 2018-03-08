@@ -1,3 +1,42 @@
+commit 2199ae062e33d376b727bfc95da35654af6b3ec5
+Merge: 984ec62 11abf08
+Author: Brandon Corbett <brando085@gmail.com>
+Date:   Thu Mar 8 15:41:07 2018 -0500
+
+    Merge pull request #1 from VSU-CS-Senior-Seminar/3.8.18
+    
+    3.8.18
+
+commit 11abf0809037ee2ac307d92d661058298e649620
+Author: amandavsu2018 <amandavsu2018@gmail.com>
+Date:   Thu Mar 8 15:38:56 2018 -0500
+
+    updated views
+
+commit 3b2e2f707e6dd2cf65f06bb953686b28fc448acb
+Author: amandavsu2018 <amandavsu2018@gmail.com>
+Date:   Thu Mar 8 15:26:08 2018 -0500
+
+    adding desc and location columns
+
+commit 9bf3b8dc847f5d7f3b4bac49cac10f33be0ac537
+Author: amandavsu2018 <amandavsu2018@gmail.com>
+Date:   Thu Mar 8 15:06:27 2018 -0500
+
+    edited routes and created our Discounts table
+
+commit 1e4996c7da9d4e3ba3cdf75176b8a8314129d9f9
+Author: amandavsu2018 <amandavsu2018@gmail.com>
+Date:   Thu Mar 8 14:48:44 2018 -0500
+
+    creating scaffolding for Discount
+
+commit 77524e546e383ae01dd4955b6219766f8166016c
+Author: amandavsu2018 <amandavsu2018@gmail.com>
+Date:   Thu Mar 8 14:44:12 2018 -0500
+
+    logfile
+
 commit 984ec6282b6fd61af3abf467d79a13eabb105844
 Author: Brandon Corbett <bmcorbet@valdosta.edu>
 Date:   Thu Mar 1 15:57:54 2018 -0500

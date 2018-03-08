@@ -1,0 +1,15 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+  background-color: blue;
+}
+
+#hero {
+  background-color: #f2f2f2;
+
+  #inside {
+    border: 1px solid grey;
+    margin-bottom: 10px;
+  }
+}
