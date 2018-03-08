@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<div class="container-fluid" id="hero">
+  <div class="col-md-2">
+    <h3>Component 1</h3>
+    <p>Some stuff.</p>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <%= render 'discounts/discounts' %>
+    </div>
+    <div class="row">
+      <h3>Events</h3>
+    </div>
+  </div>
+  <div class="col-md-2 col-md-offset-1">
+    <div class="row">
+      <h3>Testy</h3>
+      <p>Paragraph 1</p>
+    </div>
+    <div class="row">
+      <h3>Tester</h3>
+      <p>Some more stuff</p>
+    </div>
+  </div>
+</div>
