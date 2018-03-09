@@ -1,2 +1,6 @@
-<%= render 'home/feed' %>
-<%= render 'home/landing' %>
+<% @test = 1 %> <!-- will be statement to checked if logged in -->
+<% if @test == 1 %>
+  <%= render 'home/feed' %>
+<% else %>
+  <%= render 'home/landing' %>
+<% end %>
