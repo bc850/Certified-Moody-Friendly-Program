@@ -1,0 +1,10 @@
+<div id="couponsfeedID">
+  <h3>Coupons</h3>
+
+  <% @coupons.each do |coupon| %>
+    <div id="inside">
+      <strong><%= coupon.name %></strong><br>
+      <%= coupon.description %><br>
+    </div>
+  <% end %>
+</div>

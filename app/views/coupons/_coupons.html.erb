@@ -1,14 +1,5 @@
-<div id="discountsID">
-  <h3>Discounts</h3>
-
-  <% @discounts.each do |discount| %>
-    <div id="inside">
-      <strong><%= discount.name %></strong><br>
-      <%= discount.description %><br>
-    </div>
-  <% end %>
-
-<!--
+<div id="coupnsID">
+  <h3>Coupons</h3>
   <table>
     <thead>
       <tr>
@@ -42,5 +33,4 @@
   <br>
 
   <%= link_to 'New Discount', new_discount_path %>
--->
 </div>

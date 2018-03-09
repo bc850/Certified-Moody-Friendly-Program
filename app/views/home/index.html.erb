@@ -1,26 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<div class="container-fluid" id="hero">
-  <div class="col-md-2">
-    <h3>Component 1</h3>
-    <p>Some stuff.</p>
-  </div>
-  <div class="col-md-6">
-    <div class="row">
-      <%= render 'discounts/discounts' %>
-    </div>
-    <div class="row">
-      <h3>Events</h3>
-    </div>
-  </div>
-  <div class="col-md-2 col-md-offset-1">
-    <div class="row">
-      <h3>Testy</h3>
-      <p>Paragraph 1</p>
-    </div>
-    <div class="row">
-      <h3>Tester</h3>
-      <p>Some more stuff</p>
-    </div>
-  </div>
-</div>
+<% @test = 1 %> <!-- will be statement to checked if logged in -->
+<% if @test == 1 %>
+  <%= render 'home/feed' %>
+<% else %>
+  <%= render 'home/landing' %>
+<% end %>
