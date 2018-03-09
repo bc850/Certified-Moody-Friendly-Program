@@ -2,7 +2,23 @@
 @import "bootstrap";
 
 .navbar {
-  background-color: blue;
+  background-color: #0F3D5E;
+  height: 95px;
+
+  #logodiv {
+      padding-top: 35px;
+      padding-left: 125px;
+  }
+
+  #logoname {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-style: regular;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
 
 #hero {
