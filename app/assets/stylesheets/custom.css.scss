@@ -2,7 +2,27 @@
 @import "bootstrap";
 
 .navbar {
-  background-color: blue;
+  background-color: #0F3D5E;
+  height: 95px;
+  //margin: 0 !important;
+  //border-radius: 0 !important;
+  //-moz-border-radius: 0 !important;
+  border: none;
+
+  #logodiv {
+      padding-top: 30px;
+      margin-left: 125px;
+  }
+
+  #logoname {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-style: regular;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
 
 #hero {
@@ -11,5 +31,113 @@
   #inside {
     border: 1px solid grey;
     margin-bottom: 10px;
+  }
+}
+
+#landingHero {
+
+  #left-hero {
+    background-color: #fff;
+    height: 100vh;
+
+
+    /*#hero-left-h1 {
+      padding-top: 125px;
+    }*/
+
+    #hero-left-row1 {
+      padding-top: 30vh;
+    }
+
+    #hero-left-row1 h1 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    #hero-left-row2 h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    #hero-left-row3 {
+      padding-top: 25px;
+    }
+
+    #hero-left-row3 form input {
+      width: 340px;
+      height: 40px;
+      padding: 0px 10px;
+      margin-right: 10px;
+      border: 1px solid #123E5C;
+      background-color: #fff;
+      font-size: 14px;
+      color: #000000;
+      line-height: 30px;
+    }
+
+    #hero-left-row3 form button {
+      width: 120px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 40px;
+      background-color: #123E5C;
+      font-size: 14px;
+      color: #fff;
+      line-height: 20px;
+    }
+
+    #hero-left-row3 form button:hover {
+      border: 2px solid #123E5C;
+      background-color: #fff;
+      color: #9E2438;
+    }
+
+    #hero-left-row4 {
+      padding-top: 25px;
+    }
+  }
+
+  #right-hero {
+    /*background-color: #9E2438;*/
+    background-image: image-url('a-10.jpg');
+    -webkit-background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+    height: 100vh;
+    /*border-bottom: 10px solid #FD9701;*/
+    padding: 0px;
+    color: #fff;
+    background-position: 18% 80%;
+
+    #hero-right-h1 {
+      padding-top: 30vh;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+
+    height: 50px;
+
+    #logodiv {
+      margin-left: 25px;
+      padding-top: 12px;
+    }
+
+    #logoname {
+      font-size: 18px;
+    }
+  }
+
+  #landingHero {
+
+    #hero-left-row1 {
+      padding-top: 60vh;
+    }
+
+    #right-hero {
+      background-position: 20% 80%;
+    }
   }
 }

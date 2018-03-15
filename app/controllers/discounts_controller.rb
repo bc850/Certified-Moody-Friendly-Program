@@ -5,6 +5,7 @@ class DiscountsController < ApplicationController
   # GET /discounts.json
   def index
     @discounts = Discount.all
+    @discounts = @discounts.order('created_at desc') #params[:page]
   end
 
   # GET /discounts/1
