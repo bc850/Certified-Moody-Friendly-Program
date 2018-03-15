@@ -1,32 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar {
+#banner {
   background-color: #0F3D5E;
   height: 95px;
   //margin: 0 !important;
   //border-radius: 0 !important;
   //-moz-border-radius: 0 !important;
   border: none;
-
-  #logodiv {
-      padding-top: 30px;
-      margin-left: 125px;
-  }
-
-  #logoname {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-style: regular;
-    font-size: 22px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
 }
 
 #hero {
   background-color: #f2f2f2;
+  padding-top: 95px;
 
   #inside {
     border: 1px solid grey;
@@ -115,29 +101,117 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
+/**************************************************
+** MEDIA QUERY FOR SMALLER THAN DESKTOP VIEWPORT **
+**************************************************/
 
+@media screen and (max-width: 768px) {
+  #banner {
     height: 50px;
 
     #logodiv {
-      margin-left: 25px;
+      margin-left: 6%;
+      margin-right: 6%;
       padding-top: 12px;
+
+      #logoname {
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+      }
     }
 
-    #logoname {
-      font-size: 18px;
+    #navButton {
+      border-color: transparent;
+      margin-right: 3%;
+      padding-top: 0px;
+      margin-top: 5px;
+
+      span {
+        background-color: #fff;
+      }
+    }
+
+    #navFormInputs {
+      display: none;
+    }
+
+    #navSubmit {
+      width: 60px;
+      height: 28px;
+      border: 2px solid #f2f2f2;
+      border-radius: 40px;
+      background-color: #fff;
+      font-size: 14px;
+      color: #0F3D5E;
+    }
+
+    #landingHero {
+
+      #hero-left-row1 {
+        padding-top: 60vh;
+      }
+
+      #right-hero {
+        background-position: 20% 80%;
+      }
     }
   }
+}
 
-  #landingHero {
+/***********************************************
+** MEDIA QUERY FOR LARGER THAN PHONE VIEWPORT **
+***********************************************/
 
-    #hero-left-row1 {
-      padding-top: 60vh;
+@media screen and (min-width: 768px) {
+  #banner {
+    #logodiv {
+      width: 100vw;
+      padding-top: 30px;
+
+      #logoname {
+        margin-left: 6%;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
     }
 
-    #right-hero {
-      background-position: 20% 80%;
+    #navButton {
+      display: none;
+    }
+
+    #navForm {
+      margin-right: 6%;
+      input {
+        width: 140px;
+        height: 30px;
+        padding: 0px 10px;
+        margin-right: 10px;
+        border: 2px solid #f2f2f2;
+        background-color: #fff;
+        font-size: 14px;
+        color: #000000;
+      }
+
+      button {
+        width: 60px;
+        height: 30px;
+        margin-right: 10px;
+        border: 2px solid #f2f2f2;
+        border-radius: 40px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #0F3D5E;
+      }
+
+      button:hover {
+        background-color: #0F3D5E;
+        color: #fff;
+      }
     }
   }
 }
