@@ -115,6 +115,8 @@
       padding-top: 12px;
 
       #logoname {
+        height: auto;
+        width: 75px;
         font-size: 18px;
         color: #fff;
         text-transform: uppercase;
@@ -167,9 +169,14 @@
   #banner {
     #logodiv {
       width: 100vw;
-      padding-top: 20px;
+      padding-top: 0px;
 
       #logoname {
+        padding-top: 0px;
+        img {
+          height: auto;
+          width: 110px;
+        }
         margin-left: 3%;
         margin-top: 0px;
         color: #fff;
@@ -187,7 +194,7 @@
 
     #navForm {
       margin-right: 6%;
-      padding-top: 10px;
+      padding-top: 30px;
       input {
         width: 140px;
         height: 30px;
