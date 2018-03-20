@@ -167,10 +167,11 @@
   #banner {
     #logodiv {
       width: 100vw;
-      padding-top: 30px;
+      padding-top: 20px;
 
       #logoname {
-        margin-left: 6%;
+        margin-left: 3%;
+        margin-top: 0px;
         color: #fff;
         font-family: 'Raleway', sans-serif;
         font-size: 22px;
@@ -186,6 +187,7 @@
 
     #navForm {
       margin-right: 6%;
+      padding-top: 10px;
       input {
         width: 140px;
         height: 30px;
