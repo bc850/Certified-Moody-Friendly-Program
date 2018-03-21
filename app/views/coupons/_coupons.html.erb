@@ -1,4 +1,4 @@
-<div id="coupnsID">
+<div id="couponsID">
   <h3>Coupons</h3>
   <table>
     <thead>
@@ -14,17 +14,17 @@
     </thead>
 
     <tbody>
-      <% @discounts.each do |discount| %>
+      <% @coupons.each do |coupon| %>
         <tr>
-          <td><%= discount.name %></td>
-          <td><%= discount.start_date %></td>
-          <td><%= discount.end_date %></td>
-          <td><%= discount.category %></td>
-          <td><%= discount.description %></td>
-          <td><%= discount.location %></td>
-          <td><%= link_to 'Show', discount %></td>
-          <td><%= link_to 'Edit', edit_discount_path(discount) %></td>
-          <td><%= link_to 'Destroy', discount, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= coupon.name %></td>
+          <td><%= coupon.start_date %></td>
+          <td><%= coupon.end_date %></td>
+          <td><%= coupon.category %></td>
+          <td><%= coupon.description %></td>
+          <td><%= coupon.location %></td>
+          <td><%= link_to 'Show', coupon %></td>
+          <td><%= link_to 'Edit', edit_coupon_path(coupon) %></td>
+          <td><%= link_to 'Destroy', coupon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
@@ -32,5 +32,5 @@
 
   <br>
 
-  <%= link_to 'New Discount', new_discount_path %>
+  <%= link_to 'New Coupon', new_coupon_path %>
 </div>

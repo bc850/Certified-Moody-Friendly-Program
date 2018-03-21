@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body{
+  padding-top: 95px;
+}
+
 #banner {
   background-color: #0F3D5E;
   height: 95px;

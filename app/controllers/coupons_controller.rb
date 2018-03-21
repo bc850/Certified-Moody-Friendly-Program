@@ -5,6 +5,7 @@ class CouponsController < ApplicationController
   # GET /coupons.json
   def index
     @coupons = Coupon.all
+    @coupons = @coupons.order('created_at desc') #params[:page]
   end
 
   # GET /coupons/1
