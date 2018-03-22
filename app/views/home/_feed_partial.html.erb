@@ -6,6 +6,14 @@
       <strong><%= tubular.name %></strong><br>
       <%= tubular.description %>
       <span id="tubularDate" class="pull-right"><%= tubular.created_at %></span><br>
+
+      <% if tubular.item_type = "coupon" %>
+        <%= button_to 'Favorite!', line_items_path(coupon_id: coupon), remote: true %>
+      <% elsif tubular.item_type = "discount" %>
+        <%= button_to 'Favorite!', line_items_path(discount_id: discount), remote: true %>
+      <% elsif tubular.item_type = "event" %>
+        <%= button_to 'Favorite!', line_items_path(event_id: event), remote: true %>
+      <% end %>
     </div>
   <% end %>
 </div>

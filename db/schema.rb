@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20180322195734) do
     t.string "category"
     t.text "description"
     t.text "location"
+    t.string "item_type", default: "coupon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 20180322195734) do
     t.date "start_date"
     t.date "end_date"
     t.string "category"
+    t.string "item_type", default: "discount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
@@ -42,6 +44,7 @@ ActiveRecord::Schema.define(version: 20180322195734) do
     t.string "link"
     t.text "description"
     t.text "location"
+    t.string "item_type", default: "event"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

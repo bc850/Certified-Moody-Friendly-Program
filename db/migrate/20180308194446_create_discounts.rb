@@ -5,8 +5,13 @@ class CreateDiscounts < ActiveRecord::Migration[5.1]
       t.date :start_date
       t.date :end_date
       t.string :category
+      t.string :item_type, :default => "discount"
 
       t.timestamps
     end
   end
+
+  #class Model < ActiveRecord::Base
+  #  attr_protected :type #so that it cannot be set by mass assignment
+  #end
 end
