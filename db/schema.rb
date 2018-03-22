@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180322192147) do
+ActiveRecord::Schema.define(version: 20180322195734) do
 
   create_table "coupons", force: :cascade do |t|
     t.string "name"
@@ -49,6 +49,19 @@ ActiveRecord::Schema.define(version: 20180322192147) do
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "line_items", force: :cascade do |t|
+    t.integer "coupon_id"
+    t.integer "discount_id"
+    t.integer "event_id"
+    t.integer "favorite_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["coupon_id"], name: "index_line_items_on_coupon_id"
+    t.index ["discount_id"], name: "index_line_items_on_discount_id"
+    t.index ["event_id"], name: "index_line_items_on_event_id"
+    t.index ["favorite_id"], name: "index_line_items_on_favorite_id"
   end
 
 end
