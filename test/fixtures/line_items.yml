@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coupon: one
+  discount: one
+  event: one
+  favorite: one
+
+two:
+  coupon: two
+  discount: two
+  event: two
+  favorite: two
