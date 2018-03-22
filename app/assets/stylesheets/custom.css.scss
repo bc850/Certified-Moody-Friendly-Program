@@ -1,10 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-  padding-top: 95px;
-}
-
 #banner {
   background-color: #0F3D5E;
   height: 95px;
@@ -16,7 +12,7 @@ body{
 
 #hero {
   background-color: #f2f2f2;
-  padding-top: 95px;
+  // padding-top: 95px;
 
   #inside {
     border: 1px solid grey;
@@ -110,6 +106,10 @@ body{
 **************************************************/
 
 @media screen and (max-width: 768px) {
+  body{
+    padding-top: 40px;
+  }
+
   #banner {
     height: 50px;
 
@@ -119,11 +119,23 @@ body{
       padding-top: 12px;
 
       #logoname {
+        img {
+          //height: auto;
+          //width: 110px;
+          display: none;
+        }
+      }
+
+      #logonameMLink {
         height: auto;
         width: 75px;
         font-size: 18px;
+        font-weight: 300;
         color: #fff;
         text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        text-decoration: underline;
       }
     }
 
@@ -170,6 +182,10 @@ body{
 ***********************************************/
 
 @media screen and (min-width: 768px) {
+  body{
+    padding-top: 85px;
+  }
+
   #banner {
     #logodiv {
       width: 100vw;
@@ -181,6 +197,10 @@ body{
           height: auto;
           width: 110px;
         }
+      }
+
+      #logonameMLink {
+        display: none;
         margin-left: 3%;
         margin-top: 0px;
         color: #fff;
