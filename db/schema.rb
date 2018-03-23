@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20180323153029) do
     t.string "offering_type"
     t.string "img_url"
     t.string "event_url"
+    t.integer "popularity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
