@@ -11,6 +11,7 @@ class CreateOffers < ActiveRecord::Migration[5.1]
       t.string :offering_type
       t.string :img_url
       t.string :event_url
+      t.integer :popularity
 
       t.timestamps
     end
