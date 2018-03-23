@@ -1,0 +1,67 @@
+<%= form_with(model: offer, local: true) do |form| %>
+  <% if offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% offer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :offer_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date, id: :offer_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_select :end_date, id: :offer_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category, id: :offer_category %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :offer_description, rows: 10, cols: 60 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_area :location, id: :offer_location, rows: 1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_id %>
+    <%= form.number_field :business_id, id: :offer_business_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :offering_type %>
+    <%= form.text_field :offering_type, id: :offer_offering_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img_url %>
+    <%= form.text_field :img_url, id: :offer_img_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_url %>
+    <%= form.text_field :event_url, id: :offer_event_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
