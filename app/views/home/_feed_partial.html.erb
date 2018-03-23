@@ -1,5 +1,11 @@
 <div id="feedID">
   <h3>Feed</h3>
 
-  
+  <% @offers.each do |tubular| %>
+    <div id="inside">
+      <strong><%= tubular.name %></strong><br />
+      <%= tubular.description %>
+      <span id="tubularDate" class="pull-right"><%= tubular.created_at %></span><br />
+    </div>
+  <% end %>
 </div>
