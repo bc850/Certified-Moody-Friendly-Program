@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Offer:</strong>
+  <%= @line_item.offer %>
+</p>
+
+<p>
+  <strong>Favorite:</strong>
+  <%= @line_item.favorite %>
+</p>
+
+<%= link_to 'Edit', edit_line_item_path(@line_item) %> |
+<%= link_to 'Back', line_items_path %>
