@@ -6,34 +6,34 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Offer.delete_all
-Offer.create!(name: 'Discount Test',
+Offer.create!(name: 'Lowes Military Discount',
+  start_date: '2018-03-23',
+  end_date: '2018-03-25',
+  category: 'Home Improvement',
+  description: %{ <p> Get 10% off all qualifying purchases with our Military program. </p>},
+  location: '1106 North St Augustine Road, Valdosta, GA 31601',
+  offering_type: 'Discount',
+  img_url: open('app/assets/images/lowesmilitary.png')
+)
+# . . .
+Offer.create!(name: 'Mellow Mushroom Coupon',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
   category: 'Food',
-  description: %{<p> This is a test discount. </p>},
-  location: '221B Baker St',
-  offering_type: 'Discount',
-  img_url: 'www.tumblr.com/image'
-)
-# . . .
-Offer.create!(name: 'Coupon Test',
-  start_date: '2018-03-23',
-  end_date: '2018-03-25',
-  category: 'Clothing',
-  description: %{<p> This is a test coupon. </p>},
-  location: 'Valdosta State University',
+  description: %{ <p>Free order of pretzels with purchase of a large pizza!</p>},
+  location: '1526 Baytree Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  img_url: 'www.tumblr.com/hi'
+  img_url: open('app/assets/images/mellow.jpg')
 )
 # . . .
-Offer.create!(name: 'Event Test',
+Offer.create!(name: 'Moody AFB Annual Air Show',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
-  category: 'Grand Opening',
-  description: %{<p> This is a test event. </p>},
-  location: 'The Tardis',
+  category: 'Entertainment',
+  description: %{ <p>Come join us and watch the annual Moody Air Show!</p>},
+  location: 'Bemiss Rd, Moody AFB, GA 31699',
   offering_type: 'Event',
-  img_url: 'www.tumblr.com/hello',
+  img_url: open('app/assets/images/thunderbirds.jpg'),
   event_url: 'www.facebook.com/faked'
 )
 # . . .
