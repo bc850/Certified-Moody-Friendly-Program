@@ -3,10 +3,11 @@
 
   <% @offers.each do |offer| %>
     <div id="inside">
-      <strong><%= offer.name %></strong><br />
+<td><%= image_tag(offer.img_url, width: 100) if offer.img_url.present? %></td>
+      <strong><%= offer.name %></strong><!--<br />-->
       <%= offer.description %>
-      <span id="offerDate" class="pull-right"><%= offer.created_at %></span><br />
-      <%= button_to 'Favorite', line_items_path(offer_id: offer) %>
+      <span id="offerDate" class="pull-right"><%= offer.created_at %></span><!--<br />--->
+      <span class="pull-right"><%= button_to 'Favorite', line_items_path(offer_id: offer) %></span>
     </div>
   <% end %>
 </div>
