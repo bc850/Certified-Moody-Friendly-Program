@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :businesses
   resources :line_items
   resources :offers
   resources :favorites
