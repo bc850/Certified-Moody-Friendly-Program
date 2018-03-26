@@ -16,13 +16,32 @@
   // padding-top: 95px;
 
   #inside {
-    border: 1px solid grey;
+    // border: 1px solid grey;
+    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
     margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
+    margin-right: 5px;
   }
 
   #favorite {
-    border: 1px solid grey;
+    // border: 1px solid grey;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+    font-size: 13px;
+  }
+
+  #comp1 {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+    margin-left: 3px;
+    margin-right: 5px;
+  }
+
+  #comp2 {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+    margin-left: 3px;
+    margin-right: 5px;
   }
 
   #feedButtonNotLiked {
