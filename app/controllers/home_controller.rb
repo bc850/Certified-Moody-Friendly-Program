@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  include CurrentFavorite
+  before_action :set_favorite
   def index
     #@discounts = Discount.all
     #@coupons = Coupon.all
