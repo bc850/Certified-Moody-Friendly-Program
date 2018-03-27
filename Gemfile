@@ -9,6 +9,8 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'mini_magick'
 gem 'fog'
+gem 'font-awesome-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
