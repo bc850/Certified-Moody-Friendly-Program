@@ -37,6 +37,37 @@ Offer.create!(name: 'Moody AFB Annual Air Show',
   event_url: 'www.facebook.com/faked'
 )
 # . . .
+Offer.create!(name: 'Georgia Military College Application Event',
+  start_date: '2018-03-27',
+  end_date: '2018-03-27',
+  category: 'Education',
+  description: 'Sign up for Fall classes now to receive military benefits.',
+  location: '4201 N Forrest St, Valdosta, GA 31605',
+  offering_type: 'Event',
+  img_url: open('app/assets/images/gmc.png'),
+  event_url: 'www.facebook.com/gmc/fake'
+)
+# . . .
+Offer.create!(name: 'Home Depot',
+  start_date: '2018-03-23',
+  end_date: '2020-03-25',
+  category: 'Home Improvement',
+  description: 'Get 10% off all qualifying purchases with our Military program.',
+  location: '1825 Norman Dr, Valdosta, GA 31601',
+  offering_type: 'Discount',
+  img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg')
+)
+# . . .
+Offer.create!(name: 'Wild Adventures Theme Park',
+  start_date: '2018-03-23',
+  end_date: '2018-03-25',
+  category: 'Entertainment',
+  description: 'Bring this coupon for admittance of a guest.',
+  location: '3766 Old Clyattville Rd, Valdosta, GA 31601',
+  offering_type: 'Coupon',
+  img_url: open('app/assets/images/wildad.jpg')
+)
+# . . .
 
 Business.delete_all
 Business.create!(name: "Cre8ive Zone")
