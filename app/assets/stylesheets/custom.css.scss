@@ -13,36 +13,6 @@
 
 #hero {
   // background-color: #f2f2f2;
-  // padding-top: 95px;
-
-  #inside {
-    // border: 1px solid grey;
-    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
-    margin-bottom: 10px;
-    padding: 10px 10px 10px 10px;
-    margin-right: 5px;
-  }
-
-  #favorite {
-    // border: 1px solid grey;
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
-    font-size: 13px;
-  }
-
-  #comp1 {
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
-    margin-left: 3px;
-    margin-right: 5px;
-  }
-
-  #comp2 {
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
-    margin-left: 3px;
-    margin-right: 5px;
-  }
 
   #feedButtonNotLiked {
     border: none;
@@ -154,7 +124,7 @@
 
 @media screen and (max-width: 768px) {
   body{
-    padding-top: 55px;
+    // padding-top: 40px;
   }
 
   #banner {
@@ -213,6 +183,8 @@
 
     #landingHero {
 
+      // margin-top: 0px;
+
       #hero-left-row1 {
         padding-top: 60vh;
       }
@@ -220,6 +192,44 @@
       #right-hero {
         background-position: 20% 80%;
       }
+    }
+  }
+
+  #hero {
+    padding-top: 55px;
+
+    #inside {
+      // border: 1px solid grey;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-bottom: 10px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 5px;
+    }
+
+    #favorite {
+      // border: 1px solid grey;
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      font-size: 13px;
+      margin-bottom: 10px;
+      margin-left: -15px;
+      margin-right: -10px;
+    }
+
+    #comp1 {
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-left: -15px;
+      margin-right: -10px;
+      margin-bottom: 10px;
+    }
+
+    #comp2 {
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-left: -15px;
+      margin-right: -10px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -230,7 +240,7 @@
 
 @media screen and (min-width: 768px) {
   body{
-    padding-top: 100px;
+    // padding-top: 85px;
   }
 
   #banner {
@@ -293,5 +303,45 @@
         color: #fff;
       }
     }
+  }
+
+  #hero {
+    padding-top: 95px;
+
+    #inside {
+      // border: 1px solid grey;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-bottom: 10px;
+      padding: 10px 10px 10px 10px;
+      margin-right: 5px;
+    }
+
+    #favorite {
+      // border: 1px solid grey;
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      font-size: 13px;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+    }
+
+    #comp1 {
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-left: 3px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    #comp2 {
+      padding: 10px 10px 10px 10px;
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+      margin-left: 3px;
+      margin-right: 5px;
+    }
+  }
+
+  #landingHero {
+    margin-top: 0px;
   }
 }
