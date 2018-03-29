@@ -2,7 +2,7 @@
   <div class="positioner">
     <ul>
       <li class="<%= 'active' if current_page?(feed_index_path) %>"><%= link_to "", feed_index_path, :class => "fa fa-rss", :id => "rssToggle" %></li>
-      <li class="<%= 'active' if current_page?(offers_path) %>"><%= link_to "", favorite_path(@favorite), :class => "fa fa-heart", :id => "starToggle" %></li>
+      <li class="<%= 'active' if current_page?(offers_path) %>"><%= link_to "", offers_path, :class => "fa fa-heart", :id => "starToggle" %></li>
       <li class="<%= 'active' if current_page?(businesses_path) %>"><%= link_to "", businesses_path, :class => "fa fa-building", :id => "businessToggle" %></li>
     </ul>
   </div>
