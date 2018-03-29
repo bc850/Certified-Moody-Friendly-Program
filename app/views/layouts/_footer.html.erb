@@ -1,13 +1,9 @@
 <footer class="footer navbar-fixed-bottom" id="footer">
   <div class="positioner">
-    <div id="footerToFeed">
-      <button type="submit" class="fa fa-rss"></button>
-    </div>
-    <div id="footerToFavorites">
-      <button type="submit" class="fa fa-star"></button>
-    </div>
-    <div id="footerToBusinesses">
-      <button type="submit" class="fa fa-building"></button>
-    </div>
+    <ul>
+      <li class="<%= 'active' if current_page?(feed_index_path) %>"><%= link_to "", feed_index_path, :class => "fa fa-rss", :id => "rssToggle" %></li>
+      <li class="<%= 'active' if current_page?(offers_path) %>"><%= link_to "", offers_path, :class => "fa fa-star", :id => "starToggle" %></li>
+      <li class="<%= 'active' if current_page?(businesses_path) %>"><%= link_to "", businesses_path, :class => "fa fa-building", :id => "businessToggle" %></li>
+    </ul>
   </div>
 </footer>
