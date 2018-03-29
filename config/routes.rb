@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'searches/index'
+
   resources :feed
   resources :businesses
   resources :line_items
