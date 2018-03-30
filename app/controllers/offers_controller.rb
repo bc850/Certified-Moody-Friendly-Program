@@ -5,6 +5,7 @@ class OffersController < ApplicationController
   # GET /offers.json
   def index
     @offers = Offer.all
+    @popularity = Offer.order("popularity DESC").all
   end
 
   # GET /offers/1

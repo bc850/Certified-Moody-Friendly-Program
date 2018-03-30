@@ -16,7 +16,7 @@ Offer.create!(name: 'Lowes Military Discount',
   img_url: open('app/assets/images/lowesmilitary.png')
 )
 # . . .
-Offer.create!(name: 'Mellow Mushroom Coupon',
+Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
   category: 'Food',
@@ -48,7 +48,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   event_url: 'www.facebook.com/gmc/fake'
 )
 # . . .
-Offer.create!(name: 'Home Depot',
+Offer.create!(name: 'Home Depot Military Discount',
   start_date: '2018-03-23',
   end_date: '2020-03-25',
   category: 'Home Improvement',
@@ -58,7 +58,7 @@ Offer.create!(name: 'Home Depot',
   img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg')
 )
 # . . .
-Offer.create!(name: 'Wild Adventures Theme Park',
+Offer.create!(name: 'Wild Adventures Bring a Friend',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
   category: 'Entertainment',
