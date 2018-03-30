@@ -6,7 +6,7 @@ class FeedController < ApplicationController
     #@coupons = Coupon.all
     #@events = Event.all
     @offers = Offer.order(:created_at).reverse
-    @popularity = Offer.order("popularity DESC").all
+    @popularity = Offer.order("popularity DESC").limit(3)
 
     # THIS IS THE COMBINED FEED WITH SORTING ALGORITHM IMPLEMENTED!!
     #@combined = (@discounts + @coupons + @events).sort_by(&:created_at).reverse
