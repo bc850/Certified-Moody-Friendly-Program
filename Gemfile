@@ -11,6 +11,8 @@ gem 'mini_magick'
 gem 'fog'
 gem 'font-awesome-rails'
 
+#Simple Calendar gem
+gem "simple_calendar", "~> 2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
