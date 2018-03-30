@@ -23,7 +23,8 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   description: 'Free order of pretzels with purchase of a large pizza!',
   location: '1526 Baytree Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  img_url: open('app/assets/images/mellow.jpg')
+  img_url: open('app/assets/images/mellow.jpg'),
+  popularity: 3
 )
 # . . .
 Offer.create!(name: 'Moody AFB Annual Air Show',
@@ -45,7 +46,8 @@ Offer.create!(name: 'Georgia Military College Application Event',
   location: '4201 N Forrest St, Valdosta, GA 31605',
   offering_type: 'Event',
   img_url: open('app/assets/images/gmc.png'),
-  event_url: 'www.facebook.com/gmc/fake'
+  event_url: 'www.facebook.com/gmc/fake',
+  popularity: 2
 )
 # . . .
 Offer.create!(name: 'Home Depot Military Discount',
@@ -65,7 +67,8 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   description: 'Bring this coupon for admittance of a guest.',
   location: '3766 Old Clyattville Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  img_url: open('app/assets/images/wildad.jpg')
+  img_url: open('app/assets/images/wildad.jpg'),
+  popularity: 1
 )
 # . . .
 
