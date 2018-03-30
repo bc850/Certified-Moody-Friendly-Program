@@ -35,6 +35,7 @@ class LineItemsController < ApplicationController
         offer.update_attributes(:popularity => offer.popularity)
         #format.html { redirect_to @line_item.favorite, notice: 'Line item was successfully created.' }
         format.html { redirect_to feed_index_path }
+        format.js
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
