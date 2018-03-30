@@ -1,6 +1,8 @@
 <div class="row" id="comp1">
   <h3>Popular Offers</h3>
   <% @popularity.each do |offer| %>
-      <p><%= offer.name %></p>
+      <h5><%= offer.name %></h5>
+      <p id="popularityParagraph"><span id="redColorSpan"><%= offer.popularity %></span>
+        favorites for this <%= offer.offering_type %>!</p>
   <% end %>
 </div>
