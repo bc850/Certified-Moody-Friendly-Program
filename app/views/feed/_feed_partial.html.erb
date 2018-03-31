@@ -8,7 +8,7 @@
         <%= offer.description %>
       </p>
       <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
-      <%= html_button_to fa_icon(:heart), line_items_path(offer_id: offer), :id => 'feedButtonNotLiked' %>
+      <%= html_button_to fa_icon(:heart), line_items_path(offer_id: offer), :id => 'feedButtonNotLiked', remote: true %>
     </div>
   <% end %>
 </div>
