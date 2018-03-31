@@ -1,6 +1,6 @@
 <div class="pushDown">
-  <h1>Calendar#index</h1>
-  <%= month_calendar do |date| %>
+  <h1>Calendar</h1>
+  <%= month_calendar offers1: @offers do |date, offers| %>
     <%= date %>
   <% end %>
 </div>
