@@ -15,7 +15,7 @@
   // background-color: #f2f2f2;
   #feedButtonNotLiked {
     border: none;
-    // background-color: #f2f2f2;
+    background-color: #fff;
     color: #ff6666;
     font-size: 25px;
 
@@ -150,6 +150,26 @@
     padding-top: 65px;
     #offerDisplay{
       text-align: center;
+    }
+      #feedButtonNotLiked {
+      border: none;
+      background-color: #fff;
+      color: #ff6666;
+      font-size: 25px;
+
+      :hover {
+        color: red;
+      }
+
+      :focus {
+        color: red;
+      }
+    }
+    #offerImage {
+      img {
+        height: 25%;
+        width: auto;
+      }
     }
   }
 
