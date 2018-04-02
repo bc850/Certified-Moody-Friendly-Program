@@ -1,6 +1,6 @@
 <div id="popularityDiv">
   <% @popularity.each do |offer| %>
-    <h5><%= offer.name %></h5>
+    <strong><%= link_to offer.name, offer_path(offer.id) %></strong>
     <p id="popularityParagraph">
       <span id="redColorSpan"><%= offer.popularity %></span>
       favorites for this

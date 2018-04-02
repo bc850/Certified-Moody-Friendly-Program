@@ -11,6 +11,10 @@
 </p>
 
 <p>
+  <%= html_button_to fa_icon(:heart), line_items_path(offer_id: @offer), :id => 'feedButtonNotLiked', remote: true %>
+</p>
+
+<p>
   <%= @offer.offering_type %>
 </p>
 
@@ -38,10 +42,6 @@
 
 <p>
   <%= @offer.event_url %>
-</p>
-
-<p>
-  <%= html_button_to fa_icon(:heart), line_items_path(offer_id: @offer), :id => 'feedButtonNotLiked', remote: true %>
 </p>
 
 <!--<%= link_to 'Edit', edit_offer_path(@offer) %> |
