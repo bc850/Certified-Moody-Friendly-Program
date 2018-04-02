@@ -1,9 +1,21 @@
 <div class="pushDown">
 <p id="notice"><%= notice %></p>
+<div id="offerLeft" class="col-md-3"></div>
+<div id="offerDisplay" class="col-md-6">
+<p id="offerImage">
+  <%= image_tag(@offer.img_url, width: 400) if @offer.img_url.present? %>
+</p>
+</br>
+<p id = "offerTitle">
+    <strong><%= @offer.name %></strong>
+</p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @offer.name %>
+  <%= @offer.offering_type %>
+</p>
+
+<p>
+  <%= @offer.description %>
 </p>
 
 <p>
@@ -17,40 +29,24 @@
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @offer.category %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @offer.description %>
-</p>
-
-<p>
-  <strong>Location:</strong>
   <%= @offer.location %>
 </p>
 
 <p>
-  <strong>Business:</strong>
   <%= @offer.business_id %>
 </p>
 
 <p>
-  <strong>Offering type:</strong>
-  <%= @offer.offering_type %>
-</p>
-
-<p>
-  <strong>Img url:</strong>
-  <%= image_tag(@offer.img_url, width: 400) if @offer.img_url.present? %>
-</p>
-
-<p>
-  <strong>Event url:</strong>
   <%= @offer.event_url %>
 </p>
 
-<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<p>
+  <%= html_button_to fa_icon(:heart), line_items_path(offer_id: @offer), :id => 'feedButtonNotLiked', remote: true %>
+</p>
+
+<!--<%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>
+-->
+</div>
+<div id="offerRight" class="col-md-3"></div>
 </div>
