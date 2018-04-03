@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
   before_action :set_favorite, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_favorite
 
   # GET /favorites
   # GET /favorites.json
@@ -10,7 +11,9 @@ class FavoritesController < ApplicationController
   # GET /favorites/1
   # GET /favorites/1.json
   def show
-    @favorites = Favorite.all
+    if @favorite.id != session[:favorite_id]
+        invalid_favorite
+    end
   end
 
   # GET /favorites/new
@@ -63,6 +66,11 @@ class FavoritesController < ApplicationController
   end
 
   private
+
+    def invalid_favorite
+      logger.error "Attempt to access invalid favorites #{params[:id]}"
+      redirect_to feed_index_url, notice: 'Invalid favorites'
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_favorite
       @favorite = Favorite.find(params[:id])
