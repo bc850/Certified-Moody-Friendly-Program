@@ -1,3 +1,19 @@
 // Place all the styles related to the Searches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.spa_entry {
+        td {
+          min-width: 100px;
+          text-align:left;
+
+          p{
+            margin-left: 0px;
+          }
+
+          img {
+            width: 80px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
