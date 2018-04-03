@@ -3,7 +3,9 @@ class SearchesController < ApplicationController
   before_action :set_favorite
 
   def index
-    @offers = Offer.all
-    @businesses = Business.all
+    respond_to do |format|
+         format.html { }
+         format.json {render json: @offers}
+    end
   end
 end

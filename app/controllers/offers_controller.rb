@@ -1,10 +1,16 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  include CurrentFavorite
+  before_action :set_favorite, only: [:index]
 
   # GET /offers
   # GET /offers.json
   def index
     @offers = Offer.all
+    respond_to do |format|
+         format.html { }
+         format.json {render json: @offers}
+    end
   end
 
   # GET /offers/1
