@@ -30,17 +30,44 @@ class LineItemsController < ApplicationController
     offer = Offer.find(params[:offer_id])
     @line_item = @favorite.line_items.build(offer: offer)
 
-    respond_to do |format|
-      if @line_item.save
-        offer.popularity = offer.popularity + 1
-        offer.update_attributes(:popularity => offer.popularity)
-        #format.html { redirect_to @line_item.favorite, notice: 'Line item was successfully created.' }
-        format.html { redirect_to feed_index_path }
+    ### TEST CODE BLOCK ###
+    puts "TEST 1"
+
+    @lineItemTest = LineItem.all
+    @numVar = 0
+
+    @lineItemTest.each do |tester|
+      if offer.id == tester.offer_id
+        puts 'Line item exists!'
+        @numVar = 1
+        # @line_item.destroy
+      end
+    end
+
+    puts "TEST 2"
+    ### END TEST CODE BLOCK ###
+
+    if(@numVar == 1)
+      @line_item.destroy
+      @line_item = null
+
+      respond_to do |format|
         format.js
-        format.json { render :show, status: :created, location: @line_item }
-      else
-        format.html { render :new }
-        format.json { render json: @line_item.errors, status: :unprocessable_entity }
+      end
+    else
+      respond_to do |format|
+        puts "SHOULDN'T BE HERE IF ADDING SECOND."
+        if @line_item.save
+          offer.popularity = offer.popularity + 1
+          offer.update_attributes(:popularity => offer.popularity)
+          #format.html { redirect_to @line_item.favorite, notice: 'Line item was successfully created.' }
+          format.html { redirect_to feed_index_path }
+          format.js
+          format.json { render :show, status: :created, location: @line_item }
+        else
+          format.html { render :new }
+          format.json { render json: @line_item.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
