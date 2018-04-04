@@ -7,7 +7,7 @@ class RegistrationsController < Devise::RegistrationsController
     build_resource(sign_up_params)
     if (resource.type=="User")
       resource.accountable = User.new
-      resource.accountable.pay_type = 0 # default pay_type is N/A
+      #resource.accountable.pay_type = 0 # default pay_type is N/A
     else
       resource.accountable = Business.new
     end
