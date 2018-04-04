@@ -2,6 +2,8 @@ class LineItemsController < ApplicationController
   include CurrentFavorite
   before_action :set_favorite, only: [:create]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_line_items
+  before_action :set_offers
   before_action :set_popularity
 
   # GET /line_items
@@ -117,6 +119,14 @@ class LineItemsController < ApplicationController
 
     def set_popularity
       @popularity = Offer.order("popularity DESC").limit(3)
+    end
+
+    def set_offers
+      @offers = Offer.all
+    end
+
+    def set_line_items
+      @line_items = LineItem.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
