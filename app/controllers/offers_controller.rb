@@ -1,7 +1,7 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
-  include CurrentFavorite
-  before_action :set_favorite, only: [:index]
+  #include CurrentFavorite
+  #before_action :set_favorite, only: [:index]
 
   # GET /offers
   # GET /offers.json
