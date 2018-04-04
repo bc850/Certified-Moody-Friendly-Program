@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :accounts
   get 'calendar/index'
 
   get 'searches/index'
