@@ -8,18 +8,18 @@
         <h2>Join the Chamber of Commerce Military discount program!</h2>
       </div>
       <div class="row" id="hero-left-row3">
-        <form action="includes/login.inc.php" method="POST">
+        <form action="accounts/sign_up" method="GET">
           <input type="text" name="uid" id="emailfield" placeholder="Email Address">
           <br>
           <br>
           <input type="password" name="pwd" id="pwfield" placeholder="Password">
           <br>
           <br>
-          <button type="submit" id="submitbutton" name="submit">Get Started</button>
+          <%= button_to 'Get Started', new_account_registration_path %>
         </form>
       </div>
       <div class="row" id="hero-left-row4">
-        <p>Have an account? <a href="includes/login.inc.php">Login</a></p>
+        <p>Have an account?  <%= link_to 'Login', new_account_session_path %></p>
       </div>
     </div>
     <div class="col-md-6 text-center" id="right-hero">

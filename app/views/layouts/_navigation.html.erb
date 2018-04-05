@@ -14,12 +14,17 @@
             <span class="icon-bar"></span>
           </button>
         </div>
+
         <% elsif @tester == 1 %>
-          <form class="pull-right" id="navForm" action="includes/login.inc.php" method="POST">
+
+          <ul class="nav navbar-nav pull-right" >
+            <%= render 'layouts/navigation_links' %>
+          </ul>
+          <!--<form class="pull-right" id="navForm" action="includes/login.inc.php" method="POST">
             <input id="navFormInputs" type="text" name="uid" placeholder="Username">
             <input id="navFormInputs" type="password" name="pwd" placeholder="Password">
             <button id="navSubmit" type="submit" name="submit">Login</button>
-          </form>
+          </form>-->
         </div>
         <% end %>
     </div>

@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'mini_magick'
 gem 'fog'
 gem 'font-awesome-rails'
+gem 'devise'
+gem 'simple_form'
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"
