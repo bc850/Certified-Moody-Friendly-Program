@@ -1,6 +1,7 @@
 class BusinessesController < ApplicationController
-  before_action :set_business, only: [:show, :edit, :update, :destroy]
+  before_action :set_business, only: [:edit, :update]
 
+=begin
   # GET /businesses
   # GET /businesses.json
   def index
@@ -16,11 +17,12 @@ class BusinessesController < ApplicationController
   def new
     @business = Business.new
   end
-
+=end
   # GET /businesses/1/edit
   def edit
   end
 
+=begin
   # POST /businesses
   # POST /businesses.json
   def create
@@ -36,14 +38,15 @@ class BusinessesController < ApplicationController
       end
     end
   end
+=end
 
   # PATCH/PUT /businesses/1
   # PATCH/PUT /businesses/1.json
   def update
     respond_to do |format|
       if @business.update(business_params)
-        format.html { redirect_to @business, notice: 'Business was successfully updated.' }
-        format.json { render :show, status: :ok, location: @business }
+        format.html { redirect_to @business, notice: 'The profile of #{@business.name} was successfully updated.' }
+        format.json { head :no_content }
       else
         format.html { render :edit }
         format.json { render json: @business.errors, status: :unprocessable_entity }
@@ -51,6 +54,7 @@ class BusinessesController < ApplicationController
     end
   end
 
+=begin
   # DELETE /businesses/1
   # DELETE /businesses/1.json
   def destroy
@@ -60,6 +64,7 @@ class BusinessesController < ApplicationController
       format.json { head :no_content }
     end
   end
+=end
 
   private
     # Use callbacks to share common setup or constraints between actions.
