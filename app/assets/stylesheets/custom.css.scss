@@ -228,8 +228,42 @@
       #loggedInDesktop {
         display: none;
       }
-    }
 
+      #navInput {
+        margin-right: 60px;
+
+        #navFormInputs {
+          display: none;
+        }
+
+        #navSubmit {
+          width: 60px;
+          height: 28px;
+          border: 2px solid #f2f2f2;
+          border-radius: 40px;
+          background-color: #fff;
+          font-size: 14px;
+          color: #0F3D5E;
+        }
+
+        #navSubmit2 {
+          width: 60px;
+          height: 28px;
+          border: 2px solid #f2f2f2;
+          border-radius: 40px;
+          background-color: #fff;
+          font-size: 14px;
+          color: #0F3D5E;
+        }
+
+        #navFormLogin {
+          display: none;
+        }
+      }
+
+
+    }
+/*
     #navButton {
       border-color: transparent;
       margin-right: 3%;
@@ -254,6 +288,7 @@
       font-size: 14px;
       color: #0F3D5E;
     }
+    */
     /*
     #landingHero {
 
@@ -546,6 +581,9 @@
         li {
           display: none;
         }
+      }
+      #navSubmit2 {
+        display: none;
       }
     }
 
