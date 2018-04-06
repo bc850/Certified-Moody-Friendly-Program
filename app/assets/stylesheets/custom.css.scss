@@ -204,6 +204,18 @@
         text-transform: uppercase;
         text-decoration: underline;
       }
+
+      #loggedInMobile {
+        margin-top: 0px;
+        padding-top: 5px;
+        border: none;
+        color: #fff;
+        background-color: #0F3D5E;
+      }
+
+      #loggedInDesktop {
+        display: none;
+      }
     }
 
     #navButton {
@@ -512,6 +524,10 @@
 
       #RememberMe {
         color: white;
+      }
+
+      #loggedInMobile {
+        display: none;
       }
     }
 
