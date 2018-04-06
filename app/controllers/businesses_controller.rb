@@ -1,13 +1,12 @@
 class BusinessesController < ApplicationController
   before_action :set_business, only: [:edit, :update]
 
-=begin
   # GET /businesses
   # GET /businesses.json
   def index
     @businesses = Business.all
   end
-
+=begin
   # GET /businesses/1
   # GET /businesses/1.json
   def show
