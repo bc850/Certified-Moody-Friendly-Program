@@ -11,11 +11,24 @@
             <%= render 'layouts/navigation_links' %>
           </ul>
         <% else %>
+          <!--
           <form class="pull-right" id="navForm" action="includes/login.inc.php" method="POST">
             <input id="navFormInputs" type="text" name="uid" placeholder="Username">
             <input id="navFormInputs" type="password" name="pwd" placeholder="Password">
             <button id="navSubmit" type="submit" name="submit">Login</button>
           </form>
+          -->
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :email, required: false, autofocus: true %>
+              <%= f.input :password, required: false %>
+              <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+            </div>
+
+            <div class="form-actions">
+              <%= f.button :submit, "Log in" %>
+            </div>
+          <% end %>
         <% end %>
       </div>
     </div>
