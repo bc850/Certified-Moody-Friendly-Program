@@ -22,10 +22,10 @@
 
             <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <div class="form-inputs form-inline">
-                <%= f.input :email, required: false, autofocus: true %>
-                <%= f.input :password, required: false %>
-                <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-                <span id="navSubmit"><%= f.button :submit, "Log in" %></span>
+                <%= f.input :email, label: false, placeholder: 'user@domain.com', label_html: { class: 'navFormInputs' }, required: false, autofocus: true %>
+                <%= f.input :password, label: false, placeholder: 'password', label_html: { class: 'navFormInputs' }, required: false %>
+                <%= f.button :submit, "Log in", label_html: { class: 'navSubmit' } %>
+                <%= f.input :remember_me, label_html: { id: 'RememberMe' }, as: :boolean if devise_mapping.rememberable? %>
               </div>
             <% end %>
 
