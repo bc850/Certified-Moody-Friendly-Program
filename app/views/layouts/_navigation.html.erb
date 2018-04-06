@@ -7,11 +7,9 @@
           <span id="logoname"><%= image_tag("Badge2.png") %></span>
         <% end %>
         <% if account_signed_in? %>
-          <ul class="nav navbar-nav pull-right" >
-            <%= render 'layouts/navigation_links' %>
-          </ul>
+          <%= render 'layouts/navigation_links' %>
         <% else %>
-          <div class="pull-right">
+          <div class="pull-right" id="navInput">
             <!--
             <form id="navForm" action="accounts/sign_in" method="POST">
               <input id="navFormInputs" type="text" name="uid" placeholder="Username">
@@ -28,7 +26,6 @@
                 <%= f.input :remember_me, label_html: { id: 'RememberMe' }, as: :boolean if devise_mapping.rememberable? %>
               </div>
             <% end %>
-
           </div>
         <% end %>
       </div>
