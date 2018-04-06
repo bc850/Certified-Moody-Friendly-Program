@@ -435,6 +435,13 @@
 ***********************************************/
 @media screen and (min-width: 768px) {
 
+  .simple_form {
+    margin: 30px 60px 0 0;
+    input {
+
+    }
+  }
+
   .pushDown {
     padding-top: 105px;
     #offerDisplay {
@@ -501,6 +508,10 @@
         font-weight: 300;
         text-transform: uppercase;
         text-decoration: underline;
+      }
+
+      #RememberMe {
+        color: white;
       }
     }
 
