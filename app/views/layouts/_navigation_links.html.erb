@@ -1,11 +1,11 @@
-<ul class="nav navbar-nav pull-right">
+<ul class="nav navbar-nav pull-right" id="loggedInDesktop">
   <% if account_signed_in? %>
     <% if current_account.accountable_type == "User" %>
-        <li><%= link_to "Businesses", businesses_path %></li>
-        <li><%= link_to "Search", searches_index_path %></li>
+        <li><%= link_to "Businesses", businesses_path, :style => "color: #fff" %></li>
+        <li><%= link_to "Search", searches_index_path, :style => "color: #fff" %></li>
     <% else %>
-        <li><%= link_to "New Offer", new_offer_path %></li>
-        <li><%= link_to "Search", searches_index_path %></li>
+        <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
+        <li><%= link_to "Search", searches_index_path, :style => "color: #fff" %></li>
     <% end %>
     <li role="presentation" class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
@@ -34,7 +34,7 @@
     </ul>
     </li>
 
-    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete' %></li>
+    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', :style => "color: #fff" %></li>
   <% else %>
     <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
     <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
