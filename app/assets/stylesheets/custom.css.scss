@@ -529,15 +529,7 @@
         width: auto;
       }
     }
-/*    #offerLeft {
-      background-color: #0F3D5E;
-      height: 100%;
-    }
-    #offerRight {
-      background-color: #0F3D5E;
-      height: 100%;
-    }
-*/  }
+  }
 
   body {
     // padding-top: 85px;
@@ -582,8 +574,36 @@
           display: none;
         }
       }
+
       #navSubmit2 {
         display: none;
+      }
+
+      #loggedInDesktop {
+        font-size: 18px;
+        margin: 20px 40px 0px 0px;
+
+        a:link {
+          color: #fff;
+        }
+
+        :focus {
+          background-color: #0F3D5E;
+        }
+
+        :hover {
+          // color: #fff;
+        }
+
+        .dropdown-menu {
+          margin-top: 24px;
+          width: 100%;
+
+          :hover {
+            background-color: #0F3D5E;
+            color: white;
+          }
+        }
       }
     }
 

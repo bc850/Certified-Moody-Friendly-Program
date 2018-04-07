@@ -1,0 +1,9 @@
+<% @offers.each do |offer| %>
+  <% @line_items.each do |line_item| %>
+    <% if line_item.offer_id == offer.id %>
+      <% if line_item.favorite_id == session[:favorite_id] %>
+        <strong><%= link_to offer.name, offer_path(offer.id) %></strong><br />
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
