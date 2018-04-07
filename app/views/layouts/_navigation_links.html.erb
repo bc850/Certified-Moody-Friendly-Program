@@ -1,7 +1,12 @@
-<ul class="nav navbar-nav pull-right" id="loggedInDesktop">
-  <li><%= link_to "Business", businesses_path, style: 'color:#FFFFFF;' %></li>
+<ul class="nav navbar-nav pull-right">
   <% if account_signed_in? %>
-    <li><%= link_to "Search", searches_index_path, style: 'color:#FFFFFF;' %></li>
+    <% if current_account.accountable_type == "User" %>
+        <li><%= link_to "Businesses", businesses_path %></li>
+        <li><%= link_to "Search", searches_index_path %></li>
+    <% else %>
+        <li><%= link_to "New Offer", new_offer_path %></li>
+        <li><%= link_to "Search", searches_index_path %></li>
+    <% end %>
     <li role="presentation" class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
         Settings (<%= (current_account.accountable.name.nil? or current_account.accountable.name == "") ? "No Name" : current_account.accountable.name %>)
@@ -16,7 +21,20 @@
         <li><%= link_to 'Account Settings', edit_account_registration_path %></li>
       </ul>
     </li>
-    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', style: 'color:#FFFFFF;' %></li>
+    <li role="presentation" class="dropdown">
+    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    	   Resources <span class="caret"></span>
+      </a>
+    <ul class="dropdown-menu">
+    	<% if current_account.accountable_type == "Business" %>
+    	<li><%= link_to 'My Offers', business_offers_path(current_account.accountable_id) %></li>
+    	<% else %>
+      <li><%= link_to 'My Favorites', favorite_path(current_account.accountable_id) %>
+    	<% end %>
+    </ul>
+    </li>
+
+    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete' %></li>
   <% else %>
     <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
     <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>

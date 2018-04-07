@@ -2,9 +2,16 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <div id="logodiv">
-        <%= link_to home_path do %>
-          <span id="logonameMLink">Moodylink</span>
-          <span id="logoname"><%= image_tag("Badge2.png") %></span>
+        <% if account_signed_in? %>
+          <%= link_to feed_index_path do %>
+            <span id="logonameMLink">Moodylink</span>
+            <span id="logoname"><%= image_tag("Badge2.png") %></span>
+          <% end %>
+        <% else %>
+          <%= link_to home_path do %>
+            <span id="logonameMLink">Moodylink</span>
+            <span id="logoname"><%= image_tag("Badge2.png") %></span>
+            <% end %>
         <% end %>
         <% if account_signed_in? %>
           <%= render 'layouts/navigation_links' %>

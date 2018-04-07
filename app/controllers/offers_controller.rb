@@ -7,9 +7,17 @@ class OffersController < ApplicationController
   # GET /offers.json
   def index
     @offers = Offer.all
-    respond_to do |format|
-         format.html { }
-         format.json {render json: @offers}
+    if (current_account.accountable_type == "User")
+      @offers = Offer.all
+      respond_to do |format|
+          format.html { }
+          format.json {render json: @offers}
+        end
+    else
+      if (params[:business_id])
+        @business = Business.find(params[:business_id])
+        @offers = @business.offers
+      end
     end
   end
 
@@ -31,6 +39,10 @@ class OffersController < ApplicationController
   # POST /offers.json
   def create
     @offer = Offer.new(offer_params)
+
+    if current_account && current_account.accountable_type == "Business"
+      @offer.business = current_account.accountable
+    end
 
     respond_to do |format|
       if @offer.save

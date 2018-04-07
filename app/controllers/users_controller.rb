@@ -46,7 +46,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to feed_index_path, notice: 'The profile of #{@user.name} was successfully updated.' }
+        format.html { redirect_to feed_index_path, notice: "The profile of #{@user.name} was successfully updated." }
         format.json { head :no_content }
       else
         format.html { render :edit }
@@ -75,6 +75,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :address, :category, :store_id, :description, :owner_name, :phone_number, :link)
+      params.require(:user).permit(:name, :mil_branch)
     end
 end
