@@ -1,7 +1,6 @@
 class BusinessesController < ApplicationController
-  before_action :set_business, only: [:edit, :update]
+  before_action :set_business, only: [:show, :edit, :update]
 
-=begin
   # GET /businesses
   # GET /businesses.json
   def index
@@ -12,7 +11,7 @@ class BusinessesController < ApplicationController
   # GET /businesses/1.json
   def show
   end
-
+=begin
   # GET /businesses/new
   def new
     @business = Business.new
@@ -45,7 +44,7 @@ class BusinessesController < ApplicationController
   def update
     respond_to do |format|
       if @business.update(business_params)
-        format.html { redirect_to @business, notice: 'The profile of #{@business.name} was successfully updated.' }
+        format.html { redirect_to @business, notice: "The profile of #{@business.name} was successfully updated." }
         format.json { head :no_content }
       else
         format.html { render :edit }

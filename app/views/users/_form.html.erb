@@ -3,13 +3,14 @@
 <% else %>
 <h2>Edit <%= @user.name %>'s Profile</h2>
 <% end %>
+
 <%= simple_form_for(@user, as: @user, url: user_path(@user), html: { method: :patch }) do |f| %>
-<%= f.error_notification %>
-<div class="form-inputs">
-  <%= f.input :name, required: true, autofocus: true %>
-  <%= f.input :mil_branch, label: 'Military Branch', required: true %>
-</div>
-<div class="form-actions">
-  <%= f.button :submit, "Update" %>
-</div>
+  <%= f.error_notification %>
+  <div class="form-inputs">
+    <%= f.input :name, required: true, autofocus: true %>
+    <%= f.input :mil_branch, required: true, as: :radio_buttons, label: "Military Branch", collection: User::BRANCH_TYPES, checked: 'Air Force'%>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, "Update" %>
+  </div>
 <% end %>

@@ -11,7 +11,7 @@ class FavoritesController < ApplicationController
   # GET /favorites/1
   # GET /favorites/1.json
   def show
-    if @favorite.id != session[:favorite_id]
+    if @favorite.id != current_account.accountable_id
         invalid_favorite
     end
   end
