@@ -26,13 +26,14 @@
             -->
 
             <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-              <div class="form-inputs form-inline">
+              <div class="form-inputs form-inline" id="navFormLogin">
                 <%= f.input :email, label: false, placeholder: 'user@domain.com', label_html: { class: 'navFormInputs' }, required: false, autofocus: true %>
                 <%= f.input :password, label: false, placeholder: 'password', label_html: { class: 'navFormInputs' }, required: false %>
                 <%= f.button :submit, "Log in", label_html: { class: 'navSubmit' } %>
-                <%= f.input :remember_me, label_html: { id: 'RememberMe' }, as: :boolean if devise_mapping.rememberable? %>
               </div>
             <% end %>
+
+            <%= button_to "Login", new_account_session_path, :id => "navSubmit2", :class => "pull-right" %>
           </div>
         <% end %>
       </div>

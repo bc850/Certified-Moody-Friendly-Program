@@ -184,6 +184,7 @@
       margin-left: 6%;
       margin-right: 6%;
       padding-top: 12px;
+      width: 100%;
 
       #logoname {
         img {
@@ -204,8 +205,68 @@
         text-transform: uppercase;
         text-decoration: underline;
       }
-    }
 
+      #loggedInMobile {
+        margin: 0px 65px 9px 0px;
+        padding-top: 5px;
+        border: none;
+        color: #fff;
+        background-color: #0F3D5E;
+      }
+
+      #loggedInCollapse {
+        background-color: #0F3D5E;
+        width: 100%;
+        margin-left: 50%;
+
+        a:link {
+          color: #fff;
+        }
+
+        a:focus {
+          background-color: #0F3D5E;
+        }
+      }
+
+      #loggedInDesktop {
+        display: none;
+      }
+
+      #navInput {
+        margin-right: 60px;
+
+        #navFormInputs {
+          display: none;
+        }
+
+        #navSubmit {
+          width: 60px;
+          height: 28px;
+          border: 2px solid #f2f2f2;
+          border-radius: 40px;
+          background-color: #fff;
+          font-size: 14px;
+          color: #0F3D5E;
+        }
+
+        #navSubmit2 {
+          width: 60px;
+          height: 28px;
+          border: 2px solid #f2f2f2;
+          border-radius: 40px;
+          background-color: #fff;
+          font-size: 14px;
+          color: #0F3D5E;
+        }
+
+        #navFormLogin {
+          display: none;
+        }
+      }
+
+
+    }
+/*
     #navButton {
       border-color: transparent;
       margin-right: 3%;
@@ -230,6 +291,7 @@
       font-size: 14px;
       color: #0F3D5E;
     }
+    */
     /*
     #landingHero {
 
@@ -470,15 +532,7 @@
         width: auto;
       }
     }
-/*    #offerLeft {
-      background-color: #0F3D5E;
-      height: 100%;
-    }
-    #offerRight {
-      background-color: #0F3D5E;
-      height: 100%;
-    }
-*/  }
+  }
 
   body {
     // padding-top: 85px;
@@ -512,6 +566,47 @@
 
       #RememberMe {
         color: white;
+      }
+
+      #loggedInMobile {
+        display: none;
+      }
+
+      #loggedInCollapse {
+        li {
+          display: none;
+        }
+      }
+
+      #navSubmit2 {
+        display: none;
+      }
+
+      #loggedInDesktop {
+        font-size: 18px;
+        margin: 20px 40px 0px 0px;
+
+        a:link {
+          color: #fff;
+        }
+
+        :focus {
+          background-color: #0F3D5E;
+        }
+
+        :hover {
+          // color: #fff;
+        }
+
+        .dropdown-menu {
+          margin-top: 24px;
+          width: 100%;
+
+          :hover {
+            background-color: #0F3D5E;
+            color: white;
+          }
+        }
       }
     }
 

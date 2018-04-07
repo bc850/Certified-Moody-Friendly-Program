@@ -1,5 +1,7 @@
 class FavoritesController < ApplicationController
   before_action :set_favorite, only: [:show, :edit, :update, :destroy]
+  before_action :set_offers
+  before_action :set_line_items
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_favorite
 
   # GET /favorites
@@ -79,5 +81,13 @@ class FavoritesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def favorite_params
       params.fetch(:favorite, {})
+    end
+
+    def set_line_items
+      @line_items = LineItem.all
+    end
+
+    def set_offers
+      @offers = Offer.all
     end
 end
