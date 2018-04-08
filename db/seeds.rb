@@ -123,6 +123,16 @@ Business.create!(name: "Wiregrass Georgia Technical College")
 Business.create!(name: "Wiregrass Investment Management, LLC")
 Business.create!(name: "Worthington Family Dentistry")
 
+Account.delete_all
+Account.create!( :email => 'dave@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Wild Adventures Theme Park"))
+Account.create!( :email => 'mary@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Home Depot"))
+Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Georgia Military College"))
+Account.create!( :email => 'john@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Mellow Mushroom"))
+
 Offer.delete_all
 Offer.create!(name: 'Lowes Military Discount',
   start_date: '2018-03-23',
