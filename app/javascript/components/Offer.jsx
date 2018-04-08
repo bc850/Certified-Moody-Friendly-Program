@@ -6,7 +6,7 @@ export default class Offer extends React.Component {
     name: PropTypes.string,
     description: PropTypes.string,
     img_url: PropTypes.string,
-    category: PropTypes.category,
+    category: PropTypes.string,
     popularity: PropTypes.number
   };
 

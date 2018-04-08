@@ -20,14 +20,7 @@ export default class Searches extends React.Component {
       <table className="table table-striped" width="auto">
         <thead>
           <tr>
-          <th className="col-md-2 sortable">
-              <SortColumn     name="image url"
-                              text="Image url"
-                              sort={this.props.sort}
-                              order={this.props.order}
-                              handleSortColumn={this.handleSortColumn}
-              />
-          </th>
+          <th className="col-md-2">Image url</th>
           <th className="col-md-4 sortable">
               <SortColumn     name="name"
                               text="Name"
