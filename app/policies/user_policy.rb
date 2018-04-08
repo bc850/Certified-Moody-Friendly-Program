@@ -10,4 +10,5 @@ class UserPolicy
 	def update?
 		@current_account == @user.account
 	end
+
 end
