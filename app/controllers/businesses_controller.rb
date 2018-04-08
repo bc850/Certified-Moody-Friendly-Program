@@ -1,5 +1,6 @@
 class BusinessesController < ApplicationController
   before_action :set_business, only: [:show, :edit, :update]
+  before_action :authenticate_account!
 
   # GET /businesses
   # GET /businesses.json

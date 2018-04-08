@@ -1,5 +1,6 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_account!
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
