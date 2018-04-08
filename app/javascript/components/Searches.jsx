@@ -50,7 +50,8 @@ export default class Searches extends React.Component {
           <OfferList  offers={this.state.offers}
                       sort ={this.state.sort}
                       order={this.state.order}
-                      handleSortColumn={this.handleSortColumn}/>
+                      handleSortColumn={this.handleSortColumn}
+          />
           </div>
         </div>
       </div>
