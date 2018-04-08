@@ -13,6 +13,8 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'pundit'
+gem 'bourbon'
+gem 'administrate'
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"

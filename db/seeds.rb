@@ -127,6 +127,7 @@ User.delete_all
 User.create!(name: "Sam")
 User.create!(name: "Aaron")
 
+Account.delete_all
 Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
   :accountable => Business.find_by_name("Georgia Military College"))
 Account.create!( :email => 'john@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
@@ -135,6 +136,12 @@ Account.create!( :email => 'sam@depot.com', :password => 'changeme', :password_c
     :accountable => User.find_by_name("Sam"))
 Account.create!( :email => 'aaron@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
     :accountable => User.find_by_name("Aaron"))
+
+SuperAccount.delete_all
+	SuperAccount.create!( :name => 'super' )
+Account.create!( :email => 'super@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+		:accountable => SuperAccount.first())
+
 
 Offer.delete_all
 Offer.create!(name: 'Lowes Military Discount',

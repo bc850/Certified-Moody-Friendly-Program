@@ -7,6 +7,9 @@
         <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
         <li><%= link_to "Search", searches_index_path, :style => "color: #fff" %></li>
     <% end %>
+    <% if current_account.accountable_type == "SuperAccount" %>
+      <li><%= link_to 'Admin Dashboard', admin_root_path %></li>
+    <% end %>
     <li role="presentation" class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
         Settings (<%= (current_account.accountable.name.nil? or current_account.accountable.name == "") ? "No Name" : current_account.accountable.name %>)
