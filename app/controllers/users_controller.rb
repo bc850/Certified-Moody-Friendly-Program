@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:edit, :update]
   before_action :authenticate_account!
+
+def pundit_user
+  current_account
+end
+
 =begin
   # GET /users
   # GET /users.json
@@ -22,6 +27,7 @@ class UsersController < ApplicationController
 =end
   # GET /users/1/edit
   def edit
+    authorize @user
   end
 
 =begin
@@ -45,6 +51,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    authorize @user
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to feed_index_path, notice: "The profile of #{@user.name} was successfully updated." }
