@@ -28,7 +28,7 @@ export default class Searches extends React.Component {
                               handleSortColumn={this.handleSortColumn}
               />
           </th>
-          <th className="col-md-2 sortable">
+          <th className="col-md-4 sortable">
               <SortColumn     name="name"
                               text="Name"
                               sort={this.props.sort}
@@ -36,7 +36,7 @@ export default class Searches extends React.Component {
                               handleSortColumn={this.handleSortColumn}
               />
           </th>
-          <th className="col-md-2 sortable">
+          <th className="col-md-4 sortable">
               <SortColumn     name="description"
                               text="Description"
                               sort={this.props.sort}
@@ -44,7 +44,7 @@ export default class Searches extends React.Component {
                               handleSortColumn={this.handleSortColumn}
               />
           </th>
-          <th className="col-md-2 sortable">
+          <th className="col-md-3 sortable">
               <SortColumn     name="category"
                               text="Category"
                               sort={this.props.sort}
