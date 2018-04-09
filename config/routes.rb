@@ -19,5 +19,7 @@ resources :businesses do
 end
 
   root 'home#index', as: 'home'
+
+  get 'search', to: 'offers#search'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
