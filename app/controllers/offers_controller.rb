@@ -79,6 +79,11 @@ class OffersController < ApplicationController
     end
   end
 
+  def search
+    offers = Offer.where("name LIKE '%#{params[:query]}%'")
+    render json: offers
+  end
+
   private
     def sort_by
        %w(name
@@ -86,7 +91,7 @@ class OffersController < ApplicationController
           category
           popularity).include?(params[:sort_by]) ? params[:sort_by] : 'popularity'
     end
-    
+
     def order
        %w(asc desc).include?(params[:order]) ? params[:order] : 'asc'
     end

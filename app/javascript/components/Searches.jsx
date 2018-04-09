@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import OfferList from './OfferList';
+import SearchForm from './SearchForm';
 
 export default class Searches extends React.Component {
 
@@ -42,9 +43,18 @@ export default class Searches extends React.Component {
         });
     };
 
+    handleSearch = (offers) => {
+      this.setState({ offers: offers });
+    };
+
     render = () => {
     return (
       <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <SearchForm handleSearch={this.handleSearch} />
+            </div>
+        </div>
         <div className="row">
           <div className="col-md-12">
           <OfferList  offers={this.state.offers}
