@@ -35,11 +35,16 @@ ActiveRecord::Schema.define(version: 20180408181309) do
   create_table "businesses", force: :cascade do |t|
     t.string "name"
     t.text "address"
+    t.string "city"
+    t.string "state"
+    t.string "zip_code"
     t.string "category"
     t.string "store_id"
     t.text "description"
-    t.string "owner_name"
+    t.string "owner_lname"
+    t.string "owner_fname"
     t.string "phone_number"
+    t.string "email"
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
