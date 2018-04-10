@@ -1,7 +1,12 @@
 class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_account!
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
+
+def pundit_user
+  current_account
+end
 
   # GET /offers
   # GET /offers.json
@@ -19,26 +24,32 @@ class OffersController < ApplicationController
         @offers = @business.offers
       end
     end
+    authorize Offer
+    @offers = policy_scope(Offer)
   end
 
   # GET /offers/1
   # GET /offers/1.json
   def show
+    authorize @offer
   end
 
   # GET /offers/new
   def new
     @offer = Offer.new
+    authorize @offer
   end
 
   # GET /offers/1/edit
   def edit
+    authorize @offer
   end
 
   # POST /offers
   # POST /offers.json
   def create
     @offer = Offer.new(offer_params)
+    authorize @offer
 
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
@@ -58,6 +69,7 @@ class OffersController < ApplicationController
   # PATCH/PUT /offers/1
   # PATCH/PUT /offers/1.json
   def update
+    authorize @offer
     respond_to do |format|
       if @offer.update(offer_params)
         format.html { redirect_to @offer, notice: 'Offer was successfully updated.' }
@@ -72,6 +84,7 @@ class OffersController < ApplicationController
   # DELETE /offers/1
   # DELETE /offers/1.json
   def destroy
+    authorize @offer
     @offer.destroy
     respond_to do |format|
       format.html { redirect_to offers_url, notice: 'Offer was successfully destroyed.' }

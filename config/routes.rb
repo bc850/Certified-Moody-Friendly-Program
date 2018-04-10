@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :accounts
+    resources :businesses
+    resources :favorites
+    resources :line_items
+    resources :offers
+    resources :users
+    resources :super_accounts
+
+    root to: "accounts#index"
+  end
+
   devise_for :accounts,  :controllers => { :registrations => 'registrations' }
   get 'calendar/index'
 

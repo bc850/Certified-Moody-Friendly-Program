@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180404182340) do
+ActiveRecord::Schema.define(version: 20180408181309) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -35,11 +35,17 @@ ActiveRecord::Schema.define(version: 20180404182340) do
   create_table "businesses", force: :cascade do |t|
     t.string "name"
     t.text "address"
+    t.string "city"
+    t.string "state"
+    t.string "zip_code"
     t.string "category"
     t.string "store_id"
     t.text "description"
-    t.string "owner_name"
+    t.string "owner_lname"
+    t.string "owner_fname"
     t.string "phone_number"
+    t.string "email"
+    t.string "email_2"
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -71,6 +77,12 @@ ActiveRecord::Schema.define(version: 20180404182340) do
     t.string "img_url"
     t.string "event_url"
     t.integer "popularity", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "super_accounts", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
