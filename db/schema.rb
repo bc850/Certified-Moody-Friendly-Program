@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20180408181309) do
     t.string "owner_fname"
     t.string "phone_number"
     t.string "email"
+    t.string "email_2"
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
