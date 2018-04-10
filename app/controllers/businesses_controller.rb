@@ -10,6 +10,7 @@ class BusinessesController < ApplicationController
   # GET /businesses.json
   def index
     @businesses = Business.all
+    @businesses = @businesses.order('created_at asc').page params[:page]
   end
 =begin
   # GET /businesses/1
