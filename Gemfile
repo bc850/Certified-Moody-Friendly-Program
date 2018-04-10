@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'pundit'
 gem 'bourbon'
 gem 'administrate'
+gem 'kaminari'
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"

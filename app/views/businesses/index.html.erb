@@ -8,11 +8,17 @@
     <tr>
       <th>Name</th>
       <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip Code</th>
       <th>Category</th>
       <th>Store</th>
       <th>Description</th>
-      <th>Owner name</th>
+      <th>Owner First Name</th>
+      <th>Owner Last Name</th>
       <th>Phone number</th>
+      <th>Email</th>
+      <th>Email 2</th>
       <th>Link</th>
       <th colspan="3"></th>
     </tr>
@@ -21,13 +27,19 @@
   <tbody>
     <% @businesses.each do |business| %>
       <tr>
-        <td><%= business.name %></td>
+        <td><%= link_to business.name, business_path(business.id) %></td>
         <td><%= business.address %></td>
+        <td><%= business.city %></td>
+        <td><%= business.state %></td>
+        <td><%= business.zip_code %></td>
         <td><%= business.category %></td>
         <td><%= business.store_id %></td>
         <td><%= business.description %></td>
-        <td><%= business.owner_name %></td>
+        <td><%= business.owner_fname %></td>
+        <td><%= business.owner_lname %></td>
         <td><%= business.phone_number %></td>
+        <td><%= business.email %></td>
+        <td><%= business.email_2 %></td>
         <td><%= business.link %></td>
         <td><%= link_to 'Show', business %></td>
         <td><%= link_to 'Edit', edit_business_path(business) %></td>
@@ -39,5 +51,7 @@
 
 <br>
 
-<%= link_to 'New Business', new_business_path %>
+<!--<%= link_to 'New Business', new_business_path %>-->
+
+<p><%= paginate @businesses %></p>
 </div>
