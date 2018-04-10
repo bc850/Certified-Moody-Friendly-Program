@@ -16,7 +16,7 @@ end
       @offers = Offer.all
       respond_to do |format|
           format.html { }
-          format.json {render json: @offers}
+          format.json {render json: Offer.order(sort_by + ' ' + order)}
         end
     else
       if (params[:business_id])
@@ -92,7 +92,22 @@ end
     end
   end
 
+  def search
+    offers = Offer.where("name LIKE '%#{params[:query]}%'")
+    render json: offers
+  end
+
   private
+    def sort_by
+       %w(name
+          description
+          category
+          popularity).include?(params[:sort_by]) ? params[:sort_by] : 'popularity'
+    end
+
+    def order
+       %w(asc desc).include?(params[:order]) ? params[:order] : 'asc'
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_offer
       @offer = Offer.find(params[:id])
