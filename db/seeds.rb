@@ -820,18 +820,18 @@ Business.create!(name: "Furniture Express/Beds For Less, Inc.",
 )
 
 Business.create!(name: "Georgia Military College",
-  address: "",
+  address: "4201 N Forrest Street",
   city: "Valdosta",
   state: "GA",
   zip_code: "31602",
-  category: "",
+  category: "Education",
   store_id: "1",
   description: "holder",
-  owner_lname: "",
-  owner_fname: "",
-  phone_number: "",
-  email: "",
-  link: ""
+  owner_lname: "Hafer",
+  owner_fname: "Leslie",
+  phone_number: "229-269-4850",
+  email: "lhafer@gmc.edu",
+  link: "http://www.gmc.edu"
 )
 
 Business.create!(name: "Georgia Power - Hahira",
@@ -846,7 +846,7 @@ Business.create!(name: "Georgia Power - Hahira",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Georgia Power- -Business Office",
@@ -861,7 +861,7 @@ Business.create!(name: "Georgia Power- -Business Office",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Georgia Power Company",
@@ -876,7 +876,7 @@ Business.create!(name: "Georgia Power Company",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Goodwill Industries of the Southern Rivers, Inc.",
@@ -891,7 +891,7 @@ Business.create!(name: "Goodwill Industries of the Southern Rivers, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Goodwill Mission Services/Career Center",
@@ -906,7 +906,7 @@ Business.create!(name: "Goodwill Mission Services/Career Center",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Hang Out Yoga, LLC",
@@ -921,7 +921,7 @@ Business.create!(name: "Hang Out Yoga, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Harvard Risk Management",
@@ -936,7 +936,7 @@ Business.create!(name: "Harvard Risk Management",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Highland Christian Academy",
@@ -951,7 +951,7 @@ Business.create!(name: "Highland Christian Academy",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Holiday Inn Express & Suites",
@@ -966,7 +966,7 @@ Business.create!(name: "Holiday Inn Express & Suites",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Home Depot",
@@ -981,7 +981,7 @@ Business.create!(name: "Home Depot",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Hooters of Valdosta",
@@ -996,7 +996,7 @@ Business.create!(name: "Hooters of Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Hug In A Mug Coffee Company",
@@ -1011,7 +1011,7 @@ Business.create!(name: "Hug In A Mug Coffee Company",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Ink & Cotton",
@@ -1026,7 +1026,7 @@ Business.create!(name: "Ink & Cotton",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Kilby Family Dentistry",
@@ -1041,7 +1041,7 @@ Business.create!(name: "Kilby Family Dentistry",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Law Offices of Paul W. Hamilton, LLC",
@@ -1056,7 +1056,7 @@ Business.create!(name: "Law Offices of Paul W. Hamilton, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Lemongrass Day Spa",
@@ -1071,7 +1071,7 @@ Business.create!(name: "Lemongrass Day Spa",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Liberty National Life Insurance - Cannigton Agency",
@@ -1086,7 +1086,7 @@ Business.create!(name: "Liberty National Life Insurance - Cannigton Agency",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Literacy Volunteer Program of South Georgia, LLC",
@@ -1101,7 +1101,7 @@ Business.create!(name: "Literacy Volunteer Program of South Georgia, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Lynne Brown - Speaker, Trainer, Coach",
@@ -1116,7 +1116,7 @@ Business.create!(name: "Lynne Brown - Speaker, Trainer, Coach",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Lynne Brown/John Maxwell Team",
@@ -1131,7 +1131,7 @@ Business.create!(name: "Lynne Brown/John Maxwell Team",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Mellow Mushroom",
@@ -1146,7 +1146,7 @@ Business.create!(name: "Mellow Mushroom",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Messiah Lutheran Church",
@@ -1161,7 +1161,7 @@ Business.create!(name: "Messiah Lutheran Church",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Michelle Alden Counseling Services",
@@ -1176,7 +1176,7 @@ Business.create!(name: "Michelle Alden Counseling Services",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Music Funeral Services",
@@ -1191,7 +1191,7 @@ Business.create!(name: "Music Funeral Services",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Pinwheels",
@@ -1206,7 +1206,7 @@ Business.create!(name: "Pinwheels",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Powell's Outdoor Power Equipment",
@@ -1221,7 +1221,7 @@ Business.create!(name: "Powell's Outdoor Power Equipment",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Rainwater Conference Center",
@@ -1236,7 +1236,7 @@ Business.create!(name: "Rainwater Conference Center",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Raisin Cane Valdosta",
@@ -1251,7 +1251,7 @@ Business.create!(name: "Raisin Cane Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Ray Norton Tire & Auto Center",
@@ -1281,7 +1281,7 @@ Business.create!(name: "Real Living Realty Advisors",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Real Living Realty Advisors - Ron Borders",
@@ -1296,7 +1296,7 @@ Business.create!(name: "Real Living Realty Advisors - Ron Borders",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Real Living Realty Advisors - Tammy Borders",
@@ -1311,7 +1311,7 @@ Business.create!(name: "Real Living Realty Advisors - Tammy Borders",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Renasant Bank",
@@ -1326,7 +1326,7 @@ Business.create!(name: "Renasant Bank",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Roto Rooter Plumbing & Drain Service",
@@ -1341,7 +1341,7 @@ Business.create!(name: "Roto Rooter Plumbing & Drain Service",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "SAFT America, Inc.",
@@ -1356,7 +1356,7 @@ Business.create!(name: "SAFT America, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Secure Record Solutions",
@@ -1371,7 +1371,7 @@ Business.create!(name: "Secure Record Solutions",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "SJ Services inc DBA Stanley Steemer",
@@ -1386,7 +1386,7 @@ Business.create!(name: "SJ Services inc DBA Stanley Steemer",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Sleep Number by Select Comfort",
@@ -1401,7 +1401,7 @@ Business.create!(name: "Sleep Number by Select Comfort",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "South Georgia Eye Partners",
@@ -1416,7 +1416,7 @@ Business.create!(name: "South Georgia Eye Partners",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "South Georgia Medical Center",
@@ -1431,7 +1431,7 @@ Business.create!(name: "South Georgia Medical Center",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "South Georgia/North Florida Eye Partners",
@@ -1446,7 +1446,7 @@ Business.create!(name: "South Georgia/North Florida Eye Partners",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Southeastern Credit Union",
@@ -1461,7 +1461,7 @@ Business.create!(name: "Southeastern Credit Union",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
@@ -1476,7 +1476,7 @@ Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Southwest Georgia Bank",
@@ -1491,7 +1491,7 @@ Business.create!(name: "Southwest Georgia Bank",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Spyderserve Corp",
@@ -1506,7 +1506,7 @@ Business.create!(name: "Spyderserve Corp",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Stanley Steemer",
@@ -1521,7 +1521,7 @@ Business.create!(name: "Stanley Steemer",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Steeda Autosports",
@@ -1536,7 +1536,7 @@ Business.create!(name: "Steeda Autosports",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Tanner Investment Group",
@@ -1551,7 +1551,7 @@ Business.create!(name: "Tanner Investment Group",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "TeamTemps Personnel Staffing, Inc.",
@@ -1566,7 +1566,7 @@ Business.create!(name: "TeamTemps Personnel Staffing, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Thacker Dermatology, LLC",
@@ -1581,7 +1581,7 @@ Business.create!(name: "Thacker Dermatology, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "The Fields North Valdosta",
@@ -1596,7 +1596,7 @@ Business.create!(name: "The Fields North Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "The Gardens Valdosta",
@@ -1611,7 +1611,7 @@ Business.create!(name: "The Gardens Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "The Home Depot",
@@ -1626,7 +1626,7 @@ Business.create!(name: "The Home Depot",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "The UPS Store",
@@ -1641,7 +1641,7 @@ Business.create!(name: "The UPS Store",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Troy University Albany Area Support Center",
@@ -1656,7 +1656,7 @@ Business.create!(name: "Troy University Albany Area Support Center",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Turner's Fine Furniture",
@@ -1671,7 +1671,7 @@ Business.create!(name: "Turner's Fine Furniture",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Valdosta Chiropractic & Rehab",
@@ -1686,7 +1686,7 @@ Business.create!(name: "Valdosta Chiropractic & Rehab",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Valdosta Nissan Cadillac",
@@ -1701,7 +1701,7 @@ Business.create!(name: "Valdosta Nissan Cadillac",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
@@ -1716,7 +1716,7 @@ Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Valdosta State University",
@@ -1731,7 +1731,7 @@ Business.create!(name: "Valdosta State University",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authority",
@@ -1746,7 +1746,7 @@ Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authori
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "ValdostaSOLD Real Estate Services",
@@ -1761,7 +1761,7 @@ Business.create!(name: "ValdostaSOLD Real Estate Services",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Velas Studios",
@@ -1776,7 +1776,7 @@ Business.create!(name: "Velas Studios",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "W. P. Walker's Vack, Inc.",
@@ -1791,7 +1791,7 @@ Business.create!(name: "W. P. Walker's Vack, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Watson's Pools & Patios, Inc.",
@@ -1806,7 +1806,7 @@ Business.create!(name: "Watson's Pools & Patios, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Wild Adventures Theme Park",
@@ -1821,7 +1821,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Wilteck, LLC",
@@ -1836,7 +1836,7 @@ Business.create!(name: "Wilteck, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Wiregrass Georgia Technical College",
@@ -1851,7 +1851,7 @@ Business.create!(name: "Wiregrass Georgia Technical College",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Wiregrass Investment Management, LLC",
@@ -1866,7 +1866,7 @@ Business.create!(name: "Wiregrass Investment Management, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 Business.create!(name: "Worthington Family Dentistry",
@@ -1881,7 +1881,7 @@ Business.create!(name: "Worthington Family Dentistry",
   owner_fname: "",
   phone_number: "",
   email: "",
-  link: ""
+  link: "http://"
 )
 
 
