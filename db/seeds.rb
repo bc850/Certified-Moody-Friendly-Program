@@ -19,6 +19,7 @@ Business.create!(name: "1st America Home Medical Equipment",
   owner_fname: "Mandy",
   phone_number: "229-242-3433",
   email: "mandy@1stamericadrugs.com",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -34,6 +35,7 @@ Business.create!(name: "1st Franklin Financial Corporation",
   owner_fname: "Chelsea",
   phone_number: "229-247-3558",
   email: "cdb4586@1ffc.com",
+  email_2: "holder",
   link: "http://www.1ffc.com"
 )
 
@@ -49,6 +51,7 @@ Business.create!(name: "306 North",
   owner_fname: "Mark",
   phone_number: "229-249-5333",
   email: "none",
+  email_2: "holder",
   link: "http://www.306north.com"
 )
 
@@ -64,6 +67,7 @@ Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
   owner_fname: "Abigail",
   phone_number: "229-300-6980",
   email: "abigail.davis.abr@gmail.com",
+  email_2: "holder",
   link: "http://www.ForSaleByAbigail.com"
 )
 
@@ -79,6 +83,7 @@ Business.create!(name: "Ameris Bank",
   owner_fname: "Michael",
   phone_number: "229-241-2851",
   email: "michael.lee@amerisbank.com",
+  email_2: "holder",
   link: "http://www.amerisbank.com"
 )
 
@@ -94,6 +99,7 @@ Business.create!(name: "Anchored Media Marketing",
   owner_fname: "Sally",
   phone_number: "702-506-2211",
   email: "anchoredmediamarketing@gmail.com",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -109,6 +115,7 @@ Business.create!(name: "Animal Health Center",
   owner_fname: "Tad",
   phone_number: "229-242-9818",
   email: "rebecca@caringtogether.com",
+  email_2: "holder",
   link: "http://www.caringtogether.com"
 )
 
@@ -124,6 +131,7 @@ Business.create!(name: "Astro Exterminating Services, Inc.",
   owner_fname: "Winnie",
   phone_number: "229-244-6862",
   email: "astro2@bellsouth.net",
+  email_2: "holder",
   link: "http://www.astroexterminating.com"
 )
 
@@ -139,6 +147,7 @@ Business.create!(name: "Austins Cattle Co.",
   owner_fname: "Harold",
   phone_number: "229-259-9333",
   email: "hchamber@bellsouth.net",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -154,6 +163,7 @@ Business.create!(name: "Azalea Health",
   owner_fname: "Douglas",
   phone_number: "877-777-7686",
   email: "info@azaleahealth.com",
+  email_2: "holder",
   link: "http://www.AzaleaHealth.com"
 )
 
@@ -169,6 +179,7 @@ Business.create!(name: "Badcock Furniture and More",
   owner_fname: "Sauer",
   phone_number: "229-560-7305",
   email: "holder",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -184,6 +195,7 @@ Business.create!(name: "Barnes Healthcare Services",
   owner_fname: "Charles",
   phone_number: "229-245-6001",
   email: "charlie@barneshc.com",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -199,6 +211,7 @@ Business.create!(name: "Batteries Plus Bulbs",
   owner_fname: "Andy",
   phone_number: "229-375-0088",
   email: "andy@4thwardgroup.com",
+  email_2: "holder",
   link: "http://www.batteriesplus.com"
 )
 
@@ -214,6 +227,7 @@ Business.create!(name: "Big Nick's",
   owner_fname: "Nicholas",
   phone_number: "229-469-6905",
   email: "bignicksonbaytree@gmail.com",
+  email_2: "holder",
   link: "www.bignicksbaytree.com"
 )
 
@@ -229,6 +243,7 @@ Business.create!(name: "BridgeBuilder Education & Investments",
   owner_fname: "DeWayne",
   phone_number: "229-588-0866",
   email: "admin@iamabridgebuilder.us",
+  email_2: "holder",
   link: "http://www.bridgebuilderinvestments.com"
 )
 
@@ -244,6 +259,7 @@ Business.create!(name: "Buffalo Wild Wings",
   owner_fname: "John",
   phone_number: "229-241-7246",
   email: "246@buffalowildwings.com",
+  email_2: "holder",
   link: "http://www.buffalowildwings.com"
 )
 
@@ -259,6 +275,7 @@ Business.create!(name: "Bush Wealth Management",
   owner_fname: "Stacy",
   phone_number: "229-247-1474",
   email: "stacy.bush@lpl.com",
+  email_2: "holder",
   link: "http://www.bushwealthmanagement.com/"
 )
 
@@ -274,6 +291,7 @@ Business.create!(name: "Ciao Bella SC Boutique, LLC",
   owner_fname: "Valeka",
   phone_number: "229-630-9468",
   email: "ciao_bellaboutique@outlook.com",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -289,6 +307,7 @@ Business.create!(name: "Citizens Community Bank",
   owner_fname: "Tim",
   phone_number: "229-242-2225",
   email: "tjones@citizenscommunitybank.net",
+  email_2: "holder",
   link: "http://www.citizenscommunitybank.net"
 )
 
@@ -304,6 +323,7 @@ Business.create!(name: "CJB Industries, Inc.",
   owner_fname: "Clinton",
   phone_number: "229-293-0800",
   email: "cbeeland@cjbindustries.com",
+  email_2: "holder",
   link: "http://http://www.cjbindustries.com/"
 )
 
@@ -319,6 +339,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   owner_fname: "Tom",
   phone_number: "229-244-3535",
   email: "tomcall@valdostarealtors.com",
+  email_2: "holder",
   link: "http://www.valdostarealtors.com"
 )
 
@@ -334,6 +355,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   owner_fname: "Mary",
   phone_number: "229-561-4654",
   email: "maryhstraka@gmail.com",
+  email_2: "holder",
   link: "http://www.maryhstraka.realtor"
 )
 
@@ -349,6 +371,7 @@ Business.create!(name: "Coleman/Talley, LLP",
   owner_fname: "Bill",
   phone_number: "229-242-7562",
   email: "bill.holland@colemantalley.com",
+  email_2: "holder",
   link: "http://www.colemantalley.com"
 )
 
@@ -364,6 +387,7 @@ Business.create!(name: "Colony Bank",
   owner_fname: "Eddie",
   phone_number: "229-241-9900",
   email: "esmith@colonybank.com",
+  email_2: "holder",
   link: "http://www.colonybank.com"
 )
 
@@ -379,6 +403,7 @@ Business.create!(name: "Commercial Banking Company",
   owner_fname: "Daryn",
   phone_number: "229-242-7600",
   email: "drussell@cbcbank.com",
+  email_2: "holder",
   link: "http://www.cbcbank.com"
 )
 
@@ -394,6 +419,7 @@ Business.create!(name: "Commercial Banking Company",
   owner_fname: "Vicki",
   phone_number: "229-794-2494",
   email: "vgodwin@cbcbank.com",
+  email_2: "holder",
   link: "http://www.cbcbank.com"
 )
 
@@ -409,6 +435,7 @@ Business.create!(name: "Commercial Banking Company",
   owner_fname: "Sam",
   phone_number: "229-253-8784",
   email: "swarren@cbcbank.com",
+  email_2: "holder",
   link: "http://www.cbcbank.com"
 )
 
@@ -424,6 +451,7 @@ Business.create!(name: "Commercial Banking Company",
   owner_fname: "Randy",
   phone_number: "229-985-7600",
   email: "rkelly@cbcbank.com",
+  email_2: "holder",
   link: "http://www.cbcbank.com"
 )
 
@@ -439,6 +467,7 @@ Business.create!(name: "Commercial Banking Company",
   owner_fname: "holder",
   phone_number: "229-386-5595",
   email: "holder",
+  email_2: "holder",
   link: "http://www.cbcbank.com"
 )
 
@@ -456,6 +485,7 @@ Business.create!(name: "Commercial Real Estate Advisors",
   owner_fname: "Andy",
   phone_number: "229-259-0626",
   email: "deal.andy47@gmail.com",
+  email_2: "holder",
   link: "http://www.adeal.mystream.com"
 )
 
@@ -471,6 +501,7 @@ Business.create!(name: "Cooks Pest Control",
   owner_fname: "David",
   phone_number: "229-244-4687",
   email: "david.parrott@cookspest.com",
+  email_2: "holder",
   link: "http://www.cookspest.com"
 )
 
@@ -486,6 +517,7 @@ Business.create!(name: "Coombs Heating & Air",
   owner_fname: "Tim",
   phone_number: "229-794-1712",
   email: "coombs.hvac@yahoo.com",
+  email_2: "holder",
   link: "http://www.coombsac.com"
 )
 
@@ -501,6 +533,7 @@ Business.create!(name: "Covington's Dining & Catering",
   owner_fname: "Stanley",
   phone_number: "229-242-2261",
   email: "caterinc@bellsouth.net",
+  email_2: "holder",
   link: "http://www.covingtonscatering.com"
 )
 
@@ -516,6 +549,7 @@ Business.create!(name: "Cre8ive Zone",
   owner_fname: "Omiteru",
   phone_number: "holder",
   email: "eomiteru2@yahoo.com",
+  email_2: "holder",
   link: "http://www.TheCre8iveZone.com"
 )
 
@@ -531,6 +565,7 @@ Business.create!(name: "C-Tech Water Solutions, LLC",
   owner_fname: "Chris",
   phone_number: "229-245-8100",
   email: "ctechwater@gmail.com",
+  email_2: "holder",
   link: "http://www.ctechwatersolutions.com"
 )
 
@@ -546,6 +581,7 @@ Business.create!(name: "Dairy Queen/The Lyoness Co.",
   owner_fname: "Atlas",
   phone_number: "912-384-8222",
   email: "atlas@lyonmgt.com",
+  email_2: "holder",
   link: "http://http://www.lyonmgt.com/"
 )
 
@@ -561,6 +597,7 @@ Business.create!(name: "Destiny Financial Services - A Family Heritage Life Prov
   owner_fname: "Rogers",
   phone_number: "912-674-1154",
   email: "brogers@legacyservices.com",
+  email_2: "holder",
   link: "http://www.familyheritagelife.com"
 )
 
@@ -576,6 +613,7 @@ Business.create!(name: "Direct Auto & Life Insurance",
   owner_fname: "Cindy",
   phone_number: "770-710-4700",
   email: "cynthia.hartwig@directgeneral.com",
+  email_2: "holder",
   link: "http://www.directgeneral.com"
 )
 
@@ -591,6 +629,7 @@ Business.create!(name: "DuMealz",
   owner_fname: "DuBoise",
   phone_number: "229-588-1313",
   email: "info@dumealz.com",
+  email_2: "holder",
   link: "http://www.dumealz.com"
 )
 
@@ -606,6 +645,7 @@ Business.create!(name: "Edible Arrangements",
   owner_fname: "Rhonda",
   phone_number: "229-247-0101",
   email: "rmiller@gmail.com",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -621,6 +661,7 @@ Business.create!(name: "ELead1One/Fresh Beginnings",
   owner_fname: "Jennifer",
   phone_number: "229-242-0237",
   email: "holder",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -636,6 +677,7 @@ Business.create!(name: "Embry-Riddle Aeronautical University",
   owner_fname: "Jakarta",
   phone_number: "229-244-9400",
   email: "moody@erau.edu",
+  email_2: "holder",
   link: "http://worldwide.erau.edu/locations/moody"
 )
 
@@ -651,6 +693,7 @@ Business.create!(name: "Farmers Home Furniture Company",
   owner_fname: "Tim",
   phone_number: "229-244-0928",
   email: "tcarroll@valdostacity.com",
+  email_2: "holder",
   link: "http://www.farmershomefurniture.com"
 )
 
@@ -666,6 +709,7 @@ Business.create!(name: "Farmers Supply Company",
   owner_fname: "George",
   phone_number: "229-242-9911",
   email: "farmerssupplyco@bellsouth.net",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -681,6 +725,7 @@ Business.create!(name: "First Federal of Valdosta",
   owner_fname: "Leslie",
   phone_number: "229-244-0164",
   email: "leslie.vankirk@1stfederalvaldosta.com",
+  email_2: "holder",
   link: "http://www.1stfederalvaldosta.com"
 )
 
@@ -696,6 +741,7 @@ Business.create!(name: "First State Bank & Trust",
   owner_fname: "Bill",
   phone_number: "229-245-5556",
   email: "holder",
+  email_2: "holder",
   link: "http://www.fsbtc.com"
 )
 
@@ -711,6 +757,7 @@ Business.create!(name: "First State Bank & Trust",
   owner_fname: "Tammy",
   phone_number: "229-245-5615",
   email: "tammygoodin@fsbtc.com",
+  email_2: "holder",
   link: "http://www.fsbtc.com"
 )
 
@@ -726,6 +773,7 @@ Business.create!(name: "First State Bank & Trust",
   owner_fname: "holder",
   phone_number: "holder",
   email: "christinagodwin@fsbtc.com",
+  email_2: "holder",
   link: "http://www.fsbtc.com"
 )
 
@@ -741,6 +789,7 @@ Business.create!(name: "First State Bank & Trust",
   owner_fname: "Bill",
   phone_number: "229-242-5725",
   email: "billcowart@fsbtc.com",
+  email_2: "holder",
   link: "http://www.fsbtc.com"
 )
 
@@ -756,6 +805,7 @@ Business.create!(name: "First State Bank & Trust",
   owner_fname: "Amber",
   phone_number: "229-559-0341",
   email: "info@fsbtc.com",
+  email_2: "holder",
   link: "http://www.fsbtc.com"
 )
 
@@ -771,6 +821,7 @@ Business.create!(name: "Fitmix Group Fitness and Personal Training",
   owner_fname: "Melissa",
   phone_number: "229-305-6465",
   email: "morethanfit@gmail.com",
+  email_2: "holder",
   link: "http://www.fitmix.us"
 )
 
@@ -786,6 +837,7 @@ Business.create!(name: "Four Seasons Essential Oils, LLC",
   owner_fname: "Mary",
   phone_number: "229-588-0373",
   email: "mary.h.clement@gmail.com",
+  email_2: "holder",
   link: "www.fourseasonsoils.com"
 )
 
@@ -801,6 +853,7 @@ Business.create!(name: "Fresh Beginnings",
   owner_fname: "Jennifer",
   phone_number: "229-242-0237",
   email: "chip@freshbeginnings.com",
+  email_2: "holder",
   link: "http://www.freshbeginnings.com"
 )
 
@@ -816,6 +869,7 @@ Business.create!(name: "Furniture Express/Beds For Less, Inc.",
   owner_fname: "Chad",
   phone_number: "229-293-0040",
   email: "cvannamee@msn.com",
+  email_2: "holder",
   link: "http://www.valdostafurniture.com"
 )
 
@@ -831,6 +885,7 @@ Business.create!(name: "Georgia Military College",
   owner_fname: "Leslie",
   phone_number: "229-269-4850",
   email: "lhafer@gmc.edu",
+  email_2: "holder",
   link: "http://www.gmc.edu"
 )
 
@@ -846,6 +901,7 @@ Business.create!(name: "Georgia Power Company",
   owner_fname: "Audrey",
   phone_number: "888-660-5890",
   email: "audking@southernco.com",
+  email_2: "holder",
   link: "http://www.georgiapower.com"
 )
 
@@ -861,6 +917,7 @@ Business.create!(name: "Goodwill Mission Services/Career Center",
   owner_fname: "Keyara",
   phone_number: "229-316-1216",
   email: "khamilton@gwisr.org",
+  email_2: "holder",
   link: "http://www.goodwillsr.org"
 )
 
@@ -876,6 +933,7 @@ Business.create!(name: "Hang Out Yoga, LLC",
   owner_fname: "Erika",
   phone_number: "229-686-0903",
   email: "erika@hangoutyoga.com",
+  email_2: "holder",
   link: "http://www.hangoutyoga.com"
 )
 
@@ -891,6 +949,7 @@ Business.create!(name: "Harvard Risk Management",
   owner_fname: "Jasmine",
   phone_number: "706-750-6060",
   email: "jasmine.miles@harvardbenefits.com",
+  email_2: "holder",
   link: "http://www.harvardbenefits.com"
 )
 
@@ -906,6 +965,7 @@ Business.create!(name: "Heart Rize Fitness",
   owner_fname: "Mikell",
   phone_number: "229-588-0646",
   email: "mikell@heartrizefitness.com",
+  email_2: "holder",
   link: "http://www.heartrizefitness.com"
 )
 
@@ -921,6 +981,7 @@ Business.create!(name: "Highland Christian Academy",
   owner_fname: "Cobie",
   phone_number: "229-245-8111",
   email: "principal@hcavaldosta.org",
+  email_2: "holder",
   link: "http://www.hcavaldosta.org"
 )
 
@@ -936,6 +997,7 @@ Business.create!(name: "Holiday Inn Express & Suites",
   owner_fname: "Ty",
   phone_number: "229-249-8900",
   email: "ty@hiexvaldosta.com",
+  email_2: "holder",
   link: "http://www.williamshotelgroup.com"
 )
 
@@ -951,6 +1013,7 @@ Business.create!(name: "Home Depot",
   owner_fname: "Pete",
   phone_number: "229-293-9008",
   email: "Peter_A_Layne@homedepot.com",
+  email_2: "holder",
   link: "http://http://www.homedepot.com"
 )
 
@@ -966,6 +1029,7 @@ Business.create!(name: "Hooters of Valdosta",
   owner_fname: "Patricia",
   phone_number: "229-293-9110",
   email: "valdosta@hooters.com",
+  email_2: "holder",
   link: "http://www.hooters.com"
 )
 
@@ -981,6 +1045,7 @@ Business.create!(name: "Hug In A Mug Coffee Company",
   owner_fname: "Mike",
   phone_number: "229-474-6240",
   email: "pms_ptac@yahoo.com",
+  email_2: "holder",
   link: "http://www.huginamug.coffee"
 )
 
@@ -996,6 +1061,7 @@ Business.create!(name: "Ink & Cotton",
   owner_fname: "Jessica",
   phone_number: "229-262-2985",
   email: "hello@inkandcottongoods.com",
+  email_2: "holder",
   link: "http://www.inkandcottongoods.com"
 )
 
@@ -1011,6 +1077,7 @@ Business.create!(name: "Judy Martin Trexler/CR for Personal & Family Growth, LLC
   owner_fname: "Judy",
   phone_number: "229-671-1461",
   email: "judytrex@bellsouth.net",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -1026,6 +1093,7 @@ Business.create!(name: "Kentucky Fried Chicken",
   owner_fname: "Tim",
   phone_number: "229-247-2395",
   email: "kfc113@bellsouth.net",
+  email_2: "holder",
   link: "holder"
 )
 
@@ -1041,6 +1109,7 @@ Business.create!(name: "Kilby Family Dentistry",
   owner_fname: "Dustin",
   phone_number: "229-247-0200",
   email: "dkilbymcg@gmail.com",
+  email_2: "kilbyfamilydentistry@gmail.com",
   link: "http://www.kilbyfamilydentistry.com"
 )
 
@@ -1056,7 +1125,7 @@ Business.create!(name: "Langdale Vallotton LLP",
   owner_fname: "Shannon",
   phone_number: "229-244-5400",
   email: "shall@langdalelaw.com",
-  email_2: "",
+  email_2: "holder",
   link: "http://www.langdalevallotton.com"
 )
 
@@ -1088,6 +1157,7 @@ Business.create!(name: "Lemongrass Day Spa",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1103,6 +1173,7 @@ Business.create!(name: "Liberty National Life Insurance - Cannigton Agency",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1118,6 +1189,7 @@ Business.create!(name: "Literacy Volunteer Program of South Georgia, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1133,6 +1205,7 @@ Business.create!(name: "Lynne Brown - Speaker, Trainer, Coach",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1148,6 +1221,7 @@ Business.create!(name: "Lynne Brown/John Maxwell Team",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1163,6 +1237,7 @@ Business.create!(name: "Mellow Mushroom",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1178,6 +1253,7 @@ Business.create!(name: "Messiah Lutheran Church",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1193,6 +1269,7 @@ Business.create!(name: "Michelle Alden Counseling Services",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1208,6 +1285,7 @@ Business.create!(name: "Music Funeral Services",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1223,6 +1301,7 @@ Business.create!(name: "Pinwheels",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1238,6 +1317,7 @@ Business.create!(name: "Powell's Outdoor Power Equipment",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1253,6 +1333,7 @@ Business.create!(name: "Rainwater Conference Center",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1268,6 +1349,7 @@ Business.create!(name: "Raisin Cane Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1283,6 +1365,7 @@ Business.create!(name: "Ray Norton Tire & Auto Center",
   owner_fname: "Sharon",
   phone_number: "229-247-1555",
   email: "rntac@bellsouth.net",
+  email_2: "holder",
   link: "http://www.raynortontire.com"
 )
 
@@ -1298,6 +1381,7 @@ Business.create!(name: "Real Living Realty Advisors",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1313,6 +1397,7 @@ Business.create!(name: "Real Living Realty Advisors - Ron Borders",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1328,6 +1413,7 @@ Business.create!(name: "Real Living Realty Advisors - Tammy Borders",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1343,6 +1429,7 @@ Business.create!(name: "Renasant Bank",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1358,6 +1445,7 @@ Business.create!(name: "Roto Rooter Plumbing & Drain Service",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1373,6 +1461,7 @@ Business.create!(name: "SAFT America, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1388,6 +1477,7 @@ Business.create!(name: "Secure Record Solutions",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1403,6 +1493,7 @@ Business.create!(name: "SJ Services inc DBA Stanley Steemer",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1418,6 +1509,7 @@ Business.create!(name: "Sleep Number by Select Comfort",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1433,6 +1525,7 @@ Business.create!(name: "South Georgia Eye Partners",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1448,6 +1541,7 @@ Business.create!(name: "South Georgia Medical Center",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1463,6 +1557,7 @@ Business.create!(name: "South Georgia/North Florida Eye Partners",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1478,6 +1573,7 @@ Business.create!(name: "Southeastern Credit Union",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1493,6 +1589,7 @@ Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1508,6 +1605,7 @@ Business.create!(name: "Southwest Georgia Bank",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1523,6 +1621,7 @@ Business.create!(name: "Spyderserve Corp",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1538,6 +1637,7 @@ Business.create!(name: "Stanley Steemer",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1553,6 +1653,7 @@ Business.create!(name: "Steeda Autosports",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1568,6 +1669,7 @@ Business.create!(name: "Tanner Investment Group",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1583,6 +1685,7 @@ Business.create!(name: "TeamTemps Personnel Staffing, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1598,6 +1701,7 @@ Business.create!(name: "Thacker Dermatology, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1613,6 +1717,7 @@ Business.create!(name: "The Fields North Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1628,6 +1733,7 @@ Business.create!(name: "The Gardens Valdosta",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1643,6 +1749,7 @@ Business.create!(name: "The Home Depot",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1658,6 +1765,7 @@ Business.create!(name: "The UPS Store",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1673,6 +1781,7 @@ Business.create!(name: "Troy University Albany Area Support Center",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1688,6 +1797,7 @@ Business.create!(name: "Turner's Fine Furniture",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1703,6 +1813,7 @@ Business.create!(name: "Valdosta Chiropractic & Rehab",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1718,6 +1829,7 @@ Business.create!(name: "Valdosta Nissan Cadillac",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1733,6 +1845,7 @@ Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1748,6 +1861,7 @@ Business.create!(name: "Valdosta State University",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1763,6 +1877,7 @@ Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authori
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1778,6 +1893,7 @@ Business.create!(name: "ValdostaSOLD Real Estate Services",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1793,6 +1909,7 @@ Business.create!(name: "Velas Studios",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1808,6 +1925,7 @@ Business.create!(name: "W. P. Walker's Vack, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1823,6 +1941,7 @@ Business.create!(name: "Watson's Pools & Patios, Inc.",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1838,6 +1957,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1853,6 +1973,7 @@ Business.create!(name: "Wilteck, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1868,6 +1989,7 @@ Business.create!(name: "Wiregrass Georgia Technical College",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1883,6 +2005,7 @@ Business.create!(name: "Wiregrass Investment Management, LLC",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
@@ -1898,6 +2021,7 @@ Business.create!(name: "Worthington Family Dentistry",
   owner_fname: "",
   phone_number: "",
   email: "",
+  email_2: "holder",
   link: "http://"
 )
 
