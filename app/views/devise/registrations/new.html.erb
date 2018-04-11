@@ -1,5 +1,9 @@
 <div class="pushDown">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6" style=>
   <h2>Sign up</h2>
+  
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
@@ -11,10 +15,24 @@
       <%= f.input :type, required: true, as: :radio_buttons, label: "Type of Account", collection: Account::ACCOUNT_TYPES.drop(1), checked: 'User'%>
     </div>
 
+</br>
+
+    <div class="disclaimer">
+      <h4>Disclaimer</h4>
+      <p>Please note this system is only for the use of CMF Businesses and Military Personnel. By signing up, you are acknowledging that, as a business, your application will be reviewed and approved by the Chamber of Commerce. As a user, you are acknowledging that you may be asked to present your Military ID to gain access to any of the offers on this app.</p>
+    </div>
+
+</br>
+
     <div class="form-actions">
       <%= f.button :submit, "Sign up" %>
     </div>
   <% end %>
 
+</br>
   <%= render "devise/shared/links" %>
+</div>
+</br>
+<div class="col-md-3">
+</div>
 </div>
