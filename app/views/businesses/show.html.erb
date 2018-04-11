@@ -1,14 +1,30 @@
 <div class="pushDown">
+<div id="offerLeft" class="col-md-3"></div>
+<div id="offerDisplay" class="col-md-6">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @business.name %>
+  <strong><%= @business.name %></strong>
 </p>
 
 <p>
   <strong>Address:</strong>
   <%= @business.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @business.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @business.state %>
+</p>
+
+<p>
+  <strong>Zip Code:</strong>
+  <%= @business.zip_code %>
 </p>
 
 <p>
@@ -27,8 +43,13 @@
 </p>
 
 <p>
-  <strong>Owner name:</strong>
-  <%= @business.owner_name %>
+  <strong>Owner First Name:</strong>
+  <%= @business.owner_fname %>
+</p>
+
+<p>
+  <strong>Owner Last Name:</strong>
+  <%= @business.owner_lname %>
 </p>
 
 <p>
@@ -37,10 +58,18 @@
 </p>
 
 <p>
+  <strong>Email:</strong>
+  <%= @business.email %>
+</p>
+
+<p>
   <strong>Link:</strong>
   <%= @business.link %>
 </p>
 
+<!--
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>
+-->
+</div>
 </div>
