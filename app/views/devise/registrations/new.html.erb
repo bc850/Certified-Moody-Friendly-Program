@@ -3,7 +3,7 @@
   </div>
   <div class="col-md-6" style=>
   <h2>Sign up</h2>
-  
+
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
@@ -20,6 +20,10 @@
     <div class="disclaimer">
       <h4>Disclaimer</h4>
       <p>Please note this system is only for the use of CMF Businesses and Military Personnel. By signing up, you are acknowledging that, as a business, your application will be reviewed and approved by the Chamber of Commerce. As a user, you are acknowledging that you may be asked to present your Military ID to gain access to any of the offers on this app.</p>
+    </div>
+
+    <div class="form-inputs">
+      <%= f.input :agree, required: true, as: :boolean, label: "Agree"%>
     </div>
 
 </br>
