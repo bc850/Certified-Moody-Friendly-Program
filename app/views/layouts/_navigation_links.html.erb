@@ -10,7 +10,7 @@
   <% end %>
   <% end %>
   <% if current_account.accountable_type == "SuperAccount" %>
-  <li><%= link_to 'Admin Dashboard', admin_root_path %></li>
+  <li><%= link_to 'Admin Dashboard', admin_root_path, :style => "color: #fff" %></li>
   <% end %>
 
   <% if current_account.accountable_type != "SuperAccount" %>

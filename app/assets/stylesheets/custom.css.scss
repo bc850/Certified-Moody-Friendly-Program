@@ -614,6 +614,14 @@
           margin-top: 24px;
           width: 100%;
 
+          a:link {
+            color: black;
+          }
+
+          a:link:hover {
+            color: white;
+          }
+
           :hover {
             background-color: #0F3D5E;
             color: white;
