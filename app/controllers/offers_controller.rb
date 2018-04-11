@@ -11,21 +11,32 @@ end
   # GET /offers
   # GET /offers.json
   def index
-    @offers = Offer.all
-    if (current_account.accountable_type == "User")
-      @offers = Offer.all
-      respond_to do |format|
-          format.html { }
-          format.json {render json: Offer.order(sort_by + ' ' + order)}
-        end
+
+#  @offers = Offer.all
+#    if (current_account.accountable_type == "User")
+#      @offers = Offer.all
+#      respond_to do |format|
+#          format.html { }
+#          format.json {render json: Offer.order(sort_by + ' ' + order)}
+#        end
+#    else
+#      if (params[:business_id])
+#        @business = Business.find(params[:business_id])
+#        @offers = @business.offers
+#      end
+#    end
+#    authorize Offer
+#    @offers = policy_scope(Offer)
+    if (params[:business_id])
+      @business = Business.find(params[:business_id])
+      @offers = @business.offers
     else
-      if (params[:business_id])
-        @business = Business.find(params[:business_id])
-        @offers = @business.offers
-      end
+      @offers = Offer.all
+      @offers = @offers.order('created_at asc').page params[:page]
     end
     authorize Offer
     @offers = policy_scope(Offer)
+    @offers = @offers.order('created_at asc').page params[:page]
   end
 
   # GET /offers/1
