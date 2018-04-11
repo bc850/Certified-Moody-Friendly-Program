@@ -6,13 +6,13 @@ def pundit_user
   current_account
 end
 
-=begin
+
   # GET /users
   # GET /users.json
   def index
     @users = User.all
   end
-
+=begin
 
   # GET /users/1
   # GET /users/1.json
