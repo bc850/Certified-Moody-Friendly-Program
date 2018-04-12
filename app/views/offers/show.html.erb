@@ -7,19 +7,9 @@
 </p>
 </br>
 
-<% puts "!!!" %>
-<% puts "BEFORE TITLE!" %>
-<% puts "!!!" %>
-<% puts "" %>
-
 <p id = "offerTitle">
     <strong><%= @offer.name %></strong>
 </p>
-
-<% puts "!!!" %>
-<% puts "AFTER TITLE!" %>
-<% puts "!!!" %>
-<% puts "" %>
 
 <!--
   <%= link_to like_offer_path(@offer), class: "like-btn", method: :put, remote: :true do %>
@@ -29,30 +19,15 @@
   <% end %>
 -->
 
-<% puts "!!!" %>
-<% puts "AFTER COMMENTED OUT!" %>
-<% puts "!!!" %>
-<% puts "" %>
-
 <% if current_account.voted_for? @offer %>
-  <% puts "!!!" %>
-  <% puts "if @offer.liked_by current_account" %>
-  <% puts "!!!" %>
-  <% puts "" %>
   <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
               id: "like_#{@offer.id}",
               class: "glyphicon glyphicon-heart" %>
 <% else %>
-  <% puts "!!!" %>
-  <% puts "ELSE!!!" %>
-  <% puts "!!!" %>
   <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
               id: "like_#{@offer.id}",
               class: "glyphicon glyphicon-heart-empty" %>
 <% end %>
-  <% puts "!!!" %>
-  <% puts "OUTSIDE if STATEMENT" %>
-  <% puts "!!!" %>
 
   <span class="likes-count"><%= @offer.get_upvotes.size %></span>
 
