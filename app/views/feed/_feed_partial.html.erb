@@ -8,7 +8,15 @@
         <%= offer.description %>
       </p>
       <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
-      <%= html_button_to fa_icon(:heart), line_items_path(offer_id: offer), :id => 'feedButtonNotLiked', remote: true %>
+      <% if current_account.voted_for? offer %>
+        <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true,
+                    id: "like_#{offer.id}",
+                    class: "glyphicon glyphicon-heart" %>
+      <% else %>
+        <%= link_to '', like_offer_path(offer.id), method: :put, remote: true,
+                    id: "like_#{offer.id}",
+                    class: "glyphicon glyphicon-heart-empty" %>
+      <% end %>
     </div>
   <% end %>
 </div>
