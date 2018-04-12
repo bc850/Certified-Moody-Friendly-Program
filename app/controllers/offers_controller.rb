@@ -2,6 +2,7 @@ class OffersController < ApplicationController
   before_action :set_offer, only: [:show, :edit, :update, :destroy, :like, :unlike]
   before_action :authenticate_account!
   before_action :set_popularity_for_partial
+  before_action :set_offers_for_partial
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
@@ -178,5 +179,9 @@ if (params[:business_id])
 
     def set_popularity_for_partial
       @popularity = Offer.order("cached_votes_total DESC").limit(3)
+    end
+
+    def set_offers_for_partial
+      @theoffers = Offer.all
     end
 end

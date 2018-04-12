@@ -3,6 +3,7 @@ class FeedController < ApplicationController
   before_action :set_favorite
   before_action :set_offers
   before_action :set_line_items
+  before_action :set_offers_for_partial
 
   def index
     #@discounts = Discount.all
@@ -27,5 +28,9 @@ class FeedController < ApplicationController
 
   def line_item_params
     params.require(:line_item).permit(:offer_id, :favorite_id)
+  end
+
+  def set_offers_for_partial
+    @theoffers = Offer.all
   end
 end
