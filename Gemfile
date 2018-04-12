@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'acts_as_votable'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'mini_magick'

@@ -1,0 +1,17 @@
+/*<% if current_account.liked? @offer %>
+  $('.like-btn').addClass('glyphicon-heart').removeClass('glyphicon-heart-empty');
+<% else %>
+  $('.like-btn').addClass('glyphicon-heart-empty').removeClass('glyphicon-heart');
+<% end %>
+
+$('.likes-count').html("<%= @offer.get_upvotes.size %>")*/
+
+<% if current_account.liked? @offer %>
+  $("#like_<%= @offer.id %>").removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
+  $("#like_<%= @offer.id %>").attr("href", '/offers/<%= @offer.id %>/like');
+<% else %>
+  $("#like_<%= @offer.id %>").removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
+  $("#like_<%= @offer.id %>").attr("href", '/offers/<%= @offer.id %>/like');
+<% end %>
+
+$('.likes-count').html("<%= @offer.get_upvotes.size %>")

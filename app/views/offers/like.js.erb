@@ -1,0 +1,4 @@
+$("#like_<%= @offer.id %>").removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
+$("#like_<%= @offer.id %>").attr("href", '/offers/<%= @offer.id %>/unlike');
+
+$('.likes-count').html("<%= @offer.get_upvotes.size %>")

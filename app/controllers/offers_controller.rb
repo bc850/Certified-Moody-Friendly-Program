@@ -1,12 +1,37 @@
 class OffersController < ApplicationController
-  before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :set_offer, only: [:show, :edit, :update, :destroy, :like, :unlike]
   before_action :authenticate_account!
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
-def pundit_user
-  current_account
-end
+  def pundit_user
+    current_account
+  end
+
+  def like
+    #if !current_account.liked? @offer
+      @offer.liked_by current_account
+    #elsif current_account.liked? @offer
+      #@offer.unliked_by current_account
+    #end
+
+    respond_to do |format|
+      format.html { }
+      format.js { }
+      format.json { }
+    end
+  end
+
+  def unlike
+    @offer.unliked_by current_account
+
+    respond_to do |format|
+      format.html { }
+      format.js { }
+      format.json { }
+    end
+  end
+
 
   # GET /offers
   # GET /offers.json

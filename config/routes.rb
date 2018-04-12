@@ -19,7 +19,14 @@ Rails.application.routes.draw do
   resources :feed
   resources :businesses
   resources :line_items
-  resources :offers
+
+  resources :offers do
+    member do
+      put "like" => "offers#like"
+      put "unlike" => "offers#unlike"
+    end
+  end
+
   resources :favorites
   get 'home/index'
 
