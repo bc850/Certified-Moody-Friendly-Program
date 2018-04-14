@@ -1,3 +1,6 @@
+<div class="col-md-3">
+</div>
+<div class="col-md-6">
 <% @offers.each do |offer| %>
   <% @line_items.each do |line_item| %>
     <% if line_item.offer_id == offer.id %>
@@ -7,3 +10,6 @@
     <% end %>
   <% end %>
 <% end %>
+</div>
+<div class="col-md-3">
+</div>
