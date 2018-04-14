@@ -8,4 +8,5 @@ class Account < ApplicationRecord
   ACCOUNT_TYPES=["SuperAccount", "User", "Business"]
   attr_accessor :type
   attr_accessor :agree
+  validates :agree, :acceptance => true
 end
