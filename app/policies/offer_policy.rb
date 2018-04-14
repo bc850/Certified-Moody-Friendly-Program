@@ -6,7 +6,7 @@ class OfferPolicy
 	end
 	def index?
 		current_account.accountable_type == "Business"
-		current_account.accountable_type == "User"
+		#current_account.accountable_type == "User"
 	end
 	def show?
 		@current_account == @offer.business.account

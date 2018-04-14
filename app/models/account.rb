@@ -7,4 +7,5 @@ class Account < ApplicationRecord
   belongs_to :accountable, polymorphic: true
   ACCOUNT_TYPES=["SuperAccount", "User", "Business"]
   attr_accessor :type
+  attr_accessor :agree
 end
