@@ -42,7 +42,7 @@
         <td><%= business.email_2 %></td>
         <td><%= business.link %></td>
         <% if account_signed_in? %>
-          <% if current_account.accountable_type == "Business" %>
+          <% if current_account.accountable_type == "SuperAccount" %>
             <td><%= link_to 'Show', business %></td>
             <td><%= link_to 'Edit', edit_business_path(business) %></td>
             <td><%= link_to 'Destroy', business, method: :delete, data: { confirm: 'Are you sure?' } %></td>
