@@ -3,13 +3,14 @@ class FeedController < ApplicationController
   before_action :set_favorite
   before_action :set_offers
   before_action :set_line_items
+  before_action :set_offers_for_partial
 
   def index
     #@discounts = Discount.all
     #@coupons = Coupon.all
     #@events = Event.all
     @offers = Offer.order(:created_at).reverse
-    @popularity = Offer.order("popularity DESC").limit(3)
+    @popularity = Offer.order("cached_votes_total DESC").limit(3)
 
     # THIS IS THE COMBINED FEED WITH SORTING ALGORITHM IMPLEMENTED!!
     #@combined = (@discounts + @coupons + @events).sort_by(&:created_at).reverse
@@ -27,5 +28,9 @@ class FeedController < ApplicationController
 
   def line_item_params
     params.require(:line_item).permit(:offer_id, :favorite_id)
+  end
+
+  def set_offers_for_partial
+    @theoffers = Offer.all
   end
 end

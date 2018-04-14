@@ -1,0 +1,5 @@
+$("#like_<%= @offer.id %>").removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
+$("#like_<%= @offer.id %>").attr("href", '/offers/<%= @offer.id %>/like');
+$("#popularityRender").html("<%= j (render partial: 'feed/popularity_component') %>");
+$(".favsPartial").html("<%= j (render partial: 'feed/favs_partial') %>");
+$('.likes-count').html("<%= @offer.get_upvotes.size %>");

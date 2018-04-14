@@ -6,13 +6,30 @@
   <%= image_tag(@offer.img_url, width: 400) if @offer.img_url.present? %>
 </p>
 </br>
+
 <p id = "offerTitle">
     <strong><%= @offer.name %></strong>
 </p>
 
-<p>
-  <%= html_button_to fa_icon(:heart), line_items_path(offer_id: @offer), :id => 'feedButtonNotLiked', remote: true %>
-</p>
+<!--
+  <%= link_to like_offer_path(@offer), class: "like-btn", method: :put, remote: :true do %>
+    <div>
+      <span><p><i class="fa fa-heart"></i></p></span>
+    </div>
+  <% end %>
+-->
+
+<% if current_account.voted_for? @offer %>
+  <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
+              id: "like_#{@offer.id}",
+              class: "glyphicon glyphicon-heart" %>
+<% else %>
+  <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
+              id: "like_#{@offer.id}",
+              class: "glyphicon glyphicon-heart-empty" %>
+<% end %>
+
+<!--  <span class="likes-count"><%= @offer.get_upvotes.size %></span> -->
 
 <p>
   <%= @offer.offering_type %>

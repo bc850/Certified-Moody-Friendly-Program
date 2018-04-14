@@ -1,12 +1,39 @@
 class OffersController < ApplicationController
-  before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :set_offer, only: [:show, :edit, :update, :destroy, :like, :unlike]
   before_action :authenticate_account!
+  before_action :set_popularity_for_partial
+  before_action :set_offers_for_partial
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
-def pundit_user
-  current_account
-end
+  def pundit_user
+    current_account
+  end
+
+  def like
+    #if !current_account.liked? @offer
+      @offer.liked_by current_account
+    #elsif current_account.liked? @offer
+      #@offer.unliked_by current_account
+    #end
+
+    respond_to do |format|
+      format.html { }
+      format.js { }
+      format.json { }
+    end
+  end
+
+  def unlike
+    @offer.unliked_by current_account
+
+    respond_to do |format|
+      format.html { }
+      format.js { }
+      format.json { }
+    end
+  end
+
 
   # GET /offers
   # GET /offers.json
@@ -148,5 +175,13 @@ if (params[:business_id])
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
       params.require(:offer).permit(:name, :start_date, :end_date, :category, :description, :location, :business_id, :offering_type, :img_url, :event_url)
+    end
+
+    def set_popularity_for_partial
+      @popularity = Offer.order("cached_votes_total DESC").limit(3)
+    end
+
+    def set_offers_for_partial
+      @theoffers = Offer.all
     end
 end
