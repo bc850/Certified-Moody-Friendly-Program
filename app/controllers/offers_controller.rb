@@ -161,7 +161,7 @@ if (params[:business_id])
        %w(name
           description
           category
-          popularity).include?(params[:sort_by]) ? params[:sort_by] : 'popularity'
+          popularity).include?(params[:sort_by]) ? params[:sort_by] : 'cached_votes_total'
     end
 
     def order
