@@ -6,7 +6,7 @@ import SearchForm from './SearchForm';
 export default class Searches extends React.Component {
 
     state = { offers: [],
-              sort: "popularity",
+              sort: "cached_votes_total",
               order: "asc"
             };
 

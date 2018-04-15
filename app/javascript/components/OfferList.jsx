@@ -46,7 +46,7 @@ export default class Searches extends React.Component {
               />
           </th>
           <th className="col-md-2 sortable">
-              <SortColumn     name="popularity"
+              <SortColumn     name="cached_votes_total"
                               text="Popularity"
                               sort={this.props.sort}
                               order={this.props.order}
