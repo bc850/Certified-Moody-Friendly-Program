@@ -7,7 +7,7 @@ export default class Offer extends React.Component {
     description: PropTypes.string,
     img_url: PropTypes.string,
     category: PropTypes.string,
-    popularity: PropTypes.number
+    cached_votes_total: PropTypes.number
   };
 
   render = () => {
@@ -19,7 +19,7 @@ export default class Offer extends React.Component {
         <td>{this.props.offer.name}</td>
         <td dangerouslySetInnerHTML={{__html: this.props.offer.description}}></td>
         <td>{this.props.offer.category}</td>
-        <td>{this.props.offer.popularity}</td>
+        <td>{this.props.offer.cached_votes_total}</td>
       </tr>
     )
   };

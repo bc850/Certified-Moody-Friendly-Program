@@ -83,14 +83,14 @@ if (params[:business_id])
     end
   end
 
-  authorize Offer
+  #authorize Offer
   @offers = policy_scope(Offer)
   end
 
   # GET /offers/1
   # GET /offers/1.json
   def show
-    authorize @offer
+    #authorize @offer
   end
 
   # GET /offers/new
