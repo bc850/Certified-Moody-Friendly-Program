@@ -5,13 +5,13 @@ class OfferPolicy
 		@offer = model
 	end
 	def index?
-		current_account.accountable_type == "Business"
+		#current_account.accountable_type == "Business, User"
 		#current_account.accountable_type == "User"
 	end
 	def show?
-		@current_account == @offer.business.account
+		#@current_account == @offer.business.account
 		#current_account.accountable_type == "User"
-		@current_account == @current_account
+		#@current_account == @current_account
 	end
 	def new?
 		current_account.accountable_type == "Business"
