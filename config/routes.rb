@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     member do
       put "like" => "offers#like"
       put "unlike" => "offers#unlike"
+      post "check_code" => "offers#check_code"
     end
   end
 

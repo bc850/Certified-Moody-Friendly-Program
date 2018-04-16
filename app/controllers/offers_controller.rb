@@ -10,6 +10,10 @@ class OffersController < ApplicationController
     current_account
   end
 
+  def check_code
+    puts "You got to the check_code method!"
+  end
+
   def like
     #if !current_account.liked? @offer
       @offer.liked_by current_account
