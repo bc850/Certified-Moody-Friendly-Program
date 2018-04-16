@@ -1,5 +1,5 @@
 class OffersController < ApplicationController
-  before_action :set_offer, only: [:show, :edit, :update, :destroy, :like, :unlike]
+  before_action :set_offer, only: [:show, :edit, :update, :destroy, :check_code, :like, :unlike]
   before_action :authenticate_account!
   before_action :set_popularity_for_partial
   before_action :set_offers_for_partial
@@ -11,7 +11,16 @@ class OffersController < ApplicationController
   end
 
   def check_code
+
+    @test = params[:offer][:test]
+
     puts "You got to the check_code method!"
+    if @test == '123' #compare it to businesses code
+      puts "Zack is Awesome!!" #will then open a new div? or render a partial?
+    else
+      puts "WRONG!!!"
+    end
+    puts @test
   end
 
   def like
