@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.string "email"
     t.string "email_2"
     t.string "link"
+    t.integer "business_offer_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -86,6 +87,8 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.integer "cached_weighted_score", default: 0
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
+    t.integer "offer_code", default: 0
+    t.integer "test", default: 0
   end
 
   create_table "super_accounts", force: :cascade do |t|
