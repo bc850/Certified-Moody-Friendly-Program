@@ -38,7 +38,7 @@
    <% if current_account.accountable_type == "Business" %>
    <li><%= link_to 'My Offers', business_offers_path(current_account.accountable_id) %></li>
    <% else %>
-   <li><%= link_to 'My Favorites', favorite_path(current_account.accountable_id) %>
+   <li><%= link_to 'My Favorites', my_favorites_path %>
      <% end %>
    </ul>
  </li>
