@@ -23,6 +23,10 @@ class OffersController < ApplicationController
     puts @test
   end
 
+  def my_favorites
+    @theoffers = Offer.order(:created_at).reverse
+  end
+
   def like
     #if !current_account.liked? @offer
       @offer.liked_by current_account

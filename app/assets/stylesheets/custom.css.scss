@@ -474,6 +474,22 @@
     }
   }
 
+  #favoritePage {
+    #inside {
+      // border: 1px solid grey;
+      box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
+      margin-bottom: 10px;
+      padding: 10px;
+      margin-right: 5px;
+
+      .glyphicon {
+        color: red;
+        text-decoration: none;
+        font-size: 25px;
+      }
+    }
+  }
+
   #footer {
     height: 75px;
     // width: 100%;

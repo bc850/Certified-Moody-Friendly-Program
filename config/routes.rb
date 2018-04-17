@@ -27,6 +27,7 @@ Rails.application.routes.draw do
       post "check_code" => "offers#check_code"
     end
   end
+  get "my_favorites" => "offers#my_favorites"
 
   resources :favorites
   get 'home/index'

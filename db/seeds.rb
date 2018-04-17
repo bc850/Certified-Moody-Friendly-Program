@@ -2265,16 +2265,52 @@ Business.create!(name: "Worthington Family Dentistry",
   link: "http://www.worthingtonfamilydentistry.com/"
 )
 
+Business.create!(name: "Bob Fake Business",
+  address: "333 Fake Way",
+  city: "Valdosta",
+  state: "GA",
+  zip_code: "31605",
+  category: "Entertainment",
+  store_id: "1",
+  description: "holder",
+  owner_lname: "Builder",
+  owner_fname: "Bob",
+  phone_number: "229-242-5555",
+  email: "bob@depot.com",
+  email_2: "holder",
+  link: "fake@fake.com"
+)
+
+Business.create!(name: "Marie Fake Business",
+  address: "3362 Fire Way",
+  city: "Valdosta",
+  state: "GA",
+  zip_code: "31605",
+  category: "Cosmetology",
+  store_id: "1",
+  description: "holder",
+  owner_lname: "Mitchell",
+  owner_fname: "Marie",
+  phone_number: "229-242-8887",
+  email: "marie@depot.com",
+  email_2: "holder",
+  link: "marie@fake.com"
+)
+
 
 User.delete_all
 User.create!(name: "Sam")
 User.create!(name: "Aaron")
 
 Account.delete_all
-Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+Account.create!( :email => 'val_admissions@gmc.cc.ga.ua', :password => 'changeme', :password_confirmation => 'changeme',
   :accountable => Business.find_by_name("Georgia Military College"))
-Account.create!( :email => 'john@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+Account.create!( :email => 'valdosta@coastalmellow.com', :password => 'changeme', :password_confirmation => 'changeme',
   :accountable => Business.find_by_name("Mellow Mushroom"))
+  Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+    :accountable => Business.find_by_name("Bob Fake Business"))
+    Account.create!( :email => 'marie@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+      :accountable => Business.find_by_name("Marie Fake Business"))
 Account.create!( :email => 'sam@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
     :accountable => User.find_by_name("Sam"))
 Account.create!( :email => 'aaron@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
@@ -2287,17 +2323,19 @@ Account.create!( :email => 'super@depot.com', :password => 'changeme', :password
 
 
 Offer.delete_all
-Offer.create!(name: 'Lowes Military Discount',
+Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   start_date: '2018-03-23',
-  end_date: '2018-03-25',
-  category: 'Home Improvement',
-  description: 'Get 10% off all qualifying purchases with our Military program.',
-  location: '1106 North St Augustine Road, Valdosta, GA 31601',
-  offering_type: 'Discount',
-  business_id: 1,
-  img_url: open('app/assets/images/lowesmilitary.png')
+  end_date: '2018-03-29',
+  category: 'Education',
+  description: 'Join us for our summer camp about STEM!',
+  location: '3320 Bemiss Road, Valdosta, GA 31605',
+  offering_type: 'Event',
+  business_id: 35,
+  img_url: open('app/assets/images/cre8.png'),
+  event_url: 'www.facebook.com/faked'
 )
 # . . .
+
 Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
@@ -2305,20 +2343,19 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   description: 'Free order of pretzels with purchase of a large pizza!',
   location: '1526 Baytree Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  business_id: 66,
+  business_id: 79,
   img_url: open('app/assets/images/mellow.jpg')
 )
 # . . .
-Offer.create!(name: 'Moody AFB Annual Air Show',
+Offer.create!(name: 'Lemongrass Day Spa',
   start_date: '2018-03-23',
   end_date: '2018-03-25',
-  category: 'Entertainment',
-  description: 'Come join us and watch the annual Moody Air Show!',
-  location: 'Bemiss Rd, Moody AFB, GA 31699',
-  offering_type: 'Event',
-  business_id: 20,
-  img_url: open('app/assets/images/thunderbirds.jpg'),
-  event_url: 'www.facebook.com/faked'
+  category: 'Health and Wellness',
+  description: 'Receive a free facial with purchase of a gift card!',
+  location: '3338 D Country Club Road, Valdosta, GA 31605',
+  offering_type: 'Coupon',
+  business_id: 73,
+  img_url: open('app/assets/images/lemongrass.jpg')
 )
 # . . .
 Offer.create!(name: 'Georgia Military College Application Event',
@@ -2328,7 +2365,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   description: 'Sign up for Fall classes now to receive military benefits.',
   location: '4201 N Forrest St, Valdosta, GA 31605',
   offering_type: 'Event',
-  business_id: 45,
+  business_id: 56,
   img_url: open('app/assets/images/gmc.png'),
   event_url: 'www.facebook.com/gmc/fake'
 )
@@ -2340,7 +2377,7 @@ Offer.create!(name: 'Home Depot Military Discount',
   description: 'Get 10% off all qualifying purchases with our Military program.',
   location: '1825 Norman Dr, Valdosta, GA 31601',
   offering_type: 'Discount',
-  business_id: 55,
+  business_id: 64,
   img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg')
 )
 # . . .
@@ -2351,7 +2388,7 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   description: 'Bring this coupon for admittance of a guest.',
   location: '3766 Old Clyattville Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  business_id: 112,
+  business_id: 136,
   img_url: open('app/assets/images/wildad.jpg')
 )
 # . . .
