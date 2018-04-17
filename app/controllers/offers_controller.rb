@@ -55,40 +55,6 @@ class OffersController < ApplicationController
   # GET /offers
   # GET /offers.json
   def index
-=begin
-  @offers = Offer.all
-    if (current_account.accountable_type == "User")
-      @offers = Offer.all
-      respond_to do |format|
-          format.html { }
-         format.json {render json: Offer.order(sort_by + ' ' + order)}
-        end
-   else
-      if (params[:business_id])
-        @business = Business.find(params[:business_id])
-       @offers = @business.offers
-    end
-    end
-    authorize Offer
-    @offers = policy_scope(Offer)
-
-    @offers = Offer.all
-    if (current_account.accountable_type == "User")
-      @offers = Offer.all
-      respond_to do |format|
-          format.html { }
-          format.json {render json: Offer.order(sort_by + ' ' + order)}
-        end
-    else
-      if (params[:business_id])
-        @business = Business.find(params[:business_id])
-        @offers = @business.offers
-      end
-    end
-    authorize Offer
-    @offers = policy_scope(Offer)
-    @offers = @offers.order('created_at asc').page params[:page]
-=end
 if (params[:business_id])
     @business = Business.find(params[:business_id])
     @offers = @business.offers
@@ -100,14 +66,12 @@ if (params[:business_id])
     end
   end
 
-  #authorize Offer
   @offers = policy_scope(Offer)
   end
 
   # GET /offers/1
   # GET /offers/1.json
   def show
-    #authorize @offer
   end
 
   # GET /offers/new
