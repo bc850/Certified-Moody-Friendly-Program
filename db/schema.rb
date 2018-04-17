@@ -87,8 +87,9 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.integer "cached_weighted_score", default: 0
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
-    t.integer "offer_code", default: 0
+    t.string "offer_code"
     t.integer "test", default: 0
+    t.integer "analytics", default: 0
   end
 
   create_table "super_accounts", force: :cascade do |t|
