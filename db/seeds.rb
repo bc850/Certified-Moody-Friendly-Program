@@ -567,7 +567,7 @@ Business.create!(name: "Cre8ive Zone",
   email: "eomiteru2@yahoo.com",
   email_2: "holder",
   link: "http://www.TheCre8iveZone.com",
-  business_offer_number: 126
+  business_offer_number: '126'
 )
 
 Business.create!(name: "C-Tech Water Solutions, LLC",
@@ -904,7 +904,7 @@ Business.create!(name: "Georgia Military College",
   email: "lhafer@gmc.edu",
   email_2: "val_admissions@gmc.cc.ga.ua",
   link: "http://www.gmc.edu",
-  business_offer_number: 125
+  business_offer_number: '125'
 )
 
 Business.create!(name: "Georgia Power Company",
@@ -1033,7 +1033,7 @@ Business.create!(name: "Home Depot",
   email: "Peter_A_Layne@homedepot.com",
   email_2: "holder",
   link: "http://http://www.homedepot.com",
-  business_offer_number: 127
+  business_offer_number: '127'
 )
 
 Business.create!(name: "Hooters of Valdosta",
@@ -1178,7 +1178,7 @@ Business.create!(name: "Lemongrass Day Spa",
   email: "michellealamb@gmail.com",
   email_2: "holder",
   link: "http://www.lemongrassdayspaonline.com",
-  business_offer_number: 124
+  business_offer_number: '124'
 )
 
 Business.create!(name: "Liberty National Life Insurance - Cannigton Agency",
@@ -1275,7 +1275,7 @@ Business.create!(name: "Mellow Mushroom",
   email: "valdosta@coastalmellow.com",
   email_2: "holder",
   link: "http://www.mellowmushroom.com",
-  business_offer_number: 123
+  business_offer_number: '123'
 )
 
 Business.create!(name: "Messiah Lutheran Church",
@@ -2188,7 +2188,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   email: "mdeese@wildadventures.com",
   email_2: "holder",
   link: "http://www.WildAdventures.com",
-  business_offer_number: 128
+  business_offer_number: '128'
 )
 
 Business.create!(name: "Wilteck, LLC",
@@ -2339,7 +2339,7 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   business_id: 35,
   img_url: open('app/assets/images/cre8.png'),
   event_url: 'www.facebook.com/faked',
-  offer_code: 126
+  offer_code: '126'
 )
 # . . .
 
@@ -2352,7 +2352,7 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   offering_type: 'Coupon',
   business_id: 79,
   img_url: open('app/assets/images/mellow.jpg'),
-  offer_code: 123
+  offer_code: '123'
 )
 # . . .
 Offer.create!(name: 'Lemongrass Day Spa',
@@ -2364,7 +2364,7 @@ Offer.create!(name: 'Lemongrass Day Spa',
   offering_type: 'Coupon',
   business_id: 73,
   img_url: open('app/assets/images/lemongrass.jpg'),
-  offer_code: 124
+  offer_code: '124'
 )
 # . . .
 Offer.create!(name: 'Georgia Military College Application Event',
@@ -2377,7 +2377,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   business_id: 56,
   img_url: open('app/assets/images/gmc.png'),
   event_url: 'www.facebook.com/gmc/fake',
-  offer_code: 125
+  offer_code: '125'
 )
 # . . .
 Offer.create!(name: 'Home Depot Military Discount',
@@ -2389,7 +2389,7 @@ Offer.create!(name: 'Home Depot Military Discount',
   offering_type: 'Discount',
   business_id: 64,
   img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg'),
-  offer_code: 127
+  offer_code: '127'
 )
 # . . .
 Offer.create!(name: 'Wild Adventures Bring a Friend',
@@ -2401,6 +2401,6 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   offering_type: 'Coupon',
   business_id: 136,
   img_url: open('app/assets/images/wildad.jpg'),
-  offer_code: 128
+  offer_code: '128'
 )
 # . . .

@@ -14,8 +14,9 @@ class OffersController < ApplicationController
 
     @test = params[:offer][:test]
 
-    puts "You got to the check_code method!"
-    if @test == '123' #compare it to businesses code
+    puts @offer.offer_code
+
+    if @test == @offer.offer_code #compare it to businesses code
       puts "Zack is Awesome!!" #will then open a new div? or render a partial?
     else
       puts "WRONG!!!"
