@@ -17,13 +17,14 @@ class OffersController < ApplicationController
     puts @offer.offer_code
 
     if @test == @offer.offer_code
-      puts "Zack is Awesome!!"
+      @offer.analytics = @offer.analytics + 1
+      @offer.update_attributes(:analytics => @offer.analytics)
+      puts @offer.analytics
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was successful!' }
         format.json { head :no_content }
       end
     else
-      puts "WRONG!!!"
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was incorrect!' }
         format.json { head :no_content }

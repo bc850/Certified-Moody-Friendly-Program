@@ -10,6 +10,7 @@ class AddCachedLikesToOffers < ActiveRecord::Migration[5.1]
       t.float :cached_weighted_average, default: 0.0
       t.string :offer_code
       t.integer :test, default: 0
+      t.integer :analytics, default: 0
     end
 
     # Uncomment this line to force caching of existing votes
