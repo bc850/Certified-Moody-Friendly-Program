@@ -20,7 +20,8 @@ class OfferDashboard < Administrate::BaseDashboard
     offering_type: Field::String,
     img_url: Field::String,
     event_url: Field::String,
-    popularity: Field::Number,
+    cached_votes_total: Field::Number,
+    analytics: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -35,7 +36,8 @@ class OfferDashboard < Administrate::BaseDashboard
     :line_items,
     :id,
     :name,
-    :popularity
+    :cached_votes_total,
+    :analytics
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -53,7 +55,8 @@ class OfferDashboard < Administrate::BaseDashboard
     :offering_type,
     :img_url,
     :event_url,
-    :popularity,
+    :cached_votes_total,
+    :analytics,
     :created_at,
     :updated_at,
   ].freeze
@@ -73,7 +76,8 @@ class OfferDashboard < Administrate::BaseDashboard
     :offering_type,
     :img_url,
     :event_url,
-    :popularity,
+    :cached_votes_total,
+    :analytics,
   ].freeze
 
   # Overwrite this method to customize how offers are displayed
