@@ -61,6 +61,18 @@
   <%= @offer.event_url %>
 </p>
 
+<div id="businessCode">
+  <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
+    <div class="form-inputs form-inline">
+      <!--<%= text_field_tag :id_input %>-->
+      <%= f.input :test, label: false, placeholder: 'Code: i.e. 123', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
+      <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
+    </div>
+  <% end %>
+</div>
+
+<button id="codeButtonShow" type="button">Enter Code</button>
+
 <!--<p>
   <%= link_to 'Print', offers_path %>
 <p>
