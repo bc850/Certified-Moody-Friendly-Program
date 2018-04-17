@@ -24,8 +24,10 @@ Rails.application.routes.draw do
     member do
       put "like" => "offers#like"
       put "unlike" => "offers#unlike"
+      #get "my_favorites" => "offers#my_favorites"
     end
   end
+  get "my_favorites" => "offers#my_favorites"
 
   resources :favorites
   get 'home/index'
