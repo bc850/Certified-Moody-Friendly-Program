@@ -11,7 +11,7 @@
   <%= f.error_notification %>
   <div class="form-inputs">
     <%= f.input :name, required: true, autofocus: true %>
-    <%= f.input :mil_branch, as: :radio_buttons, label: "Military Branch", collection: User::BRANCH_TYPES, checked: 'Air Force' %>
+    <%= f.input :mil_branch, required: true, as: :radio_buttons, label: "Military Branch", collection: User::BRANCH_TYPES, checked: 'Air Force'%>
   </div>
   <div class="form-actions">
     <%= f.button :submit, "Update" %>
