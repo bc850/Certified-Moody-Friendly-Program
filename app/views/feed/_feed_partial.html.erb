@@ -8,15 +8,18 @@
         <%= offer.description %>
       </p>
       <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
-      <% if current_account.voted_for? offer %>
-        <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true,
+      <% if current_account.accountable_type != "Business" %>
+        <% if current_account.voted_for? offer %>
+          <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true,
                     id: "like_#{offer.id}",
                     class: "glyphicon glyphicon-heart" %>
-      <% else %>
-        <%= link_to '', like_offer_path(offer.id), method: :put, remote: true,
+        <% else %>
+          <%= link_to '', like_offer_path(offer.id), method: :put, remote: true,
                     id: "like_#{offer.id}",
                     class: "glyphicon glyphicon-heart-empty" %>
+        <% end %>
       <% end %>
+      <br>
     </div>
   <% end %>
 </div>
