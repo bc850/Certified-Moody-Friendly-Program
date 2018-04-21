@@ -68,8 +68,6 @@ class AccountDashboard < Administrate::BaseDashboard
     :email,
     :encrypted_password,
     :reset_password_token,
-    :reset_password_sent_at,
-    :remember_created_at,
   ].freeze
 
   # Overwrite this method to customize how accounts are displayed

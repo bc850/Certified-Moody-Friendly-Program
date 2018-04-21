@@ -33,7 +33,6 @@ class OfferDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :business,
-    :line_items,
     :id,
     :name,
     :cached_votes_total,
@@ -68,7 +67,6 @@ class OfferDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :business,
-    :line_items,
     :name,
     :start_date,
     :end_date,
