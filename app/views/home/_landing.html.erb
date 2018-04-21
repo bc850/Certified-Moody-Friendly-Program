@@ -9,17 +9,14 @@
       </div>
       <div class="row" id="hero-left-row3">
         <form action="accounts/sign_up" method="GET">
-          <input type="text" name="uid" id="emailfield" placeholder="Email Address">
           <br>
+          <%= button_to 'Sign Up', new_account_registration_path %>
           <br>
-          <input type="password" name="pwd" id="pwfield" placeholder="Password">
-          <br>
-          <br>
-          <%= button_to 'Get Started', new_account_registration_path %>
+          <%= button_to 'Login', new_account_session_path %>
         </form>
-      </div>
-      <div class="row" id="hero-left-row4">
+      <!--<div class="row" id="hero-left-row4">
         <p>Have an account?  <%= link_to 'Login', new_account_session_path %></p>
+      </div>-->
       </div>
     </div>
     <div class="col-md-6 text-center" id="right-hero">

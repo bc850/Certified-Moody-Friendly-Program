@@ -72,99 +72,7 @@
     margin-bottom: 20px;
   }
 }
-/*
-#landingHero {
 
-  #left-hero {
-    background-color: #fff;
-    height: 100vh;
-
-    #hero-left-row1 {
-      padding-top: 30vh;
-    }
-
-    #hero-left-row1 h1 {
-      font-size: 25px;
-      font-weight: 600;
-    }
-
-    #hero-left-row2 h2 {
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    #hero-left-row3 {
-      padding-top: 25px;
-    }
-
-    #hero-left-row3 form input {
-      width: 340px;
-      height: 40px;
-      padding: 0px 10px;
-      margin-right: 10px;
-      border: 1px solid #123E5C;
-      background-color: #fff;
-      font-size: 14px;
-      color: #000000;
-      line-height: 30px;
-    }
-
-    #hero-left-row3 form button {
-      width: 120px;
-      height: 40px;
-      margin-right: 10px;
-      border-radius: 40px;
-      background-color: #123E5C;
-      font-size: 14px;
-      color: #fff;
-      line-height: 20px;
-    }
-
-    #hero-left-row3 form button:hover {
-      border: 2px solid #123E5C;
-      background-color: #fff;
-      color: #9E2438;
-    }
-
-    #hero-left-row4 {
-      padding-top: 25px;
-    }
-  }
-
-  #right-hero {
-    background-image: image-url('a-10.jpg');
-    -webkit-background-size: cover;
-    background-repeat:no-repeat;
-    position: relative;
-    height: 100vh;
-    padding: 0px;
-    color: #fff;
-    background-position: 18% 80%;
-
-    #hero-right-h1 {
-      padding-top: 30vh;
-    }
-
-    #feedButton {
-      width: 120px;
-      height: 40px;
-      margin-top: 50px;
-      margin-right: 10px;
-      border-radius: 40px;
-      background-color: #123E5C;
-      font-size: 14px;
-      color: #fff;
-      line-height: 20px;
-
-      :hover {
-        border: 2px solid #123E5C;
-        background-color: #fff;
-        color: #9E2438;
-      }
-    }
-  }
-}
-*/
 /**************************************************
 ** MEDIA QUERY FOR SMALLER THAN DESKTOP VIEWPORT **
 **************************************************/
@@ -293,46 +201,6 @@
 
 
     }
-/*
-    #navButton {
-      border-color: transparent;
-      margin-right: 3%;
-      padding-top: 0;
-      margin-top: 5px;
-
-      span {
-        background-color: #fff;
-      }
-    }
-
-    #navFormInputs {
-      display: none;
-    }
-
-    #navSubmit {
-      width: 60px;
-      height: 28px;
-      border: 2px solid #f2f2f2;
-      border-radius: 40px;
-      background-color: #fff;
-      font-size: 14px;
-      color: #0F3D5E;
-    }
-    */
-    /*
-    #landingHero {
-
-      // margin-top: 0px;
-
-      #hero-left-row1 {
-        padding-top: 60vh;
-      }
-
-      #right-hero {
-        background-position: 20% 80%;
-      }
-    }
-    */
   }
 
   #landingHero {
@@ -358,8 +226,21 @@
 
       #hero-left-row3 {
         padding-top: 25px;
-      }
+        padding-bottom: 65px;
 
+        form {
+          input {
+            width: 340px;
+            height: 40px;
+            //border: 1px solid #123E5C;
+            //background-color: #fff;
+            background-color: #123E5C;
+            color: #fff;
+            font-size: 15px;
+          }
+        }
+      }
+/*
       #hero-left-row3 form input {
         width: 340px;
         height: 40px;
@@ -388,7 +269,7 @@
         background-color: #fff;
         color: #9E2438;
       }
-
+*/
       #hero-left-row4 {
         padding-top: 25px;
       }
@@ -776,17 +657,37 @@
       #hero-left-row1 h1 {
         font-size: 25px;
         font-weight: 600;
+        color: #123E5C;
       }
 
       #hero-left-row2 h2 {
         font-size: 20px;
         font-weight: 500;
+        color: #123E5C;
       }
 
       #hero-left-row3 {
         padding-top: 25px;
-      }
 
+        form {
+          input {
+            width: 340px;
+            height: 40px;
+            //border: 1px solid #123E5C;
+            //background-color: #fff;
+            background-color: #123E5C;
+            color: #fff;
+            font-size: 15px;
+          }
+        }
+
+        input[type="submit"]:hover {
+          background-color: #fff;
+          border: 1px solid #123E5C;
+          color: #123E5C;
+        }
+      }
+/*
       #hero-left-row3 form input {
         width: 340px;
         height: 40px;
@@ -815,7 +716,7 @@
         background-color: #fff;
         color: #9E2438;
       }
-
+*/
       #hero-left-row4 {
         padding-top: 25px;
       }
