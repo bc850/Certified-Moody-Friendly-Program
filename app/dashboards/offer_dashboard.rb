@@ -37,7 +37,9 @@ class OfferDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :cached_votes_total,
-    :analytics
+    :analytics,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -76,8 +78,6 @@ class OfferDashboard < Administrate::BaseDashboard
     :offering_type,
     :img_url,
     :event_url,
-    :cached_votes_total,
-    :analytics,
   ].freeze
 
   # Overwrite this method to customize how offers are displayed
