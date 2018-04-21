@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+###### BUSINESS CREATION ######
+
 Business.delete_all
 
 Business.create!(name: "1st America Home Medical Equipment",
@@ -37,22 +40,6 @@ Business.create!(name: "1st Franklin Financial Corporation",
   email: "cdb4586@1ffc.com",
   email_2: "",
   link: "http://www.1ffc.com"
-)
-
-Business.create!(name: "306 North",
-  address: "310 N Patterson St",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "31602",
-  category: "Restaurants",
-  store_id: "1",
-  description: "",
-  owner_lname: "Renfro",
-  owner_fname: "Mark",
-  phone_number: "229-249-5333",
-  email: "none",
-  email_2: "",
-  link: "http://www.306north.com"
 )
 
 Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
@@ -165,22 +152,6 @@ Business.create!(name: "Azalea Health",
   email: "info@azaleahealth.com",
   email_2: "sales@azaleahealth.com",
   link: "http://www.AzaleaHealth.com"
-)
-
-Business.create!(name: "Badcock Furniture and More",
-  address: "",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "",
-  category: "Furniture",
-  store_id: "1",
-  description: "",
-  owner_lname: "Cory",
-  owner_fname: "Sauer",
-  phone_number: "229-560-7305",
-  email: "",
-  email_2: "",
-  link: ""
 )
 
 Business.create!(name: "Barnes Healthcare Services",
@@ -359,7 +330,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   link: "http://www.maryhstraka.realtor"
 )
 
-Business.create!(name: "Coleman/Talley, LLP",
+Business.create!(name: "Coleman/Talley, LLP-William E. Holland",
   address: "910 N Patterson Street",
   city: "Valdosta",
   state: "GA",
@@ -471,24 +442,6 @@ Business.create!(name: "Commercial Banking Company",
   link: "http://www.cbcbank.com"
 )
 
-Business.create!(name: "Commercial Banking Company",
-  address: "729 W 2nd Street",
-  city: "Tifton",
-  state: "GA",
-  zip_code: "31794",
-  category: "Banking",
-  store_id: "2nd St. - Tifton",
-  description: "",
-  owner_lname: "",
-  owner_fname: "",
-  phone_number: "229-386-5595",
-  email: "",
-  email_2: "",
-  link: "http://www.cbcbank.com"
-)
-
-
-
 Business.create!(name: "Commercial Real Estate Advisors",
   address: "1803A Green Circle",
   city: "Valdosta",
@@ -505,7 +458,7 @@ Business.create!(name: "Commercial Real Estate Advisors",
   link: "http://www.adeal.mystream.com"
 )
 
-Business.create!(name: "Cooks Pest Control",
+Business.create!(name: "Cook's Pest Control",
   address: "823 Gil Harbin Ind Blvd",
   city: "Valdosta",
   state: "GA",
@@ -521,7 +474,7 @@ Business.create!(name: "Cooks Pest Control",
   link: "http://www.cookspest.com"
 )
 
-Business.create!(name: "Coombs Heating & Air",
+Business.create!(name: "Coombs Heating & Air Conditioning",
   address: "307 West Lawson Street",
   city: "Hahira",
   state: "GA",
@@ -618,7 +571,7 @@ Business.create!(name: "Destiny Financial Services - A Family Heritage Life Prov
   link: "http://www.familyheritagelife.com"
 )
 
-Business.create!(name: "Direct Auto & Life Insurance",
+Business.create!(name: "Direct Auto Insurance",
   address: "1515 North Ashley Street Ste A",
   city: "Valdosta",
   state: "GA",
@@ -634,7 +587,7 @@ Business.create!(name: "Direct Auto & Life Insurance",
   link: "http://www.directgeneral.com"
 )
 
-Business.create!(name: "DuMealz",
+Business.create!(name: "Dumealz",
   address: "3323 Bemiss Rd. Suite F",
   city: "Valdosta",
   state: "GA",
@@ -662,22 +615,6 @@ Business.create!(name: "Edible Arrangements",
   owner_fname: "Rhonda",
   phone_number: "229-247-0101",
   email: "rmiller@gmail.com",
-  email_2: "",
-  link: ""
-)
-
-Business.create!(name: "ELead1One/Fresh Beginnings",
-  address: "4001 Coleman Road N",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "31602",
-  category: "Customer Service",
-  store_id: "1",
-  description: "",
-  owner_lname: "Powell",
-  owner_fname: "Jennifer",
-  phone_number: "229-242-0237",
-  email: "",
   email_2: "",
   link: ""
 )
@@ -746,23 +683,7 @@ Business.create!(name: "First Federal of Valdosta",
   link: "http://www.1stfederalvaldosta.com"
 )
 
-Business.create!(name: "First State Bank & Trust",
-  address: "510 N Ashley Street",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "31601",
-  category: "Banking",
-  store_id: "North Ashley - Valdosta",
-  description: "",
-  owner_lname: "Cowart",
-  owner_fname: "Bill",
-  phone_number: "229-245-5556",
-  email: "",
-  email_2: "",
-  link: "http://www.fsbtc.com"
-)
-
-Business.create!(name: "First State Bank & Trust",
+Business.create!(name: "First State Bank & Trust-Baytree",
   address: "1522 Baytree Road",
   city: "Valdosta",
   state: "GA",
@@ -778,7 +699,7 @@ Business.create!(name: "First State Bank & Trust",
   link: "http://www.fsbtc.com"
 )
 
-Business.create!(name: "First State Bank & Trust",
+Business.create!(name: "First State Bank & Trust-ATM",
   address: "2501 N Patterson Street",
   city: "Valdosta",
   state: "GA",
@@ -794,7 +715,7 @@ Business.create!(name: "First State Bank & Trust",
   link: "http://www.fsbtc.com"
 )
 
-Business.create!(name: "First State Bank & Trust",
+Business.create!(name: "First State Bank & Trust-Inner Perimeter",
   address: "3650 Inner Perimeter Road",
   city: "Valdosta",
   state: "GA",
@@ -810,7 +731,7 @@ Business.create!(name: "First State Bank & Trust",
   link: "http://www.fsbtc.com"
 )
 
-Business.create!(name: "First State Bank & Trust",
+Business.create!(name: "First State Bank & Trust-Lake Park",
   address: "559 Lakes Blvd",
   city: "Lake Park",
   state: "GA",
@@ -858,7 +779,7 @@ Business.create!(name: "Four Seasons Essential Oils, LLC",
   link: "www.fourseasonsoils.com"
 )
 
-Business.create!(name: "Fresh Beginnings",
+Business.create!(name: "Fresh Beginnings, Inc.",
   address: "4001 Coleman Road North",
   city: "Valdosta",
   state: "GA",
@@ -1019,7 +940,7 @@ Business.create!(name: "Holiday Inn Express & Suites",
   link: "http://www.williamshotelgroup.com"
 )
 
-Business.create!(name: "Home Depot",
+Business.create!(name: "The Home Depot",
   address: "1825 Norman Drive",
   city: "Valdosta",
   state: "GA",
@@ -1052,7 +973,7 @@ Business.create!(name: "Hooters of Valdosta",
   link: "http://www.hooters.com"
 )
 
-Business.create!(name: "Hug In A Mug Coffee Company",
+Business.create!(name: "Hug In A Mug Coffee",
   address: "4165 Bemiss Rd. Suite O",
   city: "Valdosta",
   state: "GA",
@@ -1148,7 +1069,7 @@ Business.create!(name: "Langdale Vallotton LLP",
   link: "http://www.langdalevallotton.com"
 )
 
-Business.create!(name: "Law Offices of Paul W. Hamilton, LLC",
+Business.create!(name: "Law Office of Paul W. Hamilton, LLC",
   address: "2918 N. Oak St. Suite C",
   city: "Valdosta",
   state: "GA",
@@ -1181,7 +1102,7 @@ Business.create!(name: "Lemongrass Day Spa",
   business_offer_number: '124'
 )
 
-Business.create!(name: "Liberty National Life Insurance - Cannigton Agency",
+Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
   address: "401 Carswell Avenue Ste. 220",
   city: "Waycross",
   state: "GA",
@@ -1502,7 +1423,7 @@ Business.create!(name: "Ray Norton Tire & Auto Center",
   link: "http://www.raynortontire.com"
 )
 
-Business.create!(name: "Real Living Realty Advisors",
+Business.create!(name: "Real Living Realty Advisors-Ron Borders",
   address: "1817 Green Cir.",
   city: "Valdosta",
   state: "GA",
@@ -1518,7 +1439,7 @@ Business.create!(name: "Real Living Realty Advisors",
   link: "http://www.ronborders.com"
 )
 
-Business.create!(name: "Real Living Realty Advisors",
+Business.create!(name: "Real Living Realty Advisors-Tammy Borders",
   address: "1817 Green Cir.",
   city: "Valdosta",
   state: "GA",
@@ -1550,7 +1471,7 @@ Business.create!(name: "Renasant Bank",
   link: "http://www.renasantbank.com"
 )
 
-Business.create!(name: "RISE: A Real Estate Company",
+Business.create!(name: "RISE",
   address: "129 N Patterson St",
   city: "Valdosta",
   state: "GA",
@@ -1662,7 +1583,7 @@ Business.create!(name: "South Georgia Eye Partners",
   link: "http://www.southgeorgiaeye.com"
 )
 
-Business.create!(name: "South Georgia Medical Center",
+Business.create!(name: "South Georgia Medical Center/SGMC",
   address: "2501 N Patterson Street",
   city: "Valdosta",
   state: "GA",
@@ -1740,22 +1661,6 @@ Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
   email: "calvinstubbs@stcvaldosta.com",
   email_2: "",
   link: "http://southerncarpetandtile.com"
-)
-
-Business.create!(name: "Southern Vein & Laser Center",
-  address: "3321-B North Valdosta Road",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "31602",
-  category: "Healthcare",
-  store_id: "1",
-  description: "",
-  owner_lname: "Ambrozic",
-  owner_fname: "Richard",
-  phone_number: "229-242-9310",
-  email: "",
-  email_2: "",
-  link: ""
 )
 
 Business.create!(name: "Southwest Georgia Bank",
@@ -1886,7 +1791,7 @@ Business.create!(name: "The Fields North Valdosta",
   link: "http://www.thefieldsnorthvaldosta.com"
 )
 
-Business.create!(name: "The Gardens Valdosta",
+Business.create!(name: "The Gardens",
   address: "3531 Club Villas Drive",
   city: "Valdosta",
   state: "GA",
@@ -1950,7 +1855,7 @@ Business.create!(name: "Valdosta Chiropractic & Rehab",
   link: "http://www.valdostachiropractic.com"
 )
 
-Business.create!(name: "Valdosta City Manager",
+Business.create!(name: "Valdosta City-Manager",
   address: "P.O. Box 1125",
   city: "Valdosta",
   state: "GA",
@@ -1966,7 +1871,7 @@ Business.create!(name: "Valdosta City Manager",
   link: "http://www.valdostacity.com"
 )
 
-Business.create!(name: "Valdosta City Mayor",
+Business.create!(name: "Valdosta City-Mayor",
   address: "216 E Central Avenue",
   city: "Valdosta",
   state: "GA",
@@ -2142,7 +2047,7 @@ Business.create!(name: "WAAC FM",
   link: "http://www-C-93.com"
 )
 
-Business.create!(name: "W. P. Walker's Vack, Inc.",
+Business.create!(name: "W P Walker's Vack, Inc.",
   address: "4901 Lori St",
   city: "Valdosta",
   state: "GA",
@@ -2191,7 +2096,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   business_offer_number: '128'
 )
 
-Business.create!(name: "Wilteck, LLC",
+Business.create!(name: "WilTeck, LLC",
   address: "5015 Inner Perimeter Rd.",
   city: "Valdosta",
   state: "GA",
@@ -2304,29 +2209,306 @@ Business.create!(name: "Marie Fake Business",
 )
 
 
+###### USER CREATION ######
 User.delete_all
 User.create!(name: "Sam")
 User.create!(name: "Aaron")
 
+
+###### TESTERS ACCOUNT CREATION ######
+
 Account.delete_all
-Account.create!( :email => 'val_admissions@gmc.cc.ga.ua', :password => 'changeme', :password_confirmation => 'changeme',
-  :accountable => Business.find_by_name("Georgia Military College"))
-Account.create!( :email => 'valdosta@coastalmellow.com', :password => 'changeme', :password_confirmation => 'changeme',
-  :accountable => Business.find_by_name("Mellow Mushroom"))
-  Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
-    :accountable => Business.find_by_name("Bob Fake Business"))
-    Account.create!( :email => 'marie@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
-      :accountable => Business.find_by_name("Marie Fake Business"))
+Account.create!( :email => 'bob@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Bob Fake Business"))
+Account.create!( :email => 'marie@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+  :accountable => Business.find_by_name("Marie Fake Business"))
 Account.create!( :email => 'sam@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
     :accountable => User.find_by_name("Sam"))
 Account.create!( :email => 'aaron@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
     :accountable => User.find_by_name("Aaron"))
+
+
+###### MEMBER ACCOUNT CREATION ######
+
+Account.create!( :email => 'mandy@1stamericadrugs.com', :password => 'Dck3S5J', :password_confirmation => 'Dck3S5J',
+  :accountable => Business.find_by_name("1st America Home Medical Equipment"))
+Account.create!( :email => 'cdb4586@1ffc.com', :password => 'dj7XH7z', :password_confirmation => 'dj7XH7z',
+  :accountable => Business.find_by_name("1st Franklin Financial Corporation"))
+Account.create!( :email => 'abigail.davis.abr@gmail.com', :password => 'ZfbYmx4', :password_confirmation => 'ZfbYmx4',
+  :accountable => Business.find_by_name("Abigail H. Davis/Real Living Realty Advisors"))
+Account.create!( :email => 'michael.lee@amerisbank.com', :password => 'xNj3VKM', :password_confirmation => 'xNj3VKM',
+  :accountable => Business.find_by_name("Ameris Bank"))
+Account.create!( :email => 'anchoredmediamarketing@gmail.com', :password => 'tsvd2HE', :password_confirmation => 'tsvd2HE',
+  :accountable => Business.find_by_name("Anchored Media Marketing"))
+Account.create!( :email => 'rebecca@caringtogether.com', :password => 'DAecW3u', :password_confirmation => 'DAecW3u',
+  :accountable => Business.find_by_name("Animal Health Center"))
+Account.create!( :email => 'astro2@bellsouth.net', :password => '82Q3X8S', :password_confirmation => '82Q3X8S',
+  :accountable => Business.find_by_name("Astro Exterminating Services, Inc."))
+Account.create!( :email => 'hchamber@bellsouth.net', :password => '8eGN3WG', :password_confirmation => '8eGN3WG',
+  :accountable => Business.find_by_name("Austins Cattle Co."))
+Account.create!( :email => 'info@azaleahealth.com', :password => 'VZUXxR3', :password_confirmation => 'VZUXxR3',
+  :accountable => Business.find_by_name("Azalea Health"))
+#Account.create!( :email => 'charlie@barneshc.com', :password => 'sP3FvNS', :password_confirmation => 'sP3FvNS',
+#  :accountable => Business.find_by_name("Barnes Health Care Services"))
+Account.create!( :email => 'andy@4thwardgroup.com', :password => 'qWcLQ98', :password_confirmation => 'qWcLQ98',
+  :accountable => Business.find_by_name("Batteries Plus Bulbs"))
+Account.create!( :email => 'bignicksonbaytree@gmail.com', :password => 'TDU7qm5', :password_confirmation => 'TDU7qm5',
+  :accountable => Business.find_by_name("Big Nick's"))
+Account.create!( :email => 'admin@iamabridgebuilder.us', :password => 'Q93NbqW', :password_confirmation => 'Q93NbqW',
+  :accountable => Business.find_by_name("BridgeBuilder Education & Investments"))
+Account.create!( :email => '246@buffalowildwings.com', :password => '2fdKQVz', :password_confirmation => '2fdKQVz',
+  :accountable => Business.find_by_name("Buffalo Wild Wings"))
+Account.create!( :email => 'stacy.bush@lpl.com', :password => 'U8RVkCu', :password_confirmation => 'U8RVkCu',
+  :accountable => Business.find_by_name("Bush Wealth Management"))
+Account.create!( :email => 'ciao_bellaboutique@outlook.com', :password => '56uHsFU', :password_confirmation => '56uHsFU',
+  :accountable => Business.find_by_name("Ciao Bella SC Boutique, LLC"))
+Account.create!( :email => 'tjones@citizenscommunitybank.net', :password => 'K7J8fgd', :password_confirmation => 'K7J8fgd',
+  :accountable => Business.find_by_name("Citizens Community Bank"))
+Account.create!( :email => 'cbeeland@cjbindustries.com', :password => 'ZVqVQ9y', :password_confirmation => 'ZVqVQ9y',
+  :accountable => Business.find_by_name("CJB Industries, Inc."))
+Account.create!( :email => 'debbiehowell@valdostarealtors.com', :password => 'SD2wrTE', :password_confirmation => 'SD2wrTE',
+  :accountable => Business.find_by_name("Coldwell Banker Premier Real Estate"))
+Account.create!( :email => 'maryhstraka@gmail.com', :password => '8wQcjEt', :password_confirmation => '8wQcjEt',
+  :accountable => Business.find_by_name("Coldwell Banker Premier Real Estate"))
+#Account.create!( :email => 'bill.holland@colemantalley.com', :password => 'vc7XM2X', :password_confirmation => 'vc7XM2X',
+#  :accountable => Business.find_by_name("Coleman Talley LLP-William E. Holland"))
+Account.create!( :email => 'esmith@colonybank.com', :password => 'gVuj7KH', :password_confirmation => 'gVuj7KH',
+  :accountable => Business.find_by_name("Colony Bank"))
+Account.create!( :email => 'DixieLightfoot@colquittemc.com', :password => 'dG7YRtB', :password_confirmation => 'dG7YRtB',
+  :accountable => Business.find_by_name("Colquitt EMC"))
+Account.create!( :email => 'drussell@cbcbank.com', :password => 'r58Q8Ns', :password_confirmation => 'r58Q8Ns',
+  :accountable => Business.find_by_name("Commercial Banking Company"))
+Account.create!( :email => 'vgodwin@cbcbank.com', :password => '4dHKm8Q', :password_confirmation => '4dHKm8Q',
+  :accountable => Business.find_by_name("Commercial Banking Company"))
+Account.create!( :email => 'swarren@cbcbank.com', :password => '7Cf3ded', :password_confirmation => '7Cf3ded',
+  :accountable => Business.find_by_name("Commercial Banking Company"))
+Account.create!( :email => 'rkelly@cbcbank.com', :password => 'qUY4k6h', :password_confirmation => 'qUY4k6h',
+  :accountable => Business.find_by_name("Commercial Banking Company"))
+Account.create!( :email => 'deal.andy47@gmail.com', :password => 'kY7KDU5', :password_confirmation => 'kY7KDU5',
+  :accountable => Business.find_by_name("Commercial Real Estate Advisors"))
+Account.create!( :email => 'david.parrott@cookspest.com', :password => 'De45U3T', :password_confirmation => 'De45U3T',
+  :accountable => Business.find_by_name("Cook's Pest Control"))
+Account.create!( :email => 'coombs.hvac@yahoo.com', :password => 'MCCVBD3', :password_confirmation => 'MCCVBD3',
+  :accountable => Business.find_by_name("Coombs Heating & Air Conditioning"))
+Account.create!( :email => 'caterinc@bellsouth.net', :password => 'kVTWXW8', :password_confirmation => 'kVTWXW8',
+  :accountable => Business.find_by_name("Covington's Dining & Catering"))
+Account.create!( :email => 'eomiteru2@yahoo.com', :password => 'H49L2G4', :password_confirmation => 'H49L2G4',
+  :accountable => Business.find_by_name("Cre8ive Zone"))
+Account.create!( :email => 'ctechwater@gmail.com', :password => 'b5EyY4g', :password_confirmation => 'b5EyY4g',
+  :accountable => Business.find_by_name("C-Tech Water Solutions, LLC"))
+Account.create!( :email => 'atlas@lyonmgt.com', :password => 'WD7FuGD', :password_confirmation => 'WD7FuGD',
+  :accountable => Business.find_by_name("Dairy Queen/The Lyoness Co."))
+Account.create!( :email => 'brogers@legacyservices.com', :password => '3U4KZjT', :password_confirmation => '3U4KZjT',
+  :accountable => Business.find_by_name("Destiny Financial Services - A Family Heritage Life Provider"))
+Account.create!( :email => 'cynthia.hartwig@directgeneral.com', :password => '4h3Ngde', :password_confirmation => '4h3Ngde',
+  :accountable => Business.find_by_name("Direct Auto Insurance"))
+Account.create!( :email => 'info@dumealz.com', :password => '3VGSSPA', :password_confirmation => '3VGSSPA',
+  :accountable => Business.find_by_name("Dumealz"))
+Account.create!( :email => 'rmiller@gmail.com', :password => 'xRqE7Q5', :password_confirmation => 'xRqE7Q5',
+  :accountable => Business.find_by_name("Edible Arrangements"))
+Account.create!( :email => 'moody@erau.edu', :password => '2bLSPjW', :password_confirmation => '2bLSPjW',
+  :accountable => Business.find_by_name("Embry-Riddle Aeronautical University"))
+Account.create!( :email => 'tcarroll@valdostacity.com', :password => 'xHT4GhA', :password_confirmation => 'xHT4GhA',
+  :accountable => Business.find_by_name("Farmers Home Furniture Company"))
+Account.create!( :email => 'farmerssupplyco@bellsouth.net', :password => 'hUB2sjR', :password_confirmation => 'hUB2sjR',
+  :accountable => Business.find_by_name("Farmers Supply Company"))
+Account.create!( :email => 'leslie.vankirk@1stfederalvaldosta.com', :password => 'F8NTAz2', :password_confirmation => 'F8NTAz2',
+  :accountable => Business.find_by_name("First Federal of Valdosta"))
+Account.create!( :email => 'tammygoodin@fsbtc.com', :password => 'UHc4Fm7', :password_confirmation => 'UHc4Fm7',
+  :accountable => Business.find_by_name("First State Bank & Trust-Baytree"))
+Account.create!( :email => 'billcowart@fsbtc.com', :password => 'Q9zb25p', :password_confirmation => 'Q9zb25p',
+  :accountable => Business.find_by_name("First State Bank & Trust-Inner Perimeter"))
+Account.create!( :email => 'info@fsbtc.com', :password => 'DSC78zX', :password_confirmation => 'DSC78zX',
+  :accountable => Business.find_by_name("First State Bank & Trust-Lake Park"))
+Account.create!( :email => 'morethanfit@gmail.com', :password => 'uQ2TKCD', :password_confirmation => 'uQ2TKCD',
+  :accountable => Business.find_by_name("Fitmix Group Fitness and Personal Training"))
+Account.create!( :email => 'mary.h.clement@gmail.com', :password => 'V6uwRqn', :password_confirmation => 'V6uwRqn',
+  :accountable => Business.find_by_name("Four Seasons Essential Oils, LLC"))
+Account.create!( :email => 'chip@freshbeginnings.com', :password => '8CFhkpy', :password_confirmation => '8CFhkpy',
+  :accountable => Business.find_by_name("Fresh Beginnings, Inc."))
+Account.create!( :email => 'cvannamee@msn.com', :password => '7kNFY66', :password_confirmation => '7kNFY66',
+  :accountable => Business.find_by_name("Furniture Express/Beds For Less, Inc."))
+Account.create!( :email => 'lhafer@gmc.edu', :password => 'x5PEzEy', :password_confirmation => 'x5PEzEy',
+  :accountable => Business.find_by_name("Georgia Military College"))
+Account.create!( :email => 'audking@southernco.com', :password => '9sHCMkd', :password_confirmation => '9sHCMkd',
+  :accountable => Business.find_by_name("Georgia Power Company"))
+Account.create!( :email => 'khamilton@gwisr.org', :password => 'kC6pBsL', :password_confirmation => 'kC6pBsL',
+  :accountable => Business.find_by_name("Goodwill Mission Services/Career Center"))
+Account.create!( :email => 'erika@hangoutyoga.com', :password => 'P3C7wce', :password_confirmation => 'P3C7wce',
+  :accountable => Business.find_by_name("Hang Out Yoga, LLC"))
+Account.create!( :email => 'jasmine.miles@harvardbenefits.com', :password => 'cXnG96Z', :password_confirmation => 'cXnG96Z',
+  :accountable => Business.find_by_name("Harvard Risk Management"))
+Account.create!( :email => 'mikell@heartrizefitness.com', :password => 'XWARCN7', :password_confirmation => 'XWARCN7',
+  :accountable => Business.find_by_name("Heart Rize Fitness"))
+Account.create!( :email => 'principal@hcavaldosta.org', :password => 'zhA6dFH', :password_confirmation => 'zhA6dFH',
+  :accountable => Business.find_by_name("Highland Christian Academy"))
+Account.create!( :email => 'ty@hiexvaldosta.com', :password => 'MD7RHvW', :password_confirmation => 'MD7RHvW',
+  :accountable => Business.find_by_name("Holiday Inn Express & Suites"))
+Account.create!( :email => 'Peter_A_Layne@homedepot.com', :password => 'L5L7EFu', :password_confirmation => 'L5L7EFu',
+  :accountable => Business.find_by_name("The Home Depot"))
+Account.create!( :email => 'valdosta@hooters.com', :password => '2aezTLQ', :password_confirmation => '2aezTLQ',
+  :accountable => Business.find_by_name("Hooters of Valdosta"))
+Account.create!( :email => 'pms_ptac@yahoo.com', :password => '4UkWghW', :password_confirmation => '4UkWghW',
+  :accountable => Business.find_by_name("Hug In A Mug Coffee"))
+Account.create!( :email => 'hello@inkandcottongoods.com', :password => '69UthSB', :password_confirmation => '69UthSB',
+  :accountable => Business.find_by_name("Ink & Cotton"))
+Account.create!( :email => 'judytrex@bellsouth.net', :password => 'UusD524', :password_confirmation => 'UusD524',
+  :accountable => Business.find_by_name("Judy Martin Trexler/CR for Personal & Family Growth, LLC"))
+Account.create!( :email => 'kfc113@bellsouth.net', :password => 'NTH3P6S', :password_confirmation => 'NTH3P6S',
+  :accountable => Business.find_by_name("Kentucky Fried Chicken"))
+Account.create!( :email => 'dkilbymcg@gmail.com', :password => '9q5HXa5', :password_confirmation => '9q5HXa5',
+  :accountable => Business.find_by_name("Kilby Family Dentistry"))
+Account.create!( :email => 'shall@langdalelaw.com', :password => 'zWUU5Su', :password_confirmation => 'zWUU5Su',
+  :accountable => Business.find_by_name("Langdale Vallotton LLP"))
+Account.create!( :email => 'paul@paulwhamilton.com', :password => 'BXg9q8M', :password_confirmation => 'BXg9q8M',
+  :accountable => Business.find_by_name("Law Office of Paul W. Hamilton, LLC"))
+Account.create!( :email => 'michellealamb@gmail.com', :password => 'ZTS83rc', :password_confirmation => 'ZTS83rc',
+  :accountable => Business.find_by_name("Lemongrass Day Spa"))
+Account.create!( :email => 'br040@libnat.com', :password => 'kg9WfaB', :password_confirmation => 'kg9WfaB',
+  :accountable => Business.find_by_name("Liberty National Life Insurance - Cannington Agency"))
+Account.create!( :email => 'lvpinvaldosta@gmail.com', :password => 'xCR3zA9', :password_confirmation => 'xCR3zA9',
+  :accountable => Business.find_by_name("Literacy Volunteer Program of South Georgia, Inc."))
+Account.create!( :email => 'pdukes@lowndescounty.com', :password => '3F3DDDN', :password_confirmation => '3F3DDDN',
+  :accountable => Business.find_by_name("Lowndes County Board of Commissioners"))
+Account.create!( :email => 'Lynne@Lynnebrown.net', :password => 'adhm8GS', :password_confirmation => 'adhm8GS',
+  :accountable => Business.find_by_name("Lynne Brown/John Maxwell Team"))
+Account.create!( :email => 'dchaney@mediacomcc.com', :password => 'X3bnETG', :password_confirmation => 'X3bnETG',
+  :accountable => Business.find_by_name("Mediacom Residential"))
+Account.create!( :email => 'valdosta@coastalmellow.com', :password => 'T6MVmP4', :password_confirmation => 'T6MVmP4',
+  :accountable => Business.find_by_name("Mellow Mushroom"))
+Account.create!( :email => 'Office@MessiahLutheranVLD.com', :password => '6H7NHud', :password_confirmation => '6H7NHud',
+  :accountable => Business.find_by_name("Messiah Lutheran Church"))
+Account.create!( :email => 'michellealden22@gmail.com', :password => 'Nhn8XUZ', :password_confirmation => 'Nhn8XUZ',
+  :accountable => Business.find_by_name("Michelle Alden Counseling Services"))
+Account.create!( :email => 'manager@minkchiro.com', :password => '5P5eD7h', :password_confirmation => '5P5eD7h',
+  :accountable => Business.find_by_name("Mink Chiropractic Center, LLC"))
+Account.create!( :email => 'kate@misskatestours.com', :password => '3fR3NX8', :password_confirmation => '3fR3NX8',
+  :accountable => Business.find_by_name("Miss Kate's Deep South Tours"))
+Account.create!( :email => 'casey@musicfuneralservices.com', :password => 'r72R3Du', :password_confirmation => 'r72R3Du',
+  :accountable => Business.find_by_name("Music Funeral Services"))
+Account.create!( :email => 'sandy@NewHireSolutions.net', :password => 'wUZQBS7', :password_confirmation => 'wUZQBS7',
+  :accountable => Business.find_by_name("New Hire Solutions, LLC"))
+Account.create!( :email => 'srice@e-c-group.com', :password => 'Rkxt9J6', :password_confirmation => 'Rkxt9J6',
+  :accountable => Business.find_by_name("NG Telecom, Inc."))
+Account.create!( :email => 'northwindapts@hotmail.com', :password => 'XD9TFFe', :password_confirmation => 'XD9TFFe',
+  :accountable => Business.find_by_name("Northwind Apartment Homes"))
+Account.create!( :email => 'juanita.walker@park.edu', :password => 'j3GNVDd', :password_confirmation => 'j3GNVDd',
+  :accountable => Business.find_by_name("Park University"))
+Account.create!( :email => 'jlmcghin@att.net', :password => 'Qhbwz74', :password_confirmation => 'Qhbwz74',
+  :accountable => Business.find_by_name("Partners in Health Management LLC"))
+Account.create!( :email => 'pinwheelsquilts@gmail.com', :password => 'U9TE5CC', :password_confirmation => 'U9TE5CC',
+  :accountable => Business.find_by_name("Pinwheels"))
+Account.create!( :email => 'helenpowell09@yahoo.com', :password => '3ADdtTF', :password_confirmation => '3ADdtTF',
+  :accountable => Business.find_by_name("Powell's Outdoor Power Equipment"))
+Account.create!( :email => 'jay@princeauto.com', :password => 'vE9pqFW', :password_confirmation => 'vE9pqFW',
+  :accountable => Business.find_by_name("Prince Automotive of Valdosta, Inc."))
+Account.create!( :email => 'rntac@bellsouth.net', :password => 'fRM3zjt', :password_confirmation => 'fRM3zjt',
+  :accountable => Business.find_by_name("Ray Norton Tire & Auto Center"))
+Account.create!( :email => 'ron@ronborders.com', :password => 'aC9AD77', :password_confirmation => 'aC9AD77',
+  :accountable => Business.find_by_name("Real Living Realty Advisors-Ron Borders"))
+Account.create!( :email => 'tammy@ronborders.com', :password => 'XXSD653', :password_confirmation => 'XXSD653',
+  :accountable => Business.find_by_name("Real Living Realty Advisors-Tammy Borders"))
+Account.create!( :email => 'will.kemp@renasant.com', :password => '5XJACnw', :password_confirmation => '5XJACnw',
+  :accountable => Business.find_by_name("Renasant Bank"))
+Account.create!( :email => 'ghunter@risere.com', :password => 'n8e957E', :password_confirmation => 'n8e957E',
+  :accountable => Business.find_by_name("RISE"))
+Account.create!( :email => 'garotorooter@bellsouth.net', :password => 'EwX2UL8', :password_confirmation => 'EwX2UL8',
+  :accountable => Business.find_by_name("Roto Rooter Plumbing & Drain Service"))
+Account.create!( :email => 'terry.cooper@saftbatteries.com', :password => 'UFxX9w8', :password_confirmation => 'UFxX9w8',
+  :accountable => Business.find_by_name("SAFT America Inc."))
+Account.create!( :email => 'christopher@securerecordssolutions.com', :password => 'En9xEQB', :password_confirmation => 'En9xEQB',
+  :accountable => Business.find_by_name("Secure Records Solutions"))
+Account.create!( :email => 'steve.adkins@steemer.com', :password => '6aQj7fS', :password_confirmation => '6aQj7fS',
+  :accountable => Business.find_by_name("SJ Services inc DBA Stanley Steemer"))
+Account.create!( :email => 'SleepNumberValdosta@SleepNumber.com', :password => 'Twj88Ks', :password_confirmation => 'Twj88Ks',
+  :accountable => Business.find_by_name("Sleep Number by Select Comfort"))
+Account.create!( :email => 'chanson@southgeorgiaeye.com', :password => 'L9PDV2m', :password_confirmation => 'L9PDV2m',
+  :accountable => Business.find_by_name("South Georgia Eye Partners"))
+Account.create!( :email => 'johnny.ball@sgmc.org', :password => '8jxMzcH', :password_confirmation => '8jxMzcH',
+  :accountable => Business.find_by_name("South Georgia Medical Center/SGMC"))
+Account.create!( :email => 'jane@sgatravel.com', :password => '9LBtJdV', :password_confirmation => '9LBtJdV',
+  :accountable => Business.find_by_name("South Georgia Travel"))
+Account.create!( :email => 'sgvcthowell@bellsouth.net', :password => '34dYKDY', :password_confirmation => '34dYKDY',
+  :accountable => Business.find_by_name("South Georgia Vein Centers"))
+Account.create!( :email => 'mgudely@southeasterncu.com', :password => 'xGZnH6X', :password_confirmation => 'xGZnH6X',
+  :accountable => Business.find_by_name("Southeastern Credit Union"))
+Account.create!( :email => 'calvinstubbs@stcvaldosta.com', :password => 'yUC6cAd', :password_confirmation => 'yUC6cAd',
+  :accountable => Business.find_by_name("Southern Flooring of Valdosta & Kimblewood Blinds"))
+Account.create!( :email => 'jeff.hanson@sgfc.com', :password => 'A8CZDf7', :password_confirmation => 'A8CZDf7',
+  :accountable => Business.find_by_name("Southwest Georgia Bank"))
+Account.create!( :email => 'gary@spyderserve.com', :password => 'wEX9G5Y', :password_confirmation => 'wEX9G5Y',
+  :accountable => Business.find_by_name("Spyderserve Corp"))
+Account.create!( :email => 'dario@steeda.com', :password => 'VqABA7k', :password_confirmation => 'VqABA7k',
+  :accountable => Business.find_by_name("Steeda Autosports"))
+Account.create!( :email => 'john@tannerinvestmentgroup.com', :password => 'daJZ7yv', :password_confirmation => 'daJZ7yv',
+  :accountable => Business.find_by_name("Tanner Investment Group"))
+Account.create!( :email => 'teambritt28@gmail.com', :password => 'h83NM2F', :password_confirmation => 'h83NM2F',
+  :accountable => Business.find_by_name("Team-Britt Mobile Game Arcade"))
+Account.create!( :email => 'gpanizzi@teamtemps.net', :password => 'TQNn9FM', :password_confirmation => 'TQNn9FM',
+  :accountable => Business.find_by_name("Teamtemps Personnel Staffing, Inc."))
+Account.create!( :email => 'brandi.thackerderm@gmail.com', :password => 'qEBtMX7', :password_confirmation => 'qEBtMX7',
+  :accountable => Business.find_by_name("Thacker Dermatology, LLC"))
+Account.create!( :email => 'valdostaasstmanager@thefieldsliving.com', :password => 'YDZnQ4v', :password_confirmation => 'YDZnQ4v',
+  :accountable => Business.find_by_name("The Fields North Valdosta"))
+Account.create!( :email => 'thegardens@invmgt.com', :password => 'PT9A8pf', :password_confirmation => 'PT9A8pf',
+  :accountable => Business.find_by_name("The Gardens"))
+Account.create!( :email => 'cobbj@troy.edu', :password => 'KfbGXe2', :password_confirmation => 'KfbGXe2',
+  :accountable => Business.find_by_name("Troy University Albany Area Support Center"))
+Account.create!( :email => 'jerry@turnerfurniture.com', :password => 'eedEX3g', :password_confirmation => 'eedEX3g',
+  :accountable => Business.find_by_name("Turner's Fine Furniture"))
+Account.create!( :email => 'lacie_guy@yahoo.com', :password => 'vBT9PF9', :password_confirmation => 'vBT9PF9',
+  :accountable => Business.find_by_name("Valdosta Chiropractic & Rehab"))
+Account.create!( :email => 'mbarber@valdostacity.com', :password => 'aTKh6uW', :password_confirmation => 'aTKh6uW',
+  :accountable => Business.find_by_name("Valdosta City-Manager"))
+Account.create!( :email => 'jgayle@valdostacity.com', :password => 'h45Kg7b', :password_confirmation => 'h45Kg7b',
+  :accountable => Business.find_by_name("Valdosta City-Mayor"))
+Account.create!( :email => 'tcason@gocats.org', :password => 'X35aBdp', :password_confirmation => 'X35aBdp',
+  :accountable => Business.find_by_name("Valdosta City Schools"))
+Account.create!( :email => 'matthallman@ccbcu.com', :password => 'XpDgW3a', :password_confirmation => 'XpDgW3a',
+  :accountable => Business.find_by_name("Valdosta Coca-Cola Bottling Company"))
+Account.create!( :email => 'tko@thetkogroup.com', :password => 'qn2AxqS', :password_confirmation => 'qn2AxqS',
+  :accountable => Business.find_by_name("Valdosta Nissan Cadillac"))
+Account.create!( :email => 'mdorsey@valdostainsurance.com', :password => '9hFqVY2', :password_confirmation => '9hFqVY2',
+  :accountable => Business.find_by_name("Valdosta Insurance Services, Inc."))
+Account.create!( :email => 'johnroandds@valdostaoms.com', :password => 'mdmQE3T', :password_confirmation => 'mdmQE3T',
+  :accountable => Business.find_by_name("Valdosta Oral & Maxillofacial Surgeons"))
+Account.create!( :email => 'rcarvajal@valdosta.edu', :password => 'kjdn9Zg', :password_confirmation => 'kjdn9Zg',
+  :accountable => Business.find_by_name("Valdosta State University"))
+Account.create!( :email => 'chamilton@valdostatourism.com', :password => '4J2QgGK', :password_confirmation => '4J2QgGK',
+  :accountable => Business.find_by_name("Valdosta-Lowndes Co. Conference Center & Tourism Authority"))
+Account.create!( :email => 'valdostasold@gmail.com', :password => 'E3eKhNm', :password_confirmation => 'E3eKhNm',
+  :accountable => Business.find_by_name("ValdostaSOLD Real Estate Services"))
+Account.create!( :email => 'info@velasstudio.com', :password => 'bZ2J468', :password_confirmation => 'bZ2J468',
+  :accountable => Business.find_by_name("Velas Studio"))
+Account.create!( :email => 'kells@riversradio.com', :password => 'ZAD5LQe', :password_confirmation => 'ZAD5LQe',
+  :accountable => Business.find_by_name("WAAC FM"))
+Account.create!( :email => 'egri789@att.net', :password => 'dty6JMM', :password_confirmation => 'dty6JMM',
+  :accountable => Business.find_by_name("W P Walker's Vack, Inc."))
+Account.create!( :email => 'watsonspoolsandpatios@windstream.net', :password => 'Ap54UKW', :password_confirmation => 'Ap54UKW',
+  :accountable => Business.find_by_name("Watson's Pools & Patios, Inc."))
+Account.create!( :email => 'mdeese@wildadventures.com', :password => '7Le2XBJ', :password_confirmation => '7Le2XBJ',
+  :accountable => Business.find_by_name("Wild Adventures Theme Park"))
+Account.create!( :email => 'susan@wilteck.com', :password => 'wrYb7EM', :password_confirmation => 'wrYb7EM',
+  :accountable => Business.find_by_name("WilTeck, LLC"))
+Account.create!( :email => 'morethanfit@gmail.com', :password => '2bFTYvA', :password_confirmation => '2bFTYvA',
+  :accountable => Business.find_by_name("Winnersville Fitness"))
+Account.create!( :email => 'customerservice@wiregrass.edu', :password => '48Dcv7z', :password_confirmation => '48Dcv7z',
+  :accountable => Business.find_by_name("Wiregrass Georgia Technical College"))
+Account.create!( :email => 'jimmy.shiver@lpl.com', :password => 'WaambA3', :password_confirmation => 'WaambA3',
+  :accountable => Business.find_by_name("Wiregrass Investment Management, LLC"))
+Account.create!( :email => 'amy.wfd@mediacombb.net', :password => '78QWfP9', :password_confirmation => '78QWfP9',
+  :accountable => Business.find_by_name("Worthington Family Dentistry"))
+
+
+###### SUPER ACCOUNT CREATION ######
 
 SuperAccount.delete_all
 	SuperAccount.create!( :name => 'super' )
 Account.create!( :email => 'super@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
 		:accountable => SuperAccount.first())
 
+
+###### OFFER CREATION ######
 
 Offer.delete_all
 Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
