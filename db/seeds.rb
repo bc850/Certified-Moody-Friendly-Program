@@ -2485,8 +2485,8 @@ Account.create!( :email => 'amy.wfd@mediacombb.net', :password => '78QWfP9', :pa
 ###### SUPER ACCOUNT CREATION ######
 
 SuperAccount.delete_all
-	SuperAccount.create!( :name => 'super' )
-Account.create!( :email => 'super@depot.com', :password => 'changeme', :password_confirmation => 'changeme',
+	SuperAccount.create!( :name => 'Admin' )
+Account.create!( :email => 'jstensgaard@valdostachamber.com', :password => 'WVJ6S8h', :password_confirmation => 'WVJ6S8h',
 		:accountable => SuperAccount.first())
 
 
