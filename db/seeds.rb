@@ -154,7 +154,7 @@ Business.create!(name: "Azalea Health",
   link: "http://www.AzaleaHealth.com"
 )
 
-Business.create!(name: "Barnes Healthcare Services",
+Business.create!(name: "Barnes Health Care Services",
   address: "200 S. Patterson St.",
   city: "Valdosta",
   state: "GA",
@@ -330,7 +330,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   link: "http://www.maryhstraka.realtor"
 )
 
-Business.create!(name: "Coleman/Talley, LLP-William E. Holland",
+Business.create!(name: "Coleman Talley LLP-William E. Holland",
   address: "910 N Patterson Street",
   city: "Valdosta",
   state: "GA",
@@ -747,22 +747,6 @@ Business.create!(name: "First State Bank & Trust-Lake Park",
   link: "http://www.fsbtc.com"
 )
 
-Business.create!(name: "Fitmix Group Fitness and Personal Training",
-  address: "3323 Bemiss Rd. Suite E",
-  city: "Valdosta",
-  state: "GA",
-  zip_code: "31605",
-  category: "Fitness",
-  store_id: "1",
-  description: "",
-  owner_lname: "Eickenberry",
-  owner_fname: "Melissa",
-  phone_number: "229-305-6465",
-  email: "morethanfit@gmail.com",
-  email_2: "",
-  link: "http://www.fitmix.us"
-)
-
 Business.create!(name: "Four Seasons Essential Oils, LLC",
   address: "3716 Kingston Ct.",
   city: "Valdosta",
@@ -1118,7 +1102,7 @@ Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
   link: "http://www.libertynational-cannington.com"
 )
 
-Business.create!(name: "Literacy Volunteer Program of South Georgia, LLC",
+Business.create!(name: "Literacy Volunteer Program of South Georgia, Inc.",
   address: "221 S. Ashley Street",
   city: "Valdosta",
   state: "GA",
@@ -1503,7 +1487,7 @@ Business.create!(name: "Roto Rooter Plumbing & Drain Service",
   link: ""
 )
 
-Business.create!(name: "SAFT America, Inc.",
+Business.create!(name: "SAFT America Inc.",
   address: "711 Gil Harbin Industrial Blvd.",
   city: "Valdosta",
   state: "GA",
@@ -1519,7 +1503,7 @@ Business.create!(name: "SAFT America, Inc.",
   link: "http://www.saftbatteries.com"
 )
 
-Business.create!(name: "Secure Record Solutions",
+Business.create!(name: "Secure Records Solutions",
   address: "105 Baybrook St.",
   city: "Thomasville",
   state: "GA",
@@ -1743,7 +1727,7 @@ Business.create!(name: "Team-Britt Mobile Game Arcade",
   link: ""
 )
 
-Business.create!(name: "TeamTemps Personnel Staffing, Inc.",
+Business.create!(name: "Teamtemps Personnel Staffing, Inc.",
   address: "1601 Baytree Road Suite A",
   city: "Valdosta",
   state: "GA",
@@ -2015,7 +1999,7 @@ Business.create!(name: "ValdostaSOLD Real Estate Services",
   link: "http://www.valdostasold.com"
 )
 
-Business.create!(name: "Velas Studios",
+Business.create!(name: "Velas Studio",
   address: "229-548-2232",
   city: "Valdosta",
   state: "GA",
@@ -2248,8 +2232,8 @@ Account.create!( :email => 'hchamber@bellsouth.net', :password => '8eGN3WG', :pa
   :accountable => Business.find_by_name("Austins Cattle Co."))
 Account.create!( :email => 'info@azaleahealth.com', :password => 'VZUXxR3', :password_confirmation => 'VZUXxR3',
   :accountable => Business.find_by_name("Azalea Health"))
-#Account.create!( :email => 'charlie@barneshc.com', :password => 'sP3FvNS', :password_confirmation => 'sP3FvNS',
-#  :accountable => Business.find_by_name("Barnes Health Care Services"))
+Account.create!( :email => 'charlie@barneshc.com', :password => 'sP3FvNS', :password_confirmation => 'sP3FvNS',
+  :accountable => Business.find_by_name("Barnes Health Care Services"))
 Account.create!( :email => 'andy@4thwardgroup.com', :password => 'qWcLQ98', :password_confirmation => 'qWcLQ98',
   :accountable => Business.find_by_name("Batteries Plus Bulbs"))
 Account.create!( :email => 'bignicksonbaytree@gmail.com', :password => 'TDU7qm5', :password_confirmation => 'TDU7qm5',
@@ -2270,8 +2254,8 @@ Account.create!( :email => 'debbiehowell@valdostarealtors.com', :password => 'SD
   :accountable => Business.find_by_name("Coldwell Banker Premier Real Estate"))
 Account.create!( :email => 'maryhstraka@gmail.com', :password => '8wQcjEt', :password_confirmation => '8wQcjEt',
   :accountable => Business.find_by_name("Coldwell Banker Premier Real Estate"))
-#Account.create!( :email => 'bill.holland@colemantalley.com', :password => 'vc7XM2X', :password_confirmation => 'vc7XM2X',
-#  :accountable => Business.find_by_name("Coleman Talley LLP-William E. Holland"))
+Account.create!( :email => 'bill.holland@colemantalley.com', :password => 'vc7XM2X', :password_confirmation => 'vc7XM2X',
+  :accountable => Business.find_by_name("Coleman Talley LLP-William E. Holland"))
 Account.create!( :email => 'esmith@colonybank.com', :password => 'gVuj7KH', :password_confirmation => 'gVuj7KH',
   :accountable => Business.find_by_name("Colony Bank"))
 Account.create!( :email => 'DixieLightfoot@colquittemc.com', :password => 'dG7YRtB', :password_confirmation => 'dG7YRtB',
@@ -2320,8 +2304,6 @@ Account.create!( :email => 'billcowart@fsbtc.com', :password => 'Q9zb25p', :pass
   :accountable => Business.find_by_name("First State Bank & Trust-Inner Perimeter"))
 Account.create!( :email => 'info@fsbtc.com', :password => 'DSC78zX', :password_confirmation => 'DSC78zX',
   :accountable => Business.find_by_name("First State Bank & Trust-Lake Park"))
-Account.create!( :email => 'morethanfit@gmail.com', :password => 'uQ2TKCD', :password_confirmation => 'uQ2TKCD',
-  :accountable => Business.find_by_name("Fitmix Group Fitness and Personal Training"))
 Account.create!( :email => 'mary.h.clement@gmail.com', :password => 'V6uwRqn', :password_confirmation => 'V6uwRqn',
   :accountable => Business.find_by_name("Four Seasons Essential Oils, LLC"))
 Account.create!( :email => 'chip@freshbeginnings.com', :password => '8CFhkpy', :password_confirmation => '8CFhkpy',
