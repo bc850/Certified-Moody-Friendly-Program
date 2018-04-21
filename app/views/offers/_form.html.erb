@@ -65,8 +65,21 @@
 
   <div class="field">
     <%= form.label :event_url %>
-    <%= form.text_field :event_url, id: :offer_event_url %>
+    <%= form.text_field :event_url, id: :offer_event_url, placeholder: "Optional" %>
   </div>
+</br>
+
+<div class="disclaimer">
+  <h4>Disclaimer</h4>
+  <p>Please note, any new offer posted to this site must be suitable for all audiences. No use of profanity or inappropriate images will be tolerated. Please take the time to review your offer now before submitting.</p>
+</div>
+
+<div class="field">
+  <%= form.check_box :agree, required: true, as: :boolean%>
+</div>
+<p>
+  Acknowledge
+</p>
 </br>
 
   <div class="actions">
