@@ -2500,7 +2500,7 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   description: 'Join us for our summer camp about STEM!',
   location: '3320 Bemiss Road, Valdosta, GA 31605',
   offering_type: 'Event',
-  business_id: 35,
+  business_id: 32,
   img_url: open('app/assets/images/cre8.png'),
   event_url: 'www.facebook.com/faked',
   offer_code: '126'
@@ -2514,7 +2514,7 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   description: 'Free order of pretzels with purchase of a large pizza!',
   location: '1526 Baytree Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  business_id: 79,
+  business_id: 73,
   img_url: open('app/assets/images/mellow.jpg'),
   offer_code: '123'
 )
@@ -2526,7 +2526,7 @@ Offer.create!(name: 'Lemongrass Day Spa',
   description: 'Receive a free facial with purchase of a gift card!',
   location: '3338 D Country Club Road, Valdosta, GA 31605',
   offering_type: 'Coupon',
-  business_id: 73,
+  business_id: 67,
   img_url: open('app/assets/images/lemongrass.jpg'),
   offer_code: '124'
 )
@@ -2538,7 +2538,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   description: 'Sign up for Fall classes now to receive military benefits.',
   location: '4201 N Forrest St, Valdosta, GA 31605',
   offering_type: 'Event',
-  business_id: 56,
+  business_id: 50,
   img_url: open('app/assets/images/gmc.png'),
   event_url: 'www.facebook.com/gmc/fake',
   offer_code: '125'
@@ -2551,7 +2551,7 @@ Offer.create!(name: 'Home Depot Military Discount',
   description: 'Get 10% off all qualifying purchases with our Military program.',
   location: '1825 Norman Dr, Valdosta, GA 31601',
   offering_type: 'Discount',
-  business_id: 64,
+  business_id: 58,
   img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg'),
   offer_code: '127'
 )
@@ -2563,7 +2563,7 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   description: 'Bring this coupon for admittance of a guest.',
   location: '3766 Old Clyattville Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
-  business_id: 136,
+  business_id: 129,
   img_url: open('app/assets/images/wildad.jpg'),
   offer_code: '128'
 )
