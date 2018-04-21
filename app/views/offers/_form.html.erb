@@ -1,3 +1,7 @@
+<div class="col-md-4">
+</div>
+<div class="col-md-5">
+</br>
 <%= form_with(model: offer, local: true) do |form| %>
   <% if offer.errors.any? %>
     <div id="error_explanation">
@@ -15,48 +19,61 @@
     <%= form.label :name %>
     <%= form.text_field :name, id: :offer_name %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :start_date %>
     <%= form.date_select :start_date, id: :offer_start_date %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :end_date %>
     <%= form.date_select :end_date, id: :offer_end_date %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :category %>
-    <%= form.text_field :category, id: :offer_category %>
+    <%= form.text_field :category, id: :offer_category, placeholder: "i.e. Food, Entertainment" %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :offer_description, rows: 10, cols: 60 %>
+    <%= form.text_area :description, id: :offer_description, rows: 2, cols: 35 %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :location %>
     <%= form.text_area :location, id: :offer_location, rows: 1 %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :offering_type %>
-    <%= form.text_field :offering_type, id: :offer_offering_type %>
+    <%= form.text_field :offering_type, id: :offer_offering_type, placeholder: "Coupon, Discount, or Event" %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :img_url %>
     <%= form.file_field :img_url, id: :offer_img %>
   </div>
+</br>
 
   <div class="field">
     <%= form.label :event_url %>
     <%= form.text_field :event_url, id: :offer_event_url %>
   </div>
+</br>
 
   <div class="actions">
     <%= form.submit %>
   </div>
+  </br>
 <% end %>
+</div>
+<div class="col-md-3">
+</div>
