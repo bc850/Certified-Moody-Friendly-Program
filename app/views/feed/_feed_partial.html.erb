@@ -8,7 +8,7 @@
         <%= offer.description %>
       </p>
       <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
-      <% if current_account.accountable_type != "Business" %>
+      <% if current_account.accountable_type == "User" %>
         <% if current_account.voted_for? offer %>
           <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true,
                     id: "like_#{offer.id}",
