@@ -3,7 +3,7 @@
 <div id="offerDisplay" class="col-md-6">
 <p id="notice"><%= notice %></p>
 
-</br> 
+</br>
 <p>
   <h3><%= @business.name %></h3>
 </p>
@@ -63,10 +63,12 @@
   <%= @business.email %>
 </p>
 
+<% if @business.link.blank? %>
+<% else %>
 <p>
-  <strong>Link:</strong>
-  <%= @business.link %>
+  <%= link_to 'Our Site', extlink2(@business.link) %>
 </p>
+<% end %>
 
 <!--
 <%= link_to 'Edit', edit_business_path(@business) %> |

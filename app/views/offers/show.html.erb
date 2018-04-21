@@ -55,7 +55,6 @@
   <% if current_account.accountable_type == "User" %>
   <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
     <div class="form-inputs form-inline">
-      <!--<%= text_field_tag :id_input %>-->
       <%= f.input :test, label: false, placeholder: 'Code: i.e. 123', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
       <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
     </div>
@@ -65,12 +64,6 @@
 <button id="codeButtonShow" type="button">Enter Code</button>
   <% end %>
 
-<!--<p>
-  <%= link_to 'Print', offers_path %>
-<p>
-<%= link_to 'Edit', edit_offer_path(@offer) %> |
-<%= link_to 'Back', offers_path %>
--->
 </div>
 <div id="offerRight" class="col-md-3"></div>
 </div>
