@@ -23,7 +23,9 @@ Business.create!(name: "1st America Home Medical Equipment",
   phone_number: "229-242-3433",
   email: "mandy@1stamericadrugs.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "1st Franklin Financial Corporation",
@@ -39,7 +41,9 @@ Business.create!(name: "1st Franklin Financial Corporation",
   phone_number: "229-247-3558",
   email: "cdb4586@1ffc.com",
   email_2: "",
-  link: "http://www.1ffc.com"
+  link: "http://www.1ffc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
@@ -55,7 +59,9 @@ Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
   phone_number: "229-300-6980",
   email: "abigail.davis.abr@gmail.com",
   email_2: "",
-  link: "http://www.ForSaleByAbigail.com"
+  link: "http://www.ForSaleByAbigail.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Ameris Bank",
@@ -71,7 +77,9 @@ Business.create!(name: "Ameris Bank",
   phone_number: "229-241-2851",
   email: "michael.lee@amerisbank.com",
   email_2: "",
-  link: "http://www.amerisbank.com"
+  link: "http://www.amerisbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Anchored Media Marketing",
@@ -87,7 +95,9 @@ Business.create!(name: "Anchored Media Marketing",
   phone_number: "702-506-2211",
   email: "anchoredmediamarketing@gmail.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Animal Health Center",
@@ -103,7 +113,9 @@ Business.create!(name: "Animal Health Center",
   phone_number: "229-242-9818",
   email: "rebecca@caringtogether.com",
   email_2: "",
-  link: "http://www.caringtogether.com"
+  link: "http://www.caringtogether.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Astro Exterminating Services, Inc.",
@@ -119,7 +131,9 @@ Business.create!(name: "Astro Exterminating Services, Inc.",
   phone_number: "229-244-6862",
   email: "astro2@bellsouth.net",
   email_2: "",
-  link: "http://www.astroexterminating.com"
+  link: "http://www.astroexterminating.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Austins Cattle Co.",
@@ -135,7 +149,9 @@ Business.create!(name: "Austins Cattle Co.",
   phone_number: "229-259-9333",
   email: "hchamber@bellsouth.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Azalea Health",
@@ -151,7 +167,9 @@ Business.create!(name: "Azalea Health",
   phone_number: "877-777-7686",
   email: "info@azaleahealth.com",
   email_2: "sales@azaleahealth.com",
-  link: "http://www.AzaleaHealth.com"
+  link: "http://www.AzaleaHealth.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Barnes Health Care Services",
@@ -167,7 +185,9 @@ Business.create!(name: "Barnes Health Care Services",
   phone_number: "229-245-6001",
   email: "charlie@barneshc.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Batteries Plus Bulbs",
@@ -183,7 +203,9 @@ Business.create!(name: "Batteries Plus Bulbs",
   phone_number: "229-375-0088",
   email: "andy@4thwardgroup.com",
   email_2: "",
-  link: "http://www.batteriesplus.com"
+  link: "http://www.batteriesplus.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Big Nick's",
@@ -199,7 +221,9 @@ Business.create!(name: "Big Nick's",
   phone_number: "229-469-6905",
   email: "bignicksonbaytree@gmail.com",
   email_2: "",
-  link: "www.bignicksbaytree.com"
+  link: "www.bignicksbaytree.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "BridgeBuilder Education & Investments",
@@ -215,7 +239,9 @@ Business.create!(name: "BridgeBuilder Education & Investments",
   phone_number: "229-588-0866",
   email: "admin@iamabridgebuilder.us",
   email_2: "",
-  link: "http://www.bridgebuilderinvestments.com"
+  link: "http://www.bridgebuilderinvestments.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Buffalo Wild Wings",
@@ -231,7 +257,9 @@ Business.create!(name: "Buffalo Wild Wings",
   phone_number: "229-241-7246",
   email: "246@buffalowildwings.com",
   email_2: "",
-  link: "http://www.buffalowildwings.com"
+  link: "http://www.buffalowildwings.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Bush Wealth Management",
@@ -247,7 +275,9 @@ Business.create!(name: "Bush Wealth Management",
   phone_number: "229-247-1474",
   email: "stacy.bush@lpl.com",
   email_2: "",
-  link: "http://www.bushwealthmanagement.com/"
+  link: "http://www.bushwealthmanagement.com/",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Ciao Bella SC Boutique, LLC",
@@ -263,7 +293,9 @@ Business.create!(name: "Ciao Bella SC Boutique, LLC",
   phone_number: "229-630-9468",
   email: "ciao_bellaboutique@outlook.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Citizens Community Bank",
@@ -279,7 +311,9 @@ Business.create!(name: "Citizens Community Bank",
   phone_number: "229-242-2225",
   email: "tjones@citizenscommunitybank.net",
   email_2: "",
-  link: "http://www.citizenscommunitybank.net"
+  link: "http://www.citizenscommunitybank.net",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "CJB Industries, Inc.",
@@ -295,7 +329,9 @@ Business.create!(name: "CJB Industries, Inc.",
   phone_number: "229-293-0800",
   email: "cbeeland@cjbindustries.com",
   email_2: "",
-  link: "http://http://www.cjbindustries.com/"
+  link: "http://http://www.cjbindustries.com/",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Coldwell Banker Premier Real Estate",
@@ -311,7 +347,9 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   phone_number: "229-244-3535",
   email: "tomcall@valdostarealtors.com",
   email_2: "",
-  link: "http://www.valdostarealtors.com"
+  link: "http://www.valdostarealtors.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Coldwell Banker Premier Real Estate",
@@ -327,7 +365,9 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   phone_number: "229-561-4654",
   email: "maryhstraka@gmail.com",
   email_2: "",
-  link: "http://www.maryhstraka.realtor"
+  link: "http://www.maryhstraka.realtor",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Coleman Talley LLP-William E. Holland",
@@ -343,7 +383,9 @@ Business.create!(name: "Coleman Talley LLP-William E. Holland",
   phone_number: "229-242-7562",
   email: "bill.holland@colemantalley.com",
   email_2: "",
-  link: "http://www.colemantalley.com"
+  link: "http://www.colemantalley.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Colony Bank",
@@ -359,7 +401,9 @@ Business.create!(name: "Colony Bank",
   phone_number: "229-244-6893",
   email: "DixieLightfoot@colquittemc.com",
   email_2: "",
-  link: "http://www.colquittemc.com"
+  link: "http://www.colquittemc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Colquitt EMC",
@@ -375,7 +419,9 @@ Business.create!(name: "Colquitt EMC",
   phone_number: "229-241-9900",
   email: "esmith@colonybank.com",
   email_2: "",
-  link: "http://www.colonybank.com"
+  link: "http://www.colonybank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -391,7 +437,9 @@ Business.create!(name: "Commercial Banking Company",
   phone_number: "229-242-7600",
   email: "drussell@cbcbank.com",
   email_2: "amock@cbcbank.com",
-  link: "http://www.cbcbank.com"
+  link: "http://www.cbcbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -407,7 +455,9 @@ Business.create!(name: "Commercial Banking Company",
   phone_number: "229-794-2494",
   email: "vgodwin@cbcbank.com",
   email_2: "",
-  link: "http://www.cbcbank.com"
+  link: "http://www.cbcbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -423,7 +473,9 @@ Business.create!(name: "Commercial Banking Company",
   phone_number: "229-253-8784",
   email: "swarren@cbcbank.com",
   email_2: "",
-  link: "http://www.cbcbank.com"
+  link: "http://www.cbcbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -439,7 +491,9 @@ Business.create!(name: "Commercial Banking Company",
   phone_number: "229-985-7600",
   email: "rkelly@cbcbank.com",
   email_2: "",
-  link: "http://www.cbcbank.com"
+  link: "http://www.cbcbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Commercial Real Estate Advisors",
@@ -455,7 +509,9 @@ Business.create!(name: "Commercial Real Estate Advisors",
   phone_number: "229-259-0626",
   email: "deal.andy47@gmail.com",
   email_2: "andy_ignite@att.net",
-  link: "http://www.adeal.mystream.com"
+  link: "http://www.adeal.mystream.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Cook's Pest Control",
@@ -471,7 +527,9 @@ Business.create!(name: "Cook's Pest Control",
   phone_number: "229-244-4687",
   email: "david.parrott@cookspest.com",
   email_2: "",
-  link: "http://www.cookspest.com"
+  link: "http://www.cookspest.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Coombs Heating & Air Conditioning",
@@ -487,7 +545,9 @@ Business.create!(name: "Coombs Heating & Air Conditioning",
   phone_number: "229-794-1712",
   email: "coombs.hvac@yahoo.com",
   email_2: "",
-  link: "http://www.coombsac.com"
+  link: "http://www.coombsac.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Covington's Dining & Catering",
@@ -503,7 +563,9 @@ Business.create!(name: "Covington's Dining & Catering",
   phone_number: "229-242-2261",
   email: "caterinc@bellsouth.net",
   email_2: "",
-  link: "http://www.covingtonscatering.com"
+  link: "http://www.covingtonscatering.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Cre8ive Zone",
@@ -520,7 +582,8 @@ Business.create!(name: "Cre8ive Zone",
   email: "eomiteru2@yahoo.com",
   email_2: "",
   link: "http://www.TheCre8iveZone.com",
-  business_offer_number: '126'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "C-Tech Water Solutions, LLC",
@@ -536,7 +599,9 @@ Business.create!(name: "C-Tech Water Solutions, LLC",
   phone_number: "229-245-8100",
   email: "ctechwater@gmail.com",
   email_2: "",
-  link: "http://www.ctechwatersolutions.com"
+  link: "http://www.ctechwatersolutions.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Dairy Queen/The Lyoness Co.",
@@ -552,7 +617,9 @@ Business.create!(name: "Dairy Queen/The Lyoness Co.",
   phone_number: "912-384-8222",
   email: "atlas@lyonmgt.com",
   email_2: "",
-  link: "http://http://www.lyonmgt.com/"
+  link: "http://http://www.lyonmgt.com/",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Destiny Financial Services - A Family Heritage Life Provider",
@@ -568,7 +635,9 @@ Business.create!(name: "Destiny Financial Services - A Family Heritage Life Prov
   phone_number: "912-674-1154",
   email: "brogers@legacyservices.com",
   email_2: "",
-  link: "http://www.familyheritagelife.com"
+  link: "http://www.familyheritagelife.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Direct Auto Insurance",
@@ -584,7 +653,9 @@ Business.create!(name: "Direct Auto Insurance",
   phone_number: "770-710-4700",
   email: "cynthia.hartwig@directgeneral.com",
   email_2: "",
-  link: "http://www.directgeneral.com"
+  link: "http://www.directgeneral.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Dumealz",
@@ -600,7 +671,9 @@ Business.create!(name: "Dumealz",
   phone_number: "229-588-1313",
   email: "info@dumealz.com",
   email_2: "",
-  link: "http://www.dumealz.com"
+  link: "http://www.dumealz.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Edible Arrangements",
@@ -616,7 +689,9 @@ Business.create!(name: "Edible Arrangements",
   phone_number: "229-247-0101",
   email: "rmiller@gmail.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Embry-Riddle Aeronautical University",
@@ -632,7 +707,9 @@ Business.create!(name: "Embry-Riddle Aeronautical University",
   phone_number: "229-244-9400",
   email: "moody@erau.edu",
   email_2: "",
-  link: "http://worldwide.erau.edu/locations/moody"
+  link: "http://worldwide.erau.edu/locations/moody",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Farmers Home Furniture Company",
@@ -648,7 +725,9 @@ Business.create!(name: "Farmers Home Furniture Company",
   phone_number: "229-244-0928",
   email: "tcarroll@valdostacity.com",
   email_2: "store36@farmersfurniture.com",
-  link: "http://www.farmershomefurniture.com"
+  link: "http://www.farmershomefurniture.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Farmers Supply Company",
@@ -664,7 +743,9 @@ Business.create!(name: "Farmers Supply Company",
   phone_number: "229-242-9911",
   email: "farmerssupplyco@bellsouth.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "First Federal of Valdosta",
@@ -680,7 +761,9 @@ Business.create!(name: "First Federal of Valdosta",
   phone_number: "229-244-0164",
   email: "leslie.vankirk@1stfederalvaldosta.com",
   email_2: "",
-  link: "http://www.1stfederalvaldosta.com"
+  link: "http://www.1stfederalvaldosta.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "First State Bank & Trust-Baytree",
@@ -696,7 +779,9 @@ Business.create!(name: "First State Bank & Trust-Baytree",
   phone_number: "229-245-5615",
   email: "tammygoodin@fsbtc.com",
   email_2: "",
-  link: "http://www.fsbtc.com"
+  link: "http://www.fsbtc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "First State Bank & Trust-ATM",
@@ -712,7 +797,9 @@ Business.create!(name: "First State Bank & Trust-ATM",
   phone_number: "",
   email: "christinagodwin@fsbtc.com",
   email_2: "",
-  link: "http://www.fsbtc.com"
+  link: "http://www.fsbtc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "First State Bank & Trust-Inner Perimeter",
@@ -728,7 +815,9 @@ Business.create!(name: "First State Bank & Trust-Inner Perimeter",
   phone_number: "229-242-5725",
   email: "billcowart@fsbtc.com",
   email_2: "",
-  link: "http://www.fsbtc.com"
+  link: "http://www.fsbtc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "First State Bank & Trust-Lake Park",
@@ -744,7 +833,9 @@ Business.create!(name: "First State Bank & Trust-Lake Park",
   phone_number: "229-559-0341",
   email: "info@fsbtc.com",
   email_2: "",
-  link: "http://www.fsbtc.com"
+  link: "http://www.fsbtc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Four Seasons Essential Oils, LLC",
@@ -760,7 +851,9 @@ Business.create!(name: "Four Seasons Essential Oils, LLC",
   phone_number: "229-588-0373",
   email: "mary.h.clement@gmail.com",
   email_2: "",
-  link: "www.fourseasonsoils.com"
+  link: "www.fourseasonsoils.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Fresh Beginnings, Inc.",
@@ -776,7 +869,9 @@ Business.create!(name: "Fresh Beginnings, Inc.",
   phone_number: "229-242-0237",
   email: "chip@freshbeginnings.com",
   email_2: "",
-  link: "http://www.freshbeginnings.com"
+  link: "http://www.freshbeginnings.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Furniture Express/Beds For Less, Inc.",
@@ -792,7 +887,9 @@ Business.create!(name: "Furniture Express/Beds For Less, Inc.",
   phone_number: "229-293-0040",
   email: "cvannamee@msn.com",
   email_2: "",
-  link: "http://www.valdostafurniture.com"
+  link: "http://www.valdostafurniture.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Georgia Military College",
@@ -809,7 +906,8 @@ Business.create!(name: "Georgia Military College",
   email: "lhafer@gmc.edu",
   email_2: "val_admissions@gmc.cc.ga.ua",
   link: "http://www.gmc.edu",
-  business_offer_number: '125'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Georgia Power Company",
@@ -825,7 +923,9 @@ Business.create!(name: "Georgia Power Company",
   phone_number: "888-660-5890",
   email: "audking@southernco.com",
   email_2: "",
-  link: "http://www.georgiapower.com"
+  link: "http://www.georgiapower.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Goodwill Mission Services/Career Center",
@@ -841,7 +941,9 @@ Business.create!(name: "Goodwill Mission Services/Career Center",
   phone_number: "229-316-1216",
   email: "khamilton@gwisr.org",
   email_2: "cgervin@gwisr.org",
-  link: "http://www.goodwillsr.org"
+  link: "http://www.goodwillsr.org",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Hang Out Yoga, LLC",
@@ -857,7 +959,9 @@ Business.create!(name: "Hang Out Yoga, LLC",
   phone_number: "229-686-0903",
   email: "erika@hangoutyoga.com",
   email_2: "",
-  link: "http://www.hangoutyoga.com"
+  link: "http://www.hangoutyoga.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Harvard Risk Management",
@@ -873,7 +977,9 @@ Business.create!(name: "Harvard Risk Management",
   phone_number: "706-750-6060",
   email: "jasmine.miles@harvardbenefits.com",
   email_2: "",
-  link: "http://www.harvardbenefits.com"
+  link: "http://www.harvardbenefits.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Heart Rize Fitness",
@@ -889,7 +995,9 @@ Business.create!(name: "Heart Rize Fitness",
   phone_number: "229-588-0646",
   email: "mikell@heartrizefitness.com",
   email_2: "",
-  link: "http://www.heartrizefitness.com"
+  link: "http://www.heartrizefitness.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Highland Christian Academy",
@@ -905,7 +1013,9 @@ Business.create!(name: "Highland Christian Academy",
   phone_number: "229-245-8111",
   email: "principal@hcavaldosta.org",
   email_2: "registrar@hcavaldosta.org",
-  link: "http://www.hcavaldosta.org"
+  link: "http://www.hcavaldosta.org",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Holiday Inn Express & Suites",
@@ -921,7 +1031,9 @@ Business.create!(name: "Holiday Inn Express & Suites",
   phone_number: "229-249-8900",
   email: "ty@hiexvaldosta.com",
   email_2: "rick@williamshotelgroup.com",
-  link: "http://www.williamshotelgroup.com"
+  link: "http://www.williamshotelgroup.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "The Home Depot",
@@ -938,7 +1050,8 @@ Business.create!(name: "The Home Depot",
   email: "Peter_A_Layne@homedepot.com",
   email_2: "",
   link: "http://http://www.homedepot.com",
-  business_offer_number: '127'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Hooters of Valdosta",
@@ -954,7 +1067,9 @@ Business.create!(name: "Hooters of Valdosta",
   phone_number: "229-293-9110",
   email: "valdosta@hooters.com",
   email_2: "",
-  link: "http://www.hooters.com"
+  link: "http://www.hooters.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Hug In A Mug Coffee",
@@ -970,7 +1085,9 @@ Business.create!(name: "Hug In A Mug Coffee",
   phone_number: "229-474-6240",
   email: "pms_ptac@yahoo.com",
   email_2: "",
-  link: "http://www.huginamug.coffee"
+  link: "http://www.huginamug.coffee",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Ink & Cotton",
@@ -986,7 +1103,9 @@ Business.create!(name: "Ink & Cotton",
   phone_number: "229-262-2985",
   email: "hello@inkandcottongoods.com",
   email_2: "",
-  link: "http://www.inkandcottongoods.com"
+  link: "http://www.inkandcottongoods.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Judy Martin Trexler/CR for Personal & Family Growth, LLC",
@@ -1002,7 +1121,9 @@ Business.create!(name: "Judy Martin Trexler/CR for Personal & Family Growth, LLC
   phone_number: "229-671-1461",
   email: "judytrex@bellsouth.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Kentucky Fried Chicken",
@@ -1018,7 +1139,9 @@ Business.create!(name: "Kentucky Fried Chicken",
   phone_number: "229-247-2395",
   email: "kfc113@bellsouth.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Kilby Family Dentistry",
@@ -1034,7 +1157,9 @@ Business.create!(name: "Kilby Family Dentistry",
   phone_number: "229-247-0200",
   email: "dkilbymcg@gmail.com",
   email_2: "kilbyfamilydentistry@gmail.com",
-  link: "http://www.kilbyfamilydentistry.com"
+  link: "http://www.kilbyfamilydentistry.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Langdale Vallotton LLP",
@@ -1050,7 +1175,9 @@ Business.create!(name: "Langdale Vallotton LLP",
   phone_number: "229-244-5400",
   email: "shall@langdalelaw.com",
   email_2: "",
-  link: "http://www.langdalevallotton.com"
+  link: "http://www.langdalevallotton.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Law Office of Paul W. Hamilton, LLC",
@@ -1066,7 +1193,9 @@ Business.create!(name: "Law Office of Paul W. Hamilton, LLC",
   phone_number: "229-207-0850",
   email: "paul@paulwhamilton.com",
   email_2: "brittney@paulwhamilton.com",
-  link: "http://www.paulwhamilton.com"
+  link: "http://www.paulwhamilton.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Lemongrass Day Spa",
@@ -1083,7 +1212,8 @@ Business.create!(name: "Lemongrass Day Spa",
   email: "michellealamb@gmail.com",
   email_2: "",
   link: "http://www.lemongrassdayspaonline.com",
-  business_offer_number: '124'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
@@ -1099,7 +1229,9 @@ Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
   phone_number: "912-283-2220",
   email: "br040@libnat.com",
   email_2: "",
-  link: "http://www.libertynational-cannington.com"
+  link: "http://www.libertynational-cannington.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Literacy Volunteer Program of South Georgia, Inc.",
@@ -1115,7 +1247,9 @@ Business.create!(name: "Literacy Volunteer Program of South Georgia, Inc.",
   phone_number: "229-333-7515",
   email: "lvpinvaldosta@gmail.com",
   email_2: "",
-  link: "http://www.literacyvolunteerprogram.org"
+  link: "http://www.literacyvolunteerprogram.org",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Lowndes County Board of Commissioners",
@@ -1131,7 +1265,9 @@ Business.create!(name: "Lowndes County Board of Commissioners",
   phone_number: "229-671-2400",
   email: "pdukes@lowndescounty.com",
   email_2: "",
-  link: "http://http://www.lowndescounty.com"
+  link: "http://http://www.lowndescounty.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Lynne Brown/John Maxwell Team",
@@ -1147,7 +1283,9 @@ Business.create!(name: "Lynne Brown/John Maxwell Team",
   phone_number: "850-464-1350",
   email: "Lynne@Lynnebrown.net",
   email_2: "",
-  link: "http://www.johncmaxwellgroup.com/lynnebrown"
+  link: "http://www.johncmaxwellgroup.com/lynnebrown",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Mediacom Residential",
@@ -1163,7 +1301,9 @@ Business.create!(name: "Mediacom Residential",
   phone_number: "229-244-3852",
   email: "dchaney@mediacomcc.com",
   email_2: "",
-  link: "http://www.mediacomcc.com"
+  link: "http://www.mediacomcc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Mellow Mushroom",
@@ -1180,7 +1320,8 @@ Business.create!(name: "Mellow Mushroom",
   email: "valdosta@coastalmellow.com",
   email_2: "",
   link: "http://www.mellowmushroom.com",
-  business_offer_number: '123'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Messiah Lutheran Church",
@@ -1196,7 +1337,9 @@ Business.create!(name: "Messiah Lutheran Church",
   phone_number: "229-244-0143",
   email: "Office@MessiahLutheranVLD.com",
   email_2: "",
-  link: "http://MessiahLutheranVLD.com"
+  link: "http://MessiahLutheranVLD.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Michelle Alden Counseling Services",
@@ -1212,7 +1355,9 @@ Business.create!(name: "Michelle Alden Counseling Services",
   phone_number: "850-510-8627",
   email: "michellealden22@gmail.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Mink Chiropractic Center, LLC",
@@ -1228,7 +1373,9 @@ Business.create!(name: "Mink Chiropractic Center, LLC",
   phone_number: "229-242-3042",
   email: "manager@minkchiro.com",
   email_2: "",
-  link: "http://minkchiro.com"
+  link: "http://minkchiro.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Miss Kate's Deep South Tours",
@@ -1244,7 +1391,9 @@ Business.create!(name: "Miss Kate's Deep South Tours",
   phone_number: "229-231-2802",
   email: "kate@misskatestours.com",
   email_2: "",
-  link: "http://www.misskatestours.com"
+  link: "http://www.misskatestours.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Music Funeral Services",
@@ -1260,7 +1409,9 @@ Business.create!(name: "Music Funeral Services",
   phone_number: "229-244-2500",
   email: "casey@musicfuneralservices.com",
   email_2: "",
-  link: "http://www.musicfuneralservices.com"
+  link: "http://www.musicfuneralservices.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "New Hire Solutions, LLC",
@@ -1276,7 +1427,9 @@ Business.create!(name: "New Hire Solutions, LLC",
   phone_number: "229-316-1320",
   email: "sandy@NewHireSolutions.net",
   email_2: "",
-  link: "http://www.newhiresolutions.com"
+  link: "http://www.newhiresolutions.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "NG Telecom, Inc.",
@@ -1292,7 +1445,9 @@ Business.create!(name: "NG Telecom, Inc.",
   phone_number: "229-316-0011",
   email: "srice@e-c-group.com",
   email_2: "ftaylor@e-c-group.com",
-  link: "http://www.vwave.net"
+  link: "http://www.vwave.net",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Northwind Apartment Homes",
@@ -1308,7 +1463,9 @@ Business.create!(name: "Northwind Apartment Homes",
   phone_number: "229-241-8237",
   email: "northwindapts@hotmail.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Park University",
@@ -1324,7 +1481,9 @@ Business.create!(name: "Park University",
   phone_number: "229-245-7077",
   email: "juanita.walker@park.edu",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Partners in Health Management LLC",
@@ -1340,7 +1499,9 @@ Business.create!(name: "Partners in Health Management LLC",
   phone_number: "229-474-4101",
   email: "jlmcghin@att.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Pinwheels",
@@ -1356,7 +1517,9 @@ Business.create!(name: "Pinwheels",
   phone_number: "229-232-4531",
   email: "pinwheelsquilts@gmail.com",
   email_2: "",
-  link: "http://www.pinwheels.com"
+  link: "http://www.pinwheels.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Powell's Outdoor Power Equipment",
@@ -1372,7 +1535,9 @@ Business.create!(name: "Powell's Outdoor Power Equipment",
   phone_number: "229-244-4329",
   email: "helenpowell09@yahoo.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Prince Automotive of Valdosta, Inc.",
@@ -1388,7 +1553,9 @@ Business.create!(name: "Prince Automotive of Valdosta, Inc.",
   phone_number: "229-242-3311",
   email: "jay@princeauto.com",
   email_2: "",
-  link: "http://www.princeauto.com"
+  link: "http://www.princeauto.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Ray Norton Tire & Auto Center",
@@ -1404,7 +1571,9 @@ Business.create!(name: "Ray Norton Tire & Auto Center",
   phone_number: "229-247-1555",
   email: "rntac@bellsouth.net",
   email_2: "",
-  link: "http://www.raynortontire.com"
+  link: "http://www.raynortontire.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Real Living Realty Advisors-Ron Borders",
@@ -1420,7 +1589,9 @@ Business.create!(name: "Real Living Realty Advisors-Ron Borders",
   phone_number: "229-333-4622",
   email: "ron@ronborders.com",
   email_2: "",
-  link: "http://www.ronborders.com"
+  link: "http://www.ronborders.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Real Living Realty Advisors-Tammy Borders",
@@ -1436,7 +1607,9 @@ Business.create!(name: "Real Living Realty Advisors-Tammy Borders",
   phone_number: "229-333-4622",
   email: "tammy@ronborders.com",
   email_2: "",
-  link: "http://www.tammyborders.com"
+  link: "http://www.tammyborders.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Renasant Bank",
@@ -1452,7 +1625,9 @@ Business.create!(name: "Renasant Bank",
   phone_number: "229-293-8590",
   email: "will.kemp@renasant.com",
   email_2: "",
-  link: "http://www.renasantbank.com"
+  link: "http://www.renasantbank.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "RISE",
@@ -1468,7 +1643,9 @@ Business.create!(name: "RISE",
   phone_number: "229-247-2077",
   email: "ghunter@risere.com",
   email_2: "",
-  link: "http://www.riseRE.com"
+  link: "http://www.riseRE.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Roto Rooter Plumbing & Drain Service",
@@ -1484,7 +1661,9 @@ Business.create!(name: "Roto Rooter Plumbing & Drain Service",
   phone_number: "229-247-6830",
   email: "garotorooter@bellsouth.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "SAFT America Inc.",
@@ -1500,7 +1679,9 @@ Business.create!(name: "SAFT America Inc.",
   phone_number: "229-247-2331",
   email: "terry.cooper@saftbatteries.com",
   email_2: "",
-  link: "http://www.saftbatteries.com"
+  link: "http://www.saftbatteries.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Secure Records Solutions",
@@ -1516,7 +1697,9 @@ Business.create!(name: "Secure Records Solutions",
   phone_number: "229-226-0414",
   email: "christopher@securerecordssolutions.com",
   email_2: "",
-  link: "http://securerecordssolutions.com"
+  link: "http://securerecordssolutions.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "SJ Services inc DBA Stanley Steemer",
@@ -1532,7 +1715,9 @@ Business.create!(name: "SJ Services inc DBA Stanley Steemer",
   phone_number: "229-733-1557",
   email: "steve.adkins@steemer.com",
   email_2: "",
-  link: "http://www.stanleysteemer.com"
+  link: "http://www.stanleysteemer.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Sleep Number by Select Comfort",
@@ -1548,7 +1733,9 @@ Business.create!(name: "Sleep Number by Select Comfort",
   phone_number: "229-219-1134",
   email: "SleepNumberValdosta@SleepNumber.com",
   email_2: "",
-  link: "http://www.sleepnumber.com"
+  link: "http://www.sleepnumber.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "South Georgia Eye Partners",
@@ -1564,7 +1751,9 @@ Business.create!(name: "South Georgia Eye Partners",
   phone_number: "229-244-2068",
   email: "chanson@southgeorgiaeye.com",
   email_2: "",
-  link: "http://www.southgeorgiaeye.com"
+  link: "http://www.southgeorgiaeye.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "South Georgia Medical Center/SGMC",
@@ -1580,7 +1769,9 @@ Business.create!(name: "South Georgia Medical Center/SGMC",
   phone_number: "229-433-4022",
   email: "johnny.ball@sgmc.org",
   email_2: "",
-  link: "http://www.sgmc.org"
+  link: "http://www.sgmc.org",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "South Georgia Travel",
@@ -1596,7 +1787,9 @@ Business.create!(name: "South Georgia Travel",
   phone_number: "229-244-2324",
   email: "jane@sgatravel.com",
   email_2: "christy@sgatravel.com",
-  link: "http://www.sgatravel.com"
+  link: "http://www.sgatravel.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "South Georgia Vein Centers",
@@ -1612,7 +1805,9 @@ Business.create!(name: "South Georgia Vein Centers",
   phone_number: "229-259-9666",
   email: "sgvcthowell@bellsouth.net",
   email_2: "",
-  link: "http://www.valdostaveins.net"
+  link: "http://www.valdostaveins.net",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Southeastern Credit Union",
@@ -1628,7 +1823,9 @@ Business.create!(name: "Southeastern Credit Union",
   phone_number: "229-244-2732",
   email: "mgudely@southeasterncu.com",
   email_2: "info@southeasternfcu.org",
-  link: "http://www.southeasterncu.com"
+  link: "http://www.southeasterncu.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
@@ -1644,7 +1841,9 @@ Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
   phone_number: "229-242-5668",
   email: "calvinstubbs@stcvaldosta.com",
   email_2: "",
-  link: "http://southerncarpetandtile.com"
+  link: "http://southerncarpetandtile.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Southwest Georgia Bank",
@@ -1660,7 +1859,9 @@ Business.create!(name: "Southwest Georgia Bank",
   phone_number: "229-244-4444",
   email: "jeff.hanson@sgfc.com",
   email_2: "",
-  link: "http://www.sgfc.com"
+  link: "http://www.sgfc.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Spyderserve Corp",
@@ -1676,7 +1877,9 @@ Business.create!(name: "Spyderserve Corp",
   phone_number: "229-269-4108",
   email: "gary@spyderserve.com",
   email_2: "",
-  link: "http://spyderserve.com"
+  link: "http://spyderserve.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Steeda Autosports",
@@ -1692,7 +1895,9 @@ Business.create!(name: "Steeda Autosports",
   phone_number: "229-249-8151",
   email: "dario@steeda.com",
   email_2: "",
-  link: "http://www.steeda.com"
+  link: "http://www.steeda.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Tanner Investment Group",
@@ -1708,7 +1913,9 @@ Business.create!(name: "Tanner Investment Group",
   phone_number: "229-232-8211",
   email: "john@tannerinvestmentgroup.com",
   email_2: "",
-  link: "http://www.tannerinvestmentgroup.com"
+  link: "http://www.tannerinvestmentgroup.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Team-Britt Mobile Game Arcade",
@@ -1724,7 +1931,9 @@ Business.create!(name: "Team-Britt Mobile Game Arcade",
   phone_number: "229-251-8013",
   email: "teambritt28@gmail.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Teamtemps Personnel Staffing, Inc.",
@@ -1740,7 +1949,9 @@ Business.create!(name: "Teamtemps Personnel Staffing, Inc.",
   phone_number: "229-247-8367",
   email: "gpanizzi@teamtemps.net",
   email_2: "",
-  link: "http://www.teamtempspersonnelstaffing.com"
+  link: "http://www.teamtempspersonnelstaffing.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Thacker Dermatology, LLC",
@@ -1756,7 +1967,9 @@ Business.create!(name: "Thacker Dermatology, LLC",
   phone_number: "229-469-4383",
   email: "brandi.thackerderm@gmail.com",
   email_2: "kathleenmcgraw.thacker@gmail.com",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "The Fields North Valdosta",
@@ -1772,7 +1985,9 @@ Business.create!(name: "The Fields North Valdosta",
   phone_number: "229-259-9400",
   email: "valdostaasstmanager@thefieldsliving.com",
   email_2: "",
-  link: "http://www.thefieldsnorthvaldosta.com"
+  link: "http://www.thefieldsnorthvaldosta.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "The Gardens",
@@ -1788,7 +2003,9 @@ Business.create!(name: "The Gardens",
   phone_number: "229-242-9372",
   email: "thegardens@invmgt.com",
   email_2: "",
-  link: "http://www.thegardensvaldosta.com"
+  link: "http://www.thegardensvaldosta.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Troy University Albany Area Support Center",
@@ -1804,7 +2021,9 @@ Business.create!(name: "Troy University Albany Area Support Center",
   phone_number: "229-639-0303",
   email: "cobbj@troy.edu",
   email_2: "",
-  link: "http://www.troy.edu/servicecenters/albany.html"
+  link: "http://www.troy.edu/servicecenters/albany.html",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Turner's Fine Furniture",
@@ -1820,7 +2039,9 @@ Business.create!(name: "Turner's Fine Furniture",
   phone_number: "229-247-2455",
   email: "jerry@turnerfurniture.com",
   email_2: "",
-  link: "http://www.turnerfurniture.com"
+  link: "http://www.turnerfurniture.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta Chiropractic & Rehab",
@@ -1836,7 +2057,9 @@ Business.create!(name: "Valdosta Chiropractic & Rehab",
   phone_number: "229-247-2828",
   email: "lacie_guy@yahoo.com",
   email_2: "",
-  link: "http://www.valdostachiropractic.com"
+  link: "http://www.valdostachiropractic.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta City-Manager",
@@ -1852,7 +2075,9 @@ Business.create!(name: "Valdosta City-Manager",
   phone_number: "229-259-3500",
   email: "mbarber@valdostacity.com",
   email_2: "hanson@valdostacity.com",
-  link: "http://www.valdostacity.com"
+  link: "http://www.valdostacity.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta City-Mayor",
@@ -1868,7 +2093,9 @@ Business.create!(name: "Valdosta City-Mayor",
   phone_number: "",
   email: "jgayle@valdostacity.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta City Schools",
@@ -1884,7 +2111,9 @@ Business.create!(name: "Valdosta City Schools",
   phone_number: "229-671-6053",
   email: "tcason@gocats.org",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta Coca-Cola Bottling Company",
@@ -1900,7 +2129,9 @@ Business.create!(name: "Valdosta Coca-Cola Bottling Company",
   phone_number: "229-219-1530",
   email: "matthallman@ccbcu.com",
   email_2: "",
-  link: "http://cocacolaunited.com"
+  link: "http://cocacolaunited.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta Nissan Cadillac",
@@ -1916,7 +2147,9 @@ Business.create!(name: "Valdosta Nissan Cadillac",
   phone_number: "229-242-7325",
   email: "tko@thetkogroup.com",
   email_2: "",
-  link: "http://www.thetkogroup.com"
+  link: "http://www.thetkogroup.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta Insurance Services, Inc.",
@@ -1932,7 +2165,9 @@ Business.create!(name: "Valdosta Insurance Services, Inc.",
   phone_number: "229-242-4560",
   email: "mdorsey@valdostainsurance.com",
   email_2: "",
-  link: "http://www.valdostainsurance.com"
+  link: "http://www.valdostainsurance.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
@@ -1948,7 +2183,9 @@ Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
   phone_number: "229-247-5590",
   email: "johnroandds@valdostaoms.com",
   email_2: "",
-  link: "http://valdostaoms.com"
+  link: "http://valdostaoms.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta State University",
@@ -1964,7 +2201,9 @@ Business.create!(name: "Valdosta State University",
   phone_number: "229-333-5952",
   email: "rcarvajal@valdosta.edu",
   email_2: "",
-  link: "http://www.valdosta.edu"
+  link: "http://www.valdosta.edu",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authority",
@@ -1980,7 +2219,9 @@ Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authori
   phone_number: "229-245-0513",
   email: "chamilton@valdostatourism.com",
   email_2: "",
-  link: "http://www.valdostatourism.com"
+  link: "http://www.valdostatourism.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "ValdostaSOLD Real Estate Services",
@@ -1996,7 +2237,9 @@ Business.create!(name: "ValdostaSOLD Real Estate Services",
   phone_number: "229-241-1885",
   email: "valdostasold@gmail.com",
   email_2: "info@valdostasold.com",
-  link: "http://www.valdostasold.com"
+  link: "http://www.valdostasold.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Velas Studio",
@@ -2012,7 +2255,9 @@ Business.create!(name: "Velas Studio",
   phone_number: "229-548-2232",
   email: "info@velasstudio.com",
   email_2: "",
-  link: "http://www.velasstudio.com"
+  link: "http://www.velasstudio.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "WAAC FM",
@@ -2028,7 +2273,9 @@ Business.create!(name: "WAAC FM",
   phone_number: "229-242-4513",
   email: "kells@riversradio.com",
   email_2: "",
-  link: "http://www-C-93.com"
+  link: "http://www-C-93.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "W P Walker's Vack, Inc.",
@@ -2044,7 +2291,9 @@ Business.create!(name: "W P Walker's Vack, Inc.",
   phone_number: "229-244-2297",
   email: "egri789@att.net",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Watson's Pools & Patios, Inc.",
@@ -2060,7 +2309,9 @@ Business.create!(name: "Watson's Pools & Patios, Inc.",
   phone_number: "229-686-2033",
   email: "watsonspoolsandpatios@windstream.net",
   email_2: "",
-  link: "http://watsonspoolsofga.com"
+  link: "http://watsonspoolsofga.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Wild Adventures Theme Park",
@@ -2077,7 +2328,8 @@ Business.create!(name: "Wild Adventures Theme Park",
   email: "mdeese@wildadventures.com",
   email_2: "",
   link: "http://www.WildAdventures.com",
-  business_offer_number: '128'
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "WilTeck, LLC",
@@ -2093,7 +2345,9 @@ Business.create!(name: "WilTeck, LLC",
   phone_number: "229-834-8325",
   email: "susan@wilteck.com",
   email_2: "",
-  link: "http://www.WilTeck.com"
+  link: "http://www.WilTeck.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Winnersville Fitness",
@@ -2109,7 +2363,9 @@ Business.create!(name: "Winnersville Fitness",
   phone_number: "229-305-6465",
   email: "morethanfit@gmail.com",
   email_2: "",
-  link: "http://www.winnersvillefitness.com"
+  link: "http://www.winnersvillefitness.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Wiregrass Georgia Technical College",
@@ -2125,7 +2381,9 @@ Business.create!(name: "Wiregrass Georgia Technical College",
   phone_number: "229-333-2100",
   email: "customerservice@wiregrass.edu",
   email_2: "",
-  link: "http://www.wiregrass.edu"
+  link: "http://www.wiregrass.edu",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Wiregrass Investment Management, LLC",
@@ -2141,7 +2399,9 @@ Business.create!(name: "Wiregrass Investment Management, LLC",
   phone_number: "229-245-6022",
   email: "jimmy.shiver@lpl.com",
   email_2: "",
-  link: ""
+  link: "",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Worthington Family Dentistry",
@@ -2157,7 +2417,9 @@ Business.create!(name: "Worthington Family Dentistry",
   phone_number: "229-242-0063",
   email: "amy.wfd@mediacombb.net",
   email_2: "",
-  link: "http://www.worthingtonfamilydentistry.com/"
+  link: "http://www.worthingtonfamilydentistry.com/",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Bob Fake Business",
@@ -2173,7 +2435,9 @@ Business.create!(name: "Bob Fake Business",
   phone_number: "229-242-5555",
   email: "bob@depot.com",
   email_2: "",
-  link: "fake@fake.com"
+  link: "fake@fake.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 Business.create!(name: "Marie Fake Business",
@@ -2189,7 +2453,9 @@ Business.create!(name: "Marie Fake Business",
   phone_number: "229-242-8887",
   email: "marie@depot.com",
   email_2: "",
-  link: "marie@fake.com"
+  link: "marie@fake.com",
+business_offer_number: "0001",
+status: "active"
 )
 
 
