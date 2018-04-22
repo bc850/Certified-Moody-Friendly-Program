@@ -50,6 +50,12 @@ class BusinessesController < ApplicationController
   # PATCH/PUT /businesses/1.json
   def update
     authorize @business
+    @offers = Offer.all
+    @offers.each do |offer|
+      if offer.business_id == @business.id
+        offer.offer_code = @business.business_offer_number
+      end
+    end
     respond_to do |format|
       if @business.update(business_params)
         format.html { redirect_to @business, notice: "The profile of #{@business.name} was successfully updated." }
@@ -73,6 +79,7 @@ class BusinessesController < ApplicationController
   end
 =end
 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_business
@@ -83,4 +90,5 @@ class BusinessesController < ApplicationController
     def business_params
       params.require(:business).permit(:name, :address, :category, :store_id, :description, :owner_name, :phone_number, :link)
     end
+
 end
