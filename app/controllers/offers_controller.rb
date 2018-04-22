@@ -101,8 +101,11 @@ if (params[:business_id])
     @offer = Offer.new(offer_params)
     authorize @offer
 
+
+
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
+      @offer.offer_code = (@offer.business).business_offer_number
     end
 
     respond_to do |format|
