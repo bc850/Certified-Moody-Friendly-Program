@@ -2769,7 +2769,7 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   business_id: 32,
   img_url: open('app/assets/images/cre8.png'),
   event_url: 'www.facebook.com/faked',
-  offer_code: '126'
+  offer_code: '0001'
 )
 # . . .
 
@@ -2782,7 +2782,7 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   offering_type: 'Coupon',
   business_id: 73,
   img_url: open('app/assets/images/mellow.jpg'),
-  offer_code: '123'
+  offer_code: '0001'
 )
 # . . .
 Offer.create!(name: 'Lemongrass Day Spa',
@@ -2794,7 +2794,7 @@ Offer.create!(name: 'Lemongrass Day Spa',
   offering_type: 'Coupon',
   business_id: 67,
   img_url: open('app/assets/images/lemongrass.jpg'),
-  offer_code: '124'
+  offer_code: '0001'
 )
 # . . .
 Offer.create!(name: 'Georgia Military College Application Event',
@@ -2807,7 +2807,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   business_id: 50,
   img_url: open('app/assets/images/gmc.png'),
   event_url: 'www.facebook.com/gmc/fake',
-  offer_code: '125'
+  offer_code: '0001'
 )
 # . . .
 Offer.create!(name: 'Home Depot Military Discount',
@@ -2819,7 +2819,7 @@ Offer.create!(name: 'Home Depot Military Discount',
   offering_type: 'Discount',
   business_id: 58,
   img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg'),
-  offer_code: '127'
+  offer_code: '0001'
 )
 # . . .
 Offer.create!(name: 'Wild Adventures Bring a Friend',
@@ -2831,6 +2831,6 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   offering_type: 'Coupon',
   business_id: 129,
   img_url: open('app/assets/images/wildad.jpg'),
-  offer_code: '128'
+  offer_code: '0001'
 )
 # . . .
