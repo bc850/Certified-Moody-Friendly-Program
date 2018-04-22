@@ -11,14 +11,7 @@
     <strong><%= @offer.name %></strong>
 </p>
 
-<!--
-  <%= link_to like_offer_path(@offer), class: "like-btn", method: :put, remote: :true do %>
-    <div>
-      <span><p><i class="fa fa-heart"></i></p></span>
-    </div>
-  <% end %>
--->
-
+<% if current_account.accountable_type == "User" %>
 <% if current_account.voted_for? @offer %>
   <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
               id: "like_#{@offer.id}",
@@ -28,8 +21,7 @@
               id: "like_#{@offer.id}",
               class: "glyphicon glyphicon-heart-empty" %>
 <% end %>
-
-<!--  <span class="likes-count"><%= @offer.get_upvotes.size %></span> -->
+<% end %>
 
 <p>
   <%= @offer.offering_type %>
@@ -53,18 +45,16 @@
   <%= @offer.location %>
 </p>
 
+<% if @offer.event_url.present? %>
 <p>
-  <%= @offer.business_id %>
+  <%= link_to 'Event Link', extlink(@offer.event_url) %>
 </p>
-
-<p>
-  <%= @offer.event_url %>
-</p>
+<% end %>
 
 <div id="businessCode">
+  <% if current_account.accountable_type == "User" %>
   <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
     <div class="form-inputs form-inline">
-      <!--<%= text_field_tag :id_input %>-->
       <%= f.input :test, label: false, placeholder: 'Code: i.e. 123', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
       <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
     </div>
@@ -72,6 +62,8 @@
 </div>
 
 <button id="codeButtonShow" type="button">Enter Code</button>
+  <% end %>
+
 </br>
 </br>
 

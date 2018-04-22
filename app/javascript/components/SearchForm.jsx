@@ -24,7 +24,7 @@ export default class SearchForm extends React.Component {
       <input onChange={this.handleSearch}
              type="text"
              className="form-control"
-             placeholder="Type the name of the offer you are searching here..."
+             placeholder="(Case-sensitive) Type the name of the offer you are searching here..."
              ref="query" />
     )
   }

@@ -7,7 +7,7 @@ export default class Searches extends React.Component {
 
     state = { offers: [],
               sort: "cached_votes_total",
-              order: "asc"
+              order: "desc"
             };
 
     componentDidMount = () => {
@@ -26,7 +26,7 @@ export default class Searches extends React.Component {
 
     handleSortColumn = (name, order) => {
         if (this.state.sort != name) {
-          order = 'asc';
+          order = 'desc';
         }
 
         var self = this;
