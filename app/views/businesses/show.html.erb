@@ -63,13 +63,19 @@
   <%= @business.email %>
 </p>
 
+<p>
+  <strong>Website:</strong>
+  <%= @business.link %>
+</p>
+
+<!--
 <% if @business.link.blank? %>
 <% else %>
 <p>
   <%= link_to 'Our Site', extlink2(@business.link) %>
 </p>
 <% end %>
-
+-->
 <!--
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>

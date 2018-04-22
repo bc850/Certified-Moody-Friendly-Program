@@ -1,5 +1,5 @@
 module BusinessesHelper
-  def extlink2(link)
+=begin  def extlink2(link)
 
     if link.include?("http://")
       puts link
@@ -8,4 +8,5 @@ module BusinessesHelper
       link
     end
   end
+=end
 end
