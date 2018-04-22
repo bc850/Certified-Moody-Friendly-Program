@@ -3,7 +3,7 @@
 <div id="offerLeft" class="col-md-3"></div>
 <div id="offerDisplay" class="col-md-6">
 <p id="offerImage">
-  <%= image_tag(@offer.img_url, width: 400) if @offer.img_url.present? %>
+  <%= image_tag(@offer.img_url) if @offer.img_url.present? %>
 </p>
 </br>
 
@@ -63,6 +63,12 @@
 
 <button id="codeButtonShow" type="button">Enter Code</button>
   <% end %>
+
+</br>
+</br>
+
+<a href="#" onclick="window.print();return false;">Print</a>
+</br>
 
 </div>
 <div id="offerRight" class="col-md-3"></div>

@@ -22,6 +22,8 @@ COLLECTION_ATTRIBUTES = [
 	:account,
 	:id,
 	:name,
+	:created_at,
+	:updated_at,
 	].freeze
 # SHOW_PAGE_ATTRIBUTES
 # an array of attributes that will be displayed on the model's show page.
