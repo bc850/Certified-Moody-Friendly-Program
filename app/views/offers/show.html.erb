@@ -3,7 +3,7 @@
 <div id="offerLeft" class="col-md-3"></div>
 <div id="offerDisplay" class="col-md-6">
 <p id="offerImage">
-  <%= image_tag(@offer.img_url, width: 400) if @offer.img_url.present? %>
+  <%= image_tag(@offer.img_url) if @offer.img_url.present? %>
 </p>
 </br>
 
@@ -72,13 +72,12 @@
 </div>
 
 <button id="codeButtonShow" type="button">Enter Code</button>
+</br>
+</br>
 
-<!--<p>
-  <%= link_to 'Print', offers_path %>
-<p>
-<%= link_to 'Edit', edit_offer_path(@offer) %> |
-<%= link_to 'Back', offers_path %>
--->
+<a href="#" onclick="window.print();return false;">Print</a>
+</br>
+
 </div>
 <div id="offerRight" class="col-md-3"></div>
 </div>

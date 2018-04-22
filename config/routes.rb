@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :accounts
     resources :businesses
-    resources :favorites
-    resources :line_items
+#   resources :favorites
+#   resources :line_items
     resources :offers
     resources :users
     resources :super_accounts

@@ -39,6 +39,8 @@ class BusinessDashboard < Administrate::BaseDashboard
     :account,
     :id,
     :name,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -69,7 +71,6 @@ class BusinessDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :offers,
     :account,
     :name,
     :address,

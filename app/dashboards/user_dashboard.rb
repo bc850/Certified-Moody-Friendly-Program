@@ -26,6 +26,8 @@ class UserDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :mil_branch,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
