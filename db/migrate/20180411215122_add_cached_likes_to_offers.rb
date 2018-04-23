@@ -9,7 +9,8 @@ class AddCachedLikesToOffers < ActiveRecord::Migration[5.1]
       t.integer :cached_weighted_total, default: 0
       t.float :cached_weighted_average, default: 0.0
       t.string :offer_code
-      t.integer :test, default: 0
+      #t.integer :test, default: 0
+      t.string :test, default: ''
       t.integer :analytics, default: 0
     end
 
