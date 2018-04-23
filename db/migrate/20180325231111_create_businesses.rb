@@ -15,6 +15,7 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :email_2
       t.string :link
+      t.string :status
       t.integer :business_offer_number
 
       t.timestamps

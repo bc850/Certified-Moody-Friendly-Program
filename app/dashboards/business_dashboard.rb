@@ -25,6 +25,9 @@ class BusinessDashboard < Administrate::BaseDashboard
     email: Field::String,
     email_2: Field::String,
     link: Field::String,
+    status: Field::Select.with_options(
+      collection: ['Pending', 'Active']
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -41,6 +44,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     :name,
     :created_at,
     :updated_at,
+    :status,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -63,6 +67,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     :email,
     :email_2,
     :link,
+    :status,
     :created_at,
     :updated_at,
   ].freeze
@@ -71,7 +76,8 @@ class BusinessDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :account,
+    #:offers,
+    #:account,
     :name,
     :address,
     :city,
@@ -86,6 +92,7 @@ class BusinessDashboard < Administrate::BaseDashboard
     :email,
     :email_2,
     :link,
+    :status,
   ].freeze
 
   # Overwrite this method to customize how businesses are displayed

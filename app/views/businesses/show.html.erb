@@ -4,6 +4,13 @@
 <p id="notice"><%= notice %></p>
 
 </br>
+<% if @business.status == "Pending" %>
+  <h3>Your status is still pending.</h3>
+  <p>Please contact an administrator to get your flag lifted.</p>
+  <br>
+  <br>
+<% end %>
+
 <p>
   <h3><%= @business.name %></h3>
 </p>

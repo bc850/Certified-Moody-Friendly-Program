@@ -23,7 +23,8 @@ Business.create!(name: "1st America Home Medical Equipment",
   phone_number: "229-242-3433",
   email: "mandy@1stamericadrugs.com",
   email_2: "",
-  link: ""
+  link: "",
+  status: "Active"
 )
 
 Business.create!(name: "1st Franklin Financial Corporation",
@@ -39,7 +40,8 @@ Business.create!(name: "1st Franklin Financial Corporation",
   phone_number: "229-247-3558",
   email: "cdb4586@1ffc.com",
   email_2: "",
-  link: "http://www.1ffc.com"
+  link: "http://www.1ffc.com",
+  status: "Pending"
 )
 
 Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
@@ -2173,7 +2175,8 @@ Business.create!(name: "Bob Fake Business",
   phone_number: "229-242-5555",
   email: "bob@depot.com",
   email_2: "",
-  link: "fake@fake.com"
+  link: "fake@fake.com",
+  status: "Pending"
 )
 
 Business.create!(name: "Marie Fake Business",
@@ -2189,7 +2192,8 @@ Business.create!(name: "Marie Fake Business",
   phone_number: "229-242-8887",
   email: "marie@depot.com",
   email_2: "",
-  link: "marie@fake.com"
+  link: "marie@fake.com",
+  status: "Active"
 )
 
 
