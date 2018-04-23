@@ -17,6 +17,8 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :link
       t.string :status, default: "Pending"
       t.integer :business_offer_number
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps
     end
