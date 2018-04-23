@@ -106,7 +106,11 @@ if (params[:business_id])
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
       @offer.offer_code = (@offer.business).business_offer_number
-      @offer.location = (@offer.business).address + ", " + (@offer.business).city + ", " + (@offer.business).state + " " + (@offer.business).zip_code
+      puts "hello"
+      puts @offer.business.address
+      if(@offer.business.address != nil)
+        @offer.location = (@offer.business).address + ", " + (@offer.business).city + ", " + (@offer.business).state + " " + (@offer.business).zip_code
+      end
     end
 
     respond_to do |format|
@@ -169,7 +173,7 @@ if (params[:business_id])
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:name, :start_date, :end_date, :category, :description, :location, :business_id, :offering_type, :img_url, :event_url)
+      params.require(:offer).permit(:name, :start_date, :end_date, :category, :description, :business_id, :offering_type, :img_url, :event_url)
     end
 
     def set_popularity_for_partial
