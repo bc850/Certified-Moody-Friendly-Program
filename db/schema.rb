@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.string "email"
     t.string "email_2"
     t.string "link"
-    t.string "status"
+    t.string "status", default: "Pending"
     t.integer "business_offer_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
