@@ -11,26 +11,26 @@ class OffersController < ApplicationController
   end
 
   def check_code
-
+    #grabs the code the user input from the text box
     @test = params[:offer][:test]
 
-    puts @offer.offer_code
-
+    #checks if user input code is the same as the businesses offer code
     if @test == @offer.offer_code
+      #increases the count of how many times the offer has been used correctly
       @offer.analytics = @offer.analytics + 1
       @offer.update_attributes(:analytics => @offer.analytics)
-      puts @offer.analytics
+      #outputs that code was correct
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was successful!' }
         format.json { head :no_content }
       end
+    # outputs that code was incorrect
     else
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was incorrect!' }
         format.json { head :no_content }
       end
     end
-    puts @test
   end
 
   def my_favorites
