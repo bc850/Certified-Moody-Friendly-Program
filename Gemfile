@@ -17,6 +17,7 @@ gem 'pundit'
 gem 'bourbon'
 gem 'administrate'
 gem 'kaminari'
+gem 'geocoder'
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"
