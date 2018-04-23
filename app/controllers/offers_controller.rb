@@ -106,8 +106,6 @@ if (params[:business_id])
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
       @offer.offer_code = (@offer.business).business_offer_number
-      puts "hello"
-      puts @offer.business.address
       if(@offer.business.address != nil)
         @offer.location = (@offer.business).address + ", " + (@offer.business).city + ", " + (@offer.business).state + " " + (@offer.business).zip_code
       end
