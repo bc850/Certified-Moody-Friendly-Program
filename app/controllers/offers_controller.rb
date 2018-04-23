@@ -11,26 +11,26 @@ class OffersController < ApplicationController
   end
 
   def check_code
-
+    #grabs the code the user input from the text box
     @test = params[:offer][:test]
 
-    puts @offer.offer_code
-
+    #checks if user input code is the same as the businesses offer code
     if @test == @offer.offer_code
+      #increases the count of how many times the offer has been used correctly
       @offer.analytics = @offer.analytics + 1
       @offer.update_attributes(:analytics => @offer.analytics)
-      puts @offer.analytics
+      #outputs that code was correct
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was successful!' }
         format.json { head :no_content }
       end
+    # outputs that code was incorrect
     else
       respond_to do |format|
         format.html { redirect_to offer_url, notice: 'Offer code was incorrect!' }
         format.json { head :no_content }
       end
     end
-    puts @test
   end
 
   def my_favorites
@@ -101,8 +101,20 @@ if (params[:business_id])
     @offer = Offer.new(offer_params)
     authorize @offer
 
+
+
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
+
+      if @offer.business.business_offer_number != nil
+        @offer.offer_code = (@offer.business).business_offer_number
+      else
+        @offer.offer_code = '0001'
+      end
+      
+      if(@offer.business.address != nil)
+        @offer.location = (@offer.business).address + ", " + (@offer.business).city + ", " + (@offer.business).state + " " + (@offer.business).zip_code
+      end
     end
 
     respond_to do |format|
@@ -165,7 +177,7 @@ if (params[:business_id])
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:name, :start_date, :end_date, :category, :description, :location, :business_id, :offering_type, :img_url, :event_url)
+      params.require(:offer).permit(:name, :start_date, :end_date, :category, :description, :business_id, :offering_type, :img_url, :event_url)
     end
 
     def set_popularity_for_partial
