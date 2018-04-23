@@ -24,8 +24,8 @@ Business.create!(name: "1st America Home Medical Equipment",
   email: "mandy@1stamericadrugs.com",
   email_2: "",
   link: "",
-business_offer_number: "0001",
-status: "active"
+  status: "Active",
+  business_offer_number: "0001",
 )
 
 Business.create!(name: "1st Franklin Financial Corporation",
@@ -42,8 +42,8 @@ Business.create!(name: "1st Franklin Financial Corporation",
   email: "cdb4586@1ffc.com",
   email_2: "",
   link: "http://www.1ffc.com",
-business_offer_number: "0001",
-status: "active"
+  status: "Active",
+  business_offer_number: "0001",
 )
 
 Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
@@ -61,7 +61,7 @@ Business.create!(name: "Abigail H. Davis/Real Living Realty Advisors",
   email_2: "",
   link: "http://www.ForSaleByAbigail.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Ameris Bank",
@@ -79,7 +79,7 @@ Business.create!(name: "Ameris Bank",
   email_2: "",
   link: "http://www.amerisbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Anchored Media Marketing",
@@ -97,7 +97,7 @@ Business.create!(name: "Anchored Media Marketing",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Animal Health Center",
@@ -115,7 +115,7 @@ Business.create!(name: "Animal Health Center",
   email_2: "",
   link: "http://www.caringtogether.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Astro Exterminating Services, Inc.",
@@ -133,7 +133,7 @@ Business.create!(name: "Astro Exterminating Services, Inc.",
   email_2: "",
   link: "http://www.astroexterminating.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Austins Cattle Co.",
@@ -151,7 +151,7 @@ Business.create!(name: "Austins Cattle Co.",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Azalea Health",
@@ -169,7 +169,7 @@ Business.create!(name: "Azalea Health",
   email_2: "sales@azaleahealth.com",
   link: "http://www.AzaleaHealth.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Barnes Health Care Services",
@@ -187,7 +187,7 @@ Business.create!(name: "Barnes Health Care Services",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Batteries Plus Bulbs",
@@ -205,7 +205,7 @@ Business.create!(name: "Batteries Plus Bulbs",
   email_2: "",
   link: "http://www.batteriesplus.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Big Nick's",
@@ -223,7 +223,7 @@ Business.create!(name: "Big Nick's",
   email_2: "",
   link: "www.bignicksbaytree.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "BridgeBuilder Education & Investments",
@@ -241,7 +241,7 @@ Business.create!(name: "BridgeBuilder Education & Investments",
   email_2: "",
   link: "http://www.bridgebuilderinvestments.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Buffalo Wild Wings",
@@ -259,7 +259,7 @@ Business.create!(name: "Buffalo Wild Wings",
   email_2: "",
   link: "http://www.buffalowildwings.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Bush Wealth Management",
@@ -277,7 +277,7 @@ Business.create!(name: "Bush Wealth Management",
   email_2: "",
   link: "http://www.bushwealthmanagement.com/",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Ciao Bella SC Boutique, LLC",
@@ -295,7 +295,7 @@ Business.create!(name: "Ciao Bella SC Boutique, LLC",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Citizens Community Bank",
@@ -313,7 +313,7 @@ Business.create!(name: "Citizens Community Bank",
   email_2: "",
   link: "http://www.citizenscommunitybank.net",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "CJB Industries, Inc.",
@@ -331,7 +331,7 @@ Business.create!(name: "CJB Industries, Inc.",
   email_2: "",
   link: "http://http://www.cjbindustries.com/",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Coldwell Banker Premier Real Estate",
@@ -349,7 +349,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   email_2: "",
   link: "http://www.valdostarealtors.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Coldwell Banker Premier Real Estate",
@@ -367,7 +367,7 @@ Business.create!(name: "Coldwell Banker Premier Real Estate",
   email_2: "",
   link: "http://www.maryhstraka.realtor",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Coleman Talley LLP-William E. Holland",
@@ -385,7 +385,7 @@ Business.create!(name: "Coleman Talley LLP-William E. Holland",
   email_2: "",
   link: "http://www.colemantalley.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Colony Bank",
@@ -403,7 +403,7 @@ Business.create!(name: "Colony Bank",
   email_2: "",
   link: "http://www.colquittemc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Colquitt EMC",
@@ -421,7 +421,7 @@ Business.create!(name: "Colquitt EMC",
   email_2: "",
   link: "http://www.colonybank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -439,7 +439,7 @@ Business.create!(name: "Commercial Banking Company",
   email_2: "amock@cbcbank.com",
   link: "http://www.cbcbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -457,7 +457,7 @@ Business.create!(name: "Commercial Banking Company",
   email_2: "",
   link: "http://www.cbcbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -475,7 +475,7 @@ Business.create!(name: "Commercial Banking Company",
   email_2: "",
   link: "http://www.cbcbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Commercial Banking Company",
@@ -493,7 +493,7 @@ Business.create!(name: "Commercial Banking Company",
   email_2: "",
   link: "http://www.cbcbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Commercial Real Estate Advisors",
@@ -511,7 +511,7 @@ Business.create!(name: "Commercial Real Estate Advisors",
   email_2: "andy_ignite@att.net",
   link: "http://www.adeal.mystream.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Cook's Pest Control",
@@ -529,7 +529,7 @@ Business.create!(name: "Cook's Pest Control",
   email_2: "",
   link: "http://www.cookspest.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Coombs Heating & Air Conditioning",
@@ -547,7 +547,7 @@ Business.create!(name: "Coombs Heating & Air Conditioning",
   email_2: "",
   link: "http://www.coombsac.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Covington's Dining & Catering",
@@ -565,7 +565,7 @@ Business.create!(name: "Covington's Dining & Catering",
   email_2: "",
   link: "http://www.covingtonscatering.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Cre8ive Zone",
@@ -583,7 +583,7 @@ Business.create!(name: "Cre8ive Zone",
   email_2: "",
   link: "http://www.TheCre8iveZone.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "C-Tech Water Solutions, LLC",
@@ -601,7 +601,7 @@ Business.create!(name: "C-Tech Water Solutions, LLC",
   email_2: "",
   link: "http://www.ctechwatersolutions.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Dairy Queen/The Lyoness Co.",
@@ -619,7 +619,7 @@ Business.create!(name: "Dairy Queen/The Lyoness Co.",
   email_2: "",
   link: "http://http://www.lyonmgt.com/",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Destiny Financial Services - A Family Heritage Life Provider",
@@ -637,7 +637,7 @@ Business.create!(name: "Destiny Financial Services - A Family Heritage Life Prov
   email_2: "",
   link: "http://www.familyheritagelife.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Direct Auto Insurance",
@@ -655,7 +655,7 @@ Business.create!(name: "Direct Auto Insurance",
   email_2: "",
   link: "http://www.directgeneral.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Dumealz",
@@ -673,7 +673,7 @@ Business.create!(name: "Dumealz",
   email_2: "",
   link: "http://www.dumealz.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Edible Arrangements",
@@ -691,7 +691,7 @@ Business.create!(name: "Edible Arrangements",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Embry-Riddle Aeronautical University",
@@ -709,7 +709,7 @@ Business.create!(name: "Embry-Riddle Aeronautical University",
   email_2: "",
   link: "http://worldwide.erau.edu/locations/moody",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Farmers Home Furniture Company",
@@ -727,7 +727,7 @@ Business.create!(name: "Farmers Home Furniture Company",
   email_2: "store36@farmersfurniture.com",
   link: "http://www.farmershomefurniture.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Farmers Supply Company",
@@ -745,7 +745,7 @@ Business.create!(name: "Farmers Supply Company",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "First Federal of Valdosta",
@@ -763,7 +763,7 @@ Business.create!(name: "First Federal of Valdosta",
   email_2: "",
   link: "http://www.1stfederalvaldosta.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "First State Bank & Trust-Baytree",
@@ -781,7 +781,7 @@ Business.create!(name: "First State Bank & Trust-Baytree",
   email_2: "",
   link: "http://www.fsbtc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "First State Bank & Trust-ATM",
@@ -799,7 +799,7 @@ Business.create!(name: "First State Bank & Trust-ATM",
   email_2: "",
   link: "http://www.fsbtc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "First State Bank & Trust-Inner Perimeter",
@@ -817,7 +817,7 @@ Business.create!(name: "First State Bank & Trust-Inner Perimeter",
   email_2: "",
   link: "http://www.fsbtc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "First State Bank & Trust-Lake Park",
@@ -835,7 +835,7 @@ Business.create!(name: "First State Bank & Trust-Lake Park",
   email_2: "",
   link: "http://www.fsbtc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Four Seasons Essential Oils, LLC",
@@ -853,7 +853,7 @@ Business.create!(name: "Four Seasons Essential Oils, LLC",
   email_2: "",
   link: "www.fourseasonsoils.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Fresh Beginnings, Inc.",
@@ -871,7 +871,7 @@ Business.create!(name: "Fresh Beginnings, Inc.",
   email_2: "",
   link: "http://www.freshbeginnings.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Furniture Express/Beds For Less, Inc.",
@@ -889,7 +889,7 @@ Business.create!(name: "Furniture Express/Beds For Less, Inc.",
   email_2: "",
   link: "http://www.valdostafurniture.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Georgia Military College",
@@ -907,7 +907,7 @@ Business.create!(name: "Georgia Military College",
   email_2: "val_admissions@gmc.cc.ga.ua",
   link: "http://www.gmc.edu",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Georgia Power Company",
@@ -925,7 +925,7 @@ Business.create!(name: "Georgia Power Company",
   email_2: "",
   link: "http://www.georgiapower.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Goodwill Mission Services/Career Center",
@@ -943,7 +943,7 @@ Business.create!(name: "Goodwill Mission Services/Career Center",
   email_2: "cgervin@gwisr.org",
   link: "http://www.goodwillsr.org",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Hang Out Yoga, LLC",
@@ -961,7 +961,7 @@ Business.create!(name: "Hang Out Yoga, LLC",
   email_2: "",
   link: "http://www.hangoutyoga.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Harvard Risk Management",
@@ -979,7 +979,7 @@ Business.create!(name: "Harvard Risk Management",
   email_2: "",
   link: "http://www.harvardbenefits.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Heart Rize Fitness",
@@ -997,7 +997,7 @@ Business.create!(name: "Heart Rize Fitness",
   email_2: "",
   link: "http://www.heartrizefitness.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Highland Christian Academy",
@@ -1015,7 +1015,7 @@ Business.create!(name: "Highland Christian Academy",
   email_2: "registrar@hcavaldosta.org",
   link: "http://www.hcavaldosta.org",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Holiday Inn Express & Suites",
@@ -1033,7 +1033,7 @@ Business.create!(name: "Holiday Inn Express & Suites",
   email_2: "rick@williamshotelgroup.com",
   link: "http://www.williamshotelgroup.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "The Home Depot",
@@ -1051,7 +1051,7 @@ Business.create!(name: "The Home Depot",
   email_2: "",
   link: "http://http://www.homedepot.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Hooters of Valdosta",
@@ -1069,7 +1069,7 @@ Business.create!(name: "Hooters of Valdosta",
   email_2: "",
   link: "http://www.hooters.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Hug In A Mug Coffee",
@@ -1087,7 +1087,7 @@ Business.create!(name: "Hug In A Mug Coffee",
   email_2: "",
   link: "http://www.huginamug.coffee",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Ink & Cotton",
@@ -1105,7 +1105,7 @@ Business.create!(name: "Ink & Cotton",
   email_2: "",
   link: "http://www.inkandcottongoods.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Judy Martin Trexler/CR for Personal & Family Growth, LLC",
@@ -1123,7 +1123,7 @@ Business.create!(name: "Judy Martin Trexler/CR for Personal & Family Growth, LLC
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Kentucky Fried Chicken",
@@ -1141,7 +1141,7 @@ Business.create!(name: "Kentucky Fried Chicken",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Kilby Family Dentistry",
@@ -1159,7 +1159,7 @@ Business.create!(name: "Kilby Family Dentistry",
   email_2: "kilbyfamilydentistry@gmail.com",
   link: "http://www.kilbyfamilydentistry.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Langdale Vallotton LLP",
@@ -1177,7 +1177,7 @@ Business.create!(name: "Langdale Vallotton LLP",
   email_2: "",
   link: "http://www.langdalevallotton.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Law Office of Paul W. Hamilton, LLC",
@@ -1195,7 +1195,7 @@ Business.create!(name: "Law Office of Paul W. Hamilton, LLC",
   email_2: "brittney@paulwhamilton.com",
   link: "http://www.paulwhamilton.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Lemongrass Day Spa",
@@ -1213,7 +1213,7 @@ Business.create!(name: "Lemongrass Day Spa",
   email_2: "",
   link: "http://www.lemongrassdayspaonline.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
@@ -1231,7 +1231,7 @@ Business.create!(name: "Liberty National Life Insurance - Cannington Agency",
   email_2: "",
   link: "http://www.libertynational-cannington.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Literacy Volunteer Program of South Georgia, Inc.",
@@ -1249,7 +1249,7 @@ Business.create!(name: "Literacy Volunteer Program of South Georgia, Inc.",
   email_2: "",
   link: "http://www.literacyvolunteerprogram.org",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Lowndes County Board of Commissioners",
@@ -1267,7 +1267,7 @@ Business.create!(name: "Lowndes County Board of Commissioners",
   email_2: "",
   link: "http://http://www.lowndescounty.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Lynne Brown/John Maxwell Team",
@@ -1285,7 +1285,7 @@ Business.create!(name: "Lynne Brown/John Maxwell Team",
   email_2: "",
   link: "http://www.johncmaxwellgroup.com/lynnebrown",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Mediacom Residential",
@@ -1303,7 +1303,7 @@ Business.create!(name: "Mediacom Residential",
   email_2: "",
   link: "http://www.mediacomcc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Mellow Mushroom",
@@ -1321,7 +1321,7 @@ Business.create!(name: "Mellow Mushroom",
   email_2: "",
   link: "http://www.mellowmushroom.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Messiah Lutheran Church",
@@ -1339,7 +1339,7 @@ Business.create!(name: "Messiah Lutheran Church",
   email_2: "",
   link: "http://MessiahLutheranVLD.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Michelle Alden Counseling Services",
@@ -1357,7 +1357,7 @@ Business.create!(name: "Michelle Alden Counseling Services",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Mink Chiropractic Center, LLC",
@@ -1375,7 +1375,7 @@ Business.create!(name: "Mink Chiropractic Center, LLC",
   email_2: "",
   link: "http://minkchiro.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Miss Kate's Deep South Tours",
@@ -1393,7 +1393,7 @@ Business.create!(name: "Miss Kate's Deep South Tours",
   email_2: "",
   link: "http://www.misskatestours.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Music Funeral Services",
@@ -1411,7 +1411,7 @@ Business.create!(name: "Music Funeral Services",
   email_2: "",
   link: "http://www.musicfuneralservices.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "New Hire Solutions, LLC",
@@ -1429,7 +1429,7 @@ Business.create!(name: "New Hire Solutions, LLC",
   email_2: "",
   link: "http://www.newhiresolutions.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "NG Telecom, Inc.",
@@ -1447,7 +1447,7 @@ Business.create!(name: "NG Telecom, Inc.",
   email_2: "ftaylor@e-c-group.com",
   link: "http://www.vwave.net",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Northwind Apartment Homes",
@@ -1465,7 +1465,7 @@ Business.create!(name: "Northwind Apartment Homes",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Park University",
@@ -1483,7 +1483,7 @@ Business.create!(name: "Park University",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Partners in Health Management LLC",
@@ -1501,7 +1501,7 @@ Business.create!(name: "Partners in Health Management LLC",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Pinwheels",
@@ -1519,7 +1519,7 @@ Business.create!(name: "Pinwheels",
   email_2: "",
   link: "http://www.pinwheels.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Powell's Outdoor Power Equipment",
@@ -1537,7 +1537,7 @@ Business.create!(name: "Powell's Outdoor Power Equipment",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Prince Automotive of Valdosta, Inc.",
@@ -1555,7 +1555,7 @@ Business.create!(name: "Prince Automotive of Valdosta, Inc.",
   email_2: "",
   link: "http://www.princeauto.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Ray Norton Tire & Auto Center",
@@ -1573,7 +1573,7 @@ Business.create!(name: "Ray Norton Tire & Auto Center",
   email_2: "",
   link: "http://www.raynortontire.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Real Living Realty Advisors-Ron Borders",
@@ -1591,7 +1591,7 @@ Business.create!(name: "Real Living Realty Advisors-Ron Borders",
   email_2: "",
   link: "http://www.ronborders.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Real Living Realty Advisors-Tammy Borders",
@@ -1609,7 +1609,7 @@ Business.create!(name: "Real Living Realty Advisors-Tammy Borders",
   email_2: "",
   link: "http://www.tammyborders.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Renasant Bank",
@@ -1627,7 +1627,7 @@ Business.create!(name: "Renasant Bank",
   email_2: "",
   link: "http://www.renasantbank.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "RISE",
@@ -1645,7 +1645,7 @@ Business.create!(name: "RISE",
   email_2: "",
   link: "http://www.riseRE.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Roto Rooter Plumbing & Drain Service",
@@ -1663,7 +1663,7 @@ Business.create!(name: "Roto Rooter Plumbing & Drain Service",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "SAFT America Inc.",
@@ -1681,7 +1681,7 @@ Business.create!(name: "SAFT America Inc.",
   email_2: "",
   link: "http://www.saftbatteries.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Secure Records Solutions",
@@ -1699,7 +1699,7 @@ Business.create!(name: "Secure Records Solutions",
   email_2: "",
   link: "http://securerecordssolutions.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "SJ Services inc DBA Stanley Steemer",
@@ -1717,7 +1717,7 @@ Business.create!(name: "SJ Services inc DBA Stanley Steemer",
   email_2: "",
   link: "http://www.stanleysteemer.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Sleep Number by Select Comfort",
@@ -1735,7 +1735,7 @@ Business.create!(name: "Sleep Number by Select Comfort",
   email_2: "",
   link: "http://www.sleepnumber.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "South Georgia Eye Partners",
@@ -1753,7 +1753,7 @@ Business.create!(name: "South Georgia Eye Partners",
   email_2: "",
   link: "http://www.southgeorgiaeye.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "South Georgia Medical Center/SGMC",
@@ -1771,7 +1771,7 @@ Business.create!(name: "South Georgia Medical Center/SGMC",
   email_2: "",
   link: "http://www.sgmc.org",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "South Georgia Travel",
@@ -1789,7 +1789,7 @@ Business.create!(name: "South Georgia Travel",
   email_2: "christy@sgatravel.com",
   link: "http://www.sgatravel.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "South Georgia Vein Centers",
@@ -1807,7 +1807,7 @@ Business.create!(name: "South Georgia Vein Centers",
   email_2: "",
   link: "http://www.valdostaveins.net",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Southeastern Credit Union",
@@ -1825,7 +1825,7 @@ Business.create!(name: "Southeastern Credit Union",
   email_2: "info@southeasternfcu.org",
   link: "http://www.southeasterncu.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
@@ -1843,7 +1843,7 @@ Business.create!(name: "Southern Flooring of Valdosta & Kimblewood Blinds",
   email_2: "",
   link: "http://southerncarpetandtile.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Southwest Georgia Bank",
@@ -1861,7 +1861,7 @@ Business.create!(name: "Southwest Georgia Bank",
   email_2: "",
   link: "http://www.sgfc.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Spyderserve Corp",
@@ -1879,7 +1879,7 @@ Business.create!(name: "Spyderserve Corp",
   email_2: "",
   link: "http://spyderserve.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Steeda Autosports",
@@ -1897,7 +1897,7 @@ Business.create!(name: "Steeda Autosports",
   email_2: "",
   link: "http://www.steeda.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Tanner Investment Group",
@@ -1915,7 +1915,7 @@ Business.create!(name: "Tanner Investment Group",
   email_2: "",
   link: "http://www.tannerinvestmentgroup.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Team-Britt Mobile Game Arcade",
@@ -1933,7 +1933,7 @@ Business.create!(name: "Team-Britt Mobile Game Arcade",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Teamtemps Personnel Staffing, Inc.",
@@ -1951,7 +1951,7 @@ Business.create!(name: "Teamtemps Personnel Staffing, Inc.",
   email_2: "",
   link: "http://www.teamtempspersonnelstaffing.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Thacker Dermatology, LLC",
@@ -1969,7 +1969,7 @@ Business.create!(name: "Thacker Dermatology, LLC",
   email_2: "kathleenmcgraw.thacker@gmail.com",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "The Fields North Valdosta",
@@ -1987,7 +1987,7 @@ Business.create!(name: "The Fields North Valdosta",
   email_2: "",
   link: "http://www.thefieldsnorthvaldosta.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "The Gardens",
@@ -2005,7 +2005,7 @@ Business.create!(name: "The Gardens",
   email_2: "",
   link: "http://www.thegardensvaldosta.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Troy University Albany Area Support Center",
@@ -2023,7 +2023,7 @@ Business.create!(name: "Troy University Albany Area Support Center",
   email_2: "",
   link: "http://www.troy.edu/servicecenters/albany.html",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Turner's Fine Furniture",
@@ -2041,7 +2041,7 @@ Business.create!(name: "Turner's Fine Furniture",
   email_2: "",
   link: "http://www.turnerfurniture.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta Chiropractic & Rehab",
@@ -2059,7 +2059,7 @@ Business.create!(name: "Valdosta Chiropractic & Rehab",
   email_2: "",
   link: "http://www.valdostachiropractic.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta City-Manager",
@@ -2077,7 +2077,7 @@ Business.create!(name: "Valdosta City-Manager",
   email_2: "hanson@valdostacity.com",
   link: "http://www.valdostacity.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta City-Mayor",
@@ -2095,7 +2095,7 @@ Business.create!(name: "Valdosta City-Mayor",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta City Schools",
@@ -2113,7 +2113,7 @@ Business.create!(name: "Valdosta City Schools",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta Coca-Cola Bottling Company",
@@ -2131,7 +2131,7 @@ Business.create!(name: "Valdosta Coca-Cola Bottling Company",
   email_2: "",
   link: "http://cocacolaunited.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta Nissan Cadillac",
@@ -2149,7 +2149,7 @@ Business.create!(name: "Valdosta Nissan Cadillac",
   email_2: "",
   link: "http://www.thetkogroup.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta Insurance Services, Inc.",
@@ -2167,7 +2167,7 @@ Business.create!(name: "Valdosta Insurance Services, Inc.",
   email_2: "",
   link: "http://www.valdostainsurance.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
@@ -2185,7 +2185,7 @@ Business.create!(name: "Valdosta Oral & Maxillofacial Surgeons",
   email_2: "",
   link: "http://valdostaoms.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta State University",
@@ -2203,7 +2203,7 @@ Business.create!(name: "Valdosta State University",
   email_2: "",
   link: "http://www.valdosta.edu",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authority",
@@ -2221,7 +2221,7 @@ Business.create!(name: "Valdosta-Lowndes Co. Conference Center & Tourism Authori
   email_2: "",
   link: "http://www.valdostatourism.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "ValdostaSOLD Real Estate Services",
@@ -2239,7 +2239,7 @@ Business.create!(name: "ValdostaSOLD Real Estate Services",
   email_2: "info@valdostasold.com",
   link: "http://www.valdostasold.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Velas Studio",
@@ -2257,7 +2257,7 @@ Business.create!(name: "Velas Studio",
   email_2: "",
   link: "http://www.velasstudio.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "WAAC FM",
@@ -2275,7 +2275,7 @@ Business.create!(name: "WAAC FM",
   email_2: "",
   link: "http://www-C-93.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "W P Walker's Vack, Inc.",
@@ -2293,7 +2293,7 @@ Business.create!(name: "W P Walker's Vack, Inc.",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Watson's Pools & Patios, Inc.",
@@ -2311,7 +2311,7 @@ Business.create!(name: "Watson's Pools & Patios, Inc.",
   email_2: "",
   link: "http://watsonspoolsofga.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Wild Adventures Theme Park",
@@ -2329,7 +2329,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   email_2: "",
   link: "http://www.WildAdventures.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "WilTeck, LLC",
@@ -2347,7 +2347,7 @@ Business.create!(name: "WilTeck, LLC",
   email_2: "",
   link: "http://www.WilTeck.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Winnersville Fitness",
@@ -2365,7 +2365,7 @@ Business.create!(name: "Winnersville Fitness",
   email_2: "",
   link: "http://www.winnersvillefitness.com",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Wiregrass Georgia Technical College",
@@ -2383,7 +2383,7 @@ Business.create!(name: "Wiregrass Georgia Technical College",
   email_2: "",
   link: "http://www.wiregrass.edu",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Wiregrass Investment Management, LLC",
@@ -2401,7 +2401,7 @@ Business.create!(name: "Wiregrass Investment Management, LLC",
   email_2: "",
   link: "",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Worthington Family Dentistry",
@@ -2419,7 +2419,7 @@ Business.create!(name: "Worthington Family Dentistry",
   email_2: "",
   link: "http://www.worthingtonfamilydentistry.com/",
 business_offer_number: "0001",
-status: "active"
+status: "Active"
 )
 
 Business.create!(name: "Bob Fake Business",
@@ -2436,8 +2436,8 @@ Business.create!(name: "Bob Fake Business",
   email: "bob@depot.com",
   email_2: "",
   link: "fake@fake.com",
-business_offer_number: "0001",
-status: "active"
+  status: "Pending",
+  business_offer_number: "0001",
 )
 
 Business.create!(name: "Marie Fake Business",
@@ -2454,8 +2454,8 @@ Business.create!(name: "Marie Fake Business",
   email: "marie@depot.com",
   email_2: "",
   link: "marie@fake.com",
-business_offer_number: "0001",
-status: "active"
+  status: "Active",
+  business_offer_number: "0001",
 )
 
 

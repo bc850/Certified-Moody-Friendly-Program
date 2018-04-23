@@ -15,8 +15,8 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :email
       t.string :email_2
       t.string :link
-      t.string :business_offer_number
-      t.string :status
+      t.string :status, default: "Pending"
+      t.integer :business_offer_number
 
       t.timestamps
     end

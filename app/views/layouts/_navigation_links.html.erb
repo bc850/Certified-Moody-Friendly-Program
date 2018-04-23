@@ -1,15 +1,21 @@
 <ul class="nav navbar-nav pull-right" id="loggedInDesktop">
   <% if account_signed_in? %>
-  <% if current_account.accountable_type != "Business" %>
-    <li><%= link_to "Businesses", businesses_path, :style => "color: #fff" %></li>
-  <% end %>
+    <% if current_account.accountable_type != "Business" %>
+      <li><%= link_to "Businesses", businesses_path, :style => "color: #fff" %></li>
+    <% end %>
     <% if current_account.accountable_type != "SuperAccount" %>
       <% if current_account.accountable_type == "User" %>
         <li><%= link_to "Search", searches_index_path, :style => "color: #fff" %></li>
       <% else %>
-        <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
+        <% if current_account.accountable_type == "Business" %>
+          <% if @business.status == "Pending" %>
+            <li><%= link_to "New Offer", new_offer_path, :style => "display: none" %></li>
+          <% else %>
+            <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
+          <% end %>
+        <% end %>
       <% end %>
-  <% end %>
+    <% end %>
     <% if current_account.accountable_type == "SuperAccount" %>
       <li><%= link_to 'Admin Dashboard', admin_root_path, :style => "color: #fff" %></li>
     <% end %>
@@ -26,61 +32,61 @@
           <% else %>
             <li><%= link_to 'User Profile', edit_user_path(current_account.accountable_id) %></li>
           <% end %>
-        <li><%= link_to 'Account Settings', edit_account_registration_path %></li>
-    </ul>
-  </li>
+          <li><%= link_to 'Account Settings', edit_account_registration_path %></li>
+        </ul>
+      </li>
 
-  <li role="presentation" class="dropdown">
-   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-    Resources <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-   <% if current_account.accountable_type == "Business" %>
-   <li><%= link_to 'My Offers', business_offers_path(current_account.accountable_id) %></li>
-   <% else %>
-   <li><%= link_to 'My Favorites', my_favorites_path %>
-     <% end %>
-   </ul>
- </li>
- <% end %>
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Resources
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <% if current_account.accountable_type == "Business" %>
+            <li><%= link_to 'My Offers', business_offers_path(current_account.accountable_id) %></li>
+          <% else %>
+            <li><%= link_to 'My Favorites', my_favorites_path %>
+            <% end %>
+        </ul>
+      </li>
+    <% end %>
 
- <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', :style => "color: #fff" %></li>
- <% else %>
- <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
- <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
- <% end %>
+    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', :style => "color: #fff" %></li>
+  <% else %>
+    <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
+    <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
+  <% end %>
 </ul>
 
-<button id="loggedInMobile" type="button" class="navbar-toggle pull-right"
-data-toggle="collapse" data-target=".navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
+<button id="loggedInMobile" type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
 </button>
 
 <ul class="nav navbar-nav collapse navbar-collapse" id="loggedInCollapse">
   <li><%= link_to "Business", businesses_path, style: 'color:#FFFFFF;' %></li>
   <% if account_signed_in? %>
-  <li><%= link_to "Search", searches_index_path, style: 'color:#FFFFFF;' %></li>
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-      Settings (<%= (current_account.accountable.name.nil? or current_account.accountable.name == "") ? "No Name" : current_account.accountable.name %>)
-      <span class="caret"></span>
-    </a>
-    <% if current_account.accountable_type != "SuperAccount" %>
-    <ul class="dropdown-menu">
-      <% if current_account.accountable_type == "Business" %>
-      <li><%= link_to 'Business Profile', edit_business_path(current_account.accountable_id), style: 'color:#FFFFFF;' %></li>
-      <% else %>
-      <li><%= link_to 'User Profile', edit_user_path(current_account.accountable_id), style: 'color:#FFFFFF;' %></li>
-      <% end %>
-      <li><%= link_to 'Account Settings', edit_account_registration_path, style: 'color:#FFFFFF;' %></li>
-    </ul>
-  </li>
-  <% end %>
-  <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', style: 'color:#FFFFFF;' %></li>
+    <li><%= link_to "Search", searches_index_path, style: 'color:#FFFFFF;' %></li>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+        Settings (<%= (current_account.accountable.name.nil? or current_account.accountable.name == "") ? "No Name" : current_account.accountable.name %>)
+        <span class="caret"></span>
+      </a>
+      <% if current_account.accountable_type != "SuperAccount" %>
+        <ul class="dropdown-menu">
+          <% if current_account.accountable_type == "Business" %>
+            <li><%= link_to 'Business Profile', edit_business_path(current_account.accountable_id), style: 'color:#FFFFFF;' %></li>
+          <% else %>
+            <li><%= link_to 'User Profile', edit_user_path(current_account.accountable_id), style: 'color:#FFFFFF;' %></li>
+          <% end %>
+          <li><%= link_to 'Account Settings', edit_account_registration_path, style: 'color:#FFFFFF;' %></li>
+        </ul>
+      </li>
+    <% end %>
+    <li><%= link_to 'Sign out', destroy_account_session_path, :method=>'delete', style: 'color:#FFFFFF;' %></li>
   <% else %>
-  <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
-  <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
+    <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
+    <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
   <% end %>
 </ul>

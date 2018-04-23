@@ -5,12 +5,28 @@ class FeedController < ApplicationController
   before_action :set_line_items
   before_action :set_offers_for_partial
 
+  def pundit_user
+    current_account
+  end
+
   def index
     #@discounts = Discount.all
     #@coupons = Coupon.all
     #@events = Event.all
     @offers = Offer.order(:created_at).reverse
     @popularity = Offer.order("cached_votes_total DESC").limit(3)
+
+    if current_account.accountable_type == "Business"
+      #set business id number from current_account.accountable_id
+      set_business_num
+      #get the business from businesses.id based on @business_num previously set
+      @business = Business.find(@business_num)
+
+      #if the business is awaiting active status from Chamber, redirect
+      if @business.status == "Pending"
+        redirect_to business_url(@business)
+      end
+    end
 
     # THIS IS THE COMBINED FEED WITH SORTING ALGORITHM IMPLEMENTED!!
     #@combined = (@discounts + @coupons + @events).sort_by(&:created_at).reverse
@@ -32,5 +48,13 @@ class FeedController < ApplicationController
 
   def set_offers_for_partial
     @theoffers = Offer.all
+  end
+
+  def set_business
+    @business = Business.find(params[:id == @business_num])
+  end
+
+  def set_business_num
+    @business_num = current_account.accountable_id
   end
 end
