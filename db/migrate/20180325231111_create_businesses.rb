@@ -17,6 +17,8 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.string :link
       t.string :business_offer_number
       t.string :status
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps
     end
