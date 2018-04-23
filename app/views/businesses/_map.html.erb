@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-block">
     <div id="map">
-      <iframe
+      <!--<iframe
         width="300"
         height="170"
         frameborder="0"
@@ -11,16 +11,31 @@
         src="https://maps.google.com/maps?q=+<%= @business.latitude %>+,+<%= @business.longitude %>+&hl=es;z=14&amp;output=embed"
       >
       </iframe>
-      <br />
-      <small>
-        <a
-          href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"
-          style="color:#0000FF;text-align:left"
-          target="_blank"
-        >
-        See map bigger
-        </a>
-      </small>
+      <br>-->
+      <script>
+      function initMap() {
+        var test= {lat: <%= @business.latitude %>, lng: <%= @business.longitude %>};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: test
+        });
+        var infowindow = new google.maps.InfoWindow({
+          content: "<span><strong>Business Name:</strong> <%= @business.name %></span><br><span><strong>Address:</strong> <%= @business.address %>, <%= @business.city %>, <%= @business.state %>, <%= @business.zip_code %><br><strong>Phone Number:</strong> <%= @business.phone_number %></span>"
+        });
+        var marker = new google.maps.Marker({
+          position: test,
+          map: map
+        });
+        infowindow.open(map,marker);
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+      }
+    </script>
+    <script async defer
+    src=
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyD-putteHwI_lN3_b6WAbRdhOmTKC589hU&callback=initMap">
+    </script>
     </div>
   </div>
 </div>
