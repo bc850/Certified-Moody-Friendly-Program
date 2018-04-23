@@ -15,7 +15,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-
+//toggles the div in offer.show to allow user to input offer code
 $(document).on("click", "#codeButtonShow", function(){
   $("#businessCode").toggle();
 });
