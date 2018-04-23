@@ -7,14 +7,14 @@
       <% if current_account.accountable_type == "User" %>
         <li><%= link_to "Search", searches_index_path, :style => "color: #fff" %></li>
       <% else %>
-        <% if current_account.accountable_type == "Business" %>
+        <!--<% if current_account.accountable_type == "Business" %>-->
           <% if @business.status == "Pending" %>
             <li><%= link_to "New Offer", new_offer_path, :style => "display: none" %></li>
           <% else %>
             <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
           <% end %>
         <% end %>
-      <% end %>
+      <!--<% end %>-->
     <% end %>
     <% if current_account.accountable_type == "SuperAccount" %>
       <li><%= link_to 'Admin Dashboard', admin_root_path, :style => "color: #fff" %></li>
