@@ -75,7 +75,8 @@ if (params[:business_id])
              format.json {render json: Offer.order(sort_by + ' ' + order)}
     end
   end
-
+  @business = current_account.accountable_id
+  set_business
   @offers = policy_scope(Offer)
   end
 
@@ -97,6 +98,8 @@ if (params[:business_id])
   # GET /offers/1/edit
   def edit
     authorize @offer
+    @business = current_account.accountable_id
+    set_business
   end
 
   # POST /offers
