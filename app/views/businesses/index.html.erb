@@ -1,4 +1,21 @@
-<div class="pushDown">
+<div class="container-fluid" id="hero" style="padding-top: 105px;">
+  <div class="col-md-3 favsPartial">
+    <%= render 'favs_partial' %>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <%= render 'business_list' %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="row" id="comp1">
+      <h3>Popular Offers</h3>
+      <%= render 'popularity_component' %>
+    </div>
+  </div>
+</div>
+
+<!--
 <p id="notice"><%= notice %></p>
 
 <h1>Businesses</h1>
@@ -55,7 +72,8 @@
 
 <br>
 
-<!--<%= link_to 'New Business', new_business_path %>-->
+<%= link_to 'New Business', new_business_path %>
 
 <p><%= paginate @businesses %></p>
 </div>
+-->

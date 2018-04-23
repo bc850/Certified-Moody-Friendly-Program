@@ -17,14 +17,6 @@
           <%= render 'layouts/navigation_links' %>
         <% else %>
           <div class="pull-right" id="navInput">
-            <!--
-            <form id="navForm" action="accounts/sign_in" method="POST">
-              <input id="navFormInputs" type="text" name="uid" placeholder="Username">
-              <input id="navFormInputs" type="password" name="pwd" placeholder="Password">
-              <button id="navSubmit" type="submit" name="submit">Login</button>
-            </form>
-            -->
-
             <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <div class="form-inputs form-inline" id="navFormLogin">
                 <%= f.input :email, label: false, placeholder: 'user@domain.com', label_html: { class: 'navFormInputs' }, required: false, autofocus: true %>
@@ -32,8 +24,7 @@
                 <%= f.button :submit, "Log in", label_html: { class: 'navSubmit' } %>
               </div>
             <% end %>
-
-            <%= button_to "Login", new_account_session_path, :id => "navSubmit2", :class => "pull-right" %>
+              <%= button_to "Login", new_account_session_path, :id => "navSubmit2", :class => "pull-right" %>
           </div>
         <% end %>
       </div>

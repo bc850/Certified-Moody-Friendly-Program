@@ -1,0 +1,7 @@
+<% @popularity.each do |offer| %>
+  <strong><%= link_to offer.name, offer_path(offer.id) %></strong>
+  <p id="popularityParagraph">
+    <span id="redColorSpan"><%= offer.cached_votes_total %></span>
+    favorites for this
+    <%= offer.offering_type %>!</p>
+<% end %>

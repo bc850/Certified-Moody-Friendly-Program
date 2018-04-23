@@ -1,6 +1,8 @@
 class BusinessesController < ApplicationController
   before_action :set_business, only: [:show, :edit, :update]
   before_action :authenticate_account!
+  before_action :set_offers_for_partial
+  before_action :set_popularity_component
 
   def pundit_user
     current_account
@@ -91,4 +93,11 @@ class BusinessesController < ApplicationController
       params.require(:business).permit(:name, :address, :city, :state, :zip, :owner_fname, :owner_lname, :email, :email_2, :business_offer_number, :category, :store_id, :description, :phone_number, :link)
     end
 
+    def set_offers_for_partial
+      @theoffers = Offer.all
+    end
+
+    def set_popularity_component
+      @popularity = Offer.order("cached_votes_total DESC").limit(3)
+    end
 end

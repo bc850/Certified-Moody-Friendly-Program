@@ -1,0 +1,10 @@
+<div id="businessID">
+  <% @businesses.each do |business| %>
+    <div id="inside">
+      <%= link_to business.name, business_path(business.id) %>
+    </div>
+  <% end %>
+  <div style="text-align: center;">
+    <p><%= paginate @businesses %></p>
+  </div>
+</div>
