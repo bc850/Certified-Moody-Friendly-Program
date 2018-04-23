@@ -33,11 +33,12 @@ class OfferDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :business,
-    :line_items,
     :id,
     :name,
     :cached_votes_total,
-    :analytics
+    :analytics,
+    :created_at,
+    :updated_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -66,7 +67,6 @@ class OfferDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :business,
-    :line_items,
     :name,
     :start_date,
     :end_date,
@@ -76,8 +76,6 @@ class OfferDashboard < Administrate::BaseDashboard
     :offering_type,
     :img_url,
     :event_url,
-    :cached_votes_total,
-    :analytics,
   ].freeze
 
   # Overwrite this method to customize how offers are displayed

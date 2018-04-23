@@ -42,6 +42,8 @@ class BusinessDashboard < Administrate::BaseDashboard
     :account,
     :id,
     :name,
+    :created_at,
+    :updated_at,
     :status,
   ].freeze
 

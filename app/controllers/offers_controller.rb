@@ -156,7 +156,7 @@ if (params[:business_id])
     end
 
     def order
-       %w(asc desc).include?(params[:order]) ? params[:order] : 'asc'
+       %w(desc asc).include?(params[:order]) ? params[:order] : 'desc'
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_offer

@@ -3,6 +3,7 @@
 <div id="offerDisplay" class="col-md-6">
 <p id="notice"><%= notice %></p>
 
+</br>
 <% if @business.status == "Pending" %>
   <h3>Your status is still pending.</h3>
   <p>Please contact an administrator to get your flag lifted.</p>
@@ -11,7 +12,7 @@
 <% end %>
 
 <p>
-  <strong><%= @business.name %></strong>
+  <h3><%= @business.name %></h3>
 </p>
 
 <p>
@@ -70,10 +71,18 @@
 </p>
 
 <p>
-  <strong>Link:</strong>
+  <strong>Website:</strong>
   <%= @business.link %>
 </p>
 
+<!--
+<% if @business.link.blank? %>
+<% else %>
+<p>
+  <%= link_to 'Our Site', extlink2(@business.link) %>
+</p>
+<% end %>
+-->
 <!--
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>
