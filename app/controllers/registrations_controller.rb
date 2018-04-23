@@ -35,4 +35,25 @@ class RegistrationsController < Devise::RegistrationsController
     @account.accountable.destroy!
     super
   end
+
+  def edit
+    @business = current_account.accountable_id
+    set_business
+  end
+
+  #def update
+  #  @business = current_account.accountable_id
+  #  set_business
+  #  respond_to do |format|
+  #    if @user.save
+  #      format.html { redirect_to edit_account_registration_path, notice: 'Offer was successfully updated.' }
+  #    end
+  #  end
+  #end
+
+  private
+
+  def set_business
+    @business = Business.find(@business)
+  end
 end

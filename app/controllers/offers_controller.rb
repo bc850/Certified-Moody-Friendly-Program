@@ -82,12 +82,16 @@ if (params[:business_id])
   # GET /offers/1
   # GET /offers/1.json
   def show
+    @business = current_account.accountable_id
+    set_business
   end
 
   # GET /offers/new
   def new
     @offer = Offer.new
     authorize @offer
+    @business = current_account.accountable_id
+    set_business
   end
 
   # GET /offers/1/edit
@@ -111,7 +115,7 @@ if (params[:business_id])
       else
         @offer.offer_code = '0001'
       end
-      
+
       if(@offer.business.address != nil)
         @offer.location = (@offer.business).address + ", " + (@offer.business).city + ", " + (@offer.business).state + " " + (@offer.business).zip_code
       end
@@ -186,5 +190,9 @@ if (params[:business_id])
 
     def set_offers_for_partial
       @theoffers = Offer.all
+    end
+
+    def set_business
+      @business = Business.find(@business)
     end
 end
