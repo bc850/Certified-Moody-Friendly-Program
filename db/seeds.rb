@@ -2192,7 +2192,8 @@ Business.create!(name: "Marie Fake Business",
   phone_number: "229-242-8887",
   email: "marie@depot.com",
   email_2: "",
-  link: "marie@fake.com"
+  link: "marie@fake.com",
+  status: "Active"
 )
 
 
