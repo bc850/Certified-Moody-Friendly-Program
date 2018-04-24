@@ -1,0 +1,8 @@
+<div id="favorite">
+  <h3>My Listings</h3>
+  <% @theoffers.each do |offer| %>
+    <% if offer.business_id == @business.id %>
+      <strong><%= link_to offer.name, offer_path(offer.id) %></strong><br>
+    <% end %>
+  <% end %>
+</div>
