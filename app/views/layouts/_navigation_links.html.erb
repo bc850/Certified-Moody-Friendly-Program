@@ -9,9 +9,9 @@
       <% else %>
         <!--<% if current_account.accountable_type == "Business" %>-->
           <% if @business.status == "Pending" %>
-            <li><%= link_to "New Offer", new_offer_path, :style => "display: none" %></li>
+            <li><%= link_to "New Listing", new_offer_path, :style => "display: none" %></li>
           <% else %>
-            <li><%= link_to "New Offer", new_offer_path, :style => "color: #fff" %></li>
+            <li><%= link_to "New Listing", new_offer_path, :style => "color: #fff" %></li>
           <% end %>
         <% end %>
       <!--<% end %>-->
@@ -43,7 +43,7 @@
         </a>
         <ul class="dropdown-menu">
           <% if current_account.accountable_type == "Business" %>
-            <li><%= link_to 'My Offers', business_offers_path(current_account.accountable_id) %></li>
+            <li><%= link_to 'My Listings', business_offers_path(current_account.accountable_id) %></li>
           <% else %>
             <li><%= link_to 'My Favorites', my_favorites_path %>
             <% end %>
