@@ -582,6 +582,7 @@ Business.create!(name: "Cre8ive Zone",
   email: "eomiteru2@yahoo.com",
   email_2: "",
   link: "http://www.TheCre8iveZone.com",
+  img_url: open('app/assets/images/cre8.png'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -906,6 +907,7 @@ Business.create!(name: "Georgia Military College",
   email: "lhafer@gmc.edu",
   email_2: "val_admissions@gmc.cc.ga.ua",
   link: "http://www.gmc.edu",
+  img_url: open('app/assets/images/gmc.png'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1050,6 +1052,7 @@ Business.create!(name: "The Home Depot",
   email: "Peter_A_Layne@homedepot.com",
   email_2: "",
   link: "http://http://www.homedepot.com",
+  img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1212,6 +1215,7 @@ Business.create!(name: "Lemongrass Day Spa",
   email: "michellealamb@gmail.com",
   email_2: "",
   link: "http://www.lemongrassdayspaonline.com",
+  img_url: open('app/assets/images/lemongrass.jpg'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1320,6 +1324,7 @@ Business.create!(name: "Mellow Mushroom",
   email: "valdosta@coastalmellow.com",
   email_2: "",
   link: "http://www.mellowmushroom.com",
+  img_url: open('app/assets/images/mellow.jpg'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -2328,6 +2333,7 @@ Business.create!(name: "Wild Adventures Theme Park",
   email: "mdeese@wildadventures.com",
   email_2: "",
   link: "http://www.WildAdventures.com",
+  img_url: open('app/assets/images/wildad.jpg'),
 business_offer_number: "0001",
 status: "Active"
 )
@@ -2767,7 +2773,7 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   location: '3320 Bemiss Road, Valdosta, GA 31605',
   offering_type: 'Event',
   business_id: 32,
-  img_url: open('app/assets/images/cre8.png'),
+  img_url: open('app/assets/images/cre8-pic.jpg'),
   event_url: 'www.facebook.com/faked',
   offer_code: '0001'
 )
@@ -2781,7 +2787,7 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
   location: '1526 Baytree Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
   business_id: 73,
-  img_url: open('app/assets/images/mellow.jpg'),
+  img_url: open('app/assets/images/mellow-pic.jpg'),
   offer_code: '0001'
 )
 # . . .
@@ -2793,7 +2799,7 @@ Offer.create!(name: 'Lemongrass Day Spa',
   location: '3338 D Country Club Road, Valdosta, GA 31605',
   offering_type: 'Coupon',
   business_id: 67,
-  img_url: open('app/assets/images/lemongrass.jpg'),
+  img_url: open('app/assets/images/lemongrass-pic.jpg'),
   offer_code: '0001'
 )
 # . . .
@@ -2805,7 +2811,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   location: '4201 N Forrest St, Valdosta, GA 31605',
   offering_type: 'Event',
   business_id: 50,
-  img_url: open('app/assets/images/gmc.png'),
+  img_url: open('app/assets/images/gmc-pic.jpg'),
   event_url: 'www.facebook.com/gmc/fake',
   offer_code: '0001'
 )
@@ -2818,7 +2824,7 @@ Offer.create!(name: 'Home Depot Military Discount',
   location: '1825 Norman Dr, Valdosta, GA 31601',
   offering_type: 'Discount',
   business_id: 58,
-  img_url: open('app/assets/images/The_Home_Depot_Logo_t670.jpg'),
+  img_url: open('app/assets/images/home_depot_pic.jpg'),
   offer_code: '0001'
 )
 # . . .
@@ -2830,7 +2836,7 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   location: '3766 Old Clyattville Rd, Valdosta, GA 31601',
   offering_type: 'Coupon',
   business_id: 129,
-  img_url: open('app/assets/images/wildad.jpg'),
+  img_url: open('app/assets/images/wild_adv_valdosta.jpg'),
   offer_code: '0001'
 )
 # . . .
