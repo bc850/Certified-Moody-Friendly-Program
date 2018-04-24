@@ -3,6 +3,7 @@ class OffersController < ApplicationController
   before_action :authenticate_account!
   before_action :set_popularity_for_partial
   before_action :set_offers_for_partial
+  before_action :set_businesses
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
@@ -35,6 +36,8 @@ class OffersController < ApplicationController
 
   def my_favorites
     @theoffers = Offer.order(:created_at).reverse
+    @business = current_account.accountable_id
+    set_business
   end
 
   def like
@@ -197,5 +200,9 @@ if (params[:business_id])
 
     def set_business
       @business = Business.find(@business)
+    end
+
+    def set_businesses
+      @businesses_all = Business.all
     end
 end

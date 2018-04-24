@@ -4,17 +4,7 @@
   <div class="col-md-3 favsPartial">
     <%= render 'favs_partial' %>
   </div>
-  <div class="col-xs-2 col-md-1 pull-left">
-    <% @offers.each do |offer| %>
-      <% test = offer.business_id %>
-      <% @businesses_all.each do |bizall| %>
-        <% if test == bizall.id %>
-          <%= image_tag(bizall.img_url, width: 75) if bizall.img_url.present? %>
-        <% end %>
-      <% end %>
-    <% end %>
-  </div>
-  <div class="col-xs-10 col-md-5">
+  <div class="col-md-6">
     <div class="row">
       <%= render 'feed_partial' %>
     </div>
@@ -24,11 +14,5 @@
       <h3>Popular Offers</h3>
       <%= render 'popularity_component' %>
     </div>
-    <!--<div class="row" id="comp2">
-      <%= button_to "Search Button", searches_index_path, :method => :get,
-          :id => "bizButton" %>
-      <%= button_to "Business Button", businesses_path, :method => :get,
-          :id => "bizButton" %>
-    </div>-->
   </div>
 </div>
