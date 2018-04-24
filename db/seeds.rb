@@ -2799,7 +2799,7 @@ Offer.create!(name: 'Lemongrass Day Spa',
   location: '3338 D Country Club Road, Valdosta, GA 31605',
   offering_type: 'Coupon',
   business_id: 67,
-  img_url: open('app/assets/images/lemongrass-pic.jpg'),
+  img_url: open('app/assets/images/giftcardwhite.png'),
   offer_code: '0001'
 )
 # . . .
