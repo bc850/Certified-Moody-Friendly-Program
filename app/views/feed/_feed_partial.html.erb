@@ -16,7 +16,7 @@
       <p style="font-size: 16px;">
         <%= offer.description %>
       </p>
-      <td><%= link_to image_tag(offer.img_url, style: "width: 50%;"), offer_path(offer.id) %></td>
+      <td><%= link_to image_tag(offer.img_url, id: "offerImage"), offer_path(offer.id) %></td>
       <br>
       <br>
       <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
