@@ -3,6 +3,10 @@
 @import "font-awesome";
 @import "bourbon";
 
+body {
+  background-color: #f1f1f1;
+}
+
 #banner {
   background-color: #0F3D5E;
   height: 95px;
@@ -268,6 +272,7 @@
     padding-top: 55px;
 
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -300,6 +305,7 @@
 
   #favoritePage {
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -524,6 +530,7 @@
     padding-top: 95px;
 
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -538,6 +545,7 @@
     }
 
     #favorite {
+      background-color: #fff;
     //  border: 1px solid grey;
       padding: 10px;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
@@ -547,6 +555,7 @@
     }
 
     #comp1 {
+      background-color: #fff;
 
       #popularityParagraph {
         text-indent: 10px;
