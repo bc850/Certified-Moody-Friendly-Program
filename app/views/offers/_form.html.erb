@@ -5,7 +5,7 @@
 <%= form_with(model: offer, local: true) do |form| %>
   <% if offer.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this listing from being saved:</h2>
 
       <ul>
       <% offer.errors.full_messages.each do |message| %>
@@ -65,7 +65,7 @@
 
 <div class="disclaimer">
   <h4>Disclaimer</h4>
-  <p>Please note, any new offer posted to this site must be suitable for all audiences. No use of profanity or inappropriate images will be tolerated. Please take the time to review your offer now before submitting.</p>
+  <p>Please note, any new listing posted to this site must be suitable for all audiences. No use of profanity or inappropriate images will be tolerated. Please take the time to review your listing now before submitting.</p>
 </div>
 
 <div class="field">
