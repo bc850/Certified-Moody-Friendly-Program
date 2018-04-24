@@ -3,40 +3,17 @@
 @import "font-awesome";
 @import "bourbon";
 
-/*.notice, #notice {
-		background: #a0c0ff;
-		border-radius: 0.5em;
-		border: solid 0.177em #0F3D5E;
-		color: #e0eaff;
-		font-weight: bold;
-		margin-bottom: 1em;
-		padding: 1em 1.414em;
-		text-align: center;
+body {
+  background-color: #f1f1f1;
 }
-*/
 
-/*.notice, #notice {
-		background: #0000;
-		border-radius: 0.5em;
-		border: solid 0.177em #135382;
-		color: #135382;
-		font-weight: bold;
-		margin-bottom: 1em;
-		padding: 1em 1.414em;
-		text-align: center;
-	}
-*/
 #banner {
   background-color: #0F3D5E;
   height: 95px;
-  //margin: 0 !important;
-  //border-radius: 0 !important;
-  //-moz-border-radius: 0 !important;
   border: none;
 }
 
 #hero {
-  // background-color: #f2f2f2;
   #feedButtonNotLiked {
     border: none;
     background-color: #fff;
@@ -54,7 +31,6 @@
 
   #feedButtonLiked {
     border: none;
-    // background-color: #f2f2f2;
     color: red;
     font-size: 40px;
   }
@@ -240,36 +216,7 @@
           }
         }
       }
-/*
-      #hero-left-row3 form input {
-        width: 340px;
-        height: 40px;
-        padding: 0 10px;
-        margin-right: 10px;
-        border: 1px solid #123E5C;
-        background-color: #fff;
-        font-size: 14px;
-        color: #000000;
-        line-height: 30px;
-      }
 
-      #hero-left-row3 form button {
-        width: 120px;
-        height: 40px;
-        margin-right: 10px;
-        border-radius: 40px;
-        background-color: #123E5C;
-        font-size: 14px;
-        color: #fff;
-        line-height: 20px;
-      }
-
-      #hero-left-row3 form button:hover {
-        border: 2px solid #123E5C;
-        background-color: #fff;
-        color: #9E2438;
-      }
-*/
       #hero-left-row4 {
         padding-top: 25px;
       }
@@ -325,6 +272,7 @@
     padding-top: 55px;
 
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -357,6 +305,7 @@
 
   #favoritePage {
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -581,6 +530,7 @@
     padding-top: 95px;
 
     #inside {
+      background-color: #fff;
       // border: 1px solid grey;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-bottom: 10px;
@@ -595,6 +545,7 @@
     }
 
     #favorite {
+      background-color: #fff;
     //  border: 1px solid grey;
       padding: 10px;
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
@@ -604,6 +555,7 @@
     }
 
     #comp1 {
+      background-color: #fff;
 
       #popularityParagraph {
         text-indent: 10px;

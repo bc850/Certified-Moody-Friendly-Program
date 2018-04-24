@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.integer "business_offer_number", default: 1
     t.float "latitude"
     t.float "longitude"
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

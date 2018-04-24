@@ -1,0 +1,8 @@
+<div id="favorite">
+  <h3>My Favorites</h3>
+  <% @theoffers.each do |offer| %>
+    <% if current_account.voted_for? offer %>
+      <strong><%= link_to offer.name, offer_path(offer.id) %></strong><br>
+    <% end %>
+  <% end %>
+</div>
