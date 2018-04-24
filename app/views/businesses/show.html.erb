@@ -76,7 +76,11 @@
   <%= @business.link %>
 </p>
 
+</br>
+<% if @business.status != "Pending" %>
 <%= render "map" %>
+<% end %>
+</br>
 
 </div>
 
