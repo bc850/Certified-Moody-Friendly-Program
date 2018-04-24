@@ -1,7 +1,23 @@
 <div id="businessID">
   <% @businesses.each do |business| %>
     <div id="inside">
+      <%= image_tag(business.img_url, width: 100) if business.img_url.present? %>
       <%= link_to business.name, business_path(business.id) %>
+      <p>
+        <strong>Address:
+        </strong><%= business.address %>,
+        <%= business.city %>,
+        <%= business.state %>,
+        <%= business.zip_code %>
+      </p>
+      <p>
+        <strong>Category:
+        </strong><%= business.category %>
+      </p>
+      <p>
+        <strong>Description:
+        </strong><%= business.description %>
+      </p>
     </div>
   <% end %>
   <div style="text-align: center;">
