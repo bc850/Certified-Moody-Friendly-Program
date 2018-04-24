@@ -1,0 +1,27 @@
+<div id="businessID">
+  <% @offers.each do |offer| %>
+    <div id="inside">
+      <% test = offer.business_id %>
+      <% @businesses_all.each do |bizall| %>
+        <% if test == bizall.id %>
+          <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+        <% end %>
+      <% end %>
+      <p style="float: right; color: #adafb2;">
+        <%= offer.offering_type %>
+      </p>
+      <br>
+      <br>
+      <p style="font-size: 16px;">
+        <%= offer.description %>
+      </p>
+      <td><%= link_to image_tag(offer.img_url, style: "width: 100%;"), offer_path(offer.id) %></td>
+      <br>
+      <br>
+      <%= link_to '', edit_offer_path(offer), class: "fa fa-edit pull-left", style: "margin-left: 75px; font-size: 35px;" %>
+      <%= link_to '', offer, method: :delete, data: { confirm: 'Are you sure?' }, class: "fa fa-trash pull-right", style: "margin-right: 75px; font-size: 35px;" %>
+      <br>
+      <br>
+    </div>
+  <% end %>
+</div>

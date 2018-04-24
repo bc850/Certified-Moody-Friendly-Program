@@ -2,7 +2,13 @@
 
 <div class="container-fluid" id="hero">
   <div class="col-md-3 favsPartial">
-    <%= render 'favs_partial' %>
+    <% if account_signed_in? %>
+      <% if current_account.accountable_type == "User" %>
+        <%= render 'favs_partial' %>
+      <% elsif current_account.accountable_type == "Business" %>
+        <%= render 'my_listings' %>
+      <% end %>
+    <% end %>
   </div>
   <div class="col-md-6">
     <div class="row">
@@ -11,7 +17,7 @@
   </div>
   <div class="col-md-3">
     <div class="row" id="comp1">
-      <h3>Popular Offers</h3>
+      <h3>Popular Listings</h3>
       <%= render 'popularity_component' %>
     </div>
   </div>

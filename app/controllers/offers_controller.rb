@@ -22,13 +22,13 @@ class OffersController < ApplicationController
       @offer.update_attributes(:analytics => @offer.analytics)
       #outputs that code was correct
       respond_to do |format|
-        format.html { redirect_to offer_url, notice: 'Offer code was successful!' }
+        format.html { redirect_to offer_url, notice: 'Listing code was successful!' }
         format.json { head :no_content }
       end
     # outputs that code was incorrect
     else
       respond_to do |format|
-        format.html { redirect_to offer_url, notice: 'Offer code was incorrect!' }
+        format.html { redirect_to offer_url, notice: 'Listing code was incorrect!' }
         format.json { head :no_content }
       end
     end
@@ -129,7 +129,7 @@ if (params[:business_id])
 
     respond_to do |format|
       if @offer.save
-        format.html { redirect_to @offer, notice: 'Offer was successfully created.' }
+        format.html { redirect_to @offer, notice: 'Listing was successfully created.' }
         format.json { render :show, status: :created, location: @offer }
       else
         format.html { render :new }
@@ -144,7 +144,7 @@ if (params[:business_id])
     authorize @offer
     respond_to do |format|
       if @offer.update(offer_params)
-        format.html { redirect_to @offer, notice: 'Offer was successfully updated.' }
+        format.html { redirect_to @offer, notice: 'Listing was successfully updated.' }
         format.json { render :show, status: :ok, location: @offer }
       else
         format.html { render :edit }
@@ -159,7 +159,7 @@ if (params[:business_id])
     authorize @offer
     @offer.destroy
     respond_to do |format|
-      format.html { redirect_to offers_url, notice: 'Offer was successfully destroyed.' }
+      format.html { redirect_to offers_url, notice: 'Listing was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

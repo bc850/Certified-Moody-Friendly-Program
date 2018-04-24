@@ -3,7 +3,11 @@
     <ul>
       <li class="<%= 'active' if current_page?(feed_index_path) %>"><%= link_to "", feed_index_path, :class => "fa fa-home", :id => "rssToggle" %></li>
       <li class="<%= 'active' if current_page?(searches_index_path) %>"><%= link_to "", searches_index_path, :class => "fa fa-search", :id => "searchToggle" %></li>
-      <li class="<%= 'active' if current_page?(my_favorites_path) %>"><%= link_to "", my_favorites_path, :class => "fa fa-heart", :id => "starToggle" %></li>
+      <% if current_account.accountable_type == "User" %>
+        <li class="<%= 'active' if current_page?(my_favorites_path) %>"><%= link_to "", my_favorites_path, :class => "fa fa-heart", :id => "starToggle" %></li>
+      <% elsif current_account.accountable_type == "Business" %>
+        <li class="<%= 'active' if current_page?(offers_path) %>"><%= link_to "", offers_path, :class => "fa fa-list-ol", :id => "starToggle" %></li>
+      <% end %>
       <li class="<%= 'active' if current_page?(businesses_path) %>"><%= link_to "", businesses_path, :class => "fa fa-building", :id => "businessToggle" %></li>
     </ul>
   </div>
