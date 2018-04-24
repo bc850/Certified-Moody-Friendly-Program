@@ -1,17 +1,27 @@
 <div id="favoritePage" class="pushDown">
   <h3>My Favorites</h3>
   <% @theoffers.each do |offer| %>
-    <!--<% if current_account.voted_for? offer %> <strong><%= link_to offer.name, offer_path(offer.id) %></strong><br> <% end %>-->
     <% if current_account.voted_for? offer %>
       <div id="inside">
-        <td><%= image_tag(offer.img_url, width: 100) if offer.img_url.present? %></td>
-        <strong><%= link_to offer.name, offer_path(offer.id) %></strong>
-        <!--<br />-->
-        <p>
+        <% test = offer.business_id %>
+        <% @businesses_all.each do |bizall| %>
+          <% if test == bizall.id %>
+            <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+          <% end %>
+        <% end %>
+        <p style="float: right; color: #adafb2;">
+          <%= offer.offering_type %>
+        </p>
+        <br>
+        <br>
+        <p style="font-size: 16px;">
           <%= offer.description %>
         </p>
+        <td><%= link_to image_tag(offer.img_url, style: "width: 100%;"), offer_path(offer.id) %></td>
+        <br>
+        <br>
         <span id="offerDate" style="float: right"><%= offer.created_at %></span>
-        <!--<br />--->
+
         <% if current_account.voted_for? offer %>
           <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart" %>
         <% else %>
