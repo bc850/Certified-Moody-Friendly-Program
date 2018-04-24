@@ -13,6 +13,9 @@ class BusinessesController < ApplicationController
   def index
     @businesses = Business.all
     @businesses = @businesses.order('created_at asc').page params[:page]
+
+    @business = current_account.accountable_id
+    set_business_mobile
   end
 =begin
   # GET /businesses/1
@@ -99,5 +102,9 @@ class BusinessesController < ApplicationController
 
     def set_popularity_component
       @popularity = Offer.order("cached_votes_total DESC").limit(3)
+    end
+
+    def set_business_mobile
+      @business = Business.find(@business)
     end
 end
