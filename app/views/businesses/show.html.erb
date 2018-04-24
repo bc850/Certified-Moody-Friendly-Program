@@ -1,87 +1,64 @@
-<div class="pushDown">
-<div id="offerLeft" class="col-md-3"></div>
-<div id="offerDisplay" class="col-md-6">
-<p id="notice"><%= notice %></p>
-
-</br>
-<% if @business.status == "Pending" %>
-  <h3>Your status is still pending.</h3>
-  <p>Please contact an administrator to get your flag lifted.</p>
-  <p>You may edit your profile in the Settings tab above.</p>
-  <br>
-  <br>
-<% end %>
-
-<p>
-  <h3><%= @business.name %></h3>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @business.address %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @business.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @business.state %>
-</p>
-
-<p>
-  <strong>Zip Code:</strong>
-  <%= @business.zip_code %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @business.category %>
-</p>
-
-<p>
-  <strong>Store:</strong>
-  <%= @business.store_id %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @business.description %>
-</p>
-
-<p>
-  <strong>Owner First Name:</strong>
-  <%= @business.owner_fname %>
-</p>
-
-<p>
-  <strong>Owner Last Name:</strong>
-  <%= @business.owner_lname %>
-</p>
-
-<p>
-  <strong>Phone number:</strong>
-  <%= @business.phone_number %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @business.email %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @business.link %>
-</p>
-
-</br>
-<% if @business.status != "Pending" %>
-<%= render "map" %>
-<% end %>
-</br>
-
-</div>
-
+<div class="container-fluid" id="hero">
+  <div id="offerLeft" class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row">
+      <div id="inside" style="margin-top: 15px; text-align: center;">
+        <% if @business.status == "Pending" %>
+          <h3>Your status is still pending.</h3>
+          <p>Please contact an administrator to get your flag lifted.</p>
+          <p>You may edit your profile in the Settings tab above.</p>
+          <br>
+          <br>
+        <% end %>
+        <div id="mobileBusinessView">
+          <%= image_tag(@business.img_url, style: "display: block; margin: auto;") %>
+          <br>
+          <p>
+            <h3><%= @business.name %></h3>
+          </p>
+          <p>
+            <strong>Address:</strong>
+            <%= @business.address %>,
+            <%= @business.city %>,
+            <%= @business.state %>,
+            <%= @business.zip_code %>
+          </p>
+          <p>
+            <strong>Category:</strong>
+            <%= @business.category %>
+          </p>
+          <p>
+            <strong>Store:</strong>
+            <%= @business.store_id %>
+          </p>
+          <p>
+            <strong>Description:</strong>
+            <%= @business.description %>
+          </p>
+          <p>
+            <strong>Contact Name:</strong>
+            <%= @business.owner_fname %>
+            <%= @business.owner_lname %>
+          </p>
+          <p>
+            <strong>Phone number:</strong>
+            <%= @business.phone_number %>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <%= @business.email %>
+          </p>
+          <p>
+            <strong>Website:</strong>
+            <%= @business.link %>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 15px;">
+      <% if @business.status != "Pending" %>
+        <%= render "map" %>
+      <% end %>
+    </div>
+  </div>
 </div>
