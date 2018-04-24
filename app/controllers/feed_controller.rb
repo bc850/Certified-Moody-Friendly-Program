@@ -4,6 +4,7 @@ class FeedController < ApplicationController
   before_action :set_offers
   before_action :set_line_items
   before_action :set_offers_for_partial
+  before_action :set_businesses
 
   def pundit_user
     current_account
@@ -56,5 +57,9 @@ class FeedController < ApplicationController
 
   def set_business_num
     @business_num = current_account.accountable_id
+  end
+
+  def set_businesses
+    @businesses_all = Business.all
   end
 end
