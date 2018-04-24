@@ -1,33 +1,44 @@
-<div id="favoritePage" class="pushDown">
-  <h3>My Favorites</h3>
-  <% @theoffers.each do |offer| %>
-    <% if current_account.voted_for? offer %>
-      <div id="inside">
-        <% test = offer.business_id %>
-        <% @businesses_all.each do |bizall| %>
-          <% if test == bizall.id %>
-            <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
-          <% end %>
-        <% end %>
-        <p style="float: right; color: #adafb2;">
-          <%= offer.offering_type %>
-        </p>
-        <br>
-        <br>
-        <p style="font-size: 16px;">
-          <%= offer.description %>
-        </p>
-        <td><%= link_to image_tag(offer.img_url, style: "width: 100%;"), offer_path(offer.id) %></td>
-        <br>
-        <br>
-        <span id="offerDate" style="float: right"><%= offer.created_at %></span>
+<div class="container-fluid" id="hero">
+  <div class="col-md-3 favsPartial" style="margin-top: 55px;">
+    <%= render 'favs_partial' %>
+  </div>
+  <div id="favoritePage" class="col-md-6">
+    <h3>My Favorites</h3>
+    <% @theoffers.each do |offer| %>
+      <% if current_account.voted_for? offer %>
+        <div id="inside">
+          <% test = offer.business_id %>
+            <% @businesses_all.each do |bizall| %>
+              <% if test == bizall.id %>
+                <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+              <% end %>
+            <% end %>
+            <p style="float: right; color: #adafb2;">
+              <%= offer.offering_type %>
+            </p>
+            <br>
+            <br>
+            <p style="font-size: 16px;">
+              <%= offer.description %>
+            </p>
+            <td><%= link_to image_tag(offer.img_url, style: "width: 100%;"), offer_path(offer.id) %></td>
+            <br>
+            <br>
+            <span id="offerDate" style="float: right"><%= offer.created_at %></span>
 
-        <% if current_account.voted_for? offer %>
-          <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart" %>
-        <% else %>
-          <%= link_to '', like_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart-empty" %>
+            <% if current_account.voted_for? offer %>
+              <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart" %>
+            <% else %>
+              <%= link_to '', like_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart-empty" %>
+            <% end %>
+          </div>
         <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-3">
+      <div class="row" id="comp1" style="margin-top: 55px;">
+        <h3>Popular Offers</h3>
+        <%= render 'popularity_component' %>
       </div>
-    <% end %>
-  <% end %>
-</div>
+    </div>
+  </div>
