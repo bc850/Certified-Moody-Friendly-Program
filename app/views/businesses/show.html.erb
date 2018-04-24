@@ -10,43 +10,49 @@
           <br>
           <br>
         <% end %>
-        <%= image_tag(@business.img_url, style: "display: block; margin: auto;") %>
-        <br>
-        <p>
-          <h3><%= @business.name %></h3>
-        </p>
-        <p>
-          <strong>Address:</strong>
-          <%= @business.address %>, <%= @business.city %>, <%= @business.state %>, <%= @business.zip_code %>
-        </p>
-        <p>
-          <strong>Category:</strong>
-          <%= @business.category %>
-        </p>
-        <p>
-          <strong>Store:</strong>
-          <%= @business.store_id %>
-        </p>
-        <p>
-          <strong>Description:</strong>
-          <%= @business.description %>
-        </p>
-        <p>
-          <strong>Contact Name:</strong>
-          <%= @business.owner_fname %> <%= @business.owner_lname %>
-        </p>
-        <p>
-          <strong>Phone number:</strong>
-          <%= @business.phone_number %>
-        </p>
-        <p>
-          <strong>Email:</strong>
-          <%= @business.email %>
-        </p>
-        <p>
-          <strong>Website:</strong>
-          <%= @business.link %>
-        </p>
+        <div id="mobileBusinessView">
+          <%= image_tag(@business.img_url, style: "display: block; margin: auto;") %>
+          <br>
+          <p>
+            <h3><%= @business.name %></h3>
+          </p>
+          <p>
+            <strong>Address:</strong>
+            <%= @business.address %>,
+            <%= @business.city %>,
+            <%= @business.state %>,
+            <%= @business.zip_code %>
+          </p>
+          <p>
+            <strong>Category:</strong>
+            <%= @business.category %>
+          </p>
+          <p>
+            <strong>Store:</strong>
+            <%= @business.store_id %>
+          </p>
+          <p>
+            <strong>Description:</strong>
+            <%= @business.description %>
+          </p>
+          <p>
+            <strong>Contact Name:</strong>
+            <%= @business.owner_fname %>
+            <%= @business.owner_lname %>
+          </p>
+          <p>
+            <strong>Phone number:</strong>
+            <%= @business.phone_number %>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <%= @business.email %>
+          </p>
+          <p>
+            <strong>Website:</strong>
+            <%= @business.link %>
+          </p>
+        </div>
       </div>
     </div>
     <div class="row" style="margin-bottom: 15px;">
