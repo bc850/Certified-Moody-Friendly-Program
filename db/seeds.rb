@@ -2773,8 +2773,8 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
   location: '3320 Bemiss Road, Valdosta, GA 31605',
   offering_type: 'Event',
   business_id: 32,
-  img_url: open('app/assets/images/cre8-pic.jpg'),
-  event_url: 'www.facebook.com/faked',
+  img_url: open('app/assets/images/STEM-logo.png'),
+  event_url: 'https://www.facebook.com/TheCre8iveZone/',
   offer_code: '0001'
 )
 # . . .
@@ -2812,7 +2812,7 @@ Offer.create!(name: 'Georgia Military College Application Event',
   offering_type: 'Event',
   business_id: 50,
   img_url: open('app/assets/images/gmc-pic.jpg'),
-  event_url: 'www.facebook.com/gmc/fake',
+  event_url: 'https://www.facebook.com/gmcvaldosta/',
   offer_code: '0001'
 )
 # . . .
