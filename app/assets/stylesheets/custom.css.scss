@@ -301,6 +301,10 @@ body {
     #comp2 {
       display: none;
     }
+
+    #favsPartialMyFav {
+      display: none;
+    }
   }
 
   #favoritePage {
@@ -588,6 +592,10 @@ body {
       box-shadow: 0.176em 0.176em 0.354em 0 rgba(0,0,0,0.75);
       margin-left: 3px;
       margin-right: 5px;
+    }
+
+    #favsPartialMyFav {
+      margin-top: 55px;
     }
   }
   /*

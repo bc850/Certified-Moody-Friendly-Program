@@ -36,6 +36,8 @@ class OffersController < ApplicationController
 
   def my_favorites
     @theoffers = Offer.order(:created_at).reverse
+    @business = current_account.accountable_id
+    set_business
   end
 
   def like
