@@ -19,6 +19,7 @@ class CreateBusinesses < ActiveRecord::Migration[5.1]
       t.integer :business_offer_number, default: 0001
       t.float :latitude
       t.float :longitude
+      t.string :img_url
 
       t.timestamps
     end

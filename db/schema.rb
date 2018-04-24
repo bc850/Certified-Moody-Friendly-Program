@@ -48,9 +48,10 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.string "email_2"
     t.string "link"
     t.string "status", default: "Pending"
-    t.integer "business_offer_number", default: 0001
+    t.integer "business_offer_number", default: 1
     t.float "latitude"
     t.float "longitude"
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -90,7 +91,7 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.integer "cached_weighted_score", default: 0
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
-    t.string "offer_code", default: "0001"
+    t.string "offer_code", default: "1"
     t.string "test", default: ""
     t.integer "analytics", default: 0
   end
