@@ -582,7 +582,6 @@ Business.create!(name: "Cre8ive Zone",
   email: "eomiteru2@yahoo.com",
   email_2: "",
   link: "http://www.TheCre8iveZone.com",
-  img_url: "app/assets/images/cre8.png",
 business_offer_number: "0001",
 status: "Active"
 )
@@ -907,7 +906,6 @@ Business.create!(name: "Georgia Military College",
   email: "lhafer@gmc.edu",
   email_2: "val_admissions@gmc.cc.ga.ua",
   link: "http://www.gmc.edu",
-  img_url: "app/assets/images/gmc.png",
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1052,7 +1050,6 @@ Business.create!(name: "The Home Depot",
   email: "Peter_A_Layne@homedepot.com",
   email_2: "",
   link: "http://http://www.homedepot.com",
-  img_url: "app/assets/images/The_Home_Depot_Logo_t670.jpg",
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1215,7 +1212,6 @@ Business.create!(name: "Lemongrass Day Spa",
   email: "michellealamb@gmail.com",
   email_2: "",
   link: "http://www.lemongrassdayspaonline.com",
-  img_url: "app/assets/images/lemongrass.jpg",
 business_offer_number: "0001",
 status: "Active"
 )
@@ -1324,7 +1320,6 @@ Business.create!(name: "Mellow Mushroom",
   email: "valdosta@coastalmellow.com",
   email_2: "",
   link: "http://www.mellowmushroom.com",
-  img_url: "app/assets/images/mellow.jpg",
 business_offer_number: "0001",
 status: "Active"
 )
@@ -2333,7 +2328,6 @@ Business.create!(name: "Wild Adventures Theme Park",
   email: "mdeese@wildadventures.com",
   email_2: "",
   link: "http://www.WildAdventures.com",
-  img_url: "app/assets/images/wildad.jpg",
 business_offer_number: "0001",
 status: "Active"
 )
