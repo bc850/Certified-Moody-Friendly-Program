@@ -2,7 +2,7 @@
   <% @businesses.each do |business| %>
     <div id="inside">
       <%= image_tag(business.img_url, width: 100) if business.img_url.present? %>
-      <%= link_to business.name, business_path(business.id) %>
+      <%= link_to business.name, business_path(business.id), style: "font-size: 18px;" %>
       <p>
         <strong>Address:
         </strong><%= business.address %>,
