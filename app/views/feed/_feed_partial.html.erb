@@ -8,9 +8,17 @@
           <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
         <% end %>
       <% end %>
-      <p style="float: right; color: #adafb2;">
-        <%= offer.offering_type %>
-      </p>
+      <ul class="nav pull-right">
+        <li class="divider-vertical"></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle fa fa-cog" data-toggle="dropdown"><b class="caret"></b></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#" class="fa fa-heart" style="color: #0F3D5E;"> Save <%= offer.offering_type %></a></li>
+            <li><a href="#" class="fa fa-eye-slash" style="color: #0F3D5E;"> Hide <%= offer.offering_type %></a></li>
+            <li><a href="#" class="fa fa-exclamation" style="color: #0F3D5E;"> Report <%= offer.offering_type %></a></li>
+          </ul>
+        </li>
+      </ul>
       <br>
       <br>
       <p style="font-size: 16px;">
