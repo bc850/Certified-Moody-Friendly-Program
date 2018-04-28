@@ -1,0 +1,9 @@
+Steps:
+	git clone
+	bundle install --without production
+	rake db:drop db:create db:migrate db:seed
+	sudo npm install -g yarn
+	rails webpacker:install
+	rails webpacker:install:react
+	yarn add webpacker-react
+	bundle binstubs bundler --force
