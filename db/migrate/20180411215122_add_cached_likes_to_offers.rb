@@ -12,6 +12,9 @@ class AddCachedLikesToOffers < ActiveRecord::Migration[5.1]
       #t.integer :test, default: 0
       t.string :test, default: ''
       t.integer :analytics, default: 0
+      t.integer :abuse_flag_votes, default: 0
+      t.integer :abuse_flag_weight, default: 0
+      t.integer :abuse_flag_subjective, default: 0
     end
 
     # Uncomment this line to force caching of existing votes

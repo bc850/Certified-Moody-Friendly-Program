@@ -1,0 +1,2 @@
+class Hidelisting < ApplicationRecord
+end
