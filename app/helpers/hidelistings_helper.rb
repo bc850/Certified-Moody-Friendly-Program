@@ -1,0 +1,2 @@
+module HidelistingsHelper
+end

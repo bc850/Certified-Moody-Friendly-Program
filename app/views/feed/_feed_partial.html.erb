@@ -15,7 +15,7 @@
           <ul class="dropdown-menu dropdown-menu-right">
             <li><a href="#" class="fa fa-eye-slash" style="color: #0F3D5E;"> Hide <%= offer.offering_type %></a></li>
             <li><a href="#" class="fa fa-exclamation" style="color: #0F3D5E;"> Report <%= offer.offering_type %></a></li>
-            <%= link_to 'Hide all listings for this business', hide_offer_path(offer.id, current_account.id), remote: true,
+            <%= link_to 'Hide all listings for this business', hide_hidelisting_path(offer.id), remote: true,
                       id: "hide_#{offer.id}",
                       class: "fa fa-eye-slash" %>
           </ul>
