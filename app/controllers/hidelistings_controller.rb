@@ -15,9 +15,17 @@ class HidelistingsController < ApplicationController
     @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
   end
 
+  def hide_listing_render
+    set_hide_listing
+  end
+
   private
 
   def set_offer
     @offer = Offer.find(params[:id])
+  end
+
+  def set_hide_listing
+    @hidelisting.find(params[current_account.id])
   end
 end
