@@ -1,5 +1,8 @@
 class HidelistingsController < ApplicationController
   before_action :set_offer, only: [:hide_offer]
+  before_action :set_offers
+  before_action :set_hide_listing_model
+  before_action :set_businesses
   before_action :authenticate_account!
 
   def hide_offer
@@ -15,13 +18,10 @@ class HidelistingsController < ApplicationController
     @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
 
     respond_to do |format|
-      format.html { render :partial => 'feed/feed' }
+      format.html { render :partial => 'feed_partial', :layout => false }
+      format.js { }
       format.json {render json: Offer.order(sort_by + ' ' + order)}
     end
-  end
-
-  def hide_listing_render
-    set_hide_listing
   end
 
   def hide_listing_render
@@ -36,5 +36,17 @@ class HidelistingsController < ApplicationController
 
   def set_hide_listing
     @hidelisting.find(params[current_account.id])
+  end
+
+  def set_offers
+    @offers = Offer.all
+  end
+
+  def set_hide_listing_model
+    @hidelisting = Hidelisting.all
+  end
+
+  def set_businesses
+    @businesses_all = Business.all
   end
 end
