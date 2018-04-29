@@ -39,7 +39,7 @@ class HidelistingsController < ApplicationController
   end
 
   def set_offers
-    @offers = Offer.all
+    @offers = Offer.order(:created_at).reverse
   end
 
   def set_hide_listing_model
