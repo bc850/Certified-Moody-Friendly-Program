@@ -5,6 +5,7 @@ class FeedController < ApplicationController
   before_action :set_line_items
   before_action :set_offers_for_partial
   before_action :set_businesses
+  before_action :set_hide_listing_model
 
   def pundit_user
     current_account
@@ -27,6 +28,9 @@ class FeedController < ApplicationController
       if @business.status == "Pending"
         redirect_to business_url(@business)
       end
+    end
+    if current_account.accountable_type == "User"
+      #set_hide_listing
     end
 
     # THIS IS THE COMBINED FEED WITH SORTING ALGORITHM IMPLEMENTED!!
@@ -61,5 +65,14 @@ class FeedController < ApplicationController
 
   def set_businesses
     @businesses_all = Business.all
+  end
+
+  def set_hide_listing
+    #@hidelisting.find(current_account.id)
+    #@hidelisting.find(params[:offer_id == current_account.id])
+  end
+
+  def set_hide_listing_model
+    @hidelisting = Hidelisting.all
   end
 end

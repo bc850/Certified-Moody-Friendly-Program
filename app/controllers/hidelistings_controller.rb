@@ -24,6 +24,10 @@ class HidelistingsController < ApplicationController
     set_hide_listing
   end
 
+  def hide_listing_render
+    set_hide_listing
+  end
+
   private
 
   def set_offer
