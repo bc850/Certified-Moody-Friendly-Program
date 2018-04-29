@@ -13,9 +13,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle fa fa-cog" data-toggle="dropdown"><b class="caret"></b></a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="#" class="fa fa-heart" style="color: #0F3D5E;"> Save <%= offer.offering_type %></a></li>
             <li><a href="#" class="fa fa-eye-slash" style="color: #0F3D5E;"> Hide <%= offer.offering_type %></a></li>
             <li><a href="#" class="fa fa-exclamation" style="color: #0F3D5E;"> Report <%= offer.offering_type %></a></li>
+            <%= link_to 'Hide all listings for this business', hide_offer_path(offer.id, current_account.id), remote: true,
+                      id: "hide_#{offer.id}",
+                      class: "fa fa-eye-slash" %>
           </ul>
         </li>
       </ul>

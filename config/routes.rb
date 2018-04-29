@@ -25,6 +25,7 @@ Rails.application.routes.draw do
       put "like" => "offers#like"
       put "unlike" => "offers#unlike"
       post "check_code" => "offers#check_code"
+      get "hide" => "offers#hide_offer"
     end
   end
   get "my_favorites" => "offers#my_favorites"

@@ -11,6 +11,10 @@ class OffersController < ApplicationController
     current_account
   end
 
+  def hide_offer
+    puts "TESTING!!!!!"
+  end
+
   def check_code
     #grabs the code the user input from the text box
     @test = params[:offer][:test]
