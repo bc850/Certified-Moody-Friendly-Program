@@ -13,11 +13,24 @@ class HidelistingsController < ApplicationController
     @hidelistings.update_attributes(:offer_id => @hidelistings.offer_id)
     @hidelistings.user_id = current_account.id
     @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
+
+    respond_to do |format|
+      format.html { render :partial => 'feed/feed' }
+      format.json {render json: Offer.order(sort_by + ' ' + order)}
+    end
+  end
+
+  def hide_listing_render
+    set_hide_listing
   end
 
   private
 
   def set_offer
     @offer = Offer.find(params[:id])
+  end
+
+  def set_hide_listing
+    @hidelisting.find(params[current_account.id])
   end
 end

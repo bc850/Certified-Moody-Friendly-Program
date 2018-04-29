@@ -1,47 +1,56 @@
 <div id="feedID">
 
   <% @offers.each do |offer| %>
-    <div id="inside">
-      <% test = offer.business_id %>
-      <% @businesses_all.each do |bizall| %>
-        <% if test == bizall.id %>
-          <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+    <% @temp = true %>
+      <% if @hidelisting.exists? %>
+        <% @hidelisting.each do |hidelisting| %>
+          <% if current_account.id == hidelisting.user_id && offer.id == hidelisting.offer_id %>
+            <% @temp = false %>
+          <% end %>
         <% end %>
       <% end %>
-      <ul class="nav pull-right">
-        <li class="divider-vertical"></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle fa fa-cog" data-toggle="dropdown"><b class="caret"></b></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="#" class="fa fa-eye-slash" style="color: #0F3D5E;"> Hide <%= offer.offering_type %></a></li>
-            <li><a href="#" class="fa fa-exclamation" style="color: #0F3D5E;"> Report <%= offer.offering_type %></a></li>
-            <%= link_to 'Hide all listings for this business', hide_hidelisting_path(offer.id), remote: true,
-                      id: "hide_#{offer.id}",
-                      class: "fa fa-eye-slash" %>
-          </ul>
-        </li>
-      </ul>
-      <br>
-      <br>
-      <p style="font-size: 16px;">
-        <%= offer.description %>
-      </p>
-      <td><%= link_to image_tag(offer.img_url, id: "offerImage"), offer_path(offer.id) %></td>
-      <br>
-      <br>
-      <span id="offerDate" style="float: right"><%= offer.created_at %></span><!--<br />--->
-      <% if current_account.accountable_type == "User" %>
-        <% if current_account.voted_for? offer %>
-          <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true,
-                    id: "like_#{offer.id}",
-                    class: "glyphicon glyphicon-heart" %>
-        <% else %>
-          <%= link_to '', like_offer_path(offer.id), method: :put, remote: true,
-                    id: "like_#{offer.id}",
-                    class: "glyphicon glyphicon-heart-empty" %>
+      <% if @temp == true %>
+        <div id="inside">
+          <% test = offer.business_id %>
+            <% @businesses_all.each do |bizall| %>
+              <% if test == bizall.id %>
+                <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+              <% end %>
+            <% end %>
+            <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle fa fa-cog" data-toggle="dropdown">
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, id: "hide_#{offer.id}", class: "fa fa-eye-slash" %></li>
+                  <li>
+                    <a href="#" class="fa fa-exclamation" style="color: #0F3D5E;">
+                      Report
+                      <%= offer.offering_type %></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <br>
+            <p style="font-size: 16px;">
+              <%= offer.description %>
+            </p>
+            <td><%= link_to image_tag(offer.img_url, id: "offerImage"), offer_path(offer.id) %></td>
+            <br>
+            <br>
+            <span id="offerDate" style="float: right"><%= offer.created_at %></span>
+            <% if current_account.accountable_type == "User" %>
+              <% if current_account.voted_for? offer %>
+                <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart" %>
+              <% else %>
+                <%= link_to '', like_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart-empty" %>
+              <% end %>
+            <% end %>
+            <br>
+          </div>
         <% end %>
       <% end %>
-      <br>
     </div>
-  <% end %>
-</div>
