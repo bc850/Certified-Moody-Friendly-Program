@@ -1,1 +1,6 @@
 $("#feedID").html("<%= j (render partial: 'feed/feed_partial') %>");
+
+$("#notification").fadeIn("slow").append('Listing has been hidden from your feed.');
+$(".dismiss").click(function(){
+       $("#notification").fadeOut("slow");
+});
