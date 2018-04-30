@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   resources :hidelistings do
     member do
       get "hide" => "hidelistings#hide_offer"
+      get "report" => "hidelistings#report_offer"
       get "hide_render" => "hidelistings#hide_listing_render"
     end
   end

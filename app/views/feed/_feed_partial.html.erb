@@ -24,12 +24,8 @@
                   <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, id: "hide_#{offer.id}", class: "fa fa-eye-slash" %></li>
-                  <li>
-                    <a href="#" class="fa fa-exclamation" style="color: #0F3D5E;">
-                      Report
-                      <%= offer.offering_type %></a>
-                  </li>
+                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, class: "fa fa-eye-slash" %></li>
+                  <li><%= link_to ' Report Inappropriate Content', report_hidelisting_path(offer.id), remote: true, class: "fa fa-exclamation" %></li>
                 </ul>
               </li>
             </ul>

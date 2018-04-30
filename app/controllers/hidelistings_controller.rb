@@ -24,6 +24,10 @@ class HidelistingsController < ApplicationController
     end
   end
 
+  def report_offer
+    puts "YOU MADE IT TO REPORTS!"
+  end
+
   def hide_listing_render
     set_hide_listing
   end
