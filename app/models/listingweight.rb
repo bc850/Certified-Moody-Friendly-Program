@@ -1,0 +1,2 @@
+class Listingweight < ApplicationRecord
+end
