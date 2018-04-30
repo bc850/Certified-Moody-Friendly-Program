@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :offers
     resources :users
     resources :super_accounts
+    resources :listingweights
 
     root to: "accounts#index"
   end
