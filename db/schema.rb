@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411220955) do
+ActiveRecord::Schema.define(version: 20180429152819) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -61,6 +61,14 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "hidelistings", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "offer_id"
+    t.text "reason"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "line_items", force: :cascade do |t|
     t.integer "offer_id"
     t.integer "favorite_id"
@@ -94,6 +102,9 @@ ActiveRecord::Schema.define(version: 20180411220955) do
     t.string "offer_code", default: "1"
     t.string "test", default: ""
     t.integer "analytics", default: 0
+    t.integer "abuse_flag_votes", default: 0
+    t.integer "abuse_flag_weight", default: 0
+    t.integer "abuse_flag_subjective", default: 0
   end
 
   create_table "super_accounts", force: :cascade do |t|

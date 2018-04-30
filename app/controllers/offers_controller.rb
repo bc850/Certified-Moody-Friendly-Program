@@ -11,6 +11,21 @@ class OffersController < ApplicationController
     current_account
   end
 
+  #def hide_offer
+  #  puts "BEFORE!!!"
+  #  puts ""
+  #  @hidelistings = Hidelisting.new
+  #  puts "Hide Listing created"
+  #  puts ""
+  #  @hidelistings.offer_id = offerid
+    #@hidelisting.user_id = currentacctid
+  #  puts "Hide Listing offer_id"
+  #  puts ""
+  #  @hidelistings.update_attributes(:offer_id => @hidelistings.offer_id)
+  #  puts "Hide listing update attributes"
+  #  puts @hidelistings
+  #end
+
   def check_code
     #grabs the code the user input from the text box
     @test = params[:offer][:test]
@@ -205,4 +220,8 @@ if (params[:business_id])
     def set_businesses
       @businesses_all = Business.all
     end
+
+    #def hide_listing_params
+    #  params.require(:offer)
+    #end
 end
