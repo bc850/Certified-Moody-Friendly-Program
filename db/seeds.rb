@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+###### LISTINGWEIGHT CREATION ######
+Listingweight.delete_all
+Listingweight.create!(abuse_flag_weight: 1)
+
 ###### BUSINESS CREATION ######
 
 Business.delete_all
