@@ -18,7 +18,7 @@ class HidelistingsController < ApplicationController
     @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
 
     respond_to do |format|
-      format.html { render :partial => 'feed_partial', :layout => false }
+      format.html { }
       format.js { }
       format.json {render json: Offer.order(sort_by + ' ' + order)}
     end
@@ -42,7 +42,7 @@ class HidelistingsController < ApplicationController
     @offer.update_attributes(:abuse_flag_votes => @offer.abuse_flag_votes)
 
     respond_to do |format|
-      format.html { render :partial => 'feed_partial', :layout => false }
+      format.html { }
       format.js { }
       format.json {render json: Offer.order(sort_by + ' ' + order)}
     end
