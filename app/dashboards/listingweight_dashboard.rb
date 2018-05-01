@@ -8,7 +8,7 @@ class ListingweightDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    abuse_flag_weight: Field::HasMany,
+    abuse_flag_weight: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze

@@ -6,6 +6,7 @@ class FeedController < ApplicationController
   before_action :set_offers_for_partial
   before_action :set_businesses
   before_action :set_hide_listing_model
+  before_action :set_listing_weight_model
 
   def pundit_user
     current_account
@@ -74,5 +75,9 @@ class FeedController < ApplicationController
 
   def set_hide_listing_model
     @hidelisting = Hidelisting.all
+  end
+
+  def set_listing_weight_model
+    @listingweight = Listingweight.all
   end
 end
