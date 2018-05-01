@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180429152819) do
+ActiveRecord::Schema.define(version: 20180430152822) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -76,6 +76,12 @@ ActiveRecord::Schema.define(version: 20180429152819) do
     t.datetime "updated_at", null: false
     t.index ["favorite_id"], name: "index_line_items_on_favorite_id"
     t.index ["offer_id"], name: "index_line_items_on_offer_id"
+  end
+
+  create_table "listingweights", force: :cascade do |t|
+    t.integer "abuse_flag_weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "offers", force: :cascade do |t|

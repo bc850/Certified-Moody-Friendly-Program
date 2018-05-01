@@ -22,6 +22,7 @@ class OfferDashboard < Administrate::BaseDashboard
     event_url: Field::String,
     cached_votes_total: Field::Number,
     analytics: Field::Number,
+    abuse_flag_subjective: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -37,6 +38,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :name,
     :cached_votes_total,
     :analytics,
+    :abuse_flag_subjective,
     :created_at,
     :updated_at,
   ].freeze
@@ -58,6 +60,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :event_url,
     :cached_votes_total,
     :analytics,
+    :abuse_flag_subjective,
     :created_at,
     :updated_at,
   ].freeze
@@ -74,6 +77,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :description,
     :location,
     :offering_type,
+    :abuse_flag_subjective,
     :img_url,
     :event_url,
   ].freeze

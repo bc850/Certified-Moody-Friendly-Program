@@ -1,7 +1,13 @@
 <div id="feedID">
+  <div id="notification" style="display: none;">
+    <span class="dismiss"><a title="dismiss this notification">X</a></span>
+  </div>
 
   <% @offers.each do |offer| %>
     <% @temp = true %>
+      <% if offer.abuse_flag_votes >= @listingweight.abuse_flag_weight %>
+        <% @temp = false %>
+      <% end %>
       <% if @hidelisting.exists? %>
         <% @hidelisting.each do |hidelisting| %>
           <% if current_account.id == hidelisting.user_id && offer.id == hidelisting.offer_id %>
@@ -24,12 +30,8 @@
                   <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, id: "hide_#{offer.id}", class: "fa fa-eye-slash" %></li>
-                  <li>
-                    <a href="#" class="fa fa-exclamation" style="color: #0F3D5E;">
-                      Report
-                      <%= offer.offering_type %></a>
-                  </li>
+                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, class: "fa fa-eye-slash", data: {confirm: "Are you sure?"} %></li>
+                  <li><%= link_to ' Report Inappropriate Content', report_hidelisting_path(offer.id), remote: true, class: "fa fa-exclamation", data: {confirm: "Are you sure?"} %></li>
                 </ul>
               </li>
             </ul>

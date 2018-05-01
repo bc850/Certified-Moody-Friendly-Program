@@ -14,6 +14,35 @@ body {
 }
 
 #hero {
+  #notification {
+      //position:fixed;
+      top:105px; /* Set to 0 or wherever */
+      width:100%; /* set to 100% if space is available */
+      z-index:105;
+      text-align:center;
+      font-weight:normal;
+      font-size:14px;
+      font-weight:bold;
+      color:white;
+      background-color:#FF7800;
+      padding:5px;
+      margin-bottom: 10px;
+
+      span.dismiss {
+        border:2px solid #FFF;
+        padding:0 5px;
+        cursor:pointer;
+        float:right;
+        margin-right:10px;
+      }
+
+      a {
+        color:white;
+        text-decoration:none;
+        font-weight:bold
+      }
+  }
+
   #feedButtonNotLiked {
     border: none;
     background-color: #fff;
