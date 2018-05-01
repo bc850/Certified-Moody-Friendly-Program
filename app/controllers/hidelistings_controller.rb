@@ -3,6 +3,7 @@ class HidelistingsController < ApplicationController
   before_action :set_offers
   before_action :set_hide_listing_model
   before_action :set_businesses
+  before_action :set_listing_weight_model
   before_action :authenticate_account!
 
   def hide_offer
@@ -72,5 +73,9 @@ class HidelistingsController < ApplicationController
 
   def set_businesses
     @businesses_all = Business.all
+  end
+
+  def set_listing_weight_model
+    @listingweight = Listingweight.find(1)
   end
 end
