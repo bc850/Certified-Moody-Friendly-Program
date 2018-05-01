@@ -78,6 +78,6 @@ class FeedController < ApplicationController
   end
 
   def set_listing_weight_model
-    @listingweight = Listingweight.all
+    @listingweight = Listingweight.find(1)
   end
 end
