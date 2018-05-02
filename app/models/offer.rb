@@ -3,6 +3,7 @@ class Offer < ApplicationRecord
   mount_uploader :img_url, ImgUploader
   belongs_to :business
   has_many :line_items
+  has_many :hidelistings, :dependent => :delete_all
   validates :name, :category, :description, :offering_type, presence: true
   validates :img_url, allow_blank: true, format: {
 		with:

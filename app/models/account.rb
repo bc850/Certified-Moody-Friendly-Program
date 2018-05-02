@@ -9,4 +9,6 @@ class Account < ApplicationRecord
   attr_accessor :type
   attr_accessor :agree
   validates :agree, :acceptance => true
+
+  has_many :hidelistings, :dependent => :delete_all
 end

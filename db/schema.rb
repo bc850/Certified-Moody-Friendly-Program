@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20180430152822) do
   end
 
   create_table "hidelistings", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "account_id"
     t.integer "offer_id"
     t.text "reason"
     t.datetime "created_at", null: false
