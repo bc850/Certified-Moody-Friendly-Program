@@ -38,6 +38,8 @@ gem 'carrierwave'
 
 gem 'webpacker'
 gem 'webpacker-react', "~> 0.3.2"
+
+gem 'figaro'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

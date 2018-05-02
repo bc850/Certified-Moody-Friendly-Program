@@ -29,6 +29,11 @@ class RegistrationsController < Devise::RegistrationsController
       set_minimum_password_length
       respond_with resource
     end
+    if (resource.type=="User")
+      NewMemberMailer.welcome(resource).deliver
+    else
+      NewBusinessMailer.welcome(resource).deliver
+    end
   end
 
   def destroy
