@@ -42,11 +42,11 @@
           </p>
           <p>
             <strong>Phone number:</strong>
-            <%= @business.phone_number %>
+            <a href="tel:?<%= @business.phone_number %>"><%= @business.phone_number %></a>
           </p>
           <p>
             <strong>Email:</strong>
-            <%= @business.email %>
+            <%= mail_to @business.email, "Email Us" %>
           </p>
           <p>
             <strong>Website:</strong>
