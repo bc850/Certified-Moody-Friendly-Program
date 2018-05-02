@@ -15,8 +15,8 @@ class HidelistingsController < ApplicationController
     @hidelistings = Hidelisting.new
     @hidelistings.offer_id = @offer.id
     @hidelistings.update_attributes(:offer_id => @hidelistings.offer_id)
-    @hidelistings.user_id = current_account.id
-    @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
+    @hidelistings.account_id = current_account.id
+    @hidelistings.update_attributes(:account_id => @hidelistings.account_id)
 
     respond_to do |format|
       format.html { }
@@ -36,8 +36,8 @@ class HidelistingsController < ApplicationController
     @hidelistings = Hidelisting.new
     @hidelistings.offer_id = @offer.id
     @hidelistings.update_attributes(:offer_id => @hidelistings.offer_id)
-    @hidelistings.user_id = current_account.id
-    @hidelistings.update_attributes(:user_id => @hidelistings.user_id)
+    @hidelistings.account_id = current_account.id
+    @hidelistings.update_attributes(:account_id => @hidelistings.account_id)
 
     @offer.abuse_flag_votes = @offer.abuse_flag_votes + 1
     @offer.update_attributes(:abuse_flag_votes => @offer.abuse_flag_votes)

@@ -10,7 +10,7 @@
       <% end %>
       <% if @hidelisting.exists? %>
         <% @hidelisting.each do |hidelisting| %>
-          <% if current_account.id == hidelisting.user_id && offer.id == hidelisting.offer_id %>
+          <% if current_account.id == hidelisting.account_id && offer.id == hidelisting.offer_id %>
             <% @temp = false %>
           <% end %>
         <% end %>
