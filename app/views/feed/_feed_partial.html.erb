@@ -15,6 +15,12 @@
           <% end %>
         <% end %>
       <% end %>
+      
+      <!--Checks if offer is expired-->
+      <% if offer.end_date <= Time.now %>
+        <% @temp = false %>
+      <% end %>
+
       <% if @temp == true %>
         <div id="inside">
           <% test = offer.business_id %>
