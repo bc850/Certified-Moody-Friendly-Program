@@ -30,6 +30,7 @@ class OfferDashboard < Administrate::BaseDashboard
     ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    view_count: Field::Number,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -45,6 +46,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :analytics,
     :abuse_flag_subjective,
     :abuse_reported,
+    :view_count,
     :created_at,
     :updated_at,
   ].freeze
@@ -68,6 +70,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :analytics,
     :abuse_flag_subjective,
     :abuse_reported,
+    :view_count,
     :created_at,
     :updated_at,
   ].freeze
@@ -88,6 +91,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :abuse_reported,
     :img_url,
     :event_url,
+    :view_count,
   ].freeze
 
   # Overwrite this method to customize how offers are displayed
