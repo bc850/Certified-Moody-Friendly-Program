@@ -12,7 +12,7 @@ class BusinessesController < ApplicationController
   # GET /businesses.json
   def index
     @businesses = Business.all
-    @businesses = @businesses.order('created_at asc').page params[:page]
+    @businesses = @businesses.order('name asc').page params[:page]
 
     @business = current_account.accountable_id
     set_business_mobile
