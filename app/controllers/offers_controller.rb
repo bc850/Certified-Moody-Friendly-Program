@@ -87,7 +87,10 @@ if (params[:business_id])
     @business = Business.find(params[:business_id])
     @offers = @business.offers
   else
-    @offers = Offer.all
+    @theoffers = Offer.all
+    @theoffers.each do |offer|
+      @offers = Offer.where(offer.abuse_reported: "No").select(:name, :description, :category, :cached_votes_total).take
+    end
     respond_to do |format|
              format.html { }
              format.json {render json: Offer.order(sort_by + ' ' + order)}
