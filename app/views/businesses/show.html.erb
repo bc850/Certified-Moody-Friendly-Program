@@ -45,11 +45,8 @@
             <a href="tel:?<%= @business.phone_number %>"><%= @business.phone_number %></a>
           </p>
           <p>
-            <%= mail_to @business.email, "Email Us" %>
-          </p>
-          <p>
             <strong>Website:</strong>
-            <%= @business.link %>
+            <a href="<%= @business.link %>"><%= @business.link %></a>
           </p>
         </div>
       </div>
