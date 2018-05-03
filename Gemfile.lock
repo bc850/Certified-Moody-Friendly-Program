@@ -77,6 +77,7 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    chartkick (2.3.4)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
@@ -263,6 +264,8 @@ GEM
     geocoder (1.4.7)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    groupdate (4.0.1)
+      activesupport (>= 4.2)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.9.5)
@@ -451,12 +454,14 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   carrierwave
+  chartkick
   coffee-rails (~> 4.2)
   devise
   figaro
   fog
   font-awesome-rails
   geocoder
+  groupdate
   jbuilder (~> 2.5)
   jquery-rails
   kaminari

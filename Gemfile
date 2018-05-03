@@ -18,6 +18,8 @@ gem 'bourbon'
 gem 'administrate'
 gem 'kaminari'
 gem 'geocoder'
+gem 'chartkick'
+gem 'groupdate'
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"
