@@ -25,6 +25,9 @@ class OfferDashboard < Administrate::BaseDashboard
     abuse_flag_subjective: Field::Select.with_options(
       collection: ['Normal', 'Always allow']
     ),
+    abuse_reported: Field::Select.with_options(
+      collection: ['No', 'Yes']
+    ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -41,6 +44,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :cached_votes_total,
     :analytics,
     :abuse_flag_subjective,
+    :abuse_reported,
     :created_at,
     :updated_at,
   ].freeze
@@ -63,6 +67,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :cached_votes_total,
     :analytics,
     :abuse_flag_subjective,
+    :abuse_reported,
     :created_at,
     :updated_at,
   ].freeze
@@ -80,6 +85,7 @@ class OfferDashboard < Administrate::BaseDashboard
     :location,
     :offering_type,
     :abuse_flag_subjective,
+    :abuse_reported,
     :img_url,
     :event_url,
   ].freeze
