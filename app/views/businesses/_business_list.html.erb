@@ -15,8 +15,8 @@
         </strong><%= business.category %>
       </p>
       <p>
-        <strong>Description:
-        </strong><%= business.description %>
+        <strong>Phone number:</strong>
+        <a href="tel:?<%= business.phone_number %>"><%= business.phone_number %></a>
       </p>
     </div>
   <% end %>

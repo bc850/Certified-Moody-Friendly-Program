@@ -15,7 +15,7 @@
           <% end %>
         <% end %>
       <% end %>
-      
+
       <!--Checks if offer is expired-->
       <% if offer.end_date <= Time.now %>
         <% @temp = false %>
@@ -26,7 +26,11 @@
           <% test = offer.business_id %>
             <% @businesses_all.each do |bizall| %>
               <% if test == bizall.id %>
-                <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+                <% if bizall.img_url.present? %>
+                  <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+                <% else %>
+                  <b><%= bizall.name %></b>
+                <% end %>
               <% end %>
             <% end %>
             <ul class="nav pull-right">
