@@ -26,19 +26,25 @@ class HidelistingsController < ApplicationController
   end
 
   def report_offer
+    ### console outputs for testing
     puts "YOU MADE IT TO REPORTS!"
-
     puts ""
     puts @offer.name
     puts @offer.id
     puts current_account.id
 
+    ### Update hidelistings table with current offer and account_id
     @hidelistings = Hidelisting.new
     @hidelistings.offer_id = @offer.id
     @hidelistings.update_attributes(:offer_id => @hidelistings.offer_id)
     @hidelistings.account_id = current_account.id
     @hidelistings.update_attributes(:account_id => @hidelistings.account_id)
 
+    ### Listing abuse_reported attribute set to "Yes"
+    @offer.abuse_reported = "Yes"
+    @offer.update_attributes(:abuse_reported => @offer.abuse_reported)
+
+    ### Listing abuse_flag_votes gets incremented
     @offer.abuse_flag_votes = @offer.abuse_flag_votes + 1
     @offer.update_attributes(:abuse_flag_votes => @offer.abuse_flag_votes)
 
