@@ -5,7 +5,7 @@
 
   <% @offers.each do |offer| %>
     <% @temp = true %>
-      <% if offer.abuse_flag_votes >= @listingweight.abuse_flag_weight %>
+      <% if offer.abuse_flag_votes >= @listingweight.abuse_flag_weight && offer.abuse_flag_subjective != "Always allow" %>
         <% @temp = false %>
       <% end %>
       <% if @hidelisting.exists? %>

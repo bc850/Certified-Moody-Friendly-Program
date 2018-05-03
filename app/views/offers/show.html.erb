@@ -1,75 +1,75 @@
 <div class="pushDown">
-<p id="notice"><%= notice %></p>
-<div id="offerLeft" class="col-md-3"></div>
-<div id="offerDisplay" class="col-md-6">
-<p id="offerImage">
-  <%= image_tag(@offer.img_url) if @offer.img_url.present? %>
-</p>
-</br>
+  <div id="offerLeft" class="col-md-3"></div>
+  <div id="offerDisplay" class="col-md-6">
+    <p id="notice"><%= notice %></p>
+    <p id="offerImage">
+      <%= image_tag(@offer.img_url) if @offer.img_url.present? %>
+    </p>
+    </br>
 
-<p id = "offerTitle">
-    <strong><%= @offer.name %></strong>
-</p>
+    <p id = "offerTitle">
+      <strong><%= @offer.name %></strong>
+    </p>
 
-<% if current_account.accountable_type == "User" %>
-<% if current_account.voted_for? @offer %>
-  <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
+    <% if current_account.accountable_type == "User" %>
+      <% if current_account.voted_for? @offer %>
+        <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
               id: "like_#{@offer.id}",
               class: "glyphicon glyphicon-heart" %>
-<% else %>
-  <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
+      <% else %>
+        <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
               id: "like_#{@offer.id}",
               class: "glyphicon glyphicon-heart-empty" %>
-<% end %>
-<% end %>
+      <% end %>
+    <% end %>
 
-<p>
-  <%= @offer.offering_type %>
-</p>
+    <p>
+      <%= @offer.offering_type %>
+    </p>
 
-<p>
-  <%= @offer.description %>
-</p>
+    <p>
+      <%= @offer.description %>
+    </p>
 
-<p>
-  <strong>Start date:</strong>
-  <%= @offer.start_date %>
-</p>
+    <p>
+      <strong>Start date:</strong>
+      <%= @offer.start_date %>
+    </p>
 
-<p>
-  <strong>End date:</strong>
-  <%= @offer.end_date %>
-</p>
+    <p>
+      <strong>End date:</strong>
+      <%= @offer.end_date %>
+    </p>
 
-<p>
-  <%= @offer.location %>
-</p>
+    <p>
+      <%= @offer.location %>
+    </p>
 
-<% if @offer.event_url.present? %>
-<p>
-  <%= link_to 'Event Link', extlink(@offer.event_url) %>
-</p>
-<% end %>
+    <% if @offer.event_url.present? %>
+      <p>
+        <%= link_to 'Event Link', extlink(@offer.event_url) %>
+      </p>
+    <% end %>
 
-<div id="businessCode">
-  <% if current_account.accountable_type == "User" %>
-  <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
-    <div class="form-inputs form-inline">
-      <%= f.input :test, label: false, placeholder: 'Code: i.e. 1234', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
-      <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
+    <div id="businessCode">
+      <% if current_account.accountable_type == "User" %>
+        <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
+          <div class="form-inputs form-inline">
+            <%= f.input :test, label: false, placeholder: 'Code: i.e. 1234', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
+            <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
+          </div>
+        <% end %>
     </div>
-  <% end %>
-</div>
 
-<button id="codeButtonShow" type="button">Enter Code</button>
-  <% end %>
+    <button id="codeButtonShow" type="button">Enter Code</button>
+    <% end %>
 
-</br>
-</br>
+    </br>
+    </br>
 
-<a href="#" onclick="window.print();return false;">Print</a>
-</br>
+    <a href="#" onclick="window.print();return false;">Print</a>
+    </br>
 
-</div>
-<div id="offerRight" class="col-md-3"></div>
+  </div>
+  <div id="offerRight" class="col-md-3"></div>
 </div>

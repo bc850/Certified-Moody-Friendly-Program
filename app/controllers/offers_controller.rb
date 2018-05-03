@@ -126,7 +126,8 @@ if (params[:business_id])
     @offer = Offer.new(offer_params)
     authorize @offer
 
-
+    @business = current_account.accountable_id
+    set_business
 
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable

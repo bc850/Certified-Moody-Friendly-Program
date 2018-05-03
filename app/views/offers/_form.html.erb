@@ -1,7 +1,8 @@
-<div class="col-md-4">
-</div>
-<div class="col-md-5">
+<div class="col-md-3"></div>
+<div class="col-md-6 text-center">
 </br>
+
+<div class="form-group">
 <%= form_with(model: offer, local: true) do |form| %>
   <% if offer.errors.any? %>
     <div id="error_explanation">
@@ -16,8 +17,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :offer_name %>
+    <%= form.label :name, style: "float: left;" %>
+    <%= form.text_field :name, id: :offer_name, class: "form-control" %>
   </div>
 </br>
 
@@ -34,32 +35,32 @@
 </br>
 
   <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category, id: :offer_category, placeholder: "i.e. Food, Entertainment" %>
+    <%= form.label :category, style: "float: left;" %>
+    <%= form.text_field :category, id: :offer_category, placeholder: "i.e. Food, Entertainment", class: "form-control" %>
   </div>
 </br>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :offer_description, rows: 2, cols: 35 %>
+    <%= form.label :description, style: "float: left;" %>
+    <%= form.text_area :description, id: :offer_description, rows: 2, cols: 35, class: "form-control" %>
   </div>
 </br>
 
   <div class="field">
-    <%= form.label :offering_type %>
-    <%= form.text_field :offering_type, id: :offer_offering_type, placeholder: "Coupon, Discount, or Event" %>
+    <%= form.label :offering_type, style: "float: left;" %>
+    <%= form.select :offering_type, ['Coupon', 'Discount', 'Event'] %>
   </div>
 </br>
 
   <div class="field">
-    <%= form.label :img_url %>
+    <%= form.label :img_url, style: "float: left;" %>
     <%= form.file_field :img_url, id: :offer_img %>
   </div>
 </br>
 
   <div class="field">
-    <%= form.label :event_url %>
-    <%= form.text_field :event_url, id: :offer_event_url, placeholder: "Optional" %>
+    <%= form.label :event_url, style: "float: left;" %>
+    <%= form.text_field :event_url, id: :offer_event_url, placeholder: "Optional", class: "form-control" %>
   </div>
 </br>
 
@@ -81,6 +82,7 @@
   </div>
   </br>
 <% end %>
+</div>
 </div>
 <div class="col-md-3">
 </div>
