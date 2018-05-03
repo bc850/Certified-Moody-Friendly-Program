@@ -101,6 +101,10 @@ if (params[:business_id])
   # GET /offers/1
   # GET /offers/1.json
   def show
+    if current_account.accountable_type == "User"
+      @offer.view_count = @offer.view_count + 1
+      @offer.update_attributes(:view_count => @offer.view_count)
+    end
     @business = current_account.accountable_id
     set_business
   end

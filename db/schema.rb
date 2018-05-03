@@ -112,6 +112,7 @@ ActiveRecord::Schema.define(version: 20180430152822) do
     t.integer "abuse_flag_weight", default: 0
     t.string "abuse_flag_subjective", default: "Normal"
     t.string "abuse_reported", default: "No"
+    t.integer "view_count", default: 0
   end
 
   create_table "super_accounts", force: :cascade do |t|
