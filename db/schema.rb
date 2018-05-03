@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 20180430152822) do
     t.integer "analytics", default: 0
     t.integer "abuse_flag_votes", default: 0
     t.integer "abuse_flag_weight", default: 0
-    t.integer "abuse_flag_subjective", default: 0
+    t.string "abuse_flag_subjective", default: "Normal"
   end
 
   create_table "super_accounts", force: :cascade do |t|

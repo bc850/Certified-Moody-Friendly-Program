@@ -22,9 +22,8 @@ class OfferDashboard < Administrate::BaseDashboard
     event_url: Field::String,
     cached_votes_total: Field::Number,
     analytics: Field::Number,
-    abuse_flag_subjective: Field::Number,
-    status: Field::Select.with_options(
-      collection: ['Normal.', 'Always allow.']
+    abuse_flag_subjective: Field::Select.with_options(
+      collection: ['Normal', 'Always allow']
     ),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
