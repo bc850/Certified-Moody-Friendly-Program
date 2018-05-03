@@ -28,6 +28,10 @@ end
   # GET /users/1/edit
   def edit
     authorize @user
+    if (current_account.sign_in_count == 1)
+      current_account.sign_in_count = current_account.sign_in_count + 1
+      current_account.update_attributes(:sign_in_count => current_account.sign_in_count)
+    end
   end
 
 =begin

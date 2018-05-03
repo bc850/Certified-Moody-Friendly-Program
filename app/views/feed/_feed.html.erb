@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<% if current_account.sign_in_count == 1 && current_account.accountable_type == "User" %>
+  <% controller.redirect_to edit_user_path(current_account.accountable_id) %>
+<% end %>
 <div class="container-fluid" id="hero">
   <div class="col-md-3 favsPartial">
     <% if account_signed_in? %>
