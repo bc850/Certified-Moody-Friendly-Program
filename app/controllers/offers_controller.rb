@@ -37,7 +37,7 @@ class OffersController < ApplicationController
       @offer.update_attributes(:analytics => @offer.analytics)
       #outputs that code was correct
       respond_to do |format|
-        format.html { redirect_to offer_url, notice: 'Listing code was successful!' }
+        format.html { redirect_to offer_url, notice: 'Listing code was successfully redeemed!' }
         format.json { head :no_content }
       end
     # outputs that code was incorrect

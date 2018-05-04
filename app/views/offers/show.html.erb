@@ -24,22 +24,20 @@
             <% end %>
 
             <p>
-              <%= @offer.offering_type %>
-            </p>
-
-            <p>
               <%= @offer.description %>
             </p>
 
-            <p>
-              <strong>Start date:</strong>
-              <%= @offer.start_date %>
-            </p>
-
-            <p>
-              <strong>End date:</strong>
-              <%= @offer.end_date %>
-            </p>
+            <% if @offer.offering_type == "Discount" || @offer.offering_type == "Coupon" %>
+              <p>
+                <strong><%= @offer.offering_type %> EXPIRES:</strong>
+                <%= @offer.end_date %>
+              </p>
+            <% else %>
+              <p>
+                <strong>Event Ends: </strong>
+                <%= @offer.end_date %>
+              </p>
+            <% end %>
 
             <p>
               <%= @offer.location %>
