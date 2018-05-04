@@ -1,0 +1,66 @@
+<div id="feedID">
+  <% @theoffers.each do |offer| %>
+    <% @temp = true %>
+    <% if offer.business_id == @business.id %>
+      <% if offer.abuse_flag_votes >= @listingweight.abuse_flag_weight && offer.abuse_flag_subjective != "Always allow" %>
+        <% @temp = false %>
+      <% end %>
+      <% if @hidelisting.exists? %>
+        <% @hidelisting.each do |hidelisting| %>
+          <% if current_account.id == hidelisting.account_id && offer.id == hidelisting.offer_id %>
+            <% @temp = false %>
+          <% end %>
+        <% end %>
+      <% end %>
+
+      <!--Checks if offer is expired-->
+      <% if offer.end_date <= Time.now %>
+        <% @temp = false %>
+      <% end %>
+
+      <% if @temp == true %>
+        <div id="inside">
+          <% test = offer.business_id %>
+            <% @businesses_all.each do |bizall| %>
+              <% if test == bizall.id %>
+                <% if bizall.img_url.present? %>
+                  <%= link_to image_tag(bizall.img_url, width: 100), business_url(test) %>
+                <% else %>
+                  <b><%= bizall.name %></b>
+                <% end %>
+              <% end %>
+            <% end %>
+            <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle fa fa-cog" data-toggle="dropdown">
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><%= link_to ' Hide Listing', hide_hidelisting_path(offer.id), remote: true, class: "fa fa-eye-slash", data: {confirm: "Are you sure?"} %></li>
+                  <li><%= link_to ' Report Inappropriate Content', report_hidelisting_path(offer.id), remote: true, class: "fa fa-exclamation", data: {confirm: "Are you sure?"} %></li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <br>
+            <p style="font-size: 16px;">
+              <%= offer.description %>
+            </p>
+            <td><%= link_to image_tag(offer.img_url, id: "offerImage"), offer_path(offer.id) %></td>
+            <br>
+            <br>
+            <span id="offerDate" style="float: right"><%= offer.created_at %></span>
+            <% if current_account.accountable_type == "User" %>
+              <% if current_account.voted_for? offer %>
+                <%= link_to '', unlike_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart" %>
+              <% else %>
+                <%= link_to '', like_offer_path(offer.id), method: :put, remote: true, id: "like_#{offer.id}", class: "glyphicon glyphicon-heart-empty" %>
+              <% end %>
+            <% end %>
+            <br>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+</div>
