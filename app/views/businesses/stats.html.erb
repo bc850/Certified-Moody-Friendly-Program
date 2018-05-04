@@ -1,4 +1,28 @@
 <div class="pushDown">
   <h3>Statistics<h3>
-  <%= column_chart @theoffers.group_by_day_of_week(:created_at, format: "%a").count %> 
+    <% if current_account.accountable_type != "User" %>
+      <% if current_account.accountable_type == "SuperAccount" %>
+        </br>
+        <h4>Account Sign Ups</h4>
+          <%= line_chart Account.group_by_hour(:created_at).count, download: "site_sign_ups" %>
+        </br>
+        </br>
+        <h4>Account Sign Ins</h4>
+        <%= line_chart Account.group_by_hour(:last_sign_in_at).count, download: "site_sign_ins" %>
+        </br>
+        </br>
+        <h4>Number of Listings per Business</h4>
+        <%= column_chart Offer.group(:business_id).count, download: "listing_num_per_business" %>
+        </br>
+        </br>
+        <h4>Number of Accounts</h4>
+        <%= column_chart Account.group(:accountable_type).count, download: "account_types" %>
+      </br>
+      </br>
+      <h4>Popularity of Listings</h4>
+      <%= column_chart Offer.group(:cached_votes_total).count, download: "listing_popularity" %>
+      <% else %>
+        <% puts "HEY" %>
+      <% end %>
+    <% end %>
 </div>
