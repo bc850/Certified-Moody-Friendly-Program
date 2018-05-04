@@ -1,0 +1,4 @@
+<div class="pushDown">
+  <h3>Statistics<h3>
+  <%= column_chart @theoffers.group_by_day_of_week(:created_at, format: "%a").count %> 
+</div>
