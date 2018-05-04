@@ -87,7 +87,7 @@ if (params[:business_id])
     @business = Business.find(params[:business_id])
     @offers = @business.offers
   else
-    @offers = Offer.all
+    @theoffers = Offer.all
     respond_to do |format|
              format.html { }
              format.json {render json: Offer.order(sort_by + ' ' + order)}
@@ -185,7 +185,7 @@ if (params[:business_id])
   end
 
   def search
-    offers = Offer.where("name LIKE '%#{params[:query]}%'")
+    offers = Offer.where("name LIKE '%#{params[:query]}%' OR category LIKE '%#{params[:query]}%' OR description LIKE '%#{params[:query]}%'")
     render json: offers
   end
 
