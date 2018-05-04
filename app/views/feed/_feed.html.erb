@@ -3,14 +3,19 @@
   <% controller.redirect_to edit_user_path(current_account.accountable_id) %>
 <% end %>
 <div class="container-fluid" id="hero">
-  <div class="col-md-3 favsPartial">
-    <% if account_signed_in? %>
-      <% if current_account.accountable_type == "User" %>
-        <%= render 'favs_partial' %>
-      <% elsif current_account.accountable_type == "Business" %>
-        <%= render 'my_listings' %>
-      <% end %>
+  <div class="col-md-3 favsPartial" id="favsPartial">
+    <% if current_account.accountable_type == "Business" %>
+      <%= render 'business_code' %>
     <% end %>
+    <div class="row">
+      <% if account_signed_in? %>
+        <% if current_account.accountable_type == "User" %>
+          <%= render 'favs_partial' %>
+        <% elsif current_account.accountable_type == "Business" %>
+          <%= render 'my_listings' %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
   <div class="col-md-6">
     <div class="row">

@@ -1,0 +1,16 @@
+<div class="row">
+  <div id="favorite">
+    <h3>My Business Code</h3>
+    <p><%= @business.business_offer_number %></p>
+    <div id="changeCode">
+      <%= form_for(@business) do |f| %>
+        <%= f.text_field :business_offer_number %>
+        <%= f.submit "Update" %>
+      <% end %>
+    </div>
+    <p id="notice"><%= notice %></p>
+    <p>
+      <button type="button" class="btn btn-primary" id="codebutton">Change Code</button>
+    </p>
+  </div>
+</div>

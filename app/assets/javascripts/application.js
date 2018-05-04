@@ -19,3 +19,8 @@
 $(document).on("click", "#codeButtonShow", function(){
   $("#businessCode").toggle();
 });
+
+$(document).on("click", "#codebutton", function(){
+  $("#codebutton").hide();
+  $("#changeCode").show();
+});

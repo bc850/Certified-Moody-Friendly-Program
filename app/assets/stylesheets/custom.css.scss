@@ -644,6 +644,27 @@ body {
     #favsPartialMyFav {
       margin-top: 55px;
     }
+
+    #favsPartial {
+      .row {
+        margin-left: 2%;
+        width: 96%;
+      }
+
+      #changeCode {
+        display: none;
+      }
+
+      #notice {
+        font-size: 14px;
+      }
+
+      p {
+        //margin-left: 40%;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
   }
   /*
   #landingHero {
