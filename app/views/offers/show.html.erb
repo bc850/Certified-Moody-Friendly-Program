@@ -1,75 +1,79 @@
-<div class="pushDown">
+<div class="container-fluid" id="hero">
   <div id="offerLeft" class="col-md-3"></div>
-  <div id="offerDisplay" class="col-md-6">
-    <p id="notice"><%= notice %></p>
-    <p id="offerImage">
-      <%= image_tag(@offer.img_url) if @offer.img_url.present? %>
-    </p>
-    </br>
+  <div class="col-md-6">
+    <div class="row">
+      <div id="inside" style="margin-top: 15px; text-align: center;">
+        <div id="mobileBusinessView">
+          <%= image_tag(@offer.img_url, style: "display: block; margin: auto;") %>
+          </br>
 
-    <p id = "offerTitle">
-      <strong><%= @offer.name %></strong>
-    </p>
+          <p id = "offerTitle">
+            <strong><%= @offer.name %></strong>
+          </p>
 
-    <% if current_account.accountable_type == "User" %>
-      <% if current_account.voted_for? @offer %>
-        <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
-              id: "like_#{@offer.id}",
-              class: "glyphicon glyphicon-heart" %>
-      <% else %>
-        <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
-              id: "like_#{@offer.id}",
-              class: "glyphicon glyphicon-heart-empty" %>
-      <% end %>
-    <% end %>
+          <% if current_account.accountable_type == "User" %>
+            <% if current_account.voted_for? @offer %>
+              <%= link_to '', unlike_offer_path(@offer.id), method: :put, remote: true,
+                  id: "like_#{@offer.id}",
+                  class: "glyphicon glyphicon-heart" %>
+              <% else %>
+              <%= link_to '', like_offer_path(@offer.id), method: :put, remote: true,
+                  id: "like_#{@offer.id}",
+                  class: "glyphicon glyphicon-heart-empty" %>
+              <% end %>
+            <% end %>
 
-    <p>
-      <%= @offer.offering_type %>
-    </p>
+            <p>
+              <%= @offer.offering_type %>
+            </p>
 
-    <p>
-      <%= @offer.description %>
-    </p>
+            <p>
+              <%= @offer.description %>
+            </p>
 
-    <p>
-      <strong>Start date:</strong>
-      <%= @offer.start_date %>
-    </p>
+            <p>
+              <strong>Start date:</strong>
+              <%= @offer.start_date %>
+            </p>
 
-    <p>
-      <strong>End date:</strong>
-      <%= @offer.end_date %>
-    </p>
+            <p>
+              <strong>End date:</strong>
+              <%= @offer.end_date %>
+            </p>
 
-    <p>
-      <%= @offer.location %>
-    </p>
+            <p>
+              <%= @offer.location %>
+            </p>
 
-    <% if @offer.event_url.present? %>
-      <p>
-        <%= link_to 'Event Link', extlink(@offer.event_url) %>
-      </p>
-    <% end %>
+            <% if @offer.event_url.present? %>
+            <p>
+              <%= link_to 'Event Link', extlink(@offer.event_url) %>
+            </p>
+          <% end %>
 
-    <div id="businessCode">
-      <% if current_account.accountable_type == "User" %>
-        <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
-          <div class="form-inputs form-inline">
-            <%= f.input :test, label: false, placeholder: 'Code: i.e. 1234', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
-            <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
+          <br>
+          <div id="businessCode">
+            <% if current_account.accountable_type == "User" %>
+              <%= simple_form_for @offer, :url => check_code_offer_url, :method => 'post' do |f| %>
+              <div class="form-inputs form-inline">
+                <%= f.input :test, label: false, placeholder: 'Code: i.e. 1234', label_html: { class: 'discountInput' }, required: false, autofocus: true %>
+                <%= f.button :submit, "Use Offer", label_html: { class: 'discountSubmit' } %>
+              </div>
+            <% end %>
           </div>
-        <% end %>
+
+          <button id="codeButtonShow" type="button" class="btn btn-primary">Enter Code</button>
+          <% end %>
+
+          </br>
+          </br>
+          <p id="noticeOffer"><%= notice %></p>
+
+          <a href="#" onclick="window.print();return false;">Print</a>
+          </br>
+        </div>
+      </div>
     </div>
-
-    <button id="codeButtonShow" type="button">Enter Code</button>
-    <% end %>
-
-    </br>
-    </br>
-
-    <a href="#" onclick="window.print();return false;">Print</a>
-    </br>
-
   </div>
   <div id="offerRight" class="col-md-3"></div>
 </div>
