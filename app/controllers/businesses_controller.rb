@@ -17,6 +17,12 @@ class BusinessesController < ApplicationController
     @business = current_account.accountable_id
     set_business_mobile
   end
+
+  def stats
+    @offers = Offer.all
+    @business = current_account.accountable_id
+    set_business_mobile
+  end
 =begin
   # GET /businesses/1
   # GET /businesses/1.json
