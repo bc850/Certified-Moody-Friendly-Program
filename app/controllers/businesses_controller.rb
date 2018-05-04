@@ -21,6 +21,12 @@ class BusinessesController < ApplicationController
   def stats
     @offers = Offer.all
     @business = current_account.accountable_id
+    @myOffers = Array.new
+    @offers.each do |offer|
+      if offer.business_id == @business
+        @myOffers.push(offer)
+      end
+    end
     set_business_mobile
   end
 =begin

@@ -17,12 +17,17 @@
         </br>
         <h4>Number of Accounts</h4>
         <%= column_chart Account.group(:accountable_type).count, download: "account_types" %>
-      </br>
-      </br>
-      <h4>Popularity of Listings</h4>
-      <%= column_chart Offer.group(:cached_votes_total).count, download: "listing_popularity" %>
+        </br>
+        </br>
+        <h4>Popularity of Listings</h4>
+        <%= column_chart Offer.group(:cached_votes_total).count, download: "listing_popularity" %>
       <% else %>
-        <% puts "HEY" %>
+        </br>
+        <h4>Popularity of Listings</h4>
+        <%= column_chart (Offer.where("business_id = ?", @business)).group(:name).count, download: "listing_popularity" %>
+      </br>
+      <h4>Usage of Listings</h4>
+      <%= column_chart (Offer.where("business_id = ?", @business)).group(:analytics).count, download: "listing_usage" %>
       <% end %>
     <% end %>
 </div>
