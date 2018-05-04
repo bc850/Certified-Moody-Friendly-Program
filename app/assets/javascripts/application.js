@@ -14,6 +14,8 @@
 //= require bootstrap
 //= require rails-ujs
 //= require turbolinks
+//= require Chart.bundle
+//= require chartkick
 //= require_tree .
 //toggles the div in offer.show to allow user to input offer code
 $(document).on("click", "#codeButtonShow", function(){

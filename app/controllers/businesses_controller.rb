@@ -25,6 +25,18 @@ class BusinessesController < ApplicationController
     @business = current_account.accountable_id
     set_business_mobile
   end
+
+  def stats
+    @offers = Offer.all
+    @business = current_account.accountable_id
+    @myOffers = Array.new
+    @offers.each do |offer|
+      if offer.business_id == @business
+        @myOffers.push(offer)
+      end
+    end
+    set_business_mobile
+  end
 =begin
   # GET /businesses/1
   # GET /businesses/1.json
