@@ -2770,8 +2770,8 @@ Account.create!( :email => 'jstensgaard@valdostachamber.com', :password => 'WVJ6
 
 Offer.delete_all
 Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
-  start_date: '2018-03-23',
-  end_date: '2018-03-29',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Education',
   description: 'Join us for our summer camp about STEM!',
   location: '3320 Bemiss Road, Valdosta, GA 31605',
@@ -2784,8 +2784,8 @@ Offer.create!(name: 'Cre8ive Zone STEM Summer Program',
 # . . .
 
 Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
-  start_date: '2018-03-23',
-  end_date: '2018-03-25',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Food',
   description: 'Free order of pretzels with purchase of a large pizza!',
   location: '1526 Baytree Rd, Valdosta, GA 31601',
@@ -2796,8 +2796,8 @@ Offer.create!(name: 'Mellow Mushroom Pretzels Coupon',
 )
 # . . .
 Offer.create!(name: 'Lemongrass Day Spa',
-  start_date: '2018-03-23',
-  end_date: '2018-03-25',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Health and Wellness',
   description: 'Receive a free facial with purchase of a gift card!',
   location: '3338 D Country Club Road, Valdosta, GA 31605',
@@ -2808,8 +2808,8 @@ Offer.create!(name: 'Lemongrass Day Spa',
 )
 # . . .
 Offer.create!(name: 'Georgia Military College Application Event',
-  start_date: '2018-03-27',
-  end_date: '2018-03-27',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Education',
   description: 'Sign up for Fall classes now to receive military benefits.',
   location: '4201 N Forrest St, Valdosta, GA 31605',
@@ -2821,8 +2821,8 @@ Offer.create!(name: 'Georgia Military College Application Event',
 )
 # . . .
 Offer.create!(name: 'Home Depot Military Discount',
-  start_date: '2018-03-23',
-  end_date: '2020-03-25',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Home Improvement',
   description: 'Get 10% off all qualifying purchases with our Military program.',
   location: '1825 Norman Dr, Valdosta, GA 31601',
@@ -2833,8 +2833,8 @@ Offer.create!(name: 'Home Depot Military Discount',
 )
 # . . .
 Offer.create!(name: 'Wild Adventures Bring a Friend',
-  start_date: '2018-03-23',
-  end_date: '2018-03-25',
+  start_date: '2018-05-03',
+  end_date: '2018-05-25',
   category: 'Entertainment',
   description: 'Bring this coupon for admittance of a guest.',
   location: '3766 Old Clyattville Rd, Valdosta, GA 31601',

@@ -19,3 +19,17 @@
 $(document).on("click", "#codeButtonShow", function(){
   $("#businessCode").toggle();
 });
+
+$(document).on("click", "#codebutton", function(){
+  $("#codebutton").hide();
+  $("#changeCode").show();
+});
+
+$(document).ready(function() {
+   window.setTimeout("fadeMyDiv();", 3000); //call fade in 3 seconds
+ }
+)
+
+function fadeMyDiv() {
+   $("#notification").fadeOut('slow');
+}
