@@ -1,4 +1,8 @@
 <div id="businessID">
+  <%= form_tag(businesses_path, :method => "get", id: "search-form", class: "form-inline", style: "margin-bottom: 15px;") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Businesses", class: "form-control", style: "width: 85%;" %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
   <% @businesses.each do |business| %>
     <div id="inside">
       <%= image_tag(business.img_url, width: 100) if business.img_url.present? %>
