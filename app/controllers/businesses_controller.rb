@@ -3,6 +3,10 @@ class BusinessesController < ApplicationController
   before_action :authenticate_account!
   before_action :set_offers_for_partial
   before_action :set_popularity_component
+  before_action :set_offers
+  before_action :set_hide_listing_model
+  before_action :set_listing_weight_model
+  before_action :set_businesses
 
   def pundit_user
     current_account
@@ -127,5 +131,21 @@ class BusinessesController < ApplicationController
 
     def set_business_mobile
       @business = Business.find(@business)
+    end
+
+    def set_offers
+      @offers = Offer.all
+    end
+
+    def set_hide_listing_model
+      @hidelisting = Hidelisting.all
+    end
+
+    def set_listing_weight_model
+      @listingweight = Listingweight.find(1)
+    end
+
+    def set_businesses
+      @businesses_all = Business.all
     end
 end
