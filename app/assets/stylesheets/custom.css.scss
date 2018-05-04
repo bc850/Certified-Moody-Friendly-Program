@@ -344,6 +344,15 @@ body {
     #favsPartialMyFav {
       display: none;
     }
+
+    #searchInputField {
+      display: inline-block;
+      width: 75% !important;
+    }
+
+    #searchSubmitButton {
+      display: inline-block;
+    }
   }
 
   #favoritePage {
