@@ -20,6 +20,8 @@ gem 'kaminari'
 gem 'geocoder'
 gem 'chartkick'
 gem 'groupdate'
+gem 'rails-html-sanitizer', "~> 1.0.4"
+gem 'loofah', "~> 2.2.1"
 
 #Simple Calendar gem
 gem "simple_calendar", "~> 2.0"
