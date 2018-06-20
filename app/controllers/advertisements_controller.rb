@@ -31,6 +31,9 @@ class AdvertisementsController < ApplicationController
   # GET /advertisements/new
   def new
     @advertisement = Advertisement.new
+
+    @business = current_account.accountable_id
+    set_business
   end
 
   # GET /advertisements/1/edit
@@ -81,6 +84,10 @@ class AdvertisementsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_advertisement
       @advertisement = Advertisement.find(params[:id])
+    end
+
+    def set_business
+      @business = Business.find(@business)
     end
 
     def set_business_num
