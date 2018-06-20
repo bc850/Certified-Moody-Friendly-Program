@@ -1,10 +1,26 @@
 class AdvertisementsController < ApplicationController
   before_action :set_advertisement, only: [:show, :edit, :update, :destroy]
+  before_action :set_businesses
 
   # GET /advertisements
   # GET /advertisements.json
   def index
     @advertisements = Advertisement.all
+
+    if current_account.accountable_type == "Business"
+      #set business id number from current_account.accountable_id
+      set_business_num
+      #get the business from businesses.id based on @business_num previously set
+      @business = Business.find(@business_num)
+
+      #if the business is awaiting active status from Chamber, redirect
+      if @business.status == "Pending"
+        redirect_to business_url(@business)
+      end
+    end
+    if current_account.accountable_type == "User"
+      #set_hide_listing
+    end
   end
 
   # GET /advertisements/1
@@ -65,6 +81,14 @@ class AdvertisementsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_advertisement
       @advertisement = Advertisement.find(params[:id])
+    end
+
+    def set_business_num
+      @business_num = current_account.accountable_id
+    end
+
+    def set_businesses
+      @businesses_all = Business.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
