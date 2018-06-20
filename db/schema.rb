@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180620012203) do
+ActiveRecord::Schema.define(version: 20180620024928) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -122,6 +122,15 @@ ActiveRecord::Schema.define(version: 20180620012203) do
     t.string "abuse_flag_subjective", default: "Normal"
     t.string "abuse_reported", default: "No"
     t.integer "view_count", default: 0
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "image_url"
+    t.decimal "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "super_accounts", force: :cascade do |t|

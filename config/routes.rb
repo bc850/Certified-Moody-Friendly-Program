@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   resources :advertisements
   namespace :admin do
     resources :accounts
