@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'store/index'
+
   resources :products
   resources :advertisements
   namespace :admin do
