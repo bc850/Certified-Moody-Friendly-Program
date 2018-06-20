@@ -1,16 +1,14 @@
-<div class="pushDown">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Offer:</strong>
-  <%= @line_item.offer %>
+  <strong>Product:</strong>
+  <%= @line_item.product %>
 </p>
 
 <p>
-  <strong>Favorite:</strong>
-  <%= @line_item.favorite %>
+  <strong>Cart:</strong>
+  <%= @line_item.cart %>
 </p>
 
 <%= link_to 'Edit', edit_line_item_path(@line_item) %> |
 <%= link_to 'Back', line_items_path %>
-</div>

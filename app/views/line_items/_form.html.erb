@@ -1,27 +1,13 @@
-<%= form_with(model: line_item, local: true) do |form| %>
-  <% if line_item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(line_item.errors.count, "error") %> prohibited this line_item from being saved:</h2>
 
-      <ul>
-      <% line_item.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for(@line_item) do |f| %>
+  <%= f.error_notification %>
 
-  <div class="field">
-    <%= form.label :offer_id %>
-    <%= form.text_field :offer_id, id: :line_item_offer_id %>
+  <div class="form-inputs">
+    <%= f.association :product %>
+    <%= f.association :cart %>
   </div>
 
-  <div class="field">
-    <%= form.label :favorite_id %>
-    <%= form.text_field :favorite_id, id: :line_item_favorite_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-actions">
+    <%= f.button :submit %>
   </div>
 <% end %>
