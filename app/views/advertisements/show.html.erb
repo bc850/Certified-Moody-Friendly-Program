@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container pushDown">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @advertisement.title %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @advertisement.title %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @advertisement.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @advertisement.description %>
+  </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @advertisement.image_url %>
-</p>
+  <p>
+    <strong>Image url:</strong>
+    <%= image_tag(@advertisement.image_url, style: "display: block; margin: auto;") %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @advertisement.price %>
-</p>
+  <p>
+    <strong>Price:</strong>
+    <%= @advertisement.price %>
+  </p>
 
-<%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
-<%= link_to 'Back', advertisements_path %>
+  <%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
+  <%= link_to 'Back', advertisements_path %>
+</div>

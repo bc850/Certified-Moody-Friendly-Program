@@ -26,6 +26,8 @@ class AdvertisementsController < ApplicationController
   # GET /advertisements/1
   # GET /advertisements/1.json
   def show
+    @business = current_account.accountable_id
+    set_business
   end
 
   # GET /advertisements/new
@@ -38,12 +40,17 @@ class AdvertisementsController < ApplicationController
 
   # GET /advertisements/1/edit
   def edit
+    @business = current_account.accountable_id
+    set_business
   end
 
   # POST /advertisements
   # POST /advertisements.json
   def create
     @advertisement = Advertisement.new(advertisement_params)
+
+    @business = current_account.accountable_id
+    set_business
 
     respond_to do |format|
       if @advertisement.save
