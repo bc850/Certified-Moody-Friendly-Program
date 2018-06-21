@@ -1,55 +1,33 @@
 class ProductsController < ApplicationController
+  include CurrentBusiness
+  before_action :set_business
+  before_action :set_business_index_method, only: [:index]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
   # GET /products.json
   def index
     @products = Product.all
-
-    if current_account.accountable_type == "Business"
-      #set business id number from current_account.accountable_id
-      set_business_num
-      #get the business from businesses.id based on @business_num previously set
-      @business = Business.find(@business_num)
-
-      #if the business is awaiting active status from Chamber, redirect
-      if @business.status == "Pending"
-        redirect_to business_url(@business)
-      end
-    end
-    if current_account.accountable_type == "User"
-      #set_hide_listing
-    end
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    @business = current_account.accountable_id
-    set_business
   end
 
   # GET /products/new
   def new
     @product = Product.new
-
-    @business = current_account.accountable_id
-    set_business
   end
 
   # GET /products/1/edit
   def edit
-    @business = current_account.accountable_id
-    set_business
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(product_params)
-
-    @business = current_account.accountable_id
-    set_business
 
     respond_to do |format|
       if @product.save
@@ -90,18 +68,6 @@ class ProductsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
-    end
-
-    def set_business
-      @business = Business.find(@business)
-    end
-
-    def set_business_num
-      @business_num = current_account.accountable_id
-    end
-
-    def set_businesses
-      @businesses_all = Business.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
