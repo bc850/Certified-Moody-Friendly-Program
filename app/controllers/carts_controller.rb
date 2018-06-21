@@ -1,4 +1,7 @@
 class CartsController < ApplicationController
+  include CurrentBusiness
+  before_action :set_business
+  before_action :set_business_index_method, only: [:index]
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
 
   # GET /carts
@@ -25,22 +28,22 @@ class CartsController < ApplicationController
   # GET /carts/1
   # GET /carts/1.json
   def show
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
   end
 
   # GET /carts/new
   def new
     @cart = Cart.new
 
-    @business = current_account.accountable_id
-    set_business
+    # @business = current_account.accountable_id
+    # set_business
   end
 
   # GET /carts/1/edit
   def edit
-    @business = current_account.accountable_id
-    set_business
+    # @business = current_account.accountable_id
+    # set_business
   end
 
   # POST /carts
@@ -48,8 +51,8 @@ class CartsController < ApplicationController
   def create
     @cart = Cart.new(cart_params)
 
-    @business = current_account.accountable_id
-    set_business
+    # @business = current_account.accountable_id
+    # set_business
 
     respond_to do |format|
       if @cart.save
@@ -92,9 +95,9 @@ class CartsController < ApplicationController
       @cart = Cart.find(params[:id])
     end
 
-    def set_business
-      @business = Business.find(@business)
-    end
+    # def set_business
+    #  @business = Business.find(@business)
+    # end
 
     def set_business_num
       @business_num = current_account.accountable_id
