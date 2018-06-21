@@ -1,4 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="container pushDown">
+  <% if notice %>
+    <aside id="notice"><%= notice %></aside>
+  <% end %>
 
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+  <h2>Your Certified Moody Friendly Cart</h2>
+
+  <ul>
+    <% @cart.line_items.each do |item| %>
+      <li><%= item.product.title %></li>
+    <% end %>
+  </ul>
+</div>
