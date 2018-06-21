@@ -2844,3 +2844,26 @@ Offer.create!(name: 'Wild Adventures Bring a Friend',
   offer_code: '0001'
 )
 # . . .
+
+####### PRODUCT CREATION #######
+Product.delete_all
+Product.create!(
+  title: 'Advertisement: Sidebar',
+  description: 'This is an advertisement that will go into the sidebars on the site. It is part of a group of advertisements that will generate randomly on every page load.',
+  image_url: open('app/assets/images/hotdogs.jpg'),
+  price: 100.00
+)
+# . . .
+Product.create!(
+  title: 'Advertisement: Feed',
+  description: 'This is a feed advertisement that will go in the feed. It is part of a group of advertisements that will generate randomly on every page load.',
+  image_url: open('app/assets/images/hotdogs.jpg'),
+  price: 250.00
+)
+# . . .
+Product.create!(
+  title: 'Advertisement: Sponsored',
+  description: 'This is a sponsored advertisement that will go at the top of the page. This is the most exclusive advertisement on the site and displays on every page.',
+  image_url: open('app/assets/images/hotdogs.jpg'),
+  price: 1000.00
+)
