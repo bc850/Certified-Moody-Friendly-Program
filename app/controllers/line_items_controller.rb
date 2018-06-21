@@ -1,5 +1,8 @@
 class LineItemsController < ApplicationController
   include CurrentCart
+  include CurrentBusiness
+  before_action :set_business
+  before_action :set_business_index_method, only: [:index]
   before_action :set_cart, only: [:create]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
@@ -7,52 +10,27 @@ class LineItemsController < ApplicationController
   # GET /line_items.json
   def index
     @line_items = LineItem.all
-
-    if current_account.accountable_type == "Business"
-      #set business id number from current_account.accountable_id
-      set_business_num
-      #get the business from businesses.id based on @business_num previously set
-      @business = Business.find(@business_num)
-
-      #if the business is awaiting active status from Chamber, redirect
-      if @business.status == "Pending"
-        redirect_to business_url(@business)
-      end
-    end
-    if current_account.accountable_type == "User"
-      #set_hide_listing
-    end
   end
 
   # GET /line_items/1
   # GET /line_items/1.json
   def show
-    @business = current_account.accountable_id
-    set_business
   end
 
   # GET /line_items/new
   def new
     @line_item = LineItem.new
-
-    @business = current_account.accountable_id
-    set_business
   end
 
   # GET /line_items/1/edit
   def edit
-    @business = current_account.accountable_id
-    set_business
   end
 
   # POST /line_items
   # POST /line_items.json
   def create
-    @business = current_account.accountable_id
-    set_business
-
     product = Product.find(params[:product_id])
-    @line_item = @cart.line_items.build(product: product)
+    @line_item = @cart.add_product(product)
 
     respond_to do |format|
       if @line_item.save
@@ -93,18 +71,6 @@ class LineItemsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_line_item
       @line_item = LineItem.find(params[:id])
-    end
-
-    def set_business
-      @business = Business.find(@business)
-    end
-
-    def set_business_num
-      @business_num = current_account.accountable_id
-    end
-
-    def set_businesses
-      @businesses_all = Business.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
