@@ -56,6 +56,9 @@
     <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
     <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
   <% end %>
+  <% if account_signed_in? && current_account.accountable_type == "Business" && @business.status != "Pending" %>
+    <li><%= link_to "", cart_path(session[:cart_id]), :style => "color: #fff; font-size: 22px;", :class => "fa fa-shopping-cart" %></li>
+  <% end %>
 </ul>
 
 <button id="loggedInMobile" type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse">
@@ -88,5 +91,8 @@
   <% else %>
     <li><%= link_to 'Sign in', new_account_session_path, style: 'color:#FFFFFF;' %></li>
     <li><%= link_to 'Sign up', new_account_registration_path, style: 'color:#FFFFFF;' %></li>
+  <% end %>
+  <% if account_signed_in? && current_account.accountable_type == "Business" && @business.status != "Pending" %>
+    <li><%= link_to "", cart_path(session[:cart_id]), :style => "color: #fff; font-size: 22px;", :class => "fa fa-shopping-cart" %></li>
   <% end %>
 </ul>
