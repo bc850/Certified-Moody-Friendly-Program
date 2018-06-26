@@ -76,10 +76,6 @@ class LineItemsController < ApplicationController
   end
 
   def decrement
-    #@cart = @line_item.cart
-    #@product = @line_item.product
-    #@line_item = @cart.decrement_line_item_quantity(params[:id])
-    #@ptest = Product.find(@product.id)
     respond_to do |format|
       if @line_item.quantity > 1
         if @line_item.save
@@ -89,21 +85,12 @@ class LineItemsController < ApplicationController
           format.js { @current_item = @line_item }
           format.json { head :ok }
         end
+      elsif @line_item.quantity = 1
+        @line_item.destroy
+        format.html { redirect_to store_url }
+        format.js { @current_item = @line_item }
+        format.json { head :ok }
       end
-
-
-
-    #  if @line_item.save
-    #    @ptest.popularity = @ptest.popularity - 1
-    #    @ptest.update_attributes(:popularity => @ptest.popularity)
-    #    format.html { redirect_to store_url }
-    #    format.js { @current_item = @line_item }
-    #    format.json { head :ok }
-    #   else
-    #    format.html { render action: "edit" }
-    #    format.js { @current_item = @line_item }
-    #    format.json { render json: @line_item.errors, status: :unprocessable_entity }
-    #  end
     end
   end
 
