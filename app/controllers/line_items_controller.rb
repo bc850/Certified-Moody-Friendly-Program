@@ -3,8 +3,8 @@ class LineItemsController < ApplicationController
   include CurrentBusiness
   before_action :set_business
   before_action :set_business_index_method, only: [:index]
-  before_action :set_cart, only: [:create]
-  before_action :set_line_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_cart, only: [:create, :decrement]
+  before_action :set_line_item, only: [:show, :edit, :update, :destroy, :decrement]
 
   # GET /line_items
   # GET /line_items.json
@@ -76,7 +76,35 @@ class LineItemsController < ApplicationController
   end
 
   def decrement
+    #@cart = @line_item.cart
+    #@product = @line_item.product
+    #@line_item = @cart.decrement_line_item_quantity(params[:id])
+    #@ptest = Product.find(@product.id)
+    respond_to do |format|
+      if @line_item.quantity > 1
+        if @line_item.save
+          @line_item.quantity = @line_item.quantity - 1
+          @line_item.update_attributes(:quantity => @line_item.quantity)
+          format.html { redirect_to store_url }
+          format.js { @current_item = @line_item }
+          format.json { head :ok }
+        end
+      end
 
+
+
+    #  if @line_item.save
+    #    @ptest.popularity = @ptest.popularity - 1
+    #    @ptest.update_attributes(:popularity => @ptest.popularity)
+    #    format.html { redirect_to store_url }
+    #    format.js { @current_item = @line_item }
+    #    format.json { head :ok }
+    #   else
+    #    format.html { render action: "edit" }
+    #    format.js { @current_item = @line_item }
+    #    format.json { render json: @line_item.errors, status: :unprocessable_entity }
+    #  end
+    end
   end
 
   private
