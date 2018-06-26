@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   resources :products
   resources :advertisements
   resources :line_items
+  resources :line_items do
+    member do
+      post 'decrement'
+    end
+  end
   namespace :admin do
     resources :accounts
     resources :businesses

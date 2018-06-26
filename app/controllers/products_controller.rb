@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   include CurrentBusiness
+  include CurrentCart
+  before_action :set_cart
   before_action :set_business
   before_action :set_business_index_method, only: [:index]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
