@@ -1,9 +1,15 @@
 class OffersController < ApplicationController
+  include CurrentBusiness
+  include CurrentCart
+  before_action :set_cart
+  before_action :set_business
+  before_action :set_business_index_method, only: [:index, :show]
+
   before_action :set_offer, only: [:show, :edit, :update, :destroy, :check_code, :like, :unlike]
   before_action :authenticate_account!
   before_action :set_popularity_for_partial
   before_action :set_offers_for_partial
-  before_action :set_businesses
+  #before_action :set_businesses
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
 
@@ -51,8 +57,8 @@ class OffersController < ApplicationController
 
   def my_favorites
     @theoffers = Offer.order(:created_at).reverse
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
   end
 
   def like
@@ -93,8 +99,8 @@ if (params[:business_id])
              format.json {render json: Offer.order(sort_by + ' ' + order)}
     end
   end
-  @business = current_account.accountable_id
-  set_business
+  #@business = current_account.accountable_id
+  #set_business
   @offers = policy_scope(Offer)
   end
 
@@ -105,23 +111,23 @@ if (params[:business_id])
       @offer.view_count = @offer.view_count + 1
       @offer.update_attributes(:view_count => @offer.view_count)
     end
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
   end
 
   # GET /offers/new
   def new
     @offer = Offer.new
     authorize @offer
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
   end
 
   # GET /offers/1/edit
   def edit
     authorize @offer
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
   end
 
   # POST /offers
@@ -130,8 +136,8 @@ if (params[:business_id])
     @offer = Offer.new(offer_params)
     authorize @offer
 
-    @business = current_account.accountable_id
-    set_business
+    #@business = current_account.accountable_id
+    #set_business
 
     if current_account && current_account.accountable_type == "Business"
       @offer.business = current_account.accountable
@@ -218,13 +224,13 @@ if (params[:business_id])
       @theoffers = Offer.all
     end
 
-    def set_business
-      @business = Business.find(@business)
-    end
+    #def set_business
+    #  @business = Business.find(@business)
+    #end
 
-    def set_businesses
-      @businesses_all = Business.all
-    end
+    #def set_businesses
+    #  @businesses_all = Business.all
+    #end
 
     #def hide_listing_params
     #  params.require(:offer)
