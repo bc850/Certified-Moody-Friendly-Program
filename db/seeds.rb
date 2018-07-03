@@ -2867,3 +2867,21 @@ Product.create!(
   image_url: open('app/assets/images/cake.jpg'),
   price: 1000.00
 )
+
+####### ADVERTISEMENT CREATION #######
+Advertisement.delete_all
+Advertisement.create!(
+  title: 'Home Depot Banner',
+  description: 'Banner Ad for Home Depot',
+  ad_type: 'Banner',
+  image_url: open('app/assets/images/home_depot_banner-1302x210.PNG'),
+  web_url: 'https://www.homedepot.com'
+)
+# . . .
+Advertisement.create!(
+  title: 'Home Depot Regular Ad',
+  description: 'Regular Carousel Ad for Home Depot',
+  ad_type: 'Side Bar',
+  image_url: open('app/assets/images/home_depot-400x400.JPG'),
+  web_url: 'https://www.homedepot.com'
+)

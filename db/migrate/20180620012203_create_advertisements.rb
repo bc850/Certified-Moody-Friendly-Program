@@ -3,8 +3,9 @@ class CreateAdvertisements < ActiveRecord::Migration[5.1]
     create_table :advertisements do |t|
       t.string :title
       t.text :description
+      t.string :ad_type, default: 'Banner'
       t.string :image_url
-      t.decimal :price
+      t.string :web_url
 
       t.timestamps
     end
