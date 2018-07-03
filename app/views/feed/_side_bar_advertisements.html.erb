@@ -1,9 +1,9 @@
 <div id="favorite">
   <% @side_bar_advertisement.each do |advertisement| %>
-    <%= link_to image_tag(advertisement.image_url, width: 250) %>
+    <%= link_to image_tag(advertisement.image_url), advertisement.web_url %>
     <br>
-    <p>
-      <%= advertisement.description %>
-    </p>
+    <h4>
+      <%= link_to advertisement.description, advertisement.web_url %>
+    </h4>
   <% end %>
 </div>
