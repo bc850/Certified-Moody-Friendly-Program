@@ -9,6 +9,7 @@ class OffersController < ApplicationController
   before_action :authenticate_account!
   before_action :set_popularity_for_partial
   before_action :set_offers_for_partial
+  before_action :set_side_bar_advertisement
   #before_action :set_businesses
   #include CurrentFavorite
   #before_action :set_favorite, only: [:index]
@@ -222,6 +223,10 @@ if (params[:business_id])
 
     def set_offers_for_partial
       @theoffers = Offer.all
+    end
+
+    def set_side_bar_advertisement
+      @side_bar_advertisement = Advertisement.limit(1).order("RANDOM()").where(ad_type: 'Side Bar')
     end
 
     #def set_business
