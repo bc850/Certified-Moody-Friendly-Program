@@ -11,6 +11,7 @@ class FeedController < ApplicationController
   before_action :set_businesses
   before_action :set_hide_listing_model
   before_action :set_listing_weight_model
+  before_action :set_side_bar_advertisement
 
   def pundit_user
     current_account
@@ -84,5 +85,9 @@ class FeedController < ApplicationController
 
   def set_listing_weight_model
     @listingweight = Listingweight.find(1)
+  end
+
+  def set_side_bar_advertisement
+    @side_bar_advertisement = Advertisement.limit(1).order("RANDOM()").where(ad_type: 'Side Bar')
   end
 end

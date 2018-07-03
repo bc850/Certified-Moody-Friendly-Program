@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(version: 20180621040105) do
   create_table "advertisements", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.string "ad_type", default: "Banner"
     t.string "image_url"
-    t.decimal "price"
+    t.string "web_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

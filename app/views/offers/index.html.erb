@@ -3,6 +3,7 @@
     <% if account_signed_in? %>
       <% if current_account.accountable_type == "User" %>
         <%= render 'favs_partial' %>
+        <%= render 'side_bar_advertisements' %>
       <% elsif current_account.accountable_type == "Business" %>
         <%= render 'my_listings' %>
       <% end %>
