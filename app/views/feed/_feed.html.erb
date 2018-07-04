@@ -28,5 +28,12 @@
       <h3>Popular Listings</h3>
       <%= render 'popularity_component' %>
     </div>
+    <% if account_signed_in? %>
+      <% if current_account.accountable_type == "User" %>
+        <div class="row" style="margin-left: 2%; width: 96%;">
+          <%= render 'side_bar_advertisements' %>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>

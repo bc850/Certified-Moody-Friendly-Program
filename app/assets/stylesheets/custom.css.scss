@@ -629,6 +629,16 @@ body {
       font-size: 13px;
       margin-bottom: 10px;
       padding-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 12px;
+      }
     }
 
     #comp1 {
@@ -692,7 +702,7 @@ body {
 
       h4 {
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       p {
