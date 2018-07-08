@@ -14,7 +14,9 @@ class AdvertisementDashboard < Administrate::BaseDashboard
     ad_type: Field::String,
     image_url: Field::String,
     web_url: Field::String,
-    set_active: Field::String,
+    set_active: Field::Select.with_options(
+      collection: ['Active', 'Inactive']
+    ),
     expiration: Field::DateTime,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
