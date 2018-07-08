@@ -2876,7 +2876,7 @@ Advertisement.create!(
   ad_type: 'Banner',
   image_url: open('app/assets/images/home_depot_banner-1302x210.PNG'),
   web_url: 'https://www.homedepot.com',
-  set_active: 'true',
+  set_active: 'Active',
   expiration: '2019-01-01'
 )
 # . . .
@@ -2886,7 +2886,7 @@ Advertisement.create!(
   ad_type: 'Side Bar',
   image_url: open('app/assets/images/home_depot-400x400.JPG'),
   web_url: 'https://www.homedepot.com',
-  set_active: 'true',
+  set_active: 'Active',
   expiration: '2019-01-01'
 )
 # . . .
@@ -2896,6 +2896,6 @@ Advertisement.create!(
   ad_type: 'Side Bar',
   image_url: open('app/assets/images/wild_adventures_ad-315x250.JPG'),
   web_url: 'https://www.wildadventures.com',
-  set_active: 'true',
+  set_active: 'Active',
   expiration: '2019-01-01'
 )
