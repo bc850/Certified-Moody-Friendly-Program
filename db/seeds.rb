@@ -2885,3 +2885,11 @@ Advertisement.create!(
   image_url: open('app/assets/images/home_depot-400x400.JPG'),
   web_url: 'https://www.homedepot.com'
 )
+# . . .
+Advertisement.create!(
+  title: 'Wild Adventures 2018 Season Pass',
+  description: '2018 Season Pass!',
+  ad_type: 'Side Bar',
+  image_url: open('app/assets/images/wild_adventures_ad-315x250.JPG'),
+  web_url: 'https://www.wildadventures.com'
+)

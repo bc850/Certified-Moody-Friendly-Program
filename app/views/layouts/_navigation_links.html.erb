@@ -1,6 +1,11 @@
 <ul class="nav navbar-nav pull-right" id="loggedInDesktop">
   <% if account_signed_in? %>
     <% if current_account.accountable_type != "Business" %>
+      <li id="banner_ad_id">
+        <% @banner_ad.each do |banner_ad| %>
+          <%= link_to image_tag(banner_ad.image_url), banner_ad.web_url %>
+        <% end %>
+      </li>
       <li><%= link_to "Businesses", businesses_path, :style => "color: #fff" %></li>
     <% end %>
     <% if current_account.accountable_type != "SuperAccount" %>

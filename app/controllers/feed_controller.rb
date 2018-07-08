@@ -11,7 +11,6 @@ class FeedController < ApplicationController
   before_action :set_businesses
   before_action :set_hide_listing_model
   before_action :set_listing_weight_model
-  before_action :set_side_bar_advertisement
 
   def pundit_user
     current_account
@@ -42,6 +41,21 @@ class FeedController < ApplicationController
 
     # THIS IS THE COMBINED FEED WITH SORTING ALGORITHM IMPLEMENTED!!
     #@combined = (@discounts + @coupons + @events).sort_by(&:created_at).reverse
+
+    Advertisement.uncached do
+      @side_bar_advertisement = Advertisement.where(ad_type: 'Side Bar').limit(1).order("RANDOM()")
+
+      ## Have to put the loop here to get the ad to set
+      @side_bar_advertisement.each do |ad|
+      end
+      Advertisement.uncached do
+        @side_bar_advertisement_2 = Advertisement.where(ad_type: 'Side Bar').limit(1).order("RANDOM()")
+
+        ## Have to put the loop here to get the ad to set
+        @side_bar_advertisement_2.each do |ad2|
+        end
+      end
+    end
   end
 
   private
@@ -85,9 +99,5 @@ class FeedController < ApplicationController
 
   def set_listing_weight_model
     @listingweight = Listingweight.find(1)
-  end
-
-  def set_side_bar_advertisement
-    @side_bar_advertisement = Advertisement.limit(1).order("RANDOM()").where(ad_type: 'Side Bar')
   end
 end
