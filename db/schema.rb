@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20180621040105) do
     t.string "ad_type", default: "Banner"
     t.string "image_url"
     t.string "web_url"
+    t.string "set_active", default: "false"
+    t.date "expiration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

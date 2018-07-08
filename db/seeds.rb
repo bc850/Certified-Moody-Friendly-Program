@@ -2875,7 +2875,9 @@ Advertisement.create!(
   description: 'Banner Ad for Home Depot',
   ad_type: 'Banner',
   image_url: open('app/assets/images/home_depot_banner-1302x210.PNG'),
-  web_url: 'https://www.homedepot.com'
+  web_url: 'https://www.homedepot.com',
+  set_active: 'true',
+  expiration: '2019-01-01'
 )
 # . . .
 Advertisement.create!(
@@ -2883,7 +2885,9 @@ Advertisement.create!(
   description: 'Regular Carousel Ad for Home Depot',
   ad_type: 'Side Bar',
   image_url: open('app/assets/images/home_depot-400x400.JPG'),
-  web_url: 'https://www.homedepot.com'
+  web_url: 'https://www.homedepot.com',
+  set_active: 'true',
+  expiration: '2019-01-01'
 )
 # . . .
 Advertisement.create!(
@@ -2891,5 +2895,7 @@ Advertisement.create!(
   description: '2018 Season Pass!',
   ad_type: 'Side Bar',
   image_url: open('app/assets/images/wild_adventures_ad-315x250.JPG'),
-  web_url: 'https://www.wildadventures.com'
+  web_url: 'https://www.wildadventures.com',
+  set_active: 'true',
+  expiration: '2019-01-01'
 )
